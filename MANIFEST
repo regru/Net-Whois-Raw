@@ -1,0 +1,18 @@
+Build.PL
+Changes
+COPYRIGHT
+lib/Net/Whois/Raw.pm
+lib/Net/Whois/Raw/Common.pm
+lib/Net/Whois/Raw/Data.pm
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+META.yml
+pwhois
+README
+t/01-local.t
+t/02-internet.t
+t/03-coverage.t
+t/04-coro-domains.pl
+t/example-domains-load-balancing.pl
+META.json
