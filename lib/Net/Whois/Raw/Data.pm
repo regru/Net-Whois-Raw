@@ -473,7 +473,7 @@ our %servers = qw(
     BIZ.NS	whois.biz
     NAME.NS	whois.nic.name
     SO          whois.nic.so
-    BZ          whois.belizenic.bz
+    BZ          whois.enom.com
     XXX         whois.nic.xxx
 );
 
