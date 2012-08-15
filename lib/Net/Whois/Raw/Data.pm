@@ -172,7 +172,7 @@ our %servers = qw(
     FM  whois.nic.fm
     FO  whois.ripe.net
     FR  whois.nic.fr
-    GD  whois.adamsnames.com
+    GD  whois.adamsnames.tc
     GG  whois.channelisles.net
     GI  whois2.afilias-grs.net
     GS  whois.nic.gs
