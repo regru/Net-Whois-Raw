@@ -233,7 +233,7 @@ our %servers = qw(
     SG  whois.nic.net.sg
     SH  whois.nic.sh
     SI  whois.arnes.si
-    SK  whois.ripe.net
+    SK  whois.sk-nic.sk
     SM  whois.ripe.net
     ST  whois.nic.st
     TC  whois.adamsnames.tc
