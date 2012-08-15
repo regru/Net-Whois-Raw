@@ -246,7 +246,7 @@ our %servers = qw(
     TR  whois.nic.tr
     TW  whois.twnic.net.tw
     UA  whois.com.ua
-    NET.UA  whois.ua
+    NET.UA  whois.net.ua
     UK  whois.nic.uk
     US  whois.nic.us
     UZ  whois.cctld.uz
@@ -419,7 +419,6 @@ our %servers = qw(
     NET.TW  whois.twnic.net
     ORG.TW  whois.twnic.net
 
-    NET.UA      delta.hostmaster.net.ua
     COM.UA      whois.com.ua
     ORG.UA      whois.com.ua
     BIZ.UA      whois.biz.ua
