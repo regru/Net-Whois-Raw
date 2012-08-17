@@ -119,7 +119,7 @@ our %servers = qw(
     IP     whois.arin.net
 
     AERO   whois.aero
-    ARPA   whois.arin.net
+    ARPA   whois.iana.org
     ASIA   whois.nic.asia
     BIZ    whois.biz
     CAT    whois.cat
