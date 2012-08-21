@@ -471,3 +471,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.42	Jul 11 2012	Alexander Nalobin
 	- utf8 encoding fix
+
+2.43	Aug 21 2012	gleecology
+	- IPv6 whois support

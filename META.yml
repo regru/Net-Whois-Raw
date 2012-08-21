@@ -8,7 +8,7 @@ build_requires: {}
 configure_requires:
   Module::Build: 0.38
 dynamic_config: 1
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.113640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,7 +17,7 @@ name: Net-Whois-Raw
 provides:
   Net::Whois::Raw:
     file: lib/Net/Whois/Raw.pm
-    version: 2.42
+    version: 2.43
   Net::Whois::Raw::Common:
     file: lib/Net/Whois/Raw/Common.pm
     version: 0
@@ -33,7 +33,8 @@ requires:
   Net::IDN::Punycode: 1
   Test::More: 0
   URI::URL: 0
+  Win32API::Registry: 0
   perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.42
+version: 2.43

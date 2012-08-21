@@ -193,7 +193,7 @@ sub get_dom_tld {
     my ($dom) = @_;
 
     my $tld;
-    if ( is_ipaddr($dom) ) {
+    if ( is_ipaddr($dom) || is_ip6addr($dom) ) {
         $tld = "IP";
     }
     elsif ( domain_level($dom) == 1 ) {
@@ -652,8 +652,7 @@ sub is_ipaddr {
 
 # check, if it's IPv6-address?
 sub is_ip6addr {
-    # TODO: bad implementation!!!!!
-    $_[0] =~ /:/;
+    $_[0] =~ /^[0-9a-f]{1,4}:[0-9a-f]{1,4}:[0-9a-f:]+$/i;
 }
 
 # get domain level
