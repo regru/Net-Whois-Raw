@@ -30,7 +30,7 @@ sub whois_config {
     my @parnames = qw(OMIT_MSG CHECK_FAIL CHECK_EXCEED CACHE_DIR CACHE_TIME TIMEOUT @SRC_IPS);
     foreach my $parname (@parnames) {
         if (exists($par->{$parname})) {
-	    no strict 'refs';
+            no strict 'refs';
             ${$parname} = $par->{$parname};
         }
     }
@@ -42,10 +42,10 @@ sub whois_config_data {
     no strict 'refs';
 
     foreach my $k (keys %$net_whois_raw_data) {
-	%{'Net::Whois::Raw::Data::'.$k} = (
-	    %{'Net::Whois::Raw::Data::'.$k},
-	    %{ $net_whois_raw_data->{ $k } || {} },
-	);
+        %{'Net::Whois::Raw::Data::'.$k} = (
+            %{'Net::Whois::Raw::Data::'.$k},
+            %{ $net_whois_raw_data->{ $k } || {} },
+        );
     }
 }
 
@@ -77,9 +77,9 @@ sub whois {
     $res_srv = '' if $res_srv && $res_srv eq 'www_whois';
 
     if ( $which_whois ne 'QRY_ALL' ) {
-	utf8::decode( $res_text ); # Perl whyly loss utf8 flag
+        utf8::decode( $res_text ); # Perl whyly loss utf8 flag
 
-	$res_text = encode( $SET_CODEPAGE, $res_text ) if $SET_CODEPAGE;
+        $res_text = encode( $SET_CODEPAGE, $res_text ) if $SET_CODEPAGE;
     }
 
     return wantarray ? ($res_text, $res_srv) : $res_text;
@@ -96,11 +96,11 @@ sub get_whois {
     Net::Whois::Raw::Common::write_to_cache($dom, $whois, $CACHE_DIR);
 
     if ($which_whois eq 'QRY_LAST') {
-	my $thewhois = $whois->[-1];
+        my $thewhois = $whois->[-1];
         return wantarray ? ($thewhois->{text}, $thewhois->{srv}) : $thewhois->{text};
     }
     elsif ($which_whois eq 'QRY_FIRST') {
-	my $thewhois = $whois->[0];
+        my $thewhois = $whois->[0];
         return wantarray ? ($thewhois->{text}, $thewhois->{srv}) : $thewhois->{text};
     }
     else {
@@ -117,8 +117,8 @@ sub get_all_whois {
     $srv ||= Net::Whois::Raw::Common::get_server( $dom, $is_ns );
 
     if ($srv eq 'www_whois') {
-	my ($responce, $ishtml) = www_whois_query( $dom );
-	return $responce ? [ { text => $responce, srv => $srv } ] : $responce;
+        my ($responce, $ishtml) = www_whois_query( $dom );
+        return $responce ? [ { text => $responce, srv => $srv } ] : $responce;
     }
 
     my @whois = recursive_whois( $dom, $srv, [], $norecurse, $is_ns );
@@ -161,39 +161,39 @@ sub recursive_whois {
 
     my ($newsrv, $registrar);
     foreach (@{$lines}) {
-    	$registrar ||= /Registrar/ || /Registered through/;
+            $registrar ||= /Registrar/ || /Registered through/;
 
-    	if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
+            if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
             $newsrv = lc $1;
-    	}
-	elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
+            }
+        elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
             return recursive_whois( "=$dom", $srv, $was_srv );
-	}
-	elsif (/ReferralServer: whois:\/\/([-.\w]+)/) {
-	    $newsrv = $1;
-	    last;
-	}
-	elsif (/Contact information can be found in the (\S+)\s+database/) {
-	    $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $1 };
-    	}
-	elsif ((/OrgID:\s+(\w+)/ || /descr:\s+(\w+)/) && Net::Whois::Raw::Common::is_ipaddr($dom)) {
-	    my $val = $1;
-	    if($val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/) {
-		$newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $val };
-		last;
-	    }
-    	}
-	elsif (/^\s+Maintainer:\s+RIPE\b/ && Net::Whois::Raw::Common::is_ipaddr($dom)) {
+        }
+        elsif (/ReferralServer: whois:\/\/([-.\w]+)/) {
+            $newsrv = $1;
+            last;
+        }
+        elsif (/Contact information can be found in the (\S+)\s+database/) {
+            $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $1 };
+            }
+        elsif ((/OrgID:\s+(\w+)/ || /descr:\s+(\w+)/) && Net::Whois::Raw::Common::is_ipaddr($dom)) {
+            my $val = $1;
+            if($val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/) {
+                $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $val };
+                last;
+            }
+            }
+        elsif (/^\s+Maintainer:\s+RIPE\b/ && Net::Whois::Raw::Common::is_ipaddr($dom)) {
             $newsrv = $Net::Whois::Raw::Data::servers{RIPE};
-	}
-	elsif ( $is_ns && $srv ne $Net::Whois::Raw::Data::servers{NS} ) {
-	    $newsrv = $Net::Whois::Raw::Data::servers{NS};
-	}
+        }
+        elsif ( $is_ns && $srv ne $Net::Whois::Raw::Data::servers{NS} ) {
+            $newsrv = $Net::Whois::Raw::Data::servers{NS};
+        }
     }
 
     if ($dom =~ /^xn--/i && $newsrv && $Net::Whois::Raw::Data::whois_servers_with_no_idn_support{$newsrv}) {
-	# Bypass recursing to WHOIS servers with no IDN support
-	$newsrv = undef;
+        # Bypass recursing to WHOIS servers with no IDN support
+        $newsrv = undef;
     }
 
     my @whois_recs = ( { text => $whois, srv => $srv } );
@@ -204,8 +204,8 @@ sub recursive_whois {
         return () if grep {$_ eq $newsrv} @$was_srv;
 
         my @new_whois_recs = eval { recursive_whois( $dom, $newsrv, [@$was_srv, $srv], 0, $is_ns) };
-	my $new_whois = scalar(@new_whois_recs) ? $new_whois_recs[0]->{text} : '';
-	my $notfound = $Net::Whois::Raw::Data::notfound{$newsrv};
+        my $new_whois = scalar(@new_whois_recs) ? $new_whois_recs[0]->{text} : '';
+        my $notfound = $Net::Whois::Raw::Data::notfound{$newsrv};
 
         if ( $new_whois && !$@ && not ( $notfound && $new_whois =~ /$notfound/im ) ) {
             if ( $is_ns ) {
@@ -215,9 +215,9 @@ sub recursive_whois {
                 push @whois_recs, @new_whois_recs;
             }
         }
-	else {
-    	    warn "recursive query failed\n" if $DEBUG;
-	}
+        else {
+                warn "recursive query failed\n" if $DEBUG;
+        }
     }
 
     return @whois_recs;
@@ -250,8 +250,8 @@ sub whois_query {
     }
 
     print "QUERY: $whoisquery; SRV: $srv, ".
-	    "OMIT_MSG: $OMIT_MSG, CHECK_FAIL: $CHECK_FAIL, CACHE_DIR: $CACHE_DIR, ".
-	    "CACHE_TIME: $CACHE_TIME, TIMEOUT: $TIMEOUT\n" if $DEBUG >= 2;
+            "OMIT_MSG: $OMIT_MSG, CHECK_FAIL: $CHECK_FAIL, CACHE_DIR: $CACHE_DIR, ".
+            "CACHE_TIME: $CACHE_TIME, TIMEOUT: $TIMEOUT\n" if $DEBUG >= 2;
 
     my $prev_alarm = 0;
     my @lines;
@@ -271,10 +271,10 @@ sub whois_query {
             $sock = $new_sock if $new_sock;
         }
 
-	if ($DEBUG > 2) {
-	    require Data::Dumper;      
-	    print "Socket: ". Data::Dumper::Dumper($sock);
-	}
+        if ($DEBUG > 2) {
+            require Data::Dumper;      
+            print "Socket: ". Data::Dumper::Dumper($sock);
+        }
 
         $sock->print( $whoisquery, "\r\n" );
         # TODO: $soc->read, parameters for read chunk size, max content length
@@ -305,20 +305,20 @@ sub www_whois_query {
 
     foreach my $qurl ( @{$http_query_urls} ) {
 
-	# load-on-demand
-	unless ($INC{'LWP/UserAgent.pm'}) {
-	    require LWP::UserAgent;
-	    require HTTP::Request;
-	    require HTTP::Headers;
-	    require URI::URL;
-	    import LWP::UserAgent;
-	    import HTTP::Request;
-	    import HTTP::Headers;
-	    import URI::URL;
-	}
+        # load-on-demand
+        unless ($INC{'LWP/UserAgent.pm'}) {
+            require LWP::UserAgent;
+            require HTTP::Request;
+            require HTTP::Headers;
+            require URI::URL;
+            import LWP::UserAgent;
+            import HTTP::Request;
+            import HTTP::Headers;
+            import URI::URL;
+        }
 
-	my $referer = delete $qurl->{form}{referer} if $qurl->{form} && defined $qurl->{form}{referer};
-	my $method = ( $qurl->{form} && scalar(keys %{$qurl->{form}}) ) ? 'POST' : 'GET';
+        my $referer = delete $qurl->{form}{referer} if $qurl->{form} && defined $qurl->{form}{referer};
+        my $method = ( $qurl->{form} && scalar(keys %{$qurl->{form}}) ) ? 'POST' : 'GET';
 
     my $ua;
 
@@ -329,36 +329,36 @@ sub www_whois_query {
 
     unless($ua){
         $ua = new LWP::UserAgent( parse_head => 0 );
-	$ua->agent('Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.0.5) Gecko/2008121622 Fedora/3.0.5-1.fc10 Firefox/3.0.5');
+        $ua->agent('Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.0.5) Gecko/2008121622 Fedora/3.0.5-1.fc10 Firefox/3.0.5');
     }
-	my $header = HTTP::Headers->new;
-	$header->header('Referer' => $referer) if $referer;
-	my $req = new HTTP::Request $method, $qurl->{url}, $header;
+        my $header = HTTP::Headers->new;
+        $header->header('Referer' => $referer) if $referer;
+        my $req = new HTTP::Request $method, $qurl->{url}, $header;
 
-	if ($method eq 'POST') {
-	    require URI::URL;
-	    import URI::URL;
+        if ($method eq 'POST') {
+            require URI::URL;
+            import URI::URL;
 
-	    my $curl = url("http:");
-	    $req->content_type('application/x-www-form-urlencoded');
-	    $curl->query_form( %{$qurl->{form}} );
-	    $req->content( $curl->equery );
-	}
+            my $curl = url("http:");
+            $req->content_type('application/x-www-form-urlencoded');
+            $curl->query_form( %{$qurl->{form}} );
+            $req->content( $curl->equery );
+        }
 
-	$resp = eval {
-	    local $SIG{ALRM} = sub { die "www_whois connection timeout" };
-	    alarm 10;
-	    $ua->request($req)->content;
-	};
-	alarm 0;
+        $resp = eval {
+            local $SIG{ALRM} = sub { die "www_whois connection timeout" };
+            alarm 10;
+            $ua->request($req)->content;
+        };
+        alarm 0;
 
-	if ( !$resp || $@ || $resp =~ /www_whois connection timeout/ || $resp =~ /^500 Can\'t connect/ ) {
-	    undef $resp;
-	}
-	else {
-	    $url = $qurl->{url};
-	    last;
-	}
+        if ( !$resp || $@ || $resp =~ /www_whois connection timeout/ || $resp =~ /^500 Can\'t connect/ ) {
+            undef $resp;
+        }
+        else {
+            $url = $qurl->{url};
+            last;
+        }
     }
 
     return undef unless $resp;

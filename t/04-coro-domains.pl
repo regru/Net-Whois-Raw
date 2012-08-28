@@ -5,16 +5,16 @@ use strict;
 use Test::More tests => 6;
 
 BEGIN {
-	use Socket;
-	
-	eval "
-		use Coro;
-		use Coro::AnyEvent;
-		use Coro::Socket;
-		use Coro::LWP;
-	";
-	
-	$::require_coro = $@ if $@;
+        use Socket;
+        
+        eval "
+                use Coro;
+                use Coro::AnyEvent;
+                use Coro::Socket;
+                use Coro::LWP;
+        ";
+        
+        $::require_coro = $@ if $@;
 
     use_ok('Net::Whois::Raw',qw( whois ));
 
@@ -66,33 +66,33 @@ sub get_connected {
 }
 
 sub require_coro {
-	
-	no warnings 'once';
-	
-	*Net::Whois::Raw::whois_socket_fixup = sub {
-		my $class = shift;
-		my $sock  = shift;
-		
-		return Coro::Socket->new_from_fh ($sock, partial => 1);
-	};
-	
-	*Net::Whois::Raw::whois_query_sockparams = sub {
-		my $class  = shift;
-		my $domain = shift;
-		my $name   = shift;
-		
-		if (! $dns_cache->{$name}) {
-			my $ip = inet_ntoa (inet_aton ($name));
-			$dns_cache->{$name} = $ip;
-		}
-		
-		return (
-			PeerAddr => $dns_cache->{$name},
-			PeerPort => 43,
-			# LocalHost => ,
-			# LocalPort => 
-		);
-	};
-	
-	return ! $::require_coro; 
+        
+        no warnings 'once';
+        
+        *Net::Whois::Raw::whois_socket_fixup = sub {
+                my $class = shift;
+                my $sock  = shift;
+                
+                return Coro::Socket->new_from_fh ($sock, partial => 1);
+        };
+        
+        *Net::Whois::Raw::whois_query_sockparams = sub {
+                my $class  = shift;
+                my $domain = shift;
+                my $name   = shift;
+                
+                if (! $dns_cache->{$name}) {
+                        my $ip = inet_ntoa (inet_aton ($name));
+                        $dns_cache->{$name} = $ip;
+                }
+                
+                return (
+                        PeerAddr => $dns_cache->{$name},
+                        PeerPort => 43,
+                        # LocalHost => ,
+                        # LocalPort => 
+                );
+        };
+        
+        return ! $::require_coro; 
 }
