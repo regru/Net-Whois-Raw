@@ -76,7 +76,7 @@ sub whois {
 
     $res_srv = '' if $res_srv && $res_srv eq 'www_whois';
 
-    if ( $which_whois ne 'QRY_ALL' ) {
+    if ( defined $res_text && $which_whois ne 'QRY_ALL' ) {
         utf8::decode( $res_text ); # Perl whyly loss utf8 flag
 
         $res_text = encode( $SET_CODEPAGE, $res_text ) if $SET_CODEPAGE;
