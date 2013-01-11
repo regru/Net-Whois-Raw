@@ -2,7 +2,7 @@
 
 use strict;
 
-use Test::More tests => 20;
+use Test::More tests => 23;
 
 use_ok('Net::Whois::Raw');
 use_ok('Net::Whois::Raw::Common');
@@ -21,6 +21,10 @@ ok( $name eq 'auto' && $tld eq 'msk.ru', 'split_domain' );
 
 ok(  Net::Whois::Raw::Common::is_ipaddr( '122.234.214.214' ), 'is_ipaddr' );
 ok( !Net::Whois::Raw::Common::is_ipaddr( 'a22.b34.214.214' ), 'is_ipaddr' );
+
+ok(  Net::Whois::Raw::Common::is_ip6addr( '2002::2eb6:195b' ), 'is_ip6addr' );
+ok( !Net::Whois::Raw::Common::is_ip6addr( '2002::2eb6:195g' ), 'is_ip6addr' );
+ok(  Net::Whois::Raw::Common::is_ip6addr( '::ffff:c000:0280' ), 'is_ip6addr (ipv4)' );
 
 ok( Net::Whois::Raw::Common::get_dom_tld( '125.214.84.1' )   eq 'IP',     'get_dom_tld' );
 ok( Net::Whois::Raw::Common::get_dom_tld( 'REGRU-REG-RIPN' ) eq 'NOTLD',  'get_dom_tld' );

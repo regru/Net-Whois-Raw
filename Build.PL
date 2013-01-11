@@ -12,6 +12,7 @@ my $requires = {
     'Test::More' => 0,
     'Encode' => 0,
     'Net::IDN::Punycode' => 1,
+    'Regexp::IPv6' => 0,
 };
 
 if ($^O =~ /Win/) {

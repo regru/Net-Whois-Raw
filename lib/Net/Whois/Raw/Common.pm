@@ -2,6 +2,7 @@ package Net::Whois::Raw::Common;
 
 use Encode;
 use strict;
+use Regexp::IPv6 qw($IPv6_re);
 require Net::Whois::Raw::Data;
 
 use utf8;
@@ -652,7 +653,11 @@ sub is_ipaddr {
 
 # check, if it's IPv6-address?
 sub is_ip6addr {
-    $_[0] =~ /^[0-9a-f]{1,4}:[0-9a-f]{1,4}:[0-9a-f:]+$/i;
+    my ( $ip ) = @_;
+
+    return 0 unless defined $ip;
+
+    return $ip =~ /^$IPv6_re$/;
 }
 
 # get domain level

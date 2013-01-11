@@ -17,7 +17,7 @@ name: Net-Whois-Raw
 provides:
   Net::Whois::Raw:
     file: lib/Net/Whois/Raw.pm
-    version: 2.43
+    version: 2.44
   Net::Whois::Raw::Common:
     file: lib/Net/Whois/Raw/Common.pm
     version: 0
@@ -35,6 +35,7 @@ requires:
   URI::URL: 0
   Win32API::Registry: 0
   perl: 5.008001
+  Regexp::IPv6: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.43
+version: 2.44

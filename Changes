@@ -474,3 +474,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.43	Aug 21 2012	gleecology
 	- IPv6 whois support
+
+2.44    Jan 11 2013 Alexander Nalobin
+    - IPv6 whois support with Regexp::IPv6
