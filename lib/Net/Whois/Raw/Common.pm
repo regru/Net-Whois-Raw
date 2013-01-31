@@ -344,16 +344,6 @@ sub get_http_query_url {
         #};
         #push @http_query_data, $data;
     }
-    elsif ($tld eq 'cm') {
-        my $data = {
-            url  => "http://www.register.cm/whois.php",
-            form => {
-                domain => $domain,
-                submit => 'Go',
-            },
-        };
-        push @http_query_data, $data;
-    }
 
     # return $url, %form;
     return \@http_query_data;
@@ -578,25 +568,6 @@ sub parse_www_content {
             return 0;
         }
 
-    }
-    elsif ( $tld eq 'cm'  ) {
-        $resp = decode_utf8($resp);
-        if ( $resp =~ m{
-                <div \s+ class="result-info"> \s* <p> (.*?) </p> \s* </div>
-            }xms ) {
-
-            $resp = $1;
-            $resp =~ s{ <br/> }{}gxms;
-            $resp =~ s{ \n{2,} }{ \n }gxms;
-            # strip disclaimer
-            $resp =~ s{ \A .*? Domain \s+ Information \n }{}xms;
-            if ( $resp =~ /Status: \s+ Not \s+ Registered/ixms ) {
-                return 0;
-            }
-        }
-        else {
-            return 0;
-        }
     }
     elsif ( $tld eq 'tj' && $url =~ m|\.nic\.tj/cgi/lookup| ) {
 

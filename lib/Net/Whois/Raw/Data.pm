@@ -9,7 +9,6 @@ our @www_whois = qw(
     VN
     AC
     TJ
-    CM
 );
 # Candidates for www_whois: DO, IO, MG, SH, TM, TP, ZA
 
@@ -158,7 +157,8 @@ our %servers = qw(
     CD  whois.nic.cd
     CH  whois.nic.ch
     CI  whois.nic.ci
-    CL  Whois.nic.cl
+    CL  whois.nic.cl
+    CM  whois.netcom.cm
     CN  whois.cnnic.net.cn
     CO  whois.nic.co
     CX  whois.nic.cx
@@ -714,7 +714,7 @@ our %notfound = (
     'whois.domain.kg'           => 'Data not found. This domain is available for registration.',
     'whois.nic.so'              => 'Not\s+found:',
 
-    # for VN | TJ | CM zones
+    # for VN | TJ zones
     'www_whois'                 => '(Available|no records found|is free|Not Registered)',
 
     'whois.nic.xxx'             => 'NOT FOUND',
