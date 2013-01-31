@@ -243,13 +243,6 @@ sub get_http_query_url {
         };
         push @http_query_data, $data;
     }
-    elsif ($tld eq 'in') {
-        my $data = {
-            url  => "http://www.registry.in/cgi-bin/whois.cgi?whois_query_field=$name",
-            form => '',
-        };
-        push @http_query_data, $data;
-    }
     elsif ($tld eq 'cn') {
         my $data = {
             url  => "http://ewhois.cnnic.net.cn/whois?value=$name.$tld&entity=domain",
@@ -382,19 +375,6 @@ sub parse_www_content {
         $resp =~ s|</a>||g;
         $resp =~ s|<br>||g;
         $resp =~ s|&nbsp;| |g;
-
-    }
-    elsif ($tld eq 'in') {
-
-        $resp = decode_utf8( $resp );
-
-        if ( $resp =~ /Domain ID:\w{3,10}-\w{4}\n(.+?)\n\n/s ) {
-            $resp = $1;
-            $resp =~ s/<br>//g;
-        }
-        else {
-            return 0;
-        }
 
     }
     elsif ($tld eq 'cn') {
