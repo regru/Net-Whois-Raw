@@ -40,7 +40,7 @@
    "provides" : {
       "Net::Whois::Raw" : {
          "file" : "lib/Net/Whois/Raw.pm",
-         "version" : "2.44"
+         "version" : "2.45"
       },
       "Net::Whois::Raw::Common" : {
          "file" : "lib/Net/Whois/Raw/Common.pm",
@@ -57,5 +57,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "2.44"
+   "version" : "2.45"
 }
