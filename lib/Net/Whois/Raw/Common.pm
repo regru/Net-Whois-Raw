@@ -229,14 +229,7 @@ sub get_http_query_url {
 
     my $server = get_server( undef, undef, $tld );
 
-    if ($tld eq 'tv') {
-        my $data = {
-            url  => "http://www.tv/cgi-bin/whois.cgi?domain=$name&tld=tv",
-            form => '',
-        };
-        push @http_query_data, $data;
-    }
-    elsif ($tld eq 'mu') {
+    if ($tld eq 'mu') {
         my $data = {
             url  => 'http://www.mu/cgi-bin/mu_whois.cgi',
             form => {
@@ -371,19 +364,7 @@ sub parse_www_content {
 
     my $ishtml;
 
-    if ($tld eq 'tv') {
-
-        $resp = decode_utf8( $resp );
-
-        return 0 unless
-            $resp =~ /(<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" WIDTH="95%">.+?<\/TABLE>)/is;
-        $resp = $1;
-        $resp =~ s/<BR><BR>.+?The data in The.+?any time.+?<BR><BR>//is;
-        return 0 if $resp =~ /Whois information is not available for domain/s;
-        $ishtml = 1;
-
-    }
-    elsif ($tld eq 'mu') {
+    if ($tld eq 'mu') {
 
         $resp = decode_utf8( $resp );
 

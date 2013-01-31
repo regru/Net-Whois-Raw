@@ -140,7 +140,7 @@ our %servers = qw(
     TEL    whois-tel.neustar.biz
     TRAVEL whois.nic.travel
 
-    TV  tvwhois.verisign-grs.com
+    TV  whois.nic.tv
     WS  whois.worldsite.ws
     NF  whois.nic.cx
     AC  whois.nic.ac
