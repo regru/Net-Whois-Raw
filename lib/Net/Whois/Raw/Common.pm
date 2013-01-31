@@ -229,16 +229,7 @@ sub get_http_query_url {
 
     my $server = get_server( undef, undef, $tld );
 
-    if ($tld eq 'mu') {
-        my $data = {
-            url  => 'http://www.mu/cgi-bin/mu_whois.cgi',
-            form => {
-                whois => $name,
-            },
-        };
-        push @http_query_data, $data;
-    }
-    elsif ($tld eq 'ru' || $tld eq 'su') {
+    if ($tld eq 'ru' || $tld eq 'su') {
         my $data = {
             url  => "http://www.nic.ru/whois/?domain=$name.$tld",
             form => '',
@@ -364,17 +355,7 @@ sub parse_www_content {
 
     my $ishtml;
 
-    if ($tld eq 'mu') {
-
-        $resp = decode_utf8( $resp );
-
-        return 0 unless
-            $resp =~ /(<p><b>Domain Name:<\/b><br>.+?)<hr width="75%">/s;
-        $resp = $1;
-        $ishtml = 1;
-
-    }
-    elsif ( $tld eq 'ru' || $tld eq 'su' ) {
+    if ( $tld eq 'ru' || $tld eq 'su' ) {
 
         $resp = decode( 'koi8-r', $resp );
 
