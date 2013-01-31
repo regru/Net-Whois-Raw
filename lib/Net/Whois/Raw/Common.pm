@@ -243,13 +243,6 @@ sub get_http_query_url {
         };
         push @http_query_data, $data;
     }
-    elsif ($tld eq 'cn') {
-        my $data = {
-            url  => "http://ewhois.cnnic.net.cn/whois?value=$name.$tld&entity=domain",
-            form => '',
-        };
-        push @http_query_data, $data;
-    }
     elsif ($tld eq 'ws') {
         my $data = {
             url  => "http://worldsite.ws/utilities/lookup.dhtml?domain=$name&tld=$tld",
@@ -265,6 +258,7 @@ sub get_http_query_url {
         push @http_query_data, $data;
     }
     elsif ($tld eq 'vn') {
+        # VN doesn't have web whois at the moment...
         my $data = {
             url  => "http://www.tenmien.vn/jsp/jsp/tracuudomain1.jsp",
             form => {
@@ -272,8 +266,8 @@ sub get_http_query_url {
                 referer     => 'http://www.vnnic.vn/english/',
                 domainname1 => $name,
             },
-            };
-            push @http_query_data, $data;
+        };
+        push @http_query_data, $data;
     }
     elsif ($tld eq 'ac') {
         my $data = {
@@ -284,7 +278,7 @@ sub get_http_query_url {
     }
     elsif ($tld eq 'bz') {
         my $data = {
-            url  => "http://www.belizenic.bz/index.php/home/whois_result?domain=$name.$tld",
+            url  => "http://www.test.bz/Whois/index.php?query=$name&output=nice&dotname=.$tld&whois=Search",
         };
         push @http_query_data, $data;
     }
@@ -377,26 +371,6 @@ sub parse_www_content {
         $resp =~ s|&nbsp;| |g;
 
     }
-    elsif ($tld eq 'cn') {
-
-        $resp = decode_utf8( $resp );
-
-        if ($resp =~ m|<table border=1 cellspacing=0 cellpadding=2>\n\n(.+?)\n</table>|s) {
-            $resp = $1;
-            $resp =~ s|<a.+?>||isg;
-            $resp =~ s|</a>||isg;
-            $resp =~ s|<font.+?>||isg;
-            $resp =~ s|</font>||isg;
-            $resp =~ s|<tr><td class="t_blue">.+?</td><td class="t_blue">||isg;
-            $resp =~ s|</td></tr>||isg;
-            $resp =~ s|\n\s+|\n|sg;
-            $resp =~ s|\n\n|\n|sg;
-        }
-        else {
-            return 0;
-        }
-
-    }
     elsif ($tld eq 'ws') {
 
         $resp = decode_utf8( $resp );
@@ -472,9 +446,9 @@ sub parse_www_content {
         $resp = decode_utf8( $resp );
 
         if ( $resp =~ m{
-                <td \s+ class="box"> \s* <pre> # opening tags
-                \s* (.*?) \s*       # whois info
-                </?pre>             # strange closing tag - w/o slash
+                <blockquote>
+                (.+)
+                </blockquote>
             }xms )
         {
             $resp = $1;
@@ -482,6 +456,8 @@ sub parse_www_content {
                 # Whois info not found
                 return 0;
             }
+
+            $resp =~ s|<[^<>]+>||ig;
         }
         else {
             return 0;
