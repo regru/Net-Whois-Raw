@@ -483,3 +483,6 @@ Revision history for Perl module Net::Whois::Raw.
     - TV whois server updated
     - BZ web whois updated
     - MU, IN, CN web whois removed
+
+2.46    Feb 12 2013 Alexander Nalobin
+    - Fixed TJ web whois (broken html)

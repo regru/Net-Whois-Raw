@@ -510,7 +510,7 @@ sub parse_www_content {
 
         $resp = decode_utf8( $resp );
 
-        if ($resp =~ m|<table[0-9a-z=\" ]*>\n(.+?)\n</table>|s) {
+        if ( $resp =~ m{ <table [^>]*? > (.+) (:? </table> )? }sxmi ) {
             $resp = $1;
             $resp =~ s|</?tr>||ig;
             $resp =~ s|<td>| |ig;
