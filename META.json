@@ -1,12 +1,10 @@
 {
    "abstract" : "Get Whois information for domains",
    "author" : [
-      "Original author Ariel Brosh B<schop@cpan.org>,\nInspired by jwhois.pl available on the net.",
-      "Past maintainers Gabor Szabo B<gabor@perl.org.il>,\nCorris Randall B<corris@cpan.org>",
-      "Current Maintainer: Walery Studennikov B<despair@cpan.org>"
+      "unknown"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.113640",
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -18,22 +16,21 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build" : "0.40"
          }
       },
       "runtime" : {
          "requires" : {
-            "Encode" : 0,
+            "Encode" : "0",
             "Getopt::Long" : "2",
-            "HTTP::Headers" : 0,
-            "HTTP::Request" : 0,
-            "LWP::UserAgent" : 0,
+            "HTTP::Headers" : "0",
+            "HTTP::Request" : "0",
+            "LWP::UserAgent" : "0",
             "Net::IDN::Punycode" : "1",
-            "Test::More" : 0,
-            "URI::URL" : 0,
-            "Win32API::Registry" : 0,
-            "perl" : "5.008001",
-            "Regexp::IPv6" : 0
+            "Regexp::IPv6" : "0",
+            "Test::More" : "0",
+            "URI::URL" : "0",
+            "perl" : "5.008001"
          }
       }
    },
