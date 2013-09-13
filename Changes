@@ -486,3 +486,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.46    Feb 12 2013 Alexander Nalobin
     - Fixed TJ web whois (broken html)
+
+2.47    Sep 13 2013 Timur Nozadze
+    - Fixed "not found" parsing form whois.centralnic.com
