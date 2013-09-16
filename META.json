@@ -4,7 +4,7 @@
       "unknown"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "perl_5"
    ],
@@ -40,12 +40,10 @@
          "version" : "2.47"
       },
       "Net::Whois::Raw::Common" : {
-         "file" : "lib/Net/Whois/Raw/Common.pm",
-         "version" : 0
+         "file" : "lib/Net/Whois/Raw/Common.pm"
       },
       "Net::Whois::Raw::Data" : {
-         "file" : "lib/Net/Whois/Raw/Data.pm",
-         "version" : 0
+         "file" : "lib/Net/Whois/Raw/Data.pm"
       }
    },
    "release_status" : "stable",

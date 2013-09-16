@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   Module::Build: 0.40
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132140'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,10 +18,8 @@ provides:
     version: 2.47
   Net::Whois::Raw::Common:
     file: lib/Net/Whois/Raw/Common.pm
-    version: 0
   Net::Whois::Raw::Data:
     file: lib/Net/Whois/Raw/Data.pm
-    version: 0
 requires:
   Encode: 0
   Getopt::Long: 2
