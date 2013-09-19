@@ -502,7 +502,6 @@ our %codepages = (
     'whois.nic.hu'       => 'iso-8859-1',
     'whois.dns.pt'       => 'iso-8859-1',
     'whois.net.ua'       => 'koi8-u',
-    'whois.com.ua'       => 'koi8-u',
     'whois.biz.ua'       => 'koi8-u',
     'whois.co.ua'        => 'koi8-u',
     'whois.dn.ua'        => 'koi8-u',

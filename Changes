@@ -476,16 +476,19 @@ Revision history for Perl module Net::Whois::Raw.
 	- IPv6 whois support
 
 2.44    Jan 11 2013 Alexander Nalobin
-    - IPv6 whois support with Regexp::IPv6
+	- IPv6 whois support with Regexp::IPv6
 
 2.45    Jan 31 2013 Alexander Nalobin
-    - Using whois.netcom.cm for CM instead of web whois
-    - TV whois server updated
-    - BZ web whois updated
-    - MU, IN, CN web whois removed
+	- Using whois.netcom.cm for CM instead of web whois
+	- TV whois server updated
+	- BZ web whois updated
+	- MU, IN, CN web whois removed
 
 2.46    Feb 12 2013 Alexander Nalobin
-    - Fixed TJ web whois (broken html)
+	- Fixed TJ web whois (broken html)
 
 2.47    Sep 13 2013 Timur Nozadze
-    - Fixed "not found" parsing form whois.centralnic.com
+	- Fixed "not found" parsing form whois.centralnic.com
+
+2.48	Sep 19 2013 Walery Studennikov
+	- Fixed encoding for com.ua domains
