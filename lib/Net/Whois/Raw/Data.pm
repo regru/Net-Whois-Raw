@@ -7,7 +7,6 @@ use strict;
 
 our @www_whois = qw(
     VN
-    AC
     TJ
 );
 # Candidates for www_whois: DO, IO, MG, SH, TM, TP, ZA
@@ -255,6 +254,7 @@ our %servers = qw(
     VG  whois.adamsnames.tc
     WF  whois.nic.wf
     YT  whois.nic.yt
+    HR  whois.dns.hr
 
     ASN.AU        whois.aunic.net
     COM.AU        whois.aunic.net
