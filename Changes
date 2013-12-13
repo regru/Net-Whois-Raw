@@ -171,7 +171,7 @@ Revision history for Perl module Net::Whois::Raw.
 1.10	Jul 30 2006	K. J. Cheetham
 	- addons to %Net::Whois::Raw::Data::exceed hash
 
-1.11	Aug 10 2006	
+1.11	Aug 10 2006
 	- changed whois server for .aero (Danil Krivopustov)
 	- added fail check for whois.melbourneit.com (Yulia Shtyrjakova)
 
@@ -179,10 +179,10 @@ Revision history for Perl module Net::Whois::Raw.
 	- changed whois server for .gs
 
 1.13	Aug 20 2006	Doug Barton
-	- Addons + restyling of Net::Whois::Raw::Data 
+	- Addons + restyling of Net::Whois::Raw::Data
 
 1.14	Aug 24 2006	Doug Barton
-	- Addons to Net::Whois::Raw::Data 
+	- Addons to Net::Whois::Raw::Data
 
 1.20	Nov 18 2006	Walery Studennikov
 	- !INTERFACE CHANGE: CACHE_TIME now specifies time in minutes,
@@ -199,7 +199,7 @@ Revision history for Perl module Net::Whois::Raw.
 	  (Ticket http://rt.cpan.org/Ticket/Display.html?id=27097)
 	- Small refactoring
 
-1.23	May 22 2007	
+1.23	May 22 2007
 	- Added $DEBUG initialization (Walery Studennikov)
 	- Path for obtaining complete WHOIS info for .name domains (Yulia Shtyrjakova)
 
@@ -255,7 +255,7 @@ Revision history for Perl module Net::Whois::Raw.
 	- new caching mechanism
 	- tests writen for Net::Whois::Raw::Common
         - tests writen for checking the correctness of whois-servers
-        
+
 1.51    Mar 12 2008     Sergey Kotenko
         - test 02-internet.t fixed to work correctly on MS Windows.
 
@@ -288,7 +288,7 @@ Revision history for Perl module Net::Whois::Raw.
 	- small bugfixes + code layout foxes
 
 1.61    Jan 27 2009     Vadim Likhota, Walery Studennikov
-        - add whois.nic.name for .NS query for .name domains in addition for whois.nsiregistry.net 
+        - add whois.nic.name for .NS query for .name domains in addition for whois.nsiregistry.net
 	- add Test::More to module requirements
 	- add colourable user agent to satisfy http://nic.ac/
 
@@ -353,7 +353,7 @@ Revision history for Perl module Net::Whois::Raw.
 	- support geographic domains for .RU and .SU zones
 
 2.10	Nov 30 2009	David T Dzhanaev
-	- fixed -A param in pwhois 
+	- fixed -A param in pwhois
 	  (Ticket https://rt.cpan.org/Public/Bug/Display.html?id=52144)
 
 2.11	Dec 1 2009	David T Dzhanaev
@@ -364,18 +364,18 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.12	Dec 8 2009	Walery Studennikov
 	- now we require perl 5.8.1 and Encode
-	
+
 2.13	Jan 17 2010	Andrey Suslov
 	- fixed 'v-string' portability warning
 	  (Ticket https://rt.cpan.org/Public/Bug/Display.html?id=53084)
 
 2.14	Feb 1 2010	Andrey Suslov
-	- search DNS-servers in .org, .biz, .name zones through 
+	- search DNS-servers in .org, .biz, .name zones through
 	  a whois-server of appropriate zone
 
 2.15	Feb 1 2010	Andrey Suslov
 	- added more tests to MANIFEST
-	
+
 2.16	Feb 24 2010	Alexander Ponomarev
 	- fixed 'www whois' test
 
@@ -492,3 +492,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.48	Sep 19 2013 Walery Studennikov
 	- Fixed encoding for com.ua domains
+
+2.49	Dec 13 2013 Victor Efimov
+	- IN.NET whois server added

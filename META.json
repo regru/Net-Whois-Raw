@@ -1,10 +1,8 @@
 {
    "abstract" : "Get Whois information for domains",
-   "author" : [
-      "unknown"
-   ],
+   "author" : [],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Module::Build version 0.4203",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +14,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "Module::Build" : "0.42"
          }
       },
       "runtime" : {
@@ -37,7 +35,7 @@
    "provides" : {
       "Net::Whois::Raw" : {
          "file" : "lib/Net/Whois/Raw.pm",
-         "version" : "2.48"
+         "version" : "2.49"
       },
       "Net::Whois::Raw::Common" : {
          "file" : "lib/Net/Whois/Raw/Common.pm"
@@ -52,5 +50,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "2.48"
+   "version" : "2.49"
 }
