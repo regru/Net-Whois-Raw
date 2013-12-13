@@ -494,4 +494,5 @@ Revision history for Perl module Net::Whois::Raw.
 	- Fixed encoding for com.ua domains
 
 2.49	Dec 13 2013 Victor Efimov
-	- IN.NET whois server added
+	- IN.NET, HR whois server added
+	- AC whois server fixed
