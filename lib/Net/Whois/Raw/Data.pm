@@ -467,6 +467,7 @@ our %servers = qw(
     SE.NET	whois.centralnic.com
 
     AE.ORG	whois.centralnic.com
+    IN.NET      whois.centralnic.com
 
     ORG.NS	whois.pir.org
     BIZ.NS	whois.biz
