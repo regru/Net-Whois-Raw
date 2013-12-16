@@ -23,6 +23,8 @@ our %servers = qw(
     RU.NET	whois.nic.ru
     INT.RU  whois.int.ru
 
+    BY          whois.ripe.net
+
     ABKHAZIA.SU         whois.nic.ru
     ADYGEYA.RU          whois.nic.ru
     ADYGEYA.SU          whois.nic.ru
