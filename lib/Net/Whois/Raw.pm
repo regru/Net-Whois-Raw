@@ -153,6 +153,10 @@ sub process_whois_answers {
     return \@processed_whois;
 }
 
+sub _referral_server {
+    /ReferralServer:\s*r?whois:\/\/([-.\w]+(?:\:\d+)?)/
+}
+
 sub recursive_whois {
     my ($dom, $srv, $was_srv, $norecurse, $is_ns) = @_;
 
@@ -163,14 +167,14 @@ sub recursive_whois {
     foreach (@{$lines}) {
             $registrar ||= /Registrar/ || /Registered through/;
 
-            if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
+        if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
             $newsrv = lc $1;
-            }
+        }
         elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
             return recursive_whois( "=$dom", $srv, $was_srv );
         }
-        elsif (/ReferralServer: whois:\/\/([-.\w]+)/) {
-            $newsrv = $1;
+        elsif (my ($rs) = _referral_server()) {
+            $newsrv = $rs;
             last;
         }
         elsif (/Contact information can be found in the (\S+)\s+database/) {
@@ -197,7 +201,6 @@ sub recursive_whois {
     }
 
     my @whois_recs = ( { text => $whois, srv => $srv } );
-
     if ($newsrv && $newsrv ne $srv) {
         warn "recurse to $newsrv\n" if $DEBUG;
 
@@ -233,6 +236,7 @@ sub whois_query {
 
     my (@sockparams, $sock);
 
+    my $srv_and_port = $srv =~ /\:\d+$/ ? $srv : "$srv:43";
     if ($class->can ('whois_query_sockparams')) {
         @sockparams = $class->whois_query_sockparams ($dom, $srv);
     }
@@ -243,10 +247,10 @@ sub whois_query {
     elsif (scalar(@SRC_IPS)) {
         my $src_ip = $SRC_IPS[0];
         push @SRC_IPS, shift @SRC_IPS; # rotate ips
-        @sockparams = (PeerAddr => "$srv:43", LocalAddr => $src_ip);
+        @sockparams = (PeerAddr => $srv_and_port, LocalAddr => $src_ip);
     }
     else {
-        @sockparams = "$srv:43";
+        @sockparams = $srv_and_port;
     }
 
     print "QUERY: $whoisquery; SRV: $srv, ".
