@@ -464,7 +464,6 @@ sub parse_www_content {
         }
     }
     elsif ( $tld eq 'tj' && $url =~ m|^http\://get\.tj| ) {
-
         $resp = decode_utf8( $resp );
 
         if ($resp =~ m|<!-- Content //-->\n(.+?)<!-- End Content //-->|s ) {
@@ -507,10 +506,9 @@ sub parse_www_content {
 
     }
     elsif ( $tld eq 'tj' && $url =~ m|\.nic\.tj/cgi/whois| || $url =~ m|62\.122\.137\.16| ) {
-
         $resp = decode_utf8( $resp );
 
-        if ( $resp =~ m{ <table [^>]*? > (.+) (:? </table> )? }sxmi ) {
+        if ( $resp =~ m{ <table [^>]*? > (.+) (:? </table> ) }sxmi ) {
             $resp = $1;
             $resp =~ s|</?tr>||ig;
             $resp =~ s|<td>| |ig;
