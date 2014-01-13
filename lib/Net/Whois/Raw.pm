@@ -13,7 +13,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.49';
+our $VERSION = '2.50';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 our $CACHE_TIME = 60;
@@ -129,7 +129,7 @@ sub get_all_whois {
 }
 
 sub process_whois_answers {
-    my ($raw_whois, $dom) = @_;
+    my ( $raw_whois, $dom ) = @_;
 
     my @processed_whois;
 
@@ -142,7 +142,7 @@ sub process_whois_answers {
             $whois_rec->{text},
             $CHECK_FAIL, $OMIT_MSG, $CHECK_EXCEED,
         );
-        die $error if $level == 0 && $error && $error eq "Connection rate exceeded";
+        die $error if $level == 0 && $error && $error eq 'Connection rate exceeded';
         if ($text || $level == 0) {
             $whois_rec->{text} = $text;
             push @processed_whois, $whois_rec;

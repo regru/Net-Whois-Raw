@@ -496,3 +496,7 @@ Revision history for Perl module Net::Whois::Raw.
 2.49	Dec 13 2013 Victor Efimov
 	- IN.NET, HR whois server added
 	- AC whois server fixed
+
+2.50    Jan 13 2014 Alexander Nalobin
+    - Handling exceed limits of whois.nic.cz
+

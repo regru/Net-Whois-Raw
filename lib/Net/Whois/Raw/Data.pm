@@ -2182,6 +2182,7 @@ our %exceed = (
     'whois.nic.mg'   => 'Lookup quota exceeded',
     'whois.nic.li'   => 'You have exceeded this limit',
     'whois.nic.ch'   => 'You have exceeded this limit',
+    'whois.nic.cz'   => 'Your connection limit exceeded',
 );
 
 our $default_ban_time = 60;

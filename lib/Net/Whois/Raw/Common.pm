@@ -81,19 +81,19 @@ sub write_to_cache {
 
 # remove copyright messages, check for existance
 sub process_whois {
-    my ($query, $server, $whois, $CHECK_FAIL, $OMIT_MSG, $CHECK_EXCEED) = @_;
+    my ( $query, $server, $whois, $CHECK_FAIL, $OMIT_MSG, $CHECK_EXCEED ) = @_;
 
     $server = lc $server;
-    my ($name, $tld) = split_domain($query);
+    my ( $name, $tld ) = split_domain( $query );
 
     # use string as is
     no utf8;
 
     if ( $CHECK_EXCEED ) {
-        my $exceed = $Net::Whois::Raw::Data::exceed{$server};
+        my $exceed = $Net::Whois::Raw::Data::exceed{ $server };
 
         if ( $exceed && $whois =~ /$exceed/s) {
-            return $whois, "Connection rate exceeded";
+            return $whois, 'Connection rate exceeded';
         }
     }
 
@@ -102,23 +102,24 @@ sub process_whois {
         my %notfound = %Net::Whois::Raw::Data::notfound;
         my %strip = %Net::Whois::Raw::Data::strip;
 
-        my $notfound = $notfound{$server};
+        my $notfound = $notfound{ $server };
 
-        my @strip = $strip{$server} ? @{$strip{$server}} : ();
+        my @strip = $strip{ $server } ? @{ $strip{ $server } } : ();
         my @lines;
-MAIN:
-        foreach (split(/\n/, $whois)) {
+
+        MAIN:
+        for ( split /\n/, $whois ) {
             if ( $CHECK_FAIL && $notfound && /$notfound/ ) {
                 return undef, "Not found";
-            };
+            }
 
-            if ($OMIT_MSG) {
-                foreach my $re (@strip) {
-                    next MAIN if (/$re/);
+            if ( $OMIT_MSG ) {
+                for my $re ( @strip ) {
+                    next MAIN  if /$re/;
                 }
             }
 
-            push(@lines, $_);
+            push @lines, $_;
         }
 
         $whois = join "\n", @lines, '';
@@ -130,16 +131,16 @@ MAIN:
         }
     }
 
-    if ( defined $Net::Whois::Raw::Data::postprocess{$server} ) {
-        $whois = $Net::Whois::Raw::Data::postprocess{$server}->($whois);
+    if ( defined $Net::Whois::Raw::Data::postprocess{ $server } ) {
+        $whois = $Net::Whois::Raw::Data::postprocess{ $server }->( $whois );
     }
 
-    if ( defined $Net::Whois::Raw::POSTPROCESS{$server} ) {
-        $whois = $Net::Whois::Raw::POSTPROCESS{$server}->($whois);
+    if ( defined $Net::Whois::Raw::POSTPROCESS{ $server } ) {
+        $whois = $Net::Whois::Raw::POSTPROCESS{ $server }->( $whois );
     }
 
-    if ( defined $Net::Whois::Raw::Data::codepages{$server} ) {
-        $whois = decode( $Net::Whois::Raw::Data::codepages{$server}, $whois );
+    if ( defined $Net::Whois::Raw::Data::codepages{ $server } ) {
+        $whois = decode( $Net::Whois::Raw::Data::codepages{ $server }, $whois );
     }
     else {
         utf8::decode( $whois );
@@ -147,7 +148,6 @@ MAIN:
 
     return $whois, undef;
 }
-
 
 # get whois-server for domain / tld
 sub get_server {
