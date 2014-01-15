@@ -62,9 +62,10 @@ $Net::Whois::Raw::TIMEOUT    = $timeout;
 
 if ($enable_caching) {
     if ($^O eq 'MSWin32') {
-	$Net::Whois::Raw::CACHE_DIR = $ENV{TEMP} || "C:\\temp";
-    } else {
-	$Net::Whois::Raw::CACHE_DIR = $ENV{TMPDIR} || '/tmp';
+        $Net::Whois::Raw::CACHE_DIR = $ENV{TEMP} || "C:\\temp";
+    }
+    else {
+        $Net::Whois::Raw::CACHE_DIR = $ENV{TMPDIR} || '/tmp';
     }
 }
 else {
