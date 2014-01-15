@@ -13,6 +13,7 @@ my $requires = {
     'Encode' => 0,
     'Net::IDN::Punycode' => 1,
     'Regexp::IPv6' => 0,
+    'File::Temp' => 0,
 };
 
 if ($^O =~ /Win/) {
