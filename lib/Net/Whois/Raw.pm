@@ -258,40 +258,55 @@ sub whois_query {
             "OMIT_MSG: $OMIT_MSG, CHECK_FAIL: $CHECK_FAIL, CACHE_DIR: $CACHE_DIR, ".
             "CACHE_TIME: $CACHE_TIME, TIMEOUT: $TIMEOUT\n" if $DEBUG >= 2;
 
-    my $prev_alarm = 0;
+    my $prev_alarm = undef;
+    my $t0 = time();
+
     my @lines;
 
     # Make query
 
-    eval {
+    {
         local $SIG{'ALRM'} = sub { die "Connection timeout to $srv" };
-        $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
+        eval {
 
-        unless($sock){
-            $sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+            $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
+
+            unless($sock){
+                $sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+            }
+
+            if ($class->can ('whois_socket_fixup')) {
+                my $new_sock = $class->whois_socket_fixup ($sock);
+                $sock = $new_sock if $new_sock;
+            }
+
+            if ($DEBUG > 2) {
+                require Data::Dumper;
+                print "Socket: ". Data::Dumper::Dumper($sock);
+            }
+
+            $sock->print( $whoisquery, "\r\n" );
+            # TODO: $soc->read, parameters for read chunk size, max content length
+            # Now you can redefine SOCK_CLASS::getline method as you want
+            while (my $str = $sock->getline) {
+                push @lines, $str;
+            }
+            $sock->close;
+        };
+        {
+            local $@; # large code block below, so preserve previous exception.
+            if (defined $prev_alarm) { # if we ever set new alarm
+                if ($prev_alarm == 0) { # there was no alarm previously
+                    alarm 0; # clear it
+                } else { # there was an alarm previously
+                    $prev_alarm -= (time()- $t0); # try best to substract time elapsed
+                    $prev_alarm = 1 if $prev_alarm < 1; # we still need set it to something non-zero
+                    alarm $prev_alarm; # set it
+                }
+            }
         }
-
-        if ($class->can ('whois_socket_fixup')) {
-            my $new_sock = $class->whois_socket_fixup ($sock);
-            $sock = $new_sock if $new_sock;
-        }
-
-        if ($DEBUG > 2) {
-            require Data::Dumper;
-            print "Socket: ". Data::Dumper::Dumper($sock);
-        }
-
-        $sock->print( $whoisquery, "\r\n" );
-        # TODO: $soc->read, parameters for read chunk size, max content length
-        # Now you can redefine SOCK_CLASS::getline method as you want
-        while (my $str = $sock->getline) {
-            push @lines, $str;
-        }
-        $sock->close;
-    };
-
-    alarm $prev_alarm;
-    Carp::confess $@ if $@;
+        Carp::confess $@ if $@;
+    }
 
     foreach (@lines) { s/\r//g; }
 
