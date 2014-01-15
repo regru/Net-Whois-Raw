@@ -3,6 +3,7 @@ package Net::Whois::Raw::Data;
 # Use string as is
 no utf8;
 
+use warnings;
 use strict;
 
 our @www_whois = qw(

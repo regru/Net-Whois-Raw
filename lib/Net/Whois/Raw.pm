@@ -1,9 +1,10 @@
 package Net::Whois::Raw;
 
 require 5.008_001;
-require Net::Whois::Raw::Common;
-require Net::Whois::Raw::Data;
+use Net::Whois::Raw::Common ();
+use Net::Whois::Raw::Data ();
 
+use warnings;
 use strict;
 
 use Carp;

@@ -1,9 +1,11 @@
 package Net::Whois::Raw::Common;
 
 use Encode;
+use warnings;
 use strict;
 use Regexp::IPv6 qw($IPv6_re);
-require Net::Whois::Raw::Data;
+use Net::Whois::Raw::Data ();
+use Net::Whois::Raw ();
 
 use utf8;
 
