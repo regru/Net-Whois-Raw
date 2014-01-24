@@ -134,16 +134,19 @@ sub process_whois_answers {
     my @processed_whois;
 
     my $level = 0;
-    foreach my $whois_rec (@{$raw_whois}) {
+    for my $whois_rec ( @$raw_whois ) {
         $whois_rec->{level} = $level;
-        my ($text, $error) = Net::Whois::Raw::Common::process_whois(
+        my ( $text, $error ) = Net::Whois::Raw::Common::process_whois(
             $dom,
             $whois_rec->{srv},
             $whois_rec->{text},
             $CHECK_FAIL, $OMIT_MSG, $CHECK_EXCEED,
         );
-        die $error if $level == 0 && $error && $error eq 'Connection rate exceeded';
-        if ($text || $level == 0) {
+
+        die $error  if $error && $error eq 'Connection rate exceeded'
+            && ( $level == 0 || $CHECK_EXCEED == 2 );
+
+        if ( $text || $level == 0 ) {
             $whois_rec->{text} = $text;
             push @processed_whois, $whois_rec;
         }
@@ -414,10 +417,11 @@ Net::Whois::Raw -- Get Whois information for domains
         # sorted by servers.
         # Default is to give the textual response.
 
-  $Net::Whois::Raw::CHECK_EXCEED = 1;
-	# When this option is set, "die" will be called
+  $Net::Whois::Raw::CHECK_EXCEED = 0 | 1 | 2;
+	# When this option is true, "die" will be called
         # if connection rate to specific whois server have been
-        # exceeded
+        # exceeded.
+        # If set to 2, will die in recursive queries too.
 
   $Net::Whois::Raw::CACHE_DIR = "/var/spool/pwhois/";
 	# Whois information will be

@@ -2183,6 +2183,7 @@ our %exceed = (
     'whois.nic.li'   => 'You have exceeded this limit',
     'whois.nic.ch'   => 'You have exceeded this limit',
     'whois.nic.cz'   => 'Your connection limit exceeded',
+    'whois.name.com' => 'Too many connection attempts. Please try again in a few seconds.',
 );
 
 our $default_ban_time = 60;
