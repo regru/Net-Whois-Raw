@@ -2,7 +2,7 @@
 
 use strict;
 
-use Test::More tests => 23;
+use Test::More tests => 26;
 
 use_ok('Net::Whois::Raw');
 use_ok('Net::Whois::Raw::Common');
@@ -47,3 +47,15 @@ ok( Net::Whois::Raw::Common::get_real_whois_query( 'reg.ru',    'whois.ripn.net'
 is( Net::Whois::Raw::Common::get_server( 'reg.ru' ), 'whois.ripn.net', 'get_server' );
 is( Net::Whois::Raw::Common::get_server( 'nic.vn' ), 'www_whois',      'get_server' );
 is( Net::Whois::Raw::Common::get_server( undef, undef, 'spb.ru' ), 'whois.nic.ru', 'get_server' );
+
+
+for ('ReferralServer: rwhois://rwhois.theplanet.com:4321') {
+    my ($res) = Net::Whois::Raw::_referral_server();
+    is $res, 'rwhois.theplanet.com:4321', "_referral_server should work for rwhois:// and port";
+}
+
+for ('ReferralServer: whois://some-host.com') {
+    ok $_ =~ /ReferralServer: whois:\/\/([-.\w]+)/, "this test example match regexp used in previous versions of module";
+    my ($res) = Net::Whois::Raw::_referral_server();
+    is $res, 'some-host.com', "_referral_server should work for whois:// without port";
+}

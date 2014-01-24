@@ -499,3 +499,18 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.50    Jan 13 2014 Alexander Nalobin
     - Handling exceed limits of whois.nic.cz
+    - IO whois updated.
+    - BY whois added.
+
+2.51    Jan 16 2014 Victor Efimov
+    - RT#60339 fixed regexp for parsing .TJ web whois
+    - RT#64960 extend regexp for ReferralServer parsing (for recursive whois)
+    - Several timeout/alarm issues:
+        Fix race-condition between ALRM handler cleared and
+          alarm timer cleared (could result process to exit with signalal - i.e.
+          not possible to catch as die(), and no destructions called).
+        Fix action-at-distance - we were clearing alarm timer to zero, if alarm is
+          not used (i.e if TIMEOUT zero).
+        Substract time spent in request from outer alarm
+    - Fixed: unicode whois was damaging when using caching
+        Under POSIX systems pwhois now uses TMPDIR env, not TEMP.

@@ -11,6 +11,7 @@ my $requires = {
     'URI::URL' => 0,
     'Net::IDN::Punycode' => 1,
     'Regexp::IPv6' => 0,
+    'File::Temp' => 0,
 };
 if ($^O =~ /Win/) {
   $requires->{'Win32API::Registry'} = 0;

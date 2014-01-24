@@ -1,9 +1,10 @@
 package Net::Whois::Raw;
 
 require 5.008_001;
-require Net::Whois::Raw::Common;
-require Net::Whois::Raw::Data;
+use Net::Whois::Raw::Common ();
+use Net::Whois::Raw::Data ();
 
+use warnings;
 use strict;
 
 use Carp;
@@ -13,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.50';
+our $VERSION = '2.51';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 our $CACHE_TIME = 60;
@@ -156,6 +157,10 @@ sub process_whois_answers {
     return \@processed_whois;
 }
 
+sub _referral_server {
+    /ReferralServer:\s*r?whois:\/\/([-.\w]+(?:\:\d+)?)/
+}
+
 sub recursive_whois {
     my ($dom, $srv, $was_srv, $norecurse, $is_ns) = @_;
 
@@ -166,14 +171,14 @@ sub recursive_whois {
     foreach (@{$lines}) {
             $registrar ||= /Registrar/ || /Registered through/;
 
-            if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
+        if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
             $newsrv = lc $1;
-            }
+        }
         elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
             return recursive_whois( "=$dom", $srv, $was_srv );
         }
-        elsif (/ReferralServer: whois:\/\/([-.\w]+)/) {
-            $newsrv = $1;
+        elsif (my ($rs) = _referral_server()) {
+            $newsrv = $rs;
             last;
         }
         elsif (/Contact information can be found in the (\S+)\s+database/) {
@@ -200,7 +205,6 @@ sub recursive_whois {
     }
 
     my @whois_recs = ( { text => $whois, srv => $srv } );
-
     if ($newsrv && $newsrv ne $srv) {
         warn "recurse to $newsrv\n" if $DEBUG;
 
@@ -236,6 +240,7 @@ sub whois_query {
 
     my (@sockparams, $sock);
 
+    my $srv_and_port = $srv =~ /\:\d+$/ ? $srv : "$srv:43";
     if ($class->can ('whois_query_sockparams')) {
         @sockparams = $class->whois_query_sockparams ($dom, $srv);
     }
@@ -246,50 +251,65 @@ sub whois_query {
     elsif (scalar(@SRC_IPS)) {
         my $src_ip = $SRC_IPS[0];
         push @SRC_IPS, shift @SRC_IPS; # rotate ips
-        @sockparams = (PeerAddr => "$srv:43", LocalAddr => $src_ip);
+        @sockparams = (PeerAddr => $srv_and_port, LocalAddr => $src_ip);
     }
     else {
-        @sockparams = "$srv:43";
+        @sockparams = $srv_and_port;
     }
 
     print "QUERY: $whoisquery; SRV: $srv, ".
             "OMIT_MSG: $OMIT_MSG, CHECK_FAIL: $CHECK_FAIL, CACHE_DIR: $CACHE_DIR, ".
             "CACHE_TIME: $CACHE_TIME, TIMEOUT: $TIMEOUT\n" if $DEBUG >= 2;
 
-    my $prev_alarm = 0;
+    my $prev_alarm = undef;
+    my $t0 = time();
+
     my @lines;
 
     # Make query
 
-    eval {
+    {
         local $SIG{'ALRM'} = sub { die "Connection timeout to $srv" };
-        $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
+        eval {
 
-        unless($sock){
-            $sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+            $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
+
+            unless($sock){
+                $sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+            }
+
+            if ($class->can ('whois_socket_fixup')) {
+                my $new_sock = $class->whois_socket_fixup ($sock);
+                $sock = $new_sock if $new_sock;
+            }
+
+            if ($DEBUG > 2) {
+                require Data::Dumper;
+                print "Socket: ". Data::Dumper::Dumper($sock);
+            }
+
+            $sock->print( $whoisquery, "\r\n" );
+            # TODO: $soc->read, parameters for read chunk size, max content length
+            # Now you can redefine SOCK_CLASS::getline method as you want
+            while (my $str = $sock->getline) {
+                push @lines, $str;
+            }
+            $sock->close;
+        };
+        {
+            local $@; # large code block below, so preserve previous exception.
+            if (defined $prev_alarm) { # if we ever set new alarm
+                if ($prev_alarm == 0) { # there was no alarm previously
+                    alarm 0; # clear it
+                } else { # there was an alarm previously
+                    $prev_alarm -= (time()- $t0); # try best to substract time elapsed
+                    $prev_alarm = 1 if $prev_alarm < 1; # we still need set it to something non-zero
+                    alarm $prev_alarm; # set it
+                }
+            }
         }
-
-        if ($class->can ('whois_socket_fixup')) {
-            my $new_sock = $class->whois_socket_fixup ($sock);
-            $sock = $new_sock if $new_sock;
-        }
-
-        if ($DEBUG > 2) {
-            require Data::Dumper;
-            print "Socket: ". Data::Dumper::Dumper($sock);
-        }
-
-        $sock->print( $whoisquery, "\r\n" );
-        # TODO: $soc->read, parameters for read chunk size, max content length
-        # Now you can redefine SOCK_CLASS::getline method as you want
-        while (my $str = $sock->getline) {
-            push @lines, $str;
-        }
-        $sock->close;
-    };
-
-    alarm $prev_alarm;
-    Carp::confess $@ if $@;
+        Carp::confess $@ if $@;
+    }
 
     foreach (@lines) { s/\r//g; }
 

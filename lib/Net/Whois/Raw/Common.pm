@@ -1,9 +1,11 @@
 package Net::Whois::Raw::Common;
 
 use Encode;
+use warnings;
 use strict;
 use Regexp::IPv6 qw($IPv6_re);
-require Net::Whois::Raw::Data;
+use Net::Whois::Raw::Data ();
+use Net::Whois::Raw ();
 
 use utf8;
 
@@ -61,14 +63,15 @@ sub write_to_cache {
         local $res->{text} = $res->{whois} if not exists $res->{text};
 
         next if defined $res->{text} && !$res->{text} || !defined $res->{text};
-        utf8::encode( $res->{text} );
+        my $enc_text = $res->{text};
+        utf8::encode( $enc_text );
         my $postfix = sprintf("%02d", $level);
         if ( open( my $cache_fh, '>', "$cache_dir/$query.$postfix" ) ) {
             print $cache_fh $res->{srv} ? $res->{srv} :
                 ( $res->{server} ? $res->{server} : '')
                 , "\n";
 
-            print $cache_fh $res->{text} ? $res->{text} : '';
+            print $cache_fh $enc_text ? $enc_text : '';
 
             close $cache_fh;
             chmod 0666, "$cache_dir/$query.$postfix";
@@ -77,7 +80,6 @@ sub write_to_cache {
     }
 
 }
-
 
 # remove copyright messages, check for existance
 sub process_whois {
@@ -464,7 +466,6 @@ sub parse_www_content {
         }
     }
     elsif ( $tld eq 'tj' && $url =~ m|^http\://get\.tj| ) {
-
         $resp = decode_utf8( $resp );
 
         if ($resp =~ m|<!-- Content //-->\n(.+?)<!-- End Content //-->|s ) {
@@ -507,10 +508,9 @@ sub parse_www_content {
 
     }
     elsif ( $tld eq 'tj' && $url =~ m|\.nic\.tj/cgi/whois| || $url =~ m|62\.122\.137\.16| ) {
-
         $resp = decode_utf8( $resp );
 
-        if ( $resp =~ m{ <table [^>]*? > (.+) (:? </table> )? }sxmi ) {
+        if ( $resp =~ m{ <table [^>]*? > (.+) (:? </table> ) }sxmi ) {
             $resp = $1;
             $resp =~ s|</?tr>||ig;
             $resp =~ s|<td>| |ig;
