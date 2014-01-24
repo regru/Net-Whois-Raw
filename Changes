@@ -514,3 +514,8 @@ Revision history for Perl module Net::Whois::Raw.
         Substract time spent in request from outer alarm
     - Fixed: unicode whois was damaging when using caching
         Under POSIX systems pwhois now uses TMPDIR env, not TEMP.
+
+2.52    Jan 24 2014 Alexander Nalobin
+    - Handling exceed limits of whois.name.com
+      and in recursive queries ( set $CHECK_EXCEED = 2 )
+
