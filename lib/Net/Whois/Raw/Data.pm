@@ -141,6 +141,7 @@ our %servers = qw(
     PRO    whois.registrypro.pro
     TEL    whois-tel.neustar.biz
     TRAVEL whois.nic.travel
+    TODAY  whois.nic.today
 
     TV  whois.nic.tv
     WS  whois.worldsite.ws
@@ -561,6 +562,7 @@ our %notfound = (
     'whois.registrypro.pro'      => '^No match',
     'whois.worldsite.ws'         => 'No match for',
     'whois.nic.travel'           => 'Not found: \S+',
+    'whois.nic.today'            => 'Domain not found',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -2027,6 +2029,9 @@ our %strip = (
         '^whatsoever, you agree to abide',
         '^NOTE: FAILURE TO LOCATE A RECORD',
         '^OF THE AVAILABILITY OF A DOMAIN NAME',
+    ],
+    'whois.nic.today' => [
+        '^Terms of Use:',
     ],
     'whois.nic.ht' => [
         '^TERMS OF USE: You are not authorized',

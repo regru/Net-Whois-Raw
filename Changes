@@ -519,3 +519,6 @@ Revision history for Perl module Net::Whois::Raw.
     - Handling exceed limits of whois.name.com
       and in recursive queries ( set $CHECK_EXCEED = 2 )
 
+2.53    Feb 07 2014 Alexander Nalobin
+    - TODAY whois server added
+
