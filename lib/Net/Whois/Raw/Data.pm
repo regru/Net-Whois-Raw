@@ -799,6 +799,19 @@ our %notfound = (
     'whois.nic.xxx'             => 'NOT FOUND',
 );
 
+# Common whois stripping REs
+our @strip_regexps = (
+    qr{
+        (.+)
+        ^ (?: 
+            \W* Last \s update \s of \s WHOIS \s database
+            | Database \s last \s updated
+            | \W* Whois \s database \s was \s last \s updated \s on
+        )
+        \b .+ \z
+    }xmsi,
+); 
+
 our %strip = (
     'whois.arin.net' => [
         '^The ARIN Registration Services Host contains',

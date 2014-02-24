@@ -525,3 +525,5 @@ Revision history for Perl module Net::Whois::Raw.
 2.54    Feb 18 2014 Dmitriy Seluzhitskiy
     - Add whois server for gtld, managed by Sugar Glen, LLC (http://donuts.co)
 
+2.55    Feb 24 2014 Alexander Nalobin
+    - RT#91930 Boilerplate stripping

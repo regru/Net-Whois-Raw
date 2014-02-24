@@ -1,11 +1,12 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl 
 
 use strict;
+use warnings;
 
-use Test::More tests => 26;
+use Test::More tests => 29;
 
-use_ok('Net::Whois::Raw');
-use_ok('Net::Whois::Raw::Common');
+use_ok 'Net::Whois::Raw';
+use_ok 'Net::Whois::Raw::Common';
 
 ok( Net::Whois::Raw::Common::domain_level( 'reg.ru' )     == 2, 'domain_level' );
 ok( Net::Whois::Raw::Common::domain_level(' www.reg.ru' ) == 3, 'domain_level' );
@@ -59,3 +60,33 @@ for ('ReferralServer: whois://some-host.com') {
     my ($res) = Net::Whois::Raw::_referral_server();
     is $res, 'some-host.com', "_referral_server should work for whois:// without port";
 }
+
+is Net::Whois::Raw::Common::_strip_trailer_lines( q{
+blah-blah-blah
+
+>>> Last update of WHOIS database: 2014-02-24T04:01:25-0800 <<<
+
+The Data in MarkMonitor.com's WHOIS database is provided by MarkMonitor.com for
+    } ),
+    "\nblah-blah-blah\n\n", '_strip_trailer_lines';
+
+is Net::Whois::Raw::Common::_strip_trailer_lines( q{
+Record created on 24-Sep-1998
+Database last updated on 12-Sep-2013
+
+The Data in the Safenames Registrar WHOIS database is provided by Safenames for
+information purposes only, and to assist persons in obtaining information about
+or related to a domain name registration record.  Safenames does not guarantee
+its accuracy.  Additionally, the data may not reflect updates to billing
+contact information.} ),
+    "\nRecord created on 24-Sep-1998\n", '_strip_trailer_lines';
+
+
+is Net::Whois::Raw::Common::_strip_trailer_lines( q{
+Domain Last Updated Date:                    Sat Jun 04 15:25:01 GMT 2011
+
+>>>> Whois database was last updated on: Mon Feb 24 12:49:50 GMT 2014 <<<<
+
+NeuStar, Inc., the Registry Operator for .BIZ, has collected this information} ),
+    "\nDomain Last Updated Date:                    Sat Jun 04 15:25:01 GMT 2011\n\n",
+    '_strip_trailer_lines';

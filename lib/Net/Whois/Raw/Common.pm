@@ -99,6 +99,8 @@ sub process_whois {
         }
     }
 
+    $whois = _strip_trailer_lines( $whois )  if $OMIT_MSG;
+
     if ( $CHECK_FAIL || $OMIT_MSG ) {
 
         my %notfound = %Net::Whois::Raw::Data::notfound;
@@ -149,6 +151,17 @@ sub process_whois {
     }
 
     return $whois, undef;
+}
+
+# Tries to strip trailer lines of whois
+sub _strip_trailer_lines {
+    my ( $whois ) = @_;
+
+    for my $re ( @Net::Whois::Raw::Data::strip_regexps ) {
+        $whois =~ s/$re/$1/;
+    }
+
+    return $whois;
 }
 
 # get whois-server for domain / tld
