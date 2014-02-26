@@ -527,3 +527,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.55    Feb 24 2014 Alexander Nalobin
     - RT#91930 Boilerplate stripping
+
+2.56    Feb 25 2014 Anton Chuvashev
+    - new tlds XN--D1ACJ3B, XN--80ASWG, XN--80ASEHDB
