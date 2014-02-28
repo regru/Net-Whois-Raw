@@ -2,7 +2,7 @@
    "abstract" : "Get Whois information for domains",
    "author" : [],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4303",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "perl_5"
    ],
@@ -14,7 +14,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.43"
+            "Module::Build" : "0.4205"
          }
       },
       "runtime" : {
