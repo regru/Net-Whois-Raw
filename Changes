@@ -530,3 +530,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.56    Feb 25 2014 Anton Chuvashev
     - new tlds XN--D1ACJ3B, XN--80ASWG, XN--80ASEHDB
+
+2.56    Feb 25 2014 Victor Efimov
+    - Fix whois server for .BZ

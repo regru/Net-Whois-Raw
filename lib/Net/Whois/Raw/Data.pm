@@ -555,7 +555,7 @@ our %servers = qw(
     BIZ.NS	whois.biz
     NAME.NS	whois.nic.name
     SO          whois.nic.so
-    BZ          whois.enom.com
+    BZ          whois2.afilias-grs.net
     XXX         whois.nic.xxx
 );
 
@@ -809,14 +809,14 @@ our %notfound = (
 our @strip_regexps = (
     qr{
         (.+)
-        ^ (?: 
+        ^ (?:
             \W* Last \s update \s of \s WHOIS \s database
             | Database \s last \s updated
             | \W* Whois \s database \s was \s last \s updated \s on
         )
         \b .+ \z
     }xmsi,
-); 
+);
 
 our %strip = (
     'whois.arin.net' => [

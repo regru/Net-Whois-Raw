@@ -4,7 +4,7 @@ author:
   - unknown
 build_requires: {}
 configure_requires:
-  Module::Build: 0.4205
+  Module::Build: 0.42
 dynamic_config: 1
 generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.132661'
 license: perl
@@ -15,7 +15,7 @@ name: Net-Whois-Raw
 provides:
   Net::Whois::Raw:
     file: lib/Net/Whois/Raw.pm
-    version: 2.56
+    version: 2.57
   Net::Whois::Raw::Common:
     file: lib/Net/Whois/Raw/Common.pm
   Net::Whois::Raw::Data:
@@ -34,4 +34,4 @@ requires:
   perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.56
+version: 2.57
