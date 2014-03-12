@@ -221,6 +221,12 @@ our %servers = qw(
     CRUISES         whois.donuts.co
     VACATIONS       whois.donuts.co
 
+    SEXY            whois.uniregistry.net
+    TATTOO          whois.uniregistry.net
+    MENU            whois.nic.menu
+    UNO             whois.nic.uno
+    BERLIN          whois.nic.berlin
+
     TV  whois.nic.tv
     WS  whois.worldsite.ws
     NF  whois.nic.cx
@@ -641,6 +647,10 @@ our %notfound = (
     'whois.worldsite.ws'         => 'No match for',
     'whois.nic.travel'           => 'Not found: \S+',
     'whois.donuts.co'            => 'Domain not found',
+    'whois.nic.menu'             => 'No Data Found',
+    'whois.uniregistry.net'      => 'No match for',
+    'whois.nic.uno'              => 'Not found:',
+    'whois.nic.berlin'           => 'No match',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -826,6 +836,10 @@ our %strip = (
         '^Information and .* for .* Information.',
     ],
     'whois.ripe.net' => [
+        '^%',
+    ],
+
+    'whois.nic.berlin' => [
         '^%',
     ],
 
@@ -2127,6 +2141,32 @@ our %strip = (
         '^Terms of Use:',
         '>>> Last update of WHOIS database',
     ],
+
+    'whois.uniregistry.net' => [
+        '>>> Last update of WHOIS database',
+        '^Access  to  WHOIS  information',
+        '^This service is intended only',
+        '^[^A-Z]',
+        '^\s+$'
+    ],
+
+    'whois.nic.uno' => [
+        '^>>>> Whois database was last updated',
+        '^The WHOIS service offered by Dot Latin LLC',
+        '^By executing a query',
+        '^NOTE: FAILURE TO LOCATE A RECORD',
+        '^All domain names are subject to certain',
+    ],
+
+    'whois.nic.menu' => [
+        '>>> Last update of WHOIS database',
+        '^The data contained in Wedding TLD2',
+        '^This information is provided',
+        '^By submitting an inquiry',
+        '^You further agree not to use',
+        '^Wedding TLD2, LLC reserves',
+    ],
+
     'whois.nic.ht' => [
         '^TERMS OF USE: You are not authorized',
         '^database through the use of electronic',
