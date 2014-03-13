@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.58';
+our $VERSION = '2.59';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 our $CACHE_TIME = 60;
@@ -113,7 +113,7 @@ sub get_all_whois {
     my ($dom, $srv, $norecurse) = @_;
 
     my $is_ns = 0;
-    $is_ns = 1 if $dom =~ s/.NS$//i;
+    $is_ns = 1  if $dom =~ s/[.]NS$//i;
 
     $srv ||= Net::Whois::Raw::Common::get_server( $dom, $is_ns );
 

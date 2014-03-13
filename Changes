@@ -536,3 +536,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.58   Mar 12 2014 Dmitriy Seluzhitskiy
     - Add whois servers for gtld: .berlin
+
+2.59   Mar 12 2014 Dmitriy Seluzhitskiy
+    - Fixed .domains whois error
