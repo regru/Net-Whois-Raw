@@ -3,7 +3,9 @@
 use strict;
 
 use Data::Dumper;
-use Test::More tests => 10;
+use Test::More tests        =>  10;
+
+use constant ALRM_TIMEOUT   =>  10;
 
 BEGIN {
     use_ok('Net::Whois::Raw',qw( whois ));
@@ -23,6 +25,12 @@ my @domains = qw(
 
 SKIP: {
     print "The following tests requires internet connection. Checking...\n";
+    
+    local $SIG{ALRM} = sub {
+        BAIL_OUT("Check your internet connection.\n");
+    };
+
+    alarm ALRM_TIMEOUT;
     skip "Looks like no internet connection", 
         Test::More->builder->expected_tests() - 1 unless get_connected();
     
@@ -73,6 +81,7 @@ SKIP: {
 
     unlink <$tmp_dir/*>;
     rmdir $tmp_dir;
+    alarm 0;
 };
 
 sub get_connected {
