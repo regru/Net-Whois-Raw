@@ -14,12 +14,15 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.59';
+our $VERSION = '2.60';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
+
 our $CACHE_TIME = 60;
 our $SET_CODEPAGE = '';
 our $SILENT_MODE = 0;
+our $QUERY_SUFFIX = '';
+
 our (%notfound, %strip, @SRC_IPS, %POSTPROCESS);
 
 our $class = __PACKAGE__;
@@ -288,6 +291,10 @@ sub whois_query {
                 print "Socket: ". Data::Dumper::Dumper($sock);
             }
 
+            if ($QUERY_SUFFIX) {
+                $whoisquery .= $QUERY_SUFFIX;
+            }
+
             $sock->print( $whoisquery, "\r\n" );
             # TODO: $soc->read, parameters for read chunk size, max content length
             # Now you can redefine SOCK_CLASS::getline method as you want
@@ -416,58 +423,62 @@ Net::Whois::Raw -- Get Whois information for domains
 
 =head1 SYNOPSIS
 
-  use Net::Whois::Raw;
+    use Net::Whois::Raw;
 
-  $dominfo = whois('perl.com');
-  ($dominfo, $whois_server) = whois('funet.fi');
-  $reginfo = whois('REGRU-REG-RIPN', 'whois.ripn.net');
+    $dominfo = whois('perl.com');
+    ($dominfo, $whois_server) = whois('funet.fi');
+    $reginfo = whois('REGRU-REG-RIPN', 'whois.ripn.net');
 
-  $arrayref = get_whois('yahoo.co.uk', undef, 'QRY_ALL');
-  $text = get_whois('yahoo.co.uk', undef, 'QRY_LAST');
-  ($text, $srv) = get_whois('yahoo.co.uk', undef, 'QRY_FIRST');
+    $arrayref = get_whois('yahoo.co.uk', undef, 'QRY_ALL');
+    $text = get_whois('yahoo.co.uk', undef, 'QRY_LAST');
+    ($text, $srv) = get_whois('yahoo.co.uk', undef, 'QRY_FIRST');
 
-  $Net::Whois::Raw::OMIT_MSG = 1;
-	# This will attempt to strip several known copyright
+    $Net::Whois::Raw::OMIT_MSG = 1;
+        # This will attempt to strip several known copyright
         # messages and disclaimers sorted by servers.
         # Default is to give the whole response.
 
-  $Net::Whois::Raw::CHECK_FAIL = 1;
-	# This will return undef if the response matches
+    $Net::Whois::Raw::CHECK_FAIL = 1;
+        # This will return undef if the response matches
         # one of the known patterns for a failed search,
         # sorted by servers.
         # Default is to give the textual response.
 
-  $Net::Whois::Raw::CHECK_EXCEED = 0 | 1 | 2;
-	# When this option is true, "die" will be called
+    $Net::Whois::Raw::CHECK_EXCEED = 0 | 1 | 2;
+        # When this option is true, "die" will be called
         # if connection rate to specific whois server have been
         # exceeded.
         # If set to 2, will die in recursive queries too.
 
-  $Net::Whois::Raw::CACHE_DIR = "/var/spool/pwhois/";
-	# Whois information will be
+    $Net::Whois::Raw::CACHE_DIR = "/var/spool/pwhois/";
+        # Whois information will be
         # cached in this directory. Default is no cache.
 
-  $Net::Whois::Raw::CACHE_TIME = 60;
-	# Cache files will be cleared after not accessed
+    $Net::Whois::Raw::CACHE_TIME = 60;
+        # Cache files will be cleared after not accessed
         # for a specific number of minutes. Documents will not be
         # cleared if they keep get requested for, independent
         # of disk space.
 
-  $Net::Whois::Raw::TIMEOUT = 10;
-	# Cancel the request if connection is not made within
+    $Net::Whois::Raw::TIMEOUT = 10;
+        # Cancel the request if connection is not made within
         # a specific number of seconds.
 
-  @Net::Whois::Raw::SRC_IPS = (11.22.33.44);
-	# List of local IP addresses to
-	# use for WHOIS queries. Addresses will be used used
-	# successively in the successive queries
+    @Net::Whois::Raw::SRC_IPS = (11.22.33.44);
+        # List of local IP addresses to
+        # use for WHOIS queries. Addresses will be used used
+        # successively in the successive queries
 
-  $Net::Whois::Raw::POSTPROCESS{whois.crsnic.net} = \&my_func;
+    $Net::Whois::Raw::POSTPROCESS{whois.crsnic.net} = \&my_func;
         # Call to a user-defined subroutine on whois result,
         # depending on whois-server.
         # Above is equil to:
         # ($text, $srv) = whois('example.com');
         # $text = my_func($text) if $srv eq 'whois.crsnic.net';
+
+    $Net::Whois::Raw::QUERY_SUFFIX = '/e';
+        # This will add specified suffix to whois query.
+        # It may be used for english output forcing.
 
 =head1 DESCRIPTION
 
