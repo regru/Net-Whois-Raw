@@ -223,6 +223,12 @@ our %servers = qw(
 
     SEXY            whois.uniregistry.net
     TATTOO          whois.uniregistry.net
+    LINK            whois.uniregistry.net
+    GUITARS         whois.uniregistry.net
+    GIFT            whois.uniregistry.net
+    PICS            whois.uniregistry.net
+    PHOTO           whois.uniregistry.net
+
     MENU            whois.nic.menu
     UNO             whois.nic.uno
     BERLIN          whois.nic.berlin
