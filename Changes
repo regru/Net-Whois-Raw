@@ -543,3 +543,6 @@ Revision history for Perl module Net::Whois::Raw.
 2.60  Mar 21 2014 Dmitriy Shamatrin
     - Added query suffix
     - Added timeout to 02-internet.t for hangs prevention
+
+2.61  Apr 02 2014 Dmitriy Seluzhitskiy
+    - Add zones for whois.uniregistry.net
