@@ -534,15 +534,18 @@ Revision history for Perl module Net::Whois::Raw.
 2.57    Feb 25 2014 Victor Efimov
     - Fix whois server for .BZ
 
-2.58   Mar 12 2014 Dmitriy Seluzhitskiy
+2.58    Mar 12 2014 Dmitriy Seluzhitskiy
     - Add whois servers for gtld: .berlin
 
-2.59   Mar 12 2014 Dmitriy Seluzhitskiy
+2.59    Mar 12 2014 Dmitriy Seluzhitskiy
     - Fixed .domains whois error
 
-2.60  Mar 21 2014 Dmitriy Shamatrin
+2.60    Mar 21 2014 Dmitriy Shamatrin
     - Added query suffix
     - Added timeout to 02-internet.t for hangs prevention
 
-2.61  Apr 02 2014 Dmitriy Seluzhitskiy
+2.61    Apr 02 2014 Dmitriy Seluzhitskiy
     - Add zones for whois.uniregistry.net
+
+2.62    Apr 16 2014 Dmitriy Seluzhitskiy
+    - Add whois.dot-kiwi.com for .KIWI
