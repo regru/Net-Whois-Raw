@@ -233,6 +233,8 @@ our %servers = qw(
     UNO             whois.nic.uno
     BERLIN          whois.nic.berlin
 
+    KIWI            whois.dot-kiwi.com
+
     TV  whois.nic.tv
     WS  whois.worldsite.ws
     NF  whois.nic.cx
@@ -657,6 +659,7 @@ our %notfound = (
     'whois.uniregistry.net'      => 'No match for',
     'whois.nic.uno'              => 'Not found:',
     'whois.nic.berlin'           => 'No match',
+    'whois.dot-kiwi.com'         => 'Status\: Not Registered',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -2171,6 +2174,13 @@ our %strip = (
         '^By submitting an inquiry',
         '^You further agree not to use',
         '^Wedding TLD2, LLC reserves',
+    ],
+
+    'whois.dot-kiwi.com' => [
+        '^>>> Last update',
+        '^TERMS OF USE:',
+        '^The data',
+        '^[^A-Z]',
     ],
 
     'whois.nic.ht' => [
