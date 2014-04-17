@@ -232,8 +232,8 @@ our %servers = qw(
     MENU            whois.nic.menu
     UNO             whois.nic.uno
     BERLIN          whois.nic.berlin
-
     KIWI            whois.dot-kiwi.com
+    BUILD           whois.nic.build
 
     TV  whois.nic.tv
     WS  whois.worldsite.ws
@@ -660,6 +660,7 @@ our %notfound = (
     'whois.nic.uno'              => 'Not found:',
     'whois.nic.berlin'           => 'No match',
     'whois.dot-kiwi.com'         => 'Status\: Not Registered',
+    'whois.nic.build'            => 'No Data Found',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -2179,6 +2180,12 @@ our %strip = (
     'whois.dot-kiwi.com' => [
         '^>>> Last update',
         '^TERMS OF USE:',
+        '^The data',
+        '^[^A-Z]',
+    ],
+
+    'whois.nic.build' => [
+        '^>>> Last update of WHOIS database',
         '^The data',
         '^[^A-Z]',
     ],

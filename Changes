@@ -549,3 +549,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.62    Apr 16 2014 Dmitriy Seluzhitskiy
     - Add whois.dot-kiwi.com for .KIWI
+
+2.63    Apr 17 2014 Dmitriy Seluzhitskiy
+    - Add whois.nic.build for .BUILD
