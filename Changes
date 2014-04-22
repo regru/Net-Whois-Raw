@@ -552,3 +552,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.63    Apr 17 2014 Dmitriy Seluzhitskiy
     - Add whois.nic.build for .BUILD
+
+2.64    Apr 22 2014 Dmitriy Seluzhitskiy
+    - new tlds .PINK .RED .SHIKSHA .KIM .BLUE

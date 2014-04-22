@@ -235,6 +235,12 @@ our %servers = qw(
     KIWI            whois.dot-kiwi.com
     BUILD           whois.nic.build
 
+    PINK            whois.afilias.net
+    RED             whois.afilias.net
+    SHIKSHA         whois.afilias.net
+    KIM             whois.afilias.net
+    BLUE            whois.afilias.net
+
     TV  whois.nic.tv
     WS  whois.worldsite.ws
     NF  whois.nic.cx
@@ -1163,23 +1169,9 @@ our %strip = (
         '^A full list of \.name',
         '^\s+--------',
     ],
-    'whois.afilias.net' => [ # .info
-        '^Access to INFO WHOIS information',
-        '^determining the contents of a',
-        '^Afilias registry database',
-        '^Afilias Limited for informational',
-        '^guarantee its accuracy',
-        '^access\. You agree that',
-        '^and that, under no circumstances',
-        '^enable, or otherwise support',
-        '^facsimile of mass unsolicited',
-        '^to entities other than the data',
-        '^\(b\) enable high volume, automated',
-        '^queries or data to the systems',
-        '^Afilias except as reasonably',
-        '^modify existing registrations',
-        '^the right to modify these',
-        '^you agree to abide by this policy',
+    'whois.afilias.net' => [
+        '^Access to AFILIAS WHOIS',
+        '^[^A-Z]',
         '^Name Server: $',
     ],
     'whois.crsnic.net' => [ # .com  main .net
