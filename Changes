@@ -555,3 +555,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.64    Apr 22 2014 Dmitriy Seluzhitskiy
     - new tlds .PINK .RED .SHIKSHA .KIM .BLUE
+
+2.65    Apr 24 2014 Dmitriy Seluzhitskiy
+    - new tlds .CLUB
