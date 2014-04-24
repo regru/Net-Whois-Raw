@@ -241,6 +241,8 @@ our %servers = qw(
     KIM             whois.afilias.net
     BLUE            whois.afilias.net
 
+    CLUB            whois.nic.club
+
     TV  whois.nic.tv
     WS  whois.worldsite.ws
     NF  whois.nic.cx
@@ -667,6 +669,7 @@ our %notfound = (
     'whois.nic.berlin'           => 'No match',
     'whois.dot-kiwi.com'         => 'Status\: Not Registered',
     'whois.nic.build'            => 'No Data Found',
+    'whois.nic.club'             => '^Not found:',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -1173,6 +1176,9 @@ our %strip = (
         '^Access to AFILIAS WHOIS',
         '^[^A-Z]',
         '^Name Server: $',
+    ],
+    'whois.nic.club' => [
+        '>>>> Whois database was last updated [\s\w]+',
     ],
     'whois.crsnic.net' => [ # .com  main .net
         '^TERMS OF USE:',
