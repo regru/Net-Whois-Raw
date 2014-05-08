@@ -243,6 +243,36 @@ our %servers = qw(
 
     CLUB            whois.nic.club
 
+    ACTOR           whois.unitedtld.com
+    AIRFORCE        whois.unitedtld.com
+    ARMY            whois.unitedtld.com
+    ATTORNEY        whois.unitedtld.com
+    CONSULTING      whois.unitedtld.com
+    DEGREE          whois.unitedtld.com
+    DANCE           whois.unitedtld.com
+    DEMOCRAT        whois.unitedtld.com
+    DENTIST         whois.unitedtld.com
+    ENGINEER        whois.unitedtld.com
+    FUTBOL          whois.unitedtld.com
+    GIVES           whois.unitedtld.com
+    HAUS            whois.unitedtld.com
+    IMMOBILIEN      whois.unitedtld.com
+    KAUFEN          whois.unitedtld.com
+    LAWYER          whois.unitedtld.com
+    MARKET          whois.unitedtld.com
+    MODA            whois.unitedtld.com
+    MORTGAGE        whois.unitedtld.com
+    NAVY            whois.unitedtld.com
+    NINJA           whois.unitedtld.com
+    PUB             whois.unitedtld.com
+    REHAB           whois.unitedtld.com
+    REPUBLICAN      whois.unitedtld.com
+    REVIEWS         whois.unitedtld.com
+    ROCKS           whois.unitedtld.com
+    SOCIAL          whois.unitedtld.com
+    SOFTWARE        whois.unitedtld.com
+    VET             whois.unitedtld.com
+
     TV  whois.nic.tv
     WS  whois.worldsite.ws
     NF  whois.nic.cx
@@ -670,6 +700,7 @@ our %notfound = (
     'whois.dot-kiwi.com'         => 'Status\: Not Registered',
     'whois.nic.build'            => 'No Data Found',
     'whois.nic.club'             => '^Not found:',
+    'whois.unitedtld.com'        => 'Domain not found',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -2186,6 +2217,12 @@ our %strip = (
         '^>>> Last update of WHOIS database',
         '^The data',
         '^[^A-Z]',
+    ],
+
+    'whois.unitedtld.com' => [
+        '^>>> Last update of WHOIS database',
+        '^[^A-Z]',
+        '^Terms of Use'
     ],
 
     'whois.nic.ht' => [
