@@ -242,6 +242,7 @@ our %servers = qw(
     BLUE            whois.afilias.net
 
     CLUB            whois.nic.club
+    LUXURY          whois.nic.luxury
 
     ACTOR           whois.unitedtld.com
     AIRFORCE        whois.unitedtld.com
@@ -701,6 +702,7 @@ our %notfound = (
     'whois.nic.build'            => 'No Data Found',
     'whois.nic.club'             => '^Not found:',
     'whois.unitedtld.com'        => 'Domain not found',
+    'whois.nic.luxury'           => 'No Data Found',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -1210,6 +1212,10 @@ our %strip = (
     ],
     'whois.nic.club' => [
         '>>>> Whois database was last updated [\s\w]+',
+    ],
+    'whois.nic.luxury' => [
+        '>>> Last update of WHOIS',
+        '^This is the future of Luxury',
     ],
     'whois.crsnic.net' => [ # .com  main .net
         '^TERMS OF USE:',
