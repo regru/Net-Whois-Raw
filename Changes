@@ -559,5 +559,8 @@ Revision history for Perl module Net::Whois::Raw.
 2.65    Apr 24 2014 Dmitriy Seluzhitskiy
     - new tlds .CLUB
 
-2.65    May 08 2014 Dmitriy Seluzhitskiy
+2.66    May 08 2014 Dmitriy Seluzhitskiy
     - new tlds of United TLD Holdco Ltd (http://rightside.co)
+
+2.67    May 08 2014 Dmitriy Seluzhitskiy
+    - new tlds .LUXURY
