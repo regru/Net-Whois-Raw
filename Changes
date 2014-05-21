@@ -564,3 +564,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.67    May 08 2014 Dmitriy Seluzhitskiy
     - new tlds .LUXURY
+
+2.68    May 21 2014 Dmitriy Seluzhitskiy
+    - new tlds of donuts.co
