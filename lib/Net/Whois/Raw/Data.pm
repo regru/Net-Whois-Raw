@@ -621,55 +621,55 @@ our %servers = qw(
     ORG.UA      whois.com.ua
     BIZ.UA      whois.biz.ua
     CO.UA       whois.co.ua
-    PP.UA	whois.pp.ua
+    PP.UA       whois.pp.ua
     KIEV.UA     whois.com.ua
     DN.UA       whois.dn.ua
     LG.UA       whois.lg.ua
     OD.UA       whois.od.ua
     IN.UA       whois.in.ua
 
-    AC.UK	whois.ja.net
-    CO.UK   whois.nic.uk
-    GOV.UK	whois.ja.net
-    LTD.UK  whois.nic.uk
-    NET.UK  whois.nic.uk
-    ORG.UK  whois.nic.uk
-    PLC.UK  whois.nic.uk
+    AC.UK       whois.ja.net
+    CO.UK       whois.nic.uk
+    GOV.UK      whois.ja.net
+    LTD.UK      whois.nic.uk
+    NET.UK      whois.nic.uk
+    ORG.UK      whois.nic.uk
+    PLC.UK      whois.nic.uk
 
-    XN--P1AG	ru.whois.i-dns.net
-    XN--P1AG	ru.whois.i-dns.net
-    XN--J1AEF	whois.i-dns.net
-    XN--E1APQ	whois.i-dns.net
-    XN--C1AVG	whois.i-dns.net
+    XN--P1AG    ru.whois.i-dns.net
+    XN--P1AG    ru.whois.i-dns.net
+    XN--J1AEF   whois.i-dns.net
+    XN--E1APQ   whois.i-dns.net
+    XN--C1AVG   whois.publicinterestregistry.net
 
     EU.COM      whois.centralnic.com
     GB.COM      whois.centralnic.com
-    KR.COM	whois.centralnic.com
-    US.COM	whois.centralnic.com
-    QC.COM	whois.centralnic.com
-    DE.COM	whois.centralnic.com
-    NO.COM	whois.centralnic.com
-    HU.COM	whois.centralnic.com
-    JPN.COM	whois.centralnic.com
-    UY.COM	whois.centralnic.com
-    ZA.COM	whois.centralnic.com
-    BR.COM	whois.centralnic.com
-    CN.COM	whois.centralnic.com
-    SA.COM	whois.centralnic.com
-    SE.COM	whois.centralnic.com
+    KR.COM      whois.centralnic.com
+    US.COM      whois.centralnic.com
+    QC.COM      whois.centralnic.com
+    DE.COM      whois.centralnic.com
+    NO.COM      whois.centralnic.com
+    HU.COM      whois.centralnic.com
+    JPN.COM     whois.centralnic.com
+    UY.COM      whois.centralnic.com
+    ZA.COM      whois.centralnic.com
+    BR.COM      whois.centralnic.com
+    CN.COM      whois.centralnic.com
+    SA.COM      whois.centralnic.com
+    SE.COM      whois.centralnic.com
     UK.COM      whois.centralnic.com
-    RU.COM	whois.centralnic.com
+    RU.COM      whois.centralnic.com
 
     GB.NET      whois.centralnic.com
     UK.NET      whois.centralnic.com
-    SE.NET	whois.centralnic.com
+    SE.NET      whois.centralnic.com
 
-    AE.ORG	whois.centralnic.com
+    AE.ORG      whois.centralnic.com
     IN.NET      whois.centralnic.com
 
-    ORG.NS	whois.pir.org
-    BIZ.NS	whois.biz
-    NAME.NS	whois.nic.name
+    ORG.NS      whois.pir.org
+    BIZ.NS      whois.biz
+    NAME.NS     whois.nic.name
     SO          whois.nic.so
     BZ          whois2.afilias-grs.net
     XXX         whois.nic.xxx
@@ -718,27 +718,27 @@ our %notfound = (
     'whois.ripe.net'        => 'No entries found',
 
     'whois.ripn.net'        => 'No entries found',
-    'whois.nic.ru'       => 'No entries found',
+    'whois.nic.ru'          => 'No entries found',
     'whois.nnov.ru'         => 'No entries found',
     'whois.int.ru'          => 'No entries found',
     'whois.reg.ru'          => '^Domain \S+ not found',
 
-    'whois.com.ua'          => 'No entries found for',
-    'whois.co.ua'           => 'No entries found',
-    'whois.biz.ua'          => 'No entries found',
-    'whois.net.ua'            => 'No entries found for domain',
-    'delta.hostmaster.net.ua' => 'No entries found for domain',
-    'whois.pp.ua'             => 'No entries found',
-    'whois.dn.ua'             => 'No match record found',
-    'whois.lg.ua'             => 'No match record found',
-    'whois.od.ua'             => 'No match record found',
-    'whois.in.ua'             => 'No records found',
+    'whois.com.ua'              => 'No entries found for',
+    'whois.co.ua'               => 'No entries found',
+    'whois.biz.ua'              => 'No entries found',
+    'whois.net.ua'              => 'No entries found for domain',
+    'delta.hostmaster.net.ua'   => 'No entries found for domain',
+    'whois.pp.ua'               => 'No entries found',
+    'whois.dn.ua'               => 'No match record found',
+    'whois.lg.ua'               => 'No match record found',
+    'whois.od.ua'               => 'No match record found',
+    'whois.in.ua'               => 'No records found',
 
     'whois.aero'                 => '^NOT FOUND',
     'whois.nic.asia'             => '^NOT FOUND',
     'whois.biz'                  => '^Not found:',
     'whois-tel.neustar.biz'      => '^Not found',
-    'whois.cat'		         => '^% Object \S+ NOT FOUND',
+    'whois.cat'                  => '^% Object \S+ NOT FOUND',
     'whois.nic.coop'             => 'No domain records',
     'whois.educause.edu'         => '^No Match',
     'whois.nic.mil'              => '^No match for',
@@ -766,6 +766,8 @@ our %notfound = (
     'whois.nic.club'             => '^Not found:',
     'whois.unitedtld.com'        => 'Domain not found',
     'whois.nic.luxury'           => 'No Data Found',
+
+    'whois.publicinterestregistry.net' => 'NOT FOUND',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -822,7 +824,7 @@ our %notfound = (
     'whois.iam.net.ma'        => 'No Objects Found',
     'whois.nic.md'            => 'No match for',
     'whois.nic.me'            => 'NOT FOUND',
-    'whois.nic.mg'			  => 'Status\: Not Registered',
+    'whois.nic.mg'            => 'Status\: Not Registered',
     'whois.nic.ms'            => 'Status\: Not Registered',
     'whois.nic.mt'            => 'Domain is not registered',
     'whois.nic.mu'            => 'Status\: Not Registered',
@@ -964,6 +966,10 @@ our %strip = (
         'Last updated on ',
     ],
 
+    'whois.publicinterestregistry.net' => [
+        '^[^A-Z]',
+        '^Access to Public Interest Registry',
+    ],
 
     'whois.aero' => [
         '^Access to \.AERO WHOIS',
