@@ -158,11 +158,18 @@ sub detect_encodings {
         $output_cp = 'cp'.$data;
     } else {
         # Read encoding from environment
-        (my $cp = $ENV{LANG}) =~ s/^[a-z]{2}_[A-Z]{2}\.//;
+        my $cp = $ENV{LANG};
+        if ( $cp ) {
+            $cp =~ s/^[a-z]{2}_[A-Z]{2}[.]//;
+        }
+        else {
+            $cp = 'utf-8';
+        }
+
         $input_cp = $output_cp = lc $cp;
     }
 
-    return ($input_cp, $output_cp);
+    return $input_cp, $output_cp;
 }
 
 # Prepare domain name
