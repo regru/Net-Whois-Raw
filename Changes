@@ -574,3 +574,6 @@ Revision history for Perl module Net::Whois::Raw.
 2.70    Jun 02 2014 Alexander Nalobin
     - RT#96078 Fixed LANG handling in pwhois script
 
+2.71    Jun 03 2014 Dmitriy Seluzhitskiy
+    - Add whois for .PW
+
