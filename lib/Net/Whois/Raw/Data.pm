@@ -282,8 +282,6 @@ our %servers = qw(
     WTF             whois.donuts.co
     ZONE            whois.donuts.co
 
-
-
     SEXY            whois.uniregistry.net
     TATTOO          whois.uniregistry.net
     LINK            whois.uniregistry.net
@@ -453,6 +451,7 @@ our %servers = qw(
     WF  whois.nic.wf
     YT  whois.nic.yt
     HR  whois.dns.hr
+    PW  whois.nic.pw
 
     ASN.AU        whois.aunic.net
     COM.AU        whois.aunic.net
@@ -865,7 +864,7 @@ our %notfound = (
     'whois.nic.ve'            => 'No match for',
     'whois.nic.wf'            => 'No entries found',
     'whois.nic.yt'            => 'No entries found',
-
+    'whois.nic.pw'            => 'DOMAIN NOT FOUND',
 
     'whois.nsiregistry.net'     => 'No match for',
 
@@ -1491,7 +1490,11 @@ our %strip = (
         '^prohibited.',
     ],
 
-
+    'whois.nic.pw' => [
+        '^This whois service',
+        '^[^A-Z]',
+        '^\s+$',
+    ],
 
     'whois.nic.ag' => [
         '^Access to CCTLD WHOIS',
@@ -2261,7 +2264,7 @@ our %strip = (
         '^Access  to  WHOIS  information',
         '^This service is intended only',
         '^[^A-Z]',
-        '^\s+$'
+        '^\s+$',
     ],
 
     'whois.nic.uno' => [
