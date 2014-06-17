@@ -123,28 +123,28 @@ our %servers = qw(
     RIPE   whois.ripe.net
     IP     whois.arin.net
 
-    AERO   whois.aero
-    ARPA   whois.iana.org
-    ASIA   whois.nic.asia
-    BIZ    whois.biz
-    CAT    whois.cat
-    CC     ccwhois.verisign-grs.com
-    COM    whois.crsnic.net
-    COOP   whois.nic.coop
-    EDU    whois.educause.edu
-    GOV    whois.dotgov.gov
-    INFO   whois.afilias.net
-    INT    whois.iana.org
-    JOBS   jobswhois.verisign-grs.com
-    MIL    whois.nic.mil
-    MOBI   whois.dotmobiregistry.net
-    MUSEUM whois.museum
-    NAME   whois.nic.name
-    NET    whois.crsnic.net
-    ORG    whois.pir.org
-    PRO    whois.registrypro.pro
-    TEL    whois-tel.neustar.biz
-    TRAVEL whois.nic.travel
+    AERO            whois.aero
+    ARPA            whois.iana.org
+    ASIA            whois.nic.asia
+    BIZ             whois.biz
+    CAT             whois.cat
+    CC              ccwhois.verisign-grs.com
+    COM             whois.crsnic.net
+    COOP            whois.nic.coop
+    EDU             whois.educause.edu
+    GOV             whois.dotgov.gov
+    INFO            whois.afilias.net
+    INT             whois.iana.org
+    JOBS            jobswhois.verisign-grs.com
+    MIL             whois.nic.mil
+    MOBI            whois.dotmobiregistry.net
+    MUSEUM          whois.museum
+    NAME            whois.nic.name
+    NET             whois.crsnic.net
+    ORG             whois.pir.org
+    PRO             whois.registrypro.pro
+    TEL             whois-tel.neustar.biz
+    TRAVEL          whois.nic.travel
 
     ACADEMY         whois.donuts.co
     ACCOUNTANTS     whois.donuts.co
@@ -334,6 +334,27 @@ our %servers = qw(
     SOCIAL          whois.unitedtld.com
     SOFTWARE        whois.unitedtld.com
     VET             whois.unitedtld.com
+
+    COOKING         whois-dub.mm-registry.com
+    COUNTRY         whois-dub.mm-registry.com
+    FISHING         whois-dub.mm-registry.com
+    HORSE           whois-dub.mm-registry.com
+    RODEO           whois-dub.mm-registry.com
+    VODKA           whois-dub.mm-registry.com
+    LONDON          whois-dub.mm-registry.com
+    BAYERN          whois-dub.mm-registry.com
+    MIAMI           whois-dub.mm-registry.com
+    ABOGADO         whois-dub.mm-registry.com
+    BEER            whois-dub.mm-registry.com
+    BUDAPEST        whois-dub.mm-registry.com
+    FIT             whois-dub.mm-registry.com
+    GARDEN          whois-dub.mm-registry.com
+    LUXE            whois-dub.mm-registry.com
+    NRW             whois-dub.mm-registry.com
+    SURF            whois-dub.mm-registry.com
+    WEDDING         whois-dub.mm-registry.com
+    WORK            whois-dub.mm-registry.com
+    YOGA            whois-dub.mm-registry.com
 
     TV  whois.nic.tv
     WS  whois.worldsite.ws
@@ -564,57 +585,57 @@ our %servers = qw(
     YN.CN  whois.cnnic.net.cn
     ZJ.CN  whois.cnnic.net.cn
 
-    AC.FJ   whois.domains.fj
-    BIZ.FJ  whois.domains.fj
-    COM.FJ  whois.domains.fj
-    INFO.FJ whois.domains.fj
-    MIL.FJ  whois.domains.fj
-    NAME.FJ whois.domains.fj
-    NET.FJ  whois.domains.fj
-    ORG.FJ  whois.domains.fj
-    PRO.FJ  whois.domains.fj
+    AC.FJ       whois.domains.fj
+    BIZ.FJ      whois.domains.fj
+    COM.FJ      whois.domains.fj
+    INFO.FJ     whois.domains.fj
+    MIL.FJ      whois.domains.fj
+    NAME.FJ     whois.domains.fj
+    NET.FJ      whois.domains.fj
+    ORG.FJ      whois.domains.fj
+    PRO.FJ      whois.domains.fj
 
-    CO.GY   whois.registry.gy
-    COM.GY  whois.registry.gy
-    NET.GY  whois.registry.gy
+    CO.GY       whois.registry.gy
+    COM.GY      whois.registry.gy
+    NET.GY      whois.registry.gy
 
-    COM.HK  whois.hknic.net.hk
-    GOV.HK  whois.hknic.net.hk
-    NET.HK  whois.hknic.net.hk
-    ORG.HK  whois.hknic.net.hk
+    COM.HK      whois.hknic.net.hk
+    GOV.HK      whois.hknic.net.hk
+    NET.HK      whois.hknic.net.hk
+    ORG.HK      whois.hknic.net.hk
 
-    AC.JP  whois.jprs.jp
-    AD.JP  whois.jprs.jp
-    CO.JP  whois.jprs.jp
-    GR.JP  whois.jprs.jp
-    NE.JP  whois.jprs.jp
-    OR.JP  whois.jprs.jp
+    AC.JP       whois.jprs.jp
+    AD.JP       whois.jprs.jp
+    CO.JP       whois.jprs.jp
+    GR.JP       whois.jprs.jp
+    NE.JP       whois.jprs.jp
+    OR.JP       whois.jprs.jp
 
-    AC.MA   whois.iam.net.ma
-    CO.MA   whois.iam.net.ma
-    GOV.MA  whois.iam.net.ma
-    NET.MA  whois.iam.net.ma
-    ORG.MA  whois.iam.net.ma
-    PRESS.MA  whois.iam.net.ma
+    AC.MA       whois.iam.net.ma
+    CO.MA       whois.iam.net.ma
+    GOV.MA      whois.iam.net.ma
+    NET.MA      whois.iam.net.ma
+    ORG.MA      whois.iam.net.ma
+    PRESS.MA    whois.iam.net.ma
 
-    COM.MX  whois.nic.mx
-    GOB.MX  whois.nic.mx
-    NET.MX  whois.nic.mx
+    COM.MX      whois.nic.mx
+    GOB.MX      whois.nic.mx
+    NET.MX      whois.nic.mx
 
-    COM.MT  whois.nic.mt
-    ORG.MT  whois.nic.mt
-    NET.MT  whois.nic.mt
-    EDU.MT  whois.nic.mt
+    COM.MT      whois.nic.mt
+    ORG.MT      whois.nic.mt
+    NET.MT      whois.nic.mt
+    EDU.MT      whois.nic.mt
 
-    CO.RS  whois.rnids.rs
-    ORG.RS whois.rnids.rs
-    IN.RS  whois.rnids.rs
-    EDU.RS whois.rnids.rs
+    CO.RS       whois.rnids.rs
+    ORG.RS      whois.rnids.rs
+    IN.RS       whois.rnids.rs
+    EDU.RS      whois.rnids.rs
 
-    COM.TW  whois.twnic.net
-    IDV.TW  whois.twnic.net
-    NET.TW  whois.twnic.net
-    ORG.TW  whois.twnic.net
+    COM.TW      whois.twnic.net
+    IDV.TW      whois.twnic.net
+    NET.TW      whois.twnic.net
+    ORG.TW      whois.twnic.net
 
     COM.UA      whois.com.ua
     ORG.UA      whois.com.ua
@@ -676,14 +697,14 @@ our %servers = qw(
 
 
 our %ip_whois_servers = qw(
-    AFRINIC	whois.afrinic.net
-    APNIC	whois.apnic.net
-    ARIN	whois.arin.net
-    LACNIC	whois.lacnic.net
-    RIPE	whois.ripe.net
+    AFRINIC     whois.afrinic.net
+    APNIC       whois.apnic.net
+    ARIN        whois.arin.net
+    LACNIC      whois.lacnic.net
+    RIPE        whois.ripe.net
 
-    JPNIC	whois.nic.ad.jp
-    KRNIC	whois.krnic.net
+    JPNIC       whois.nic.ad.jp
+    KRNIC       whois.krnic.net
 );
 
 
@@ -767,6 +788,7 @@ our %notfound = (
     'whois.nic.luxury'           => 'No Data Found',
 
     'whois.publicinterestregistry.net' => 'NOT FOUND',
+    'whois-dub.mm-registry.com'        => 'Status: Not Registered',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
@@ -959,6 +981,10 @@ our %strip = (
         '^%',
     ],
 
+    'whois-dub.mm-registry.com' => [
+        '^[^A-Z]',
+        '^TERMS OF USE',
+    ],
 
     'whois.ripn.net' => [
         '^%',

@@ -577,3 +577,6 @@ Revision history for Perl module Net::Whois::Raw.
 2.71    Jun 03 2014 Dmitriy Seluzhitskiy
     - Add whois for .PW
 
+2.72    Jun 17 2014 Dmitriy Seluzhitskiy
+    - new tlds of http://mm-registry.com
+
