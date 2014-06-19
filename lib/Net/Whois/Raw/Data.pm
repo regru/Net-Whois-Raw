@@ -13,22 +13,22 @@ our @www_whois = qw(
 # Candidates for www_whois: DO, IO, MG, SH, TM, TP, ZA
 
 our %servers = qw(
-    RU          whois.ripn.net
-    SU          whois.ripn.net
-    XN--P1AI	whois.ripn.net
-    XN--D1ACJ3B	whois.ripn.net
+    RU                  whois.ripn.net
+    SU                  whois.ripn.net
+    XN--P1AI            whois.ripn.net
+    XN--D1ACJ3B         whois.ripn.net
 
-    XN--80ASWG   whois.online.rs.corenic.net
-    XN--80ASEHDB whois.online.rs.corenic.net
+    XN--80ASWG          whois.site.rs.corenic.net
+    XN--80ASEHDB        whois.online.rs.corenic.net
 
-    COM.RU	whois.nic.ru
-    NET.RU	whois.nic.ru
-    ORG.RU	whois.nic.ru
-    PP.RU	whois.nic.ru
-    RU.NET	whois.nic.ru
-    INT.RU  whois.int.ru
+    COM.RU              whois.nic.ru
+    NET.RU              whois.nic.ru
+    ORG.RU              whois.nic.ru
+    PP.RU               whois.nic.ru
+    RU.NET              whois.nic.ru
+    INT.RU              whois.int.ru
 
-    BY          whois.ripe.net
+    BY                  whois.ripe.net
 
     ABKHAZIA.SU         whois.nic.ru
     ADYGEYA.RU          whois.nic.ru
@@ -951,6 +951,7 @@ our %notfound = (
     'whois.nic.xxx'             => 'NOT FOUND',
 
     'whois.online.rs.corenic.net' => 'no matching objects found',
+    'whois.site.rs.corenic.net'   => 'no matching objects found',
 );
 
 # Common whois stripping REs
@@ -2465,6 +2466,9 @@ our %strip = (
         '^you agree to abide by this policy.',
     ],
     'whois.online.rs.corenic.net' => [
+        '^%',
+    ],
+    'whois.site.rs.corenic.net' => [
         '^%',
     ],
 );
