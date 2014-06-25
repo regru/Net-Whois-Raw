@@ -289,6 +289,11 @@ our %servers = qw(
     GIFT            whois.uniregistry.net
     PICS            whois.uniregistry.net
     PHOTO           whois.uniregistry.net
+    AUDIO           whois.uniregistry.net
+    BLACKFRIDAY     whois.uniregistry.net
+    CHRISTMAS       whois.uniregistry.net
+    HIPHOP          whois.uniregistry.net
+    JUEGOS          whois.uniregistry.net
 
     MENU            whois.nic.menu
     UNO             whois.nic.uno

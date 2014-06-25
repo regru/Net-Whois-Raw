@@ -580,3 +580,5 @@ Revision history for Perl module Net::Whois::Raw.
 2.72    Jun 17 2014 Dmitriy Seluzhitskiy
     - new tlds of http://mm-registry.com
 
+2.73    Jun 25 2014 Dmitriy Seluzhitskiy
+    - new tlds of http://uniregistry.com
