@@ -31,12 +31,17 @@
             "URI::URL" : "0",
             "perl" : "5.008001"
          }
+      },
+      "test": {
+        "requires": {
+            "Test::RequiresInternet" : "0"
+        }
       }
    },
    "provides" : {
       "Net::Whois::Raw" : {
          "file" : "lib/Net/Whois/Raw.pm",
-         "version" : "2.73"
+         "version" : "2.74"
       },
       "Net::Whois::Raw::Common" : {
          "file" : "lib/Net/Whois/Raw/Common.pm"
@@ -51,5 +56,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "2.73"
+   "version" : "2.74"
 }

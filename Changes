@@ -582,3 +582,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.73    Jun 25 2014 Dmitriy Seluzhitskiy
     - new tlds of http://uniregistry.com
+
+2.74    Jul 1 2014 Alexander Nalobin
+    - tests cleaning

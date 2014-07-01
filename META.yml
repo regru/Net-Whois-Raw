@@ -3,6 +3,8 @@ abstract: 'Get Whois information for domains'
 author:
   - unknown
 build_requires: {}
+test_requires:
+    Test::RequiresInternet
 configure_requires:
   Module::Build: 0.42
 dynamic_config: 1
@@ -15,7 +17,7 @@ name: Net-Whois-Raw
 provides:
   Net::Whois::Raw:
     file: lib/Net/Whois/Raw.pm
-    version: 2.73
+    version: 2.74
   Net::Whois::Raw::Common:
     file: lib/Net/Whois/Raw/Common.pm
   Net::Whois::Raw::Data:
@@ -34,4 +36,4 @@ requires:
   perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.73
+version: 2.74

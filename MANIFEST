@@ -12,9 +12,6 @@ pwhois
 README
 t/01-local.t
 t/02-internet.t
-t/03-coverage.t
-t/04-coro-domains.pl
-t/05-www_parse_tj_cgi_whois.t
-t/06-read_write_cache.t
-t/example-domains-load-balancing.pl
+t/03-www_parse_tj_cgi_whois.t
+t/04-read_write_cache.t
 META.json

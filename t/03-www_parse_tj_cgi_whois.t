@@ -6,11 +6,11 @@ use Test::More tests => 2;
 use Net::Whois::Raw::Common;
 my $string = do { local $/; <DATA> };
 
-ok !utf8::is_utf8($string), "make sure it's bytes";
+ok !utf8::is_utf8( $string ), 'make sure it\'s bytes';
 
 use Data::Dumper;
 
-my $got = Net::Whois::Raw::Common::parse_www_content($string, 'tj', 'http://www.nic.tj/cgi/whois?domain=get', 1);
+my $got = Net::Whois::Raw::Common::parse_www_content( $string, 'tj', 'http://www.nic.tj/cgi/whois?domain=get', 1 );
 my $expected = qq{
 domain name get.tj
 description \x{420}\x{435}\x{433}\x{438}\x{441}\x{442}\x{440}\x{430}\x{446}\x{438}\x{44f} \x{434}\x{43e}\x{43c}\x{435}\x{43d}\x{43d}\x{44b}\x{445} \x{438}\x{43c}\x{435}\x{43d}
@@ -57,7 +57,7 @@ registrar  GET.TJ
 registration date 12 Jul 2007
 };
 
-is($got, $expected, "should match the fixture");
+is $got, $expected, 'should match the fixture';
 
 __DATA__
 <html>
