@@ -585,3 +585,7 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.74    Jul 1 2014 Alexander Nalobin
     - tests cleaning
+
+2.75    Jul 2 2014 Alexander Nalobin
+    - deps fix
+

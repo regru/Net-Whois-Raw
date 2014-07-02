@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.74';
+our $VERSION = '2.75';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 
@@ -594,9 +594,10 @@ Inspired by jwhois.pl available on the net.
 Since Ariel has passed away in September 2002:
 
 Past maintainers Gabor Szabo B<gabor@perl.org.il>,
-Corris Randall B<corris@cpan.org>
+Corris Randall B<corris@cpan.org>, 
+Walery Studennikov B<despair@cpan.org>
 
-Current Maintainer: Walery Studennikov B<despair@cpan.org>
+Current Maintainer: Alexander Nalobin B<nalobin@cpan.org>
 
 =head1 CREDITS
 
@@ -617,7 +618,7 @@ B<die> on L<perlfunc> about exception handling in Perl.
 Copyright 2000--2002 Ariel Brosh.
 Copyright 2003--2003 Gabor Szabo.
 Copyright 2003--2003 Corris Randall.
-Copyright 2003--now() Walery Studennikov.
+Copyright 2003--now() Walery Studennikov
 
 This package is free software. You may redistribute it or modify it under
 the same terms as Perl itself.
