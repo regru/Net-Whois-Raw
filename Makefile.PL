@@ -12,7 +12,6 @@ my $requires = {
     'Net::IDN::Punycode' => 1,
     'Regexp::IPv6' => 0,
     'File::Temp' => 0,
-    'Test::RequiresInternet' => 0,
 };
 
 if ( $^O =~ /Win/ ) {

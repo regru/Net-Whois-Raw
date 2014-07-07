@@ -589,3 +589,5 @@ Revision history for Perl module Net::Whois::Raw.
 2.75    Jul 2 2014 Alexander Nalobin
     - deps fix
 
+2.76    Jul 2 2014 Alexander Nalobin
+    - hide internet dependent tests

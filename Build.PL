@@ -24,9 +24,6 @@ my $build = Module::Build->new(
     module_name => 'Net::Whois::Raw',
     license  => 'perl',
     requires => $requires,
-    test_requires => {
-        'Test::RequiresInternet' => 0,
-    },
     script_files => 'pwhois',
     dist_abstract => 'Get Whois information for domains',
 );

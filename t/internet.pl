@@ -1,11 +1,11 @@
 #!/usr/bin/perl -w
 
 use strict;
+use warnings;
 
 use Data::Dumper;
-use Test::More tests        =>  10;
-
 use Test::RequiresInternet;
+use Test::More tests =>  10;
 
 use_ok 'Net::Whois::Raw';
 

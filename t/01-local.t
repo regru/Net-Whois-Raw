@@ -5,8 +5,6 @@ use warnings;
 
 use Test::More tests => 29;
 
-use Test::RequiresInternet;
-
 use_ok 'Net::Whois::Raw';
 use_ok 'Net::Whois::Raw::Common';
 
