@@ -11,10 +11,6 @@ META.yml
 pwhois
 README
 t/01-local.t
-t/02-internet.t
-t/03-coverage.t
-t/04-coro-domains.pl
-t/05-www_parse_tj_cgi_whois.t
-t/06-read_write_cache.t
-t/example-domains-load-balancing.pl
+t/02-www_parse_tj_cgi_whois.t
+t/03-read_write_cache.t
 META.json

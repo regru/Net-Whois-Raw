@@ -19,6 +19,7 @@ my $requires = {
 if ($^O =~ /Win/) {
     $requires->{'Win32API::Registry'} = 0;
 }
+
 my $build = Module::Build->new(
     module_name => 'Net::Whois::Raw',
     license  => 'perl',
@@ -28,16 +29,3 @@ my $build = Module::Build->new(
 );
 
 $build->create_build_script;
-
-# IS IT NECESSARY? (see belowe)
-#
-#sub MY::postamble {
-#        package MY;
-#        shift->SUPER::postamble . <<'MAKE';
-#dist : README
-#
-#README : lib/Net/Whois/Raw.pm
-#	@$(PERL) -MPod::Text -e "pod2text('$<');" > $@
-#
-#MAKE
-#}

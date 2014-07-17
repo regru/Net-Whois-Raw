@@ -13,19 +13,16 @@ my $requires = {
     'Regexp::IPv6' => 0,
     'File::Temp' => 0,
 };
-if ($^O =~ /Win/) {
-  $requires->{'Win32API::Registry'} = 0;
+
+if ( $^O =~ /Win/ ) {
+    $requires->{ 'Win32API::Registry' } = 0;
 }
 
-WriteMakefile
-(
-          'NAME' => 'Net::Whois::Raw',
-          'VERSION_FROM' => 'lib/Net/Whois/Raw.pm',
-          'PREREQ_PM' => $requires,
-          'INSTALLDIRS' => 'site',
-          'EXE_FILES' => [
-                           'pwhois'
-                         ],
-          'PL_FILES' => {}
-        )
-;
+WriteMakefile (
+    NAME         => 'Net::Whois::Raw',
+    VERSION_FROM => 'lib/Net/Whois/Raw.pm',
+    PREREQ_PM    => $requires,
+    INSTALLDIRS  => 'site',
+    EXE_FILES    => [ 'pwhois' ],
+    PL_FILES     => {},
+);
