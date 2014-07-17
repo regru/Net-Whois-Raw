@@ -591,3 +591,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.76    Jul 2 2014 Alexander Nalobin
     - hide internet dependent tests
+
+2.77    Jul 17 2014 Dmitriy Seluzhitskiy
+    - new tld .WIEN

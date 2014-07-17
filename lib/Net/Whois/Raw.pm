@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.76';
+our $VERSION = '2.77';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 
@@ -594,7 +594,7 @@ Inspired by jwhois.pl available on the net.
 Since Ariel has passed away in September 2002:
 
 Past maintainers Gabor Szabo B<gabor@perl.org.il>,
-Corris Randall B<corris@cpan.org>, 
+Corris Randall B<corris@cpan.org>,
 Walery Studennikov B<despair@cpan.org>
 
 Current Maintainer: Alexander Nalobin B<nalobin@cpan.org>
