@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.73';
+our $VERSION = '2.74';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 

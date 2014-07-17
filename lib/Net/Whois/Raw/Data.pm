@@ -309,6 +309,7 @@ our %servers = qw(
 
     CLUB            whois.nic.club
     LUXURY          whois.nic.luxury
+    WIEN            whois.nic.wien
 
     ACTOR           whois.unitedtld.com
     AIRFORCE        whois.unitedtld.com
@@ -791,6 +792,7 @@ our %notfound = (
     'whois.nic.club'             => '^Not found:',
     'whois.unitedtld.com'        => 'Domain not found',
     'whois.nic.luxury'           => 'No Data Found',
+    'whois.nic.wien'             => 'No match',
 
     'whois.publicinterestregistry.net' => 'NOT FOUND',
     'whois-dub.mm-registry.com'        => 'Status: Not Registered',
@@ -984,6 +986,9 @@ our %strip = (
     ],
 
     'whois.nic.berlin' => [
+        '^%',
+    ],
+    'whois.nic.wien' => [
         '^%',
     ],
 
