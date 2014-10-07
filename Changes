@@ -569,7 +569,7 @@ Revision history for Perl module Net::Whois::Raw.
     - new tlds of donuts.co
 
 2.69    May 27 2014 Dmitriy Seluzhitskiy
-    - change whois for .���
+    - change whois for .орг
 
 2.70    Jun 02 2014 Alexander Nalobin
     - RT#96078 Fixed LANG handling in pwhois script
@@ -594,3 +594,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.77    Jul 17 2014 Dmitriy Seluzhitskiy
     - new tld .WIEN
+
+2.78    Oct 07 2014 Alexander Nalobin
+    - new tld .МОСКВА ( XN--80ADXHKS )

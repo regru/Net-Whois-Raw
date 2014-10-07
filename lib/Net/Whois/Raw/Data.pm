@@ -20,6 +20,7 @@ our %servers = qw(
 
     XN--80ASWG          whois.site.rs.corenic.net
     XN--80ASEHDB        whois.online.rs.corenic.net
+    XN--80ADXHKS        whois.nic.xn--80adxhks
 
     COM.RU              whois.nic.ru
     NET.RU              whois.nic.ru
@@ -959,6 +960,7 @@ our %notfound = (
 
     'whois.online.rs.corenic.net' => 'no matching objects found',
     'whois.site.rs.corenic.net'   => 'no matching objects found',
+    'whois.nic.xn--80adxhks'      => 'No entries found for the selected source',
 );
 
 # Common whois stripping REs
@@ -2475,12 +2477,9 @@ our %strip = (
         '^the right to modify these terms at any time. By submitting this query,',
         '^you agree to abide by this policy.',
     ],
-    'whois.online.rs.corenic.net' => [
-        '^%',
-    ],
-    'whois.site.rs.corenic.net' => [
-        '^%',
-    ],
+    'whois.online.rs.corenic.net' => [ '^%' ],
+    'whois.site.rs.corenic.net'   => [ '^%' ],
+    'whois.nic.xn--80adxhks'      => [ '^%' ],
 );
 
 our %exceed = (
