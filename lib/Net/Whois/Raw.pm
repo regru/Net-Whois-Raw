@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.78';
+our $VERSION = '2.79';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 
@@ -24,6 +24,7 @@ our $SILENT_MODE = 0;
 our $QUERY_SUFFIX = '';
 
 our (%notfound, %strip, @SRC_IPS, %POSTPROCESS);
+our $TLD_IPS_POOL = {};
 
 our $class = __PACKAGE__;
 
@@ -242,6 +243,10 @@ sub whois_query {
     # Prepare for query
 
     my (@sockparams, $sock);
+    my (undef, $tld) = Net::Whois::Raw::Common::split_domain($dom);
+
+    $tld = uc $tld;
+    my $rotate_reference = undef;
 
     my $srv_and_port = $srv =~ /\:\d+$/ ? $srv : "$srv:43";
     if ($class->can ('whois_query_sockparams')) {
@@ -251,13 +256,21 @@ sub whois_query {
     elsif ($class->can ('whois_query_socket')) {
         $sock = $class->whois_query_socket ($dom, $srv);
     }
+    elsif (scalar %$TLD_IPS_POOL && $TLD_IPS_POOL->{$tld} && ref $TLD_IPS_POOL->{$tld} eq 'ARRAY') {
+        $rotate_reference = $TLD_IPS_POOL->{$tld};
+    }
     elsif (scalar(@SRC_IPS)) {
-        my $src_ip = $SRC_IPS[0];
-        push @SRC_IPS, shift @SRC_IPS; # rotate ips
-        @sockparams = (PeerAddr => $srv_and_port, LocalAddr => $src_ip);
+        $rotate_reference = \@SRC_IPS;
     }
     else {
         @sockparams = $srv_and_port;
+    }
+
+
+    if ($rotate_reference) {
+        my $src_ip = $rotate_reference->[0];
+        push @$rotate_reference, shift @$rotate_reference; # rotate ips
+        @sockparams = (PeerAddr => $srv_and_port, LocalAddr => $src_ip);
     }
 
     print "QUERY: $whoisquery; SRV: $srv, ".
@@ -468,6 +481,10 @@ Net::Whois::Raw -- Get Whois information for domains
         # List of local IP addresses to
         # use for WHOIS queries. Addresses will be used used
         # successively in the successive queries
+    
+    $Net::Whois::Raw::TLD_IPS_POOL = { COM => ['11.22.33.44', '55.66.77.88'] };
+        # Hash reference which contains IP lists for specified TLDs, like SRC_IPS,
+        # but only for specified TLDS. Has higher priority than @SRC_IPS
 
     $Net::Whois::Raw::POSTPROCESS{whois.crsnic.net} = \&my_func;
         # Call to a user-defined subroutine on whois result,
