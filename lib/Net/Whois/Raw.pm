@@ -24,7 +24,9 @@ our $SILENT_MODE = 0;
 our $QUERY_SUFFIX = '';
 
 our (%notfound, %strip, @SRC_IPS, %POSTPROCESS);
-our $TLD_IPS_POOL = {};
+
+# internal variable, used for save whois_server->ip relations
+my $_IPS = {};
 
 our $class = __PACKAGE__;
 
@@ -248,6 +250,10 @@ sub whois_query {
     $tld = uc $tld;
     my $rotate_reference = undef;
 
+    ### get server for query
+    my $server4query = Net::Whois::Raw::Common::get_server($dom);
+    $server4query = lc $server4query;
+
     my $srv_and_port = $srv =~ /\:\d+$/ ? $srv : "$srv:43";
     if ($class->can ('whois_query_sockparams')) {
         @sockparams = $class->whois_query_sockparams ($dom, $srv);
@@ -256,8 +262,8 @@ sub whois_query {
     elsif ($class->can ('whois_query_socket')) {
         $sock = $class->whois_query_socket ($dom, $srv);
     }
-    elsif (scalar %$TLD_IPS_POOL && $TLD_IPS_POOL->{$tld} && ref $TLD_IPS_POOL->{$tld} eq 'ARRAY') {
-        $rotate_reference = $TLD_IPS_POOL->{$tld};
+    elsif (my $ips_arrayref = get_ips_for_query($server4query)) {
+        $rotate_reference = $ips_arrayref;
     }
     elsif (scalar(@SRC_IPS)) {
         $rotate_reference = \@SRC_IPS;
@@ -427,6 +433,28 @@ sub import {
     *{"$callpkg\::$_"} = \&{"$mypkg\::$_"} foreach ((@EXPORT, @_));
 }
 
+
+sub set_ips_for_server {
+    my ($server, $ips) = @_;
+
+    croak "Missing params" if (!$ips || !$server);
+
+    $server = lc $server;
+    $_IPS->{$server} = $ips;
+}
+
+
+sub get_ips_for_query {
+    my ($server) = @_;
+
+    $server = lc $server;
+    if ($_IPS->{$server}) {
+        return $_IPS->{$server};
+    }
+    return undef;
+}
+
+
 1;
 __END__
 
@@ -481,10 +509,6 @@ Net::Whois::Raw -- Get Whois information for domains
         # List of local IP addresses to
         # use for WHOIS queries. Addresses will be used used
         # successively in the successive queries
-    
-    $Net::Whois::Raw::TLD_IPS_POOL = { COM => ['11.22.33.44', '55.66.77.88'] };
-        # Hash reference which contains IP lists for specified TLDs, like SRC_IPS,
-        # but only for specified TLDS. Has higher priority than @SRC_IPS
 
     $Net::Whois::Raw::POSTPROCESS{whois.crsnic.net} = \&my_func;
         # Call to a user-defined subroutine on whois result,
@@ -600,6 +624,13 @@ You can set your own LWP::UserAgent like this:
 
         return LWP::UserAgent->new();
     };
+
+
+=item set_ips_for_server('whois.ripn.net', ['127.0.0.1']);
+
+You can specify IPs list which will be used for queries to desired whois server.
+It can be useful if you have few interfaces, but you need to access whois server
+from specified ips.
 
 =back
 
