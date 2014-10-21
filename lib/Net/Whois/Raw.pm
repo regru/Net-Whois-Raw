@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.78';
+our $VERSION = '2.79';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 
@@ -24,6 +24,9 @@ our $SILENT_MODE = 0;
 our $QUERY_SUFFIX = '';
 
 our (%notfound, %strip, @SRC_IPS, %POSTPROCESS);
+
+# internal variable, used for save whois_server->ip relations
+my $_IPS = {};
 
 our $class = __PACKAGE__;
 
@@ -242,6 +245,14 @@ sub whois_query {
     # Prepare for query
 
     my (@sockparams, $sock);
+    my (undef, $tld) = Net::Whois::Raw::Common::split_domain($dom);
+
+    $tld = uc $tld;
+    my $rotate_reference = undef;
+
+    ### get server for query
+    my $server4query = Net::Whois::Raw::Common::get_server($dom);
+    $server4query = lc $server4query;
 
     my $srv_and_port = $srv =~ /\:\d+$/ ? $srv : "$srv:43";
     if ($class->can ('whois_query_sockparams')) {
@@ -251,13 +262,21 @@ sub whois_query {
     elsif ($class->can ('whois_query_socket')) {
         $sock = $class->whois_query_socket ($dom, $srv);
     }
+    elsif (my $ips_arrayref = get_ips_for_query($server4query)) {
+        $rotate_reference = $ips_arrayref;
+    }
     elsif (scalar(@SRC_IPS)) {
-        my $src_ip = $SRC_IPS[0];
-        push @SRC_IPS, shift @SRC_IPS; # rotate ips
-        @sockparams = (PeerAddr => $srv_and_port, LocalAddr => $src_ip);
+        $rotate_reference = \@SRC_IPS;
     }
     else {
         @sockparams = $srv_and_port;
+    }
+
+
+    if ($rotate_reference) {
+        my $src_ip = $rotate_reference->[0];
+        push @$rotate_reference, shift @$rotate_reference; # rotate ips
+        @sockparams = (PeerAddr => $srv_and_port, LocalAddr => $src_ip);
     }
 
     print "QUERY: $whoisquery; SRV: $srv, ".
@@ -413,6 +432,28 @@ sub import {
     # export subs
     *{"$callpkg\::$_"} = \&{"$mypkg\::$_"} foreach ((@EXPORT, @_));
 }
+
+
+sub set_ips_for_server {
+    my ($server, $ips) = @_;
+
+    croak "Missing params" if (!$ips || !$server);
+
+    $server = lc $server;
+    $_IPS->{$server} = $ips;
+}
+
+
+sub get_ips_for_query {
+    my ($server) = @_;
+
+    $server = lc $server;
+    if ($_IPS->{$server}) {
+        return $_IPS->{$server};
+    }
+    return undef;
+}
+
 
 1;
 __END__
@@ -583,6 +624,13 @@ You can set your own LWP::UserAgent like this:
 
         return LWP::UserAgent->new();
     };
+
+
+=item set_ips_for_server('whois.ripn.net', ['127.0.0.1']);
+
+You can specify IPs list which will be used for queries to desired whois server.
+It can be useful if you have few interfaces, but you need to access whois server
+from specified ips.
 
 =back
 

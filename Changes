@@ -597,3 +597,7 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.78    Oct 07 2014 Alexander Nalobin
     - new tld .МОСКВА ( XN--80ADXHKS )
+
+2.79    Oct 18 2014 Dmitriy Shamatrin
+    - Added possibility to specify list of ips for selected whois servers
+    - Refactored logic for @SRC_IPS
