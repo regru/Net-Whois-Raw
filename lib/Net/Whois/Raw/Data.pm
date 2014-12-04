@@ -362,6 +362,7 @@ our %servers = qw(
     WEDDING         whois-dub.mm-registry.com
     WORK            whois-dub.mm-registry.com
     YOGA            whois-dub.mm-registry.com
+    OOO             whois-dub.mm-registry.com
 
     TV  whois.nic.tv
     WS  whois.worldsite.ws

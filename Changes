@@ -601,3 +601,6 @@ Revision history for Perl module Net::Whois::Raw.
 2.79    Oct 18 2014 Dmitriy Shamatrin
     - Added possibility to specify list of ips for selected whois servers
     - Refactored logic for @SRC_IPS
+
+2.80    Dec 03 2014 Alexander Nalivayko
+    - new tld .OOO
