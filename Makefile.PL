@@ -25,4 +25,14 @@ WriteMakefile (
     INSTALLDIRS  => 'site',
     EXE_FILES    => [ 'pwhois' ],
     PL_FILES     => {},
+    META_MERGE => {
+        'meta-spec' => { version => 2 },
+         resources => {
+             repository => {
+                 type => 'git',
+                 url  => 'https://github.com/regru/Net-Whois-Raw.git',
+                 web  => 'https://github.com/regru/Net-Whois-Raw',
+             },
+         },
+    },
 );

@@ -26,6 +26,11 @@ my $build = Module::Build->new(
     requires => $requires,
     script_files => 'pwhois',
     dist_abstract => 'Get Whois information for domains',
+    meta_merge => {
+        resources => {
+            repository => 'https://github.com/regru/Net-Whois-Raw'
+        }
+    },
 );
 
 $build->create_build_script;
