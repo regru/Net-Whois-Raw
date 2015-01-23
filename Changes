@@ -605,5 +605,5 @@ Revision history for Perl module Net::Whois::Raw.
 2.80    Dec 03 2014 Alexander Nalivayko
     - new tld .OOO
 
-2.82    Jan 21 2015 Igor Zhuk
+2.81    Jan 21 2015 Igor Zhuk
     - new tld .MOSCOW
