@@ -701,6 +701,7 @@ our %servers = qw(
     SO          whois.nic.so
     BZ          whois2.afilias-grs.net
     XXX         whois.nic.xxx
+    MOSCOW      whois.nic.moscow
 );
 
 
@@ -962,6 +963,7 @@ our %notfound = (
     'whois.online.rs.corenic.net' => 'no matching objects found',
     'whois.site.rs.corenic.net'   => 'no matching objects found',
     'whois.nic.xn--80adxhks'      => 'No entries found for the selected source',
+    'whois.nic.moscow'            => 'No entries found for the selected source',
 );
 
 # Common whois stripping REs
@@ -2481,6 +2483,7 @@ our %strip = (
     'whois.online.rs.corenic.net' => [ '^%' ],
     'whois.site.rs.corenic.net'   => [ '^%' ],
     'whois.nic.xn--80adxhks'      => [ '^%' ],
+    'whois.nic.moscow'            => [ '^%' ],
 );
 
 our %exceed = (
