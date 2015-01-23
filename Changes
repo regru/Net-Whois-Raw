@@ -607,3 +607,8 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.81    Jan 21 2015 Igor Zhuk
     - new tld .MOSCOW
+
+2.82    Jan 23 2015 Alexander Nalobin
+    - whois.jprs.jp whois server's encoding is UTF-8
+
+

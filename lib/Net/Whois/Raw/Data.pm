@@ -736,7 +736,6 @@ our %codepages = (
     'whois.lg.ua'        => 'koi8-u',
     'whois.od.ua'        => 'koi8-u',
     'whois.in.ua'        => 'koi8-u',
-    'whois.jprs.jp'      => 'iso-2022-jp',
     'whois.nic.or.kr'    => 'euc-kr',
     'whois.domain.kg'    => 'cp-1251',
 );
