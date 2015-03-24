@@ -611,4 +611,8 @@ Revision history for Perl module Net::Whois::Raw.
 2.82    Jan 23 2015 Alexander Nalobin
     - whois.jprs.jp whois server's encoding is UTF-8
 
+2.83    Mar 24 2015 Alexander Nalobin
+    - Fix getting whois of ARIN IP addresses
+    - Fix .sh и .pro "not found" patterns
+
 

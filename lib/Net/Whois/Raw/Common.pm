@@ -189,16 +189,15 @@ sub get_server {
 }
 
 sub get_real_whois_query{
-    my ($whoisquery, $srv, $is_ns) = @_;
+    my ( $whoisquery, $srv, $is_ns ) = @_;
 
-        $srv = $is_ns ? $srv . '.ns' : $srv;
+    $srv .= '.ns'  if $is_ns;
 
-    if ($srv eq 'whois.crsnic.net' && domain_level($whoisquery) == 2) {
-        $whoisquery = "domain $whoisquery";
+    if ( $srv eq 'whois.crsnic.net' && domain_level( $whoisquery ) == 2 ) {
+        return "domain $whoisquery";
     }
     elsif ( $Net::Whois::Raw::Data::query_prefix{ $srv } ) {
-        $whoisquery = $Net::Whois::Raw::Data::query_prefix{ $srv }
-                      . $whoisquery;
+        return $Net::Whois::Raw::Data::query_prefix{ $srv } . $whoisquery;
     }
 
     return $whoisquery;

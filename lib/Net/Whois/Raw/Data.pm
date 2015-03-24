@@ -2532,6 +2532,8 @@ our %query_prefix = (
     'whois.pir.org.ns'         => 'HO ',
     'whois.biz.ns'             => 'nameserver ',
     'whois.nsiregistry.net.ns' => 'nameserver = ',
+
+    'whois.arin.net'           => 'n + ',
 );
 
 1;
