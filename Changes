@@ -615,4 +615,6 @@ Revision history for Perl module Net::Whois::Raw.
     - Fix getting whois of ARIN IP addresses
     - Fix .sh и .pro "not found" patterns
 
+2.84    Mar 27 2015 Alexander Nalobin
+    - new tld .TATAR
 

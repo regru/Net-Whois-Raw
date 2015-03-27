@@ -702,6 +702,7 @@ our %servers = qw(
     BZ          whois2.afilias-grs.net
     XXX         whois.nic.xxx
     MOSCOW      whois.nic.moscow
+    TATAR       whois.nic.tatar
 );
 
 
@@ -963,6 +964,7 @@ our %notfound = (
     'whois.site.rs.corenic.net'   => 'no matching objects found',
     'whois.nic.xn--80adxhks'      => 'No entries found for the selected source',
     'whois.nic.moscow'            => 'No entries found for the selected source',
+    'whois.nic.tatar'             => 'No entries found for the selected source',
 );
 
 # Common whois stripping REs
