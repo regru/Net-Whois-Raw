@@ -664,6 +664,11 @@ our %servers = qw(
     ORG.UK      whois.nic.uk
     PLC.UK      whois.nic.uk
 
+    CO.ZA       whois.co.za
+    NET.ZA      whois.net.za
+    ORG.ZA      whois.org.za
+    WEB.ZA      whois.web.za
+
     XN--P1AG    ru.whois.i-dns.net
     XN--P1AG    ru.whois.i-dns.net
     XN--J1AEF   whois.i-dns.net
