@@ -301,16 +301,16 @@ our %servers = qw(
     BERLIN          whois.nic.berlin
     KIWI            whois.dot-kiwi.com
     BUILD           whois.nic.build
+    CLUB            whois.nic.club
+    LUXURY          whois.nic.luxury
+    WIEN            whois.nic.wien
+    ONE             whois.nic.one
 
     PINK            whois.afilias.net
     RED             whois.afilias.net
     SHIKSHA         whois.afilias.net
     KIM             whois.afilias.net
     BLUE            whois.afilias.net
-
-    CLUB            whois.nic.club
-    LUXURY          whois.nic.luxury
-    WIEN            whois.nic.wien
 
     ACTOR           whois.unitedtld.com
     AIRFORCE        whois.unitedtld.com
@@ -954,11 +954,11 @@ our %notfound = (
     'whois.ttpia.com'           => 'No match for',
     'whois.worldnames.net'      => 'NO MATCH for domain',
      # 'whois.yournamemonkey.com' -- need try again
-    'whois.cnnic.net.cn'	=> 'no matching record',
+    'whois.cnnic.net.cn'        => 'no matching record',
     'whois.nic.co'              => 'Not found: \S+',
-    'me.whois-servers.net'	=> 'NOT FOUND',
+    'me.whois-servers.net'      => 'NOT FOUND',
     'whois.domain.kg'           => 'Data not found. This domain is available for registration.',
-    'whois.nic.so'              => 'Not\s+found:',
+    'whois.nic.one'             => 'No Data Found',
 
     # for VN | TJ zones
     'www_whois'                 => '(Available|no records found|is free|Not Registered)',
