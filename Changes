@@ -618,3 +618,6 @@ Revision history for Perl module Net::Whois::Raw.
 2.84    Mar 27 2015 Alexander Nalobin
     - new tld .TATAR
 
+2.85    Jul 09 2015 Alexander Nalobin
+    - new tld .PRESS
+

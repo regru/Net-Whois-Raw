@@ -708,6 +708,7 @@ our %servers = qw(
     XXX         whois.nic.xxx
     MOSCOW      whois.nic.moscow
     TATAR       whois.nic.tatar
+    PRESS       whois.nic.press
 );
 
 
@@ -970,6 +971,7 @@ our %notfound = (
     'whois.nic.xn--80adxhks'      => 'No entries found for the selected source',
     'whois.nic.moscow'            => 'No entries found for the selected source',
     'whois.nic.tatar'             => 'No entries found for the selected source',
+    'whois.nic.press'             => 'DOMAIN NOT FOUND',
 );
 
 # Common whois stripping REs
