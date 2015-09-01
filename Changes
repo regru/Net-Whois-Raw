@@ -621,3 +621,5 @@ Revision history for Perl module Net::Whois::Raw.
 2.85    Jul 09 2015 Alexander Nalobin
     - new tld .PRESS
 
+2.86    Sep 01 2015 Alexander Nalobin
+    - QRY_LAST/QRY_FIRST caching issue fix

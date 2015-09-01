@@ -14,7 +14,7 @@ use utf8;
 
 our @EXPORT = qw( whois get_whois );
 
-our $VERSION = '2.85';
+our $VERSION = '2.86';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 
@@ -62,9 +62,7 @@ sub whois {
 
     $which_whois ||= 'QRY_LAST';
 
-    my $res = Net::Whois::Raw::Common::get_from_cache(
-        $dom, $CACHE_DIR, $CACHE_TIME
-    );
+    my $res = Net::Whois::Raw::Common::get_from_cache( "$dom-$which_whois", $CACHE_DIR, $CACHE_TIME );
 
     my ($res_text, $res_srv, $res_text2);
 
@@ -97,10 +95,10 @@ sub get_whois {
     my ($dom, $srv, $which_whois) = @_;
     $which_whois ||= 'QRY_LAST';
 
-    my $whois = get_all_whois($dom, $srv, $which_whois eq 'QRY_FIRST')
+    my $whois = get_all_whois( $dom, $srv, $which_whois eq 'QRY_FIRST' )
         or return undef;
 
-    Net::Whois::Raw::Common::write_to_cache($dom, $whois, $CACHE_DIR);
+    Net::Whois::Raw::Common::write_to_cache( "$dom-$which_whois", $whois, $CACHE_DIR );
 
     if ($which_whois eq 'QRY_LAST') {
         my $thewhois = $whois->[-1];
