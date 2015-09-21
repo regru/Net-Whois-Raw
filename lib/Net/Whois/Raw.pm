@@ -9,6 +9,7 @@ use strict;
 
 use Carp;
 use IO::Socket;
+use IO::Socket::INET6;
 use Encode;
 use utf8;
 
@@ -295,7 +296,13 @@ sub whois_query {
             $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
 
             unless($sock){
-                $sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+		if (Net::Whois::Raw::Common::is_ip6addr($srv)) {
+			@sockparams = (PeerAddr=>$srv, PeerPort=>'43');
+			$sock = IO::Socket::INET6->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+		}
+		else {
+			$sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+		}
             }
 
             if ($class->can ('whois_socket_fixup')) {
