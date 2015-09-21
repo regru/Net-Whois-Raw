@@ -296,7 +296,7 @@ sub whois_query {
             $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
 
             unless($sock){
-                if ($srv =~ /:/) {
+		if (Net::Whois::Raw::Common::is_ip6addr($srv)) {
 			@sockparams = (PeerAddr=>$srv, PeerPort=>'43');
 			$sock = IO::Socket::INET6->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
 		}
