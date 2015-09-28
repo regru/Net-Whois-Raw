@@ -1,8 +1,8 @@
 package Net::Whois::Raw::Data;
 
-# Use string as is
-no utf8;
+# ABSTRACT: Config for Net::Whois::Raw.
 
+use utf8;
 use warnings;
 use strict;
 
@@ -1590,11 +1590,11 @@ our %strip = (
     ],
     'whois.nic.cl' => [
         '^ACE\:',
-        '^Última modificación',
+        '^Ðªltima modificaciÑƒn',
         '\(Database last updated on\)',
-        '^Más información',
+        '^MÐ±s informaciÑƒn',
         'www\.nic\.cl\/cgi-bin',
-        '^Este mensajes está impreso',
+        '^Este mensajes estÐ± impreso',
         '^\(This message is printed',
         '^\s+\(\)$',
     ],
@@ -1735,8 +1735,8 @@ our %strip = (
         '^abide by the rules',
         '^http\:',
         'A szolgaltatas csak a',
-        '^elérhetõ feltételek',
-        '^használható legálisan',
+        '^elÐ¹rhetÑ… feltÐ¹telek',
+        '^hasznÐ±lhatÑƒ legÐ±lisan',
     ],
     'whois.domainregistry.ie' => [
         '^%',
@@ -1777,7 +1777,7 @@ our %strip = (
         '^remarks\:',
     ],
     'whois.nic.or.kr' => [
-        '^³×ÀÓ¼­¹ö ÀÌ¸§ÀÌ .krÀÌ ¾Æ´Ñ °æ¿ì´',
+        '^Ñ–Ð§ÐÐ£Ñ˜Â­â„–Ñ† ÐÐœÑ‘Â§ÐÐœ .krÐÐœ Ñ•Ð–Ò‘Ð¡ Â°Ð¶Ñ—Ð¼Ò‘',
     ],
     'whois.nic.kz' => [
         '^Whois Server for the KZ',

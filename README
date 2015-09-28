@@ -145,16 +145,9 @@ AUTHOR
     Since Ariel has passed away in September 2002:
 
     Past maintainers Gabor Szabo gabor@perl.org.il, Corris Randall
-    corris@cpan.org
+    corris@cpan.org, Walery Studennikov <despair@cpan.org>.
 
-    Current Maintainer: Walery Studennikov despair@cpan.org
-
-CREDITS
-    See file "Changes" in the distribution for the complete list of
-    contributors.
-
-CHANGES
-    See file "Changes" in the distribution
+    Current Maintainer (since 2014): Alexander Nalobin <nalobin@cpan.org>
 
 NOTE
     Some users complained that the die statements in the module make their
@@ -162,24 +155,16 @@ NOTE
     perlfunc about exception handling in Perl.
 
 COPYRIGHT
-    Copyright 2000--2002 Ariel Brosh. Copyright 2003--2003 Gabor Szabo.
-    Copyright 2003--2003 Corris Randall. Copyright 2003--now() Walery
-    Studennikov.
+    Copyright 2000--2002 Ariel Brosh.
+    Copyright 2003--2003 Gabor Szabo.
+    Copyright 2003--2003 Corris Randall.
+    Copyright 2003--2014 Walery Studennikov.
 
     This package is free software. You may redistribute it or modify it
     under the same terms as Perl itself.
 
     I apologize for any misunderstandings caused by the lack of a clear
     licence in previous versions.
-
-COMMERCIAL SUPPORT
-    Not available anymore.
-
-LEGAL
-    Notice that registrars forbid querying their whois servers as a part of
-    a search engine, or querying for a lot of domains by script. Also,
-    omitting the copyright information (that was requested by users of this
-    module) is forbidden by the registrars.
 
 SEE ALSO
     pwhois, whois.

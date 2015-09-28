@@ -1,5 +1,7 @@
 package Net::Whois::Raw::Common;
 
+# ABSTRACT: Helper for Net::Whois::Raw.
+
 use Encode;
 use warnings;
 use strict;

@@ -623,3 +623,6 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.86    Sep 01 2015 Alexander Nalobin
     - QRY_LAST/QRY_FIRST caching issue fix
+
+2.87    Sep 28 2015 Alexander Nalobin & Hugo Salgado
+    - basic IPv6 server support

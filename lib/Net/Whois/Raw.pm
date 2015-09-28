@@ -1,5 +1,7 @@
 package Net::Whois::Raw;
 
+# ABSTRACT: Get Whois information of domains and IP addresses.
+
 require 5.008_001;
 use Net::Whois::Raw::Common ();
 use Net::Whois::Raw::Data ();
@@ -13,8 +15,6 @@ use Encode;
 use utf8;
 
 our @EXPORT = qw( whois get_whois );
-
-our $VERSION = '2.86';
 
 our ($OMIT_MSG, $CHECK_FAIL, $CHECK_EXCEED, $CACHE_DIR, $TIMEOUT, $DEBUG) = (0) x 7;
 
@@ -252,12 +252,16 @@ sub whois_query {
     my $server4query = Net::Whois::Raw::Common::get_server($dom);
     $server4query = lc $server4query;
 
+    if ( Net::Whois::Raw::Common::is_ip6addr( $srv ) ) {
+        $srv = "[$srv]";
+    }
+
     my $srv_and_port = $srv =~ /\:\d+$/ ? $srv : "$srv:43";
-    if ($class->can ('whois_query_sockparams')) {
+    if ($class->can('whois_query_sockparams')) {
         @sockparams = $class->whois_query_sockparams ($dom, $srv);
     }
     # hook for outside defined socket
-    elsif ($class->can ('whois_query_socket')) {
+    elsif ($class->can('whois_query_socket')) {
         $sock = $class->whois_query_socket ($dom, $srv);
     }
     elsif (my $ips_arrayref = get_ips_for_query($server4query)) {
@@ -459,7 +463,7 @@ __END__
 
 =head1 NAME
 
-Net::Whois::Raw -- Get Whois information for domains
+Net::Whois::Raw — Get Whois information of domains and IP addresses.
 
 =head1 SYNOPSIS
 
