@@ -22,7 +22,7 @@ my @domains = qw(
 );
 
 # registrars    
-like whois( 'REGRU-REG-RIPN', 'whois.ripn.net' ), qr/www.reg.ru/;
+like whois( 'REGRU-RU', 'whois.ripn.net' ), qr/www.reg.ru/;
 
 # domains    
 for my $domain ( @domains ) {

@@ -8,7 +8,7 @@ use warnings;
 use strict;
 
 use Carp;
-use IO::Socket;
+use IO::Socket::IP;
 use Encode;
 use utf8;
 
@@ -294,8 +294,9 @@ sub whois_query {
 
             $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
 
-            unless($sock){
-                $sock = IO::Socket::INET->new(@sockparams) || die "$srv: $!: ".join(', ', @sockparams);
+            unless ( $sock ) {
+                $sock = IO::Socket::IP->new( @sockparams )
+                    or die "$srv: $!: " . join( ', ', @sockparams );
             }
 
             if ($class->can ('whois_socket_fixup')) {
