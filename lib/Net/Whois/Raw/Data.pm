@@ -696,9 +696,9 @@ our %servers = qw(
     GB.NET      whois.centralnic.com
     UK.NET      whois.centralnic.com
     SE.NET      whois.centralnic.com
-
     AE.ORG      whois.centralnic.com
     IN.NET      whois.centralnic.com
+    SITE        whois.centralnic.com
 
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
@@ -2492,6 +2492,23 @@ our %strip = (
     'whois.site.rs.corenic.net'   => [ '^%' ],
     'whois.nic.xn--80adxhks'      => [ '^%' ],
     'whois.nic.moscow'            => [ '^%' ],
+
+    'whois.centralnic.com' => [
+        '^>>> Last update of WHOIS database:',
+        '^For more information on Whois status codes, please visit https://icann.org/epp',
+        '^This whois service is provided by CentralNic Ltd and only contains',
+        '^information pertaining to Internet domain names registered by our',
+        '^our customers. By using this service you are agreeing (1) not to use any',
+        '^information presented here for any purpose other than determining',
+        '^ownership of domain names, (2) not to store or reproduce this data in ',
+        '^any way, (3) not to use any high-volume, automated, electronic processes',
+        '^to obtain data from this service. Abuse of this service is monitored and',
+        '^actions in contravention of these terms will result in being permanently',
+        '^blacklisted. All data is (c) CentralNic Ltd https://www.centralnic.com/',
+
+        '^Access to the whois service is rate limited. For more information, please',
+        '^see https://registrar-console.centralnic.com/pub/whois_guidance.',
+    ]
 );
 
 our %exceed = (

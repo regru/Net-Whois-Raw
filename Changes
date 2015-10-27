@@ -1,5 +1,11 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.88    Oct 27 2015 Alexander Nalobin
+    - new tld .SITE
+
+2.87    Sep 28 2015 Alexander Nalobin & Hugo Salgado
+    - basic IPv6 server support
+
 2.86    Sep 01 2015 Alexander Nalobin
     - QRY_LAST/QRY_FIRST caching issue fix
 
@@ -623,5 +629,3 @@ Revision history for Perl module Net::Whois::Raw.
 
 0.01  Jul 05 2000
     - original version; created by h2xs 1.19
-
-
