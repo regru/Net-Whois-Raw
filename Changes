@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.89    Oct 27 2015 Alexander Nalobin
+    - more new tlds of whois.centralnic.com
+
 2.88    Oct 27 2015 Alexander Nalobin
     - new tld .SITE
 

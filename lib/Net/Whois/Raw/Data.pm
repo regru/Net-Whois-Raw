@@ -699,6 +699,22 @@ our %servers = qw(
     AE.ORG      whois.centralnic.com
     IN.NET      whois.centralnic.com
     SITE        whois.centralnic.com
+    AFRICA.COM  whois.centralnic.com
+    DESIGN      whois.centralnic.com
+    FANS        whois.centralnic.com
+    HOST        whois.centralnic.com
+    LOVE        whois.centralnic.com
+    MEX.COM     whois.centralnic.com
+    ONLINE      whois.centralnic.com
+    PROTECTION  whois.centralnic.com
+    REIT        whois.centralnic.com
+    RENT        whois.centralnic.com
+    SECURITY    whois.centralnic.com
+    SPACE       whois.centralnic.com
+    TECH        whois.centralnic.com
+    THEATRE     whois.centralnic.com
+    TICKETS     whois.centralnic.com
+    WEBSITE     whois.centralnic.com
 
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
