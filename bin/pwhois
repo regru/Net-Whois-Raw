@@ -1,4 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
+
+# PODNAME: phwois
+# ABSTRACT: Get Whois information of domains and IP addresses.
 
 use strict;
 use warnings;
