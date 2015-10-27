@@ -715,6 +715,13 @@ our %servers = qw(
     THEATRE     whois.centralnic.com
     TICKETS     whois.centralnic.com
     WEBSITE     whois.centralnic.com
+    BAR         whois.centralnic.com
+    COLLEGE     whois.centralnic.com
+    FEEDBACK    whois.centralnic.com
+    INK         whois.centralnic.com
+    REST        whois.centralnic.com
+    WIKI        whois.centralnic.com
+    XYZ         whois.centralnic.com
 
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
