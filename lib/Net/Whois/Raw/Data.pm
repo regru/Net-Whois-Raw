@@ -305,6 +305,8 @@ our %servers = qw(
     LUXURY          whois.nic.luxury
     WIEN            whois.nic.wien
     ONE             whois.nic.one
+    TOP             whois.nic.top
+    TRADING         whois.nic.trading
 
     PINK            whois.afilias.net
     RED             whois.afilias.net
@@ -470,7 +472,6 @@ our %servers = qw(
     TR  whois.nic.tr
     TW  whois.twnic.net.tw
     UA  whois.com.ua
-    NET.UA  whois.net.ua
     UK  whois.nic.uk
     US  whois.nic.us
     UZ  whois.cctld.uz
@@ -646,6 +647,7 @@ our %servers = qw(
     ORG.TW      whois.twnic.net
 
     COM.UA      whois.com.ua
+    NET.UA      whois.net.ua
     ORG.UA      whois.com.ua
     BIZ.UA      whois.biz.ua
     CO.UA       whois.co.ua
@@ -675,51 +677,59 @@ our %servers = qw(
     XN--E1APQ   whois.i-dns.net
     XN--C1AVG   whois.publicinterestregistry.net
 
-    EU.COM      whois.centralnic.com
-    GB.COM      whois.centralnic.com
-    KR.COM      whois.centralnic.com
-    US.COM      whois.centralnic.com
-    QC.COM      whois.centralnic.com
-    DE.COM      whois.centralnic.com
-    NO.COM      whois.centralnic.com
-    HU.COM      whois.centralnic.com
-    JPN.COM     whois.centralnic.com
-    UY.COM      whois.centralnic.com
-    ZA.COM      whois.centralnic.com
+    AE.ORG      whois.centralnic.com
+    AFRICA.COM  whois.centralnic.com
+    AR.COM      whois.centralnic.com
     BR.COM      whois.centralnic.com
     CN.COM      whois.centralnic.com
+    CO.COM      whois.centralnic.com
+    DE.COM      whois.centralnic.com
+    COM.DE      whois.centralnic.com
+    EU.COM      whois.centralnic.com
+    GB.COM      whois.centralnic.com
+    GB.NET      whois.centralnic.com
+    GR.COM      whois.centralnic.com
+    HU.COM      whois.centralnic.com
+    HU.NET      whois.centralnic.com
+    IN.NET      whois.centralnic.com
+    JP.NET      whois.centralnic.com
+    JPN.COM     whois.centralnic.com
+    KR.COM      whois.centralnic.com
+    MEX.COM     whois.centralnic.com
+    NO.COM      whois.centralnic.com
+    QC.COM      whois.centralnic.com
+    RU.COM      whois.centralnic.com
     SA.COM      whois.centralnic.com
     SE.COM      whois.centralnic.com
-    UK.COM      whois.centralnic.com
-    RU.COM      whois.centralnic.com
-
-    GB.NET      whois.centralnic.com
-    UK.NET      whois.centralnic.com
+    COM.SE      whois.centralnic.com
     SE.NET      whois.centralnic.com
-    AE.ORG      whois.centralnic.com
-    IN.NET      whois.centralnic.com
-    SITE        whois.centralnic.com
-    AFRICA.COM  whois.centralnic.com
+    UK.COM      whois.centralnic.com
+    UK.NET      whois.centralnic.com
+    US.COM      whois.centralnic.com
+    UY.COM      whois.centralnic.com
+    ZA.COM      whois.centralnic.com
+
+    BAR         whois.centralnic.com
+    COLLEGE     whois.centralnic.com
     DESIGN      whois.centralnic.com
     FANS        whois.centralnic.com
+    FEEDBACK    whois.centralnic.com
     HOST        whois.centralnic.com
+    INK         whois.centralnic.com
     LOVE        whois.centralnic.com
-    MEX.COM     whois.centralnic.com
     ONLINE      whois.centralnic.com
+    PRESS       whois.centralnic.com
     PROTECTION  whois.centralnic.com
     REIT        whois.centralnic.com
     RENT        whois.centralnic.com
+    REST        whois.centralnic.com
     SECURITY    whois.centralnic.com
+    SITE        whois.centralnic.com
     SPACE       whois.centralnic.com
     TECH        whois.centralnic.com
     THEATRE     whois.centralnic.com
     TICKETS     whois.centralnic.com
     WEBSITE     whois.centralnic.com
-    BAR         whois.centralnic.com
-    COLLEGE     whois.centralnic.com
-    FEEDBACK    whois.centralnic.com
-    INK         whois.centralnic.com
-    REST        whois.centralnic.com
     WIKI        whois.centralnic.com
     XYZ         whois.centralnic.com
 
@@ -731,7 +741,6 @@ our %servers = qw(
     XXX         whois.nic.xxx
     MOSCOW      whois.nic.moscow
     TATAR       whois.nic.tatar
-    PRESS       whois.nic.press
 );
 
 
