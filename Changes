@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.xx        Vadim Likhota
+    - fix clear disclaimer for .NAME and .ORG
+
 2.89, 2.90    Oct 27 2015 Alexander Nalobin
     - more new tlds of whois.centralnic.com
 
