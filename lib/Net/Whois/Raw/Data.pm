@@ -1324,6 +1324,7 @@ our %strip = (
         '^by this policy and accept that mTLD',
         '^WHOIS services in order to protect',
         '^integrity of the database.',
+        '^For more information on Whois',
     ],
     'whois.museum' => [
         '^%',
