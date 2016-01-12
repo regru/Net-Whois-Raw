@@ -10,7 +10,7 @@ our @www_whois = qw(
     VN
     TJ
 );
-# Candidates for www_whois: DO, IO, MG, SH, TM, TP, ZA
+# Candidates for www_whois: DO, ES, IO, MG, SH, TM, TP, ZA
 
 our %servers = qw(
     RU                  whois.ripn.net
@@ -21,6 +21,7 @@ our %servers = qw(
     XN--80ASWG          whois.site.rs.corenic.net
     XN--80ASEHDB        whois.online.rs.corenic.net
     XN--80ADXHKS        whois.nic.xn--80adxhks
+    XN--P1ACF           whois.nic.xn--p1acf
 
     COM.RU              whois.nic.ru
     NET.RU              whois.nic.ru
@@ -376,6 +377,7 @@ our %servers = qw(
     BG  whois.register.bg
     BJ  whois.nic.bj
     BR  whois.registro.br
+    BZ  whois2.afilias-grs.net
     CA  whois.cira.ca
     CD  whois.nic.cd
     CH  whois.nic.ch
@@ -421,7 +423,7 @@ our %servers = qw(
     KI  whois.nic.ki
     KR  whois.nic.or.kr
     KZ  whois.nic.kz
-    LA  whois.nic.la
+    LA  whois.centralnic.com
     LC  whois2.afilias-grs.net
     LI  whois.nic.li
     LT  whois.domreg.lt
@@ -461,6 +463,7 @@ our %servers = qw(
     SI  whois.arnes.si
     SK  whois.sk-nic.sk
     SM  whois.ripe.net
+    SO  whois.nic.so
     ST  whois.nic.st
     TC  whois.adamsnames.tc
     TF  whois.nic.tf
@@ -672,7 +675,6 @@ our %servers = qw(
     WEB.ZA      whois.web.za
 
     XN--P1AG    ru.whois.i-dns.net
-    XN--P1AG    ru.whois.i-dns.net
     XN--J1AEF   whois.i-dns.net
     XN--E1APQ   whois.i-dns.net
     XN--C1AVG   whois.publicinterestregistry.net
@@ -711,15 +713,19 @@ our %servers = qw(
 
     BAR         whois.centralnic.com
     COLLEGE     whois.centralnic.com
+    CONTACT     whois.centralnic.com
     DESIGN      whois.centralnic.com
+    FAN         whois.centralnic.com
     FANS        whois.centralnic.com
     FEEDBACK    whois.centralnic.com
     HOST        whois.centralnic.com
     INK         whois.centralnic.com
     LOVE        whois.centralnic.com
     ONLINE      whois.centralnic.com
+    PID         whois.centralnic.com
     PRESS       whois.centralnic.com
     PROTECTION  whois.centralnic.com
+    REALTY      whois.centralnic.com
     REIT        whois.centralnic.com
     RENT        whois.centralnic.com
     REST        whois.centralnic.com
@@ -736,8 +742,6 @@ our %servers = qw(
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
-    SO          whois.nic.so
-    BZ          whois2.afilias-grs.net
     XXX         whois.nic.xxx
     MOSCOW      whois.nic.moscow
     TATAR       whois.nic.tatar
