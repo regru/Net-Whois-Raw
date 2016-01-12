@@ -296,17 +296,18 @@ our %servers = qw(
     HIPHOP          whois.uniregistry.net
     JUEGOS          whois.uniregistry.net
 
-    MENU            whois.nic.menu
-    UNO             whois.nic.uno
     BERLIN          whois.nic.berlin
-    KIWI            whois.dot-kiwi.com
     BUILD           whois.nic.build
     CLUB            whois.nic.club
+    KIWI            whois.dot-kiwi.com
     LUXURY          whois.nic.luxury
-    WIEN            whois.nic.wien
+    MENU            whois.nic.menu
     ONE             whois.nic.one
+    OOO             whois.nic.ooo
     TOP             whois.nic.top
     TRADING         whois.nic.trading
+    WIEN            whois.nic.wien
+    UNO             whois.nic.uno
 
     PINK            whois.afilias.net
     RED             whois.afilias.net
@@ -364,11 +365,7 @@ our %servers = qw(
     WEDDING         whois-dub.mm-registry.com
     WORK            whois-dub.mm-registry.com
     YOGA            whois-dub.mm-registry.com
-    OOO             whois-dub.mm-registry.com
 
-    TV  whois.nic.tv
-    WS  whois.worldsite.ws
-    NF  whois.nic.cx
     AC  whois.nic.ac
     AG  whois.nic.ag
     AM  whois.amnic.net
@@ -407,6 +404,7 @@ our %servers = qw(
     HK  whois.hkirc.hk
     HM  whois.registry.hm
     HN  whois2.afilias-grs.net
+    HR  whois.dns.hr
     HT  whois.nic.ht
     IE  whois.domainregistry.ie
     IL  whois.isoc.org.il
@@ -441,6 +439,7 @@ our %servers = qw(
     MX  whois.nic.mx
     MY  whois.mynic.net.my
     NA  whois.na-nic.com.na
+    NF  whois.nic.cx
     NL  whois.domain-registry.nl
     NO  whois.norid.no
     NU  whois.nic.nu
@@ -449,6 +448,7 @@ our %servers = qw(
     PM  whois.nic.pm
     PR  whois.nic.pr
     PT  whois.dns.pt
+    PW  whois.centralnic.com
     RE  whois.nic.re
     RO  whois.rotld.ro
     RS  whois.rnids.rs
@@ -470,6 +470,7 @@ our %servers = qw(
     TM  whois.nic.tm
     TO  whois.tonic.to
     TR  whois.nic.tr
+    TV  whois.nic.tv
     TW  whois.twnic.net.tw
     UA  whois.com.ua
     UK  whois.nic.uk
@@ -479,9 +480,8 @@ our %servers = qw(
     VE  whois.nic.ve
     VG  whois.adamsnames.tc
     WF  whois.nic.wf
+    WS  whois.worldsite.ws
     YT  whois.nic.yt
-    HR  whois.dns.hr
-    PW  whois.nic.pw
 
     ASN.AU        whois.aunic.net
     COM.AU        whois.aunic.net
