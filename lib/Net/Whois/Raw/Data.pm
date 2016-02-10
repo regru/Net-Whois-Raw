@@ -144,7 +144,7 @@ our %servers = qw(
     NAME            whois.nic.name
     NET             whois.crsnic.net
     ORG             whois.pir.org
-    PRO             whois.registrypro.pro
+    PRO             whois.nic.pro
     TEL             whois-tel.neustar.biz
     TRAVEL          whois.nic.travel
 
