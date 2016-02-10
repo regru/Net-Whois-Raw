@@ -10,7 +10,7 @@ our @www_whois = qw(
     VN
     TJ
 );
-# Candidates for www_whois: DO, IO, MG, SH, TM, TP, ZA
+# Candidates for www_whois: DO, ES, IO, MG, SH, TM, TP, ZA
 
 our %servers = qw(
     RU                  whois.ripn.net
@@ -21,6 +21,7 @@ our %servers = qw(
     XN--80ASWG          whois.site.rs.corenic.net
     XN--80ASEHDB        whois.online.rs.corenic.net
     XN--80ADXHKS        whois.nic.xn--80adxhks
+    XN--P1ACF           whois.nic.xn--p1acf
 
     COM.RU              whois.nic.ru
     NET.RU              whois.nic.ru
@@ -143,7 +144,7 @@ our %servers = qw(
     NAME            whois.nic.name
     NET             whois.crsnic.net
     ORG             whois.pir.org
-    PRO             whois.registrypro.pro
+    PRO             whois.nic.pro
     TEL             whois-tel.neustar.biz
     TRAVEL          whois.nic.travel
 
@@ -296,17 +297,18 @@ our %servers = qw(
     HIPHOP          whois.uniregistry.net
     JUEGOS          whois.uniregistry.net
 
-    MENU            whois.nic.menu
-    UNO             whois.nic.uno
     BERLIN          whois.nic.berlin
-    KIWI            whois.dot-kiwi.com
     BUILD           whois.nic.build
     CLUB            whois.nic.club
+    KIWI            whois.dot-kiwi.com
     LUXURY          whois.nic.luxury
-    WIEN            whois.nic.wien
+    MENU            whois.nic.menu
     ONE             whois.nic.one
+    OOO             whois.nic.ooo
     TOP             whois.nic.top
     TRADING         whois.nic.trading
+    WIEN            whois.nic.wien
+    UNO             whois.nic.uno
 
     PINK            whois.afilias.net
     RED             whois.afilias.net
@@ -364,11 +366,7 @@ our %servers = qw(
     WEDDING         whois-dub.mm-registry.com
     WORK            whois-dub.mm-registry.com
     YOGA            whois-dub.mm-registry.com
-    OOO             whois-dub.mm-registry.com
 
-    TV  whois.nic.tv
-    WS  whois.worldsite.ws
-    NF  whois.nic.cx
     AC  whois.nic.ac
     AG  whois.nic.ag
     AM  whois.amnic.net
@@ -379,6 +377,7 @@ our %servers = qw(
     BG  whois.register.bg
     BJ  whois.nic.bj
     BR  whois.registro.br
+    BZ  whois2.afilias-grs.net
     CA  whois.cira.ca
     CD  whois.nic.cd
     CH  whois.nic.ch
@@ -407,6 +406,7 @@ our %servers = qw(
     HK  whois.hkirc.hk
     HM  whois.registry.hm
     HN  whois2.afilias-grs.net
+    HR  whois.dns.hr
     HT  whois.nic.ht
     IE  whois.domainregistry.ie
     IL  whois.isoc.org.il
@@ -423,7 +423,7 @@ our %servers = qw(
     KI  whois.nic.ki
     KR  whois.nic.or.kr
     KZ  whois.nic.kz
-    LA  whois.nic.la
+    LA  whois.centralnic.com
     LC  whois2.afilias-grs.net
     LI  whois.nic.li
     LT  whois.domreg.lt
@@ -441,6 +441,7 @@ our %servers = qw(
     MX  whois.nic.mx
     MY  whois.mynic.net.my
     NA  whois.na-nic.com.na
+    NF  whois.nic.cx
     NL  whois.domain-registry.nl
     NO  whois.norid.no
     NU  whois.nic.nu
@@ -449,6 +450,7 @@ our %servers = qw(
     PM  whois.nic.pm
     PR  whois.nic.pr
     PT  whois.dns.pt
+    PW  whois.centralnic.com
     RE  whois.nic.re
     RO  whois.rotld.ro
     RS  whois.rnids.rs
@@ -461,6 +463,7 @@ our %servers = qw(
     SI  whois.arnes.si
     SK  whois.sk-nic.sk
     SM  whois.ripe.net
+    SO  whois.nic.so
     ST  whois.nic.st
     TC  whois.adamsnames.tc
     TF  whois.nic.tf
@@ -470,6 +473,7 @@ our %servers = qw(
     TM  whois.nic.tm
     TO  whois.tonic.to
     TR  whois.nic.tr
+    TV  whois.nic.tv
     TW  whois.twnic.net.tw
     UA  whois.com.ua
     UK  whois.nic.uk
@@ -479,9 +483,8 @@ our %servers = qw(
     VE  whois.nic.ve
     VG  whois.adamsnames.tc
     WF  whois.nic.wf
+    WS  whois.worldsite.ws
     YT  whois.nic.yt
-    HR  whois.dns.hr
-    PW  whois.nic.pw
 
     ASN.AU        whois.aunic.net
     COM.AU        whois.aunic.net
@@ -672,7 +675,6 @@ our %servers = qw(
     WEB.ZA      whois.web.za
 
     XN--P1AG    ru.whois.i-dns.net
-    XN--P1AG    ru.whois.i-dns.net
     XN--J1AEF   whois.i-dns.net
     XN--E1APQ   whois.i-dns.net
     XN--C1AVG   whois.publicinterestregistry.net
@@ -711,15 +713,19 @@ our %servers = qw(
 
     BAR         whois.centralnic.com
     COLLEGE     whois.centralnic.com
+    CONTACT     whois.centralnic.com
     DESIGN      whois.centralnic.com
+    FAN         whois.centralnic.com
     FANS        whois.centralnic.com
     FEEDBACK    whois.centralnic.com
     HOST        whois.centralnic.com
     INK         whois.centralnic.com
     LOVE        whois.centralnic.com
     ONLINE      whois.centralnic.com
+    PID         whois.centralnic.com
     PRESS       whois.centralnic.com
     PROTECTION  whois.centralnic.com
+    REALTY      whois.centralnic.com
     REIT        whois.centralnic.com
     RENT        whois.centralnic.com
     REST        whois.centralnic.com
@@ -736,8 +742,6 @@ our %servers = qw(
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
-    SO          whois.nic.so
-    BZ          whois2.afilias-grs.net
     XXX         whois.nic.xxx
     MOSCOW      whois.nic.moscow
     TATAR       whois.nic.tatar
@@ -814,7 +818,7 @@ our %notfound = (
     'whois.crsnic.net'           => '^No match for',
     'whois.networksolutions.com' => '(?i)no match',
     'whois.dotmobiregistry.net'  => '^NOT FOUND',
-    'whois.nic.name'             => '^No match',
+    'whois.nic.name'             => '^No match for domain',
     'whois.iana.org'             => '^Domain \S+ not found',
     'whois.pir.org'              => '^NOT FOUND',
     'ccwhois.verisign-grs.com'   => '^No match for',
@@ -1324,41 +1328,59 @@ our %strip = (
         '^by this policy and accept that mTLD',
         '^WHOIS services in order to protect',
         '^integrity of the database.',
+        '^For more information on Whois',
     ],
     'whois.museum' => [
         '^%',
     ],
     'whois.nic.name' => [
-        '^Disclaimer: The Global Name Registry',
-        '^maintain the completeness',
-        '^guarantee that',
-        '^provided through',
-        '^any warranties',
-        '^HEREIN OR IN ANY',
-        '^ACCEPTED THAT THE GLOBAL',
-        '^ANY DAMAGES OF ANY KIND',
-        '^REPORT OR THE INFORMATION',
-        '^OMISSIONS OR MISSING',
-        '^INFORMATION PROVIDED',
-        '^CONTEMPLATION OF LEGAL',
-        '^DO SUCH RESULTS CONSTITUTE',
-        '^results of the Whois',
+        '^Disclaimer: VeriSign, Inc',
+        '^completeness and accuracy of',
+        '^that the results are error-free',
+        '^through the Whois service are on',
+        '^warranties',
+        '^BY USING THE WHOIS SERVICE AND',
+        '^HEREIN OR IN ANY REPORT GENERATED',
+        '^ACCEPTED THAT VERISIGN, INC',
+        '^ANY DAMAGES OF ANY KIND ARISING',
+        '^REPORT OR THE INFORMATION PROVIDED',
+        '^OMISSIONS OR MISSING INFORMATION',
+        '^INFORMATION PROVIDED BY THE WHOIS',
+        '^CONTEMPLATION OF LEGAL PROCEEDINGS',
+        '^DO SUCH RESULTS CONSTITUTE A LEGAL OPINION',
+        '^results of the Whois constitutes',
         '^conditions and limitations',
         '^lawful purposes, in particular',
-        '^obligations\.  Illegitimate uses',
+        '^obligations',
         '^limited to, unsolicited email',
         '^other improper purpose',
-        '^documented by The Global Name',
-        '^for any commercial purpose',
-        '^This is the \.name Tiered Access',
-        '^string "help"\. A whois web',
-        '^A full list of \.name',
-        '^\s+--------',
+        '^documented by VeriSign, Inc',
+        '^\s+\*\*\*',
+        '^For more information on Whois',
+        '^https\:',
     ],
     'whois.afilias.net' => [
         '^Access to AFILIAS WHOIS',
         '^[^A-Z]',
         '^Name Server: $',
+    ],
+    'whois.nic.me' => [
+        '^WHOIS TERMS & CONDITIONS',
+        '^assist persons in determining',
+        '^record in the \.ME registry',
+        '^\.ME Registry for',
+        '^guarantee its accuracy',
+        '^access\. You agree that',
+        '^and that, under no circumstances',
+        '^enable, or otherwise',
+        '^facsimile, or other',
+        '^advertising or solicitations',
+        '^existing customers',
+        '^processes that send',
+        '^except as reasonably necessary',
+        '^registrations\. All rights',
+        '^these terms at any time',
+        '^policy\.',
     ],
     'whois.nic.club' => [
         '>>>> Whois database was last updated [\s\w]+',
@@ -1432,22 +1454,12 @@ our %strip = (
         '^q',
     ],
     'whois.pir.org' => [
-        '^NOTICE\: Access to \.ORG WHOIS',
-        '^determining the contents',
-        '^registry database\. The data',
-        '^for informational purposes',
-        '^accuracy\.  This service',
-        '^that you will use this data',
-        '^circumstances will you use',
-        '^support the transmission by',
-        '^unsolicited, commercial',
-        '^the data recipient',
-        '^automated, electronic processes',
-        '^Registry Operator or any',
-        '^necessary to register domain',
-        '^rights reserved\. Public Interest',
-        '^time\. By submitting this query',
-        '^Name Server: $',
+        '^Access to Public Interest Registry',
+        '^cord is provided by Public Interest Registry',
+        '^use this data only for lawful purposes and that',
+        '^al advertising or solicitations',
+        '^or, a Registrar, or Afilias except',
+        '^By submitting this query',
     ],
     'whois.registrypro.pro' => [
         '^Whois data provided by RegistryPro',

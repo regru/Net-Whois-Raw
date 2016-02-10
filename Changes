@@ -1,5 +1,10 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.92    Feb 10 2016  Vadim Likhota
+    - fix clear disclaimer for .ME, .MOBY .NAME, and .ORG
+    - fix whois for .OOO, .LA, .PRO and .PW
+    - new tlds .CONTACT, .FAN, .PID and .REALTY
+
 2.91    Oct 28 2015 Vadim Likhota
     - even more new tlds of whois.centralnic.com
 
