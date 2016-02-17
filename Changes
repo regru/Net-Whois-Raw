@@ -1,5 +1,9 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.93               Vadim Likhota
+    - fix whois for .CC
+    - new tld .CLOUD
+
 2.92    Feb 10 2016  Vadim Likhota
     - fix clear disclaimer for .ME, .MOBY .NAME, and .ORG
     - fix whois for .OOO, .LA, .PRO and .PW

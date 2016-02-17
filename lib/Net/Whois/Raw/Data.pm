@@ -130,7 +130,7 @@ our %servers = qw(
     ASIA            whois.nic.asia
     BIZ             whois.biz
     CAT             whois.cat
-    CC              ccwhois.verisign-grs.com
+    CC              whois.nic.cc
     COM             whois.crsnic.net
     COOP            whois.nic.coop
     EDU             whois.educause.edu
@@ -299,6 +299,7 @@ our %servers = qw(
 
     BERLIN          whois.nic.berlin
     BUILD           whois.nic.build
+    CLOUD           whois.nic.cloud
     CLUB            whois.nic.club
     KIWI            whois.dot-kiwi.com
     LUXURY          whois.nic.luxury
