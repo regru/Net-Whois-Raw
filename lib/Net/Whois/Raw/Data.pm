@@ -23,103 +23,104 @@ our %servers = qw(
     XN--80ADXHKS        whois.nic.xn--80adxhks
     XN--P1ACF           whois.nic.xn--p1acf
 
-    COM.RU              whois.nic.ru
     NET.RU              whois.nic.ru
     ORG.RU              whois.nic.ru
     PP.RU               whois.nic.ru
-    RU.NET              whois.nic.ru
     INT.RU              whois.int.ru
 
-    BY                  whois.ripe.net
+    RU.NET              whois.flexireg.net
+    COM.RU              whois.flexireg.net
+    EXNET.SU            whois.flexireg.net
 
-    ABKHAZIA.SU         whois.nic.ru
-    ADYGEYA.RU          whois.nic.ru
-    ADYGEYA.SU          whois.nic.ru
-    AKTYUBINSK.SU       whois.nic.ru
+    ABKHAZIA.SU         whois.flexireg.net
+    ADYGEYA.RU          whois.flexireg.net
+    ADYGEYA.SU          whois.flexireg.net
+    AKTYUBINSK.SU       whois.flexireg.net
     AMURSK.RU           whois.nic.ru
-    ARKHANGELSK.SU      whois.nic.ru
-    ARMENIA.SU          whois.nic.ru
-    ASHGABAD.SU         whois.nic.ru
-    AZERBAIJAN.SU       whois.nic.ru
-    BALASHOV.SU         whois.nic.ru
-    BASHKIRIA.RU        whois.nic.ru
-    BASHKIRIA.SU        whois.nic.ru
+    ARKHANGELSK.SU      whois.flexireg.net
+    ARMENIA.SU          whois.flexireg.net
+    ASHGABAD.SU         whois.flexireg.net
+    AZERBAIJAN.SU       whois.flexireg.net
+    BALASHOV.SU         whois.flexireg.net
+    BASHKIRIA.RU        whois.flexireg.net
+    BASHKIRIA.SU        whois.flexireg.net
     BELGOROD.RU         whois.nic.ru
     BELGOROD.SU         whois.nic.ru
-    BIR.RU              whois.nic.ru
-    BRYANSK.SU          whois.nic.ru
-    BUKHARA.SU          whois.nic.ru
-    CBG.RU              whois.nic.ru
+    BIR.RU              whois.flexireg.net
+    BRYANSK.SU          whois.flexireg.net
+    BUKHARA.SU          whois.flexireg.net
+    CBG.RU              whois.flexireg.net
     CHELYABINSK.RU      whois.nic.ru
-    CHIMKENT.SU         whois.nic.ru
+    CHIMKENT.SU         whois.flexireg.net
     CMW.RU              whois.nic.ru
-    DAGESTAN.RU         whois.nic.ru
-    DAGESTAN.SU         whois.nic.ru
+    DAGESTAN.RU         whois.flexireg.net
+    DAGESTAN.SU         whois.flexireg.net
     DUDINKA.RU          whois.nic.ru
-    EAST-KAZAKHSTAN.SU  whois.nic.ru
-    EXNET.SU            whois.nic.ru
+    EAST-KAZAKHSTAN.SU  whois.flexireg.net
     FAREAST.RU          whois.nic.ru
-    GEORGIA.SU          whois.nic.ru
-    GROZNY.RU           whois.nic.ru
-    GROZNY.SU           whois.nic.ru
-    IVANOVO.SU          whois.nic.ru
-    JAMBYL.SU           whois.nic.ru
+    GEORGIA.SU          whois.flexireg.net
+    GROZNY.RU           whois.flexireg.net
+    GROZNY.SU           whois.flexireg.net
+    IVANOVO.SU          whois.flexireg.net
+    JAMBYL.SU           whois.flexireg.net
     JAR.RU              whois.nic.ru
     JOSHKAR-OLA.RU      whois.nic.ru
-    KALMYKIA.RU         whois.nic.ru
-    KALMYKIA.SU         whois.nic.ru
-    KALUGA.SU           whois.nic.ru
-    KARACOL.SU          whois.nic.ru
-    KARAGANDA.SU        whois.nic.ru
-    KARELIA.SU          whois.nic.ru
+    KALMYKIA.RU         whois.flexireg.net
+    KALMYKIA.SU         whois.flexireg.net
+    KALUGA.SU           whois.flexireg.net
+    KARACOL.SU          whois.flexireg.net
+    KARAGANDA.SU        whois.flexireg.net
+    KARELIA.SU          whois.flexireg.net
     KCHR.RU             whois.nic.ru
-    KHAKASSIA.SU        whois.nic.ru
+    KHAKASSIA.SU        whois.flexireg.net
     KOMI.SU             whois.nic.ru
-    KRASNODAR.SU        whois.nic.ru
-    KURGAN.SU           whois.nic.ru
-    KUSTANAI.RU         whois.nic.ru
-    KUSTANAI.SU         whois.nic.ru
-    MANGYSHLAK.SU       whois.nic.ru
-    MARINE.RU           whois.nic.ru
-    MORDOVIA.RU         whois.nic.ru
-    MORDOVIA.SU         whois.nic.ru
-    MSK.RU              whois.nic.ru
-    MSK.SU              whois.nic.ru
-    MURMANSK.SU         whois.nic.ru
-    MYTIS.RU            whois.nic.ru
-    NALCHIK.RU          whois.nic.ru
-    NALCHIK.SU          whois.nic.ru
-    NAVOI.SU            whois.nic.ru
+    KRASNODAR.SU        whois.flexireg.net
+    KURGAN.SU           whois.flexireg.net
+    KUSTANAI.RU         whois.flexireg.net
+    KUSTANAI.SU         whois.flexireg.net
+    LENUG.SU            whois.flexireg.net
+    MANGYSHLAK.SU       whois.flexireg.net
+    MARINE.RU           whois.flexireg.net
+    MORDOVIA.RU         whois.flexireg.net
+    MORDOVIA.SU         whois.flexireg.net
+    MSK.RU              whois.flexireg.net
+    MSK.SU              whois.flexireg.net
+    MURMANSK.SU         whois.flexireg.net
+    MYTIS.RU            whois.flexireg.net
+    NALCHIK.RU          whois.flexireg.net
+    NALCHIK.SU          whois.flexireg.net
+    NAVOI.SU            whois.flexireg.net
     NNOV.RU             whois.nnov.ru
     NORILSK.RU          whois.nic.ru
-    NORTH-KAZAKHSTAN.SU whois.nic.ru
-    NOV.RU              whois.nic.ru
-    NOV.SU              whois.nic.ru
-    OBNINSK.SU          whois.nic.ru
+    NORTH-KAZAKHSTAN.SU whois.flexireg.net
+    NOV.RU              whois.flexireg.net
+    NOV.SU              whois.flexireg.net
+    OBNINSK.SU          whois.flexireg.net
     PALANA.RU           whois.nic.ru
-    PENZA.SU            whois.nic.ru
-    POKROVSK.SU         whois.nic.ru
-    PYATIGORSK.RU       whois.nic.ru
-    RU.NET              whois.nic.ru
+    PENZA.SU            whois.flexireg.net
+    POKROVSK.SU         whois.flexireg.net
+    PYATIGORSK.RU       whois.flexireg.net
     SIMBIRSK.RU         whois.nic.ru
-    SOCHI.SU            whois.nic.ru
-    SPB.RU              whois.nic.ru
-    SPB.SU              whois.nic.ru
-    TASHKENT.SU         whois.nic.ru
-    TERMEZ.SU           whois.nic.ru
-    TOGLIATTI.SU        whois.nic.ru
-    TROITSK.SU          whois.nic.ru
+    SOCHI.SU            whois.flexireg.net
+    SPB.RU              whois.flexireg.net
+    SPB.SU              whois.flexireg.net
+    TASHKENT.SU         whois.flexireg.net
+    TERMEZ.SU           whois.flexireg.net
+    TOGLIATTI.SU        whois.flexireg.net
+    TROITSK.SU          whois.flexireg.net
     TSARITSYN.RU        whois.nic.ru
-    TSELINOGRAD.SU      whois.nic.ru
-    TULA.SU             whois.nic.ru
-    TUVA.SU             whois.nic.ru
-    VLADIKAVKAZ.RU      whois.nic.ru
-    VLADIKAVKAZ.SU      whois.nic.ru
-    VLADIMIR.RU         whois.nic.ru
-    VLADIMIR.SU         whois.nic.ru
-    VOLOGDA.SU          whois.nic.ru
+    TSELINOGRAD.SU      whois.flexireg.net
+    TULA.SU             whois.flexireg.net
+    TUVA.SU             whois.flexireg.net
+    VLADIKAVKAZ.RU      whois.flexireg.net
+    VLADIKAVKAZ.SU      whois.flexireg.net
+    VLADIMIR.RU         whois.flexireg.net
+    VLADIMIR.SU         whois.flexireg.net
+    VOLOGDA.SU          whois.flexireg.net
     YAKUTIA.SU          whois.nic.ru
     YEKATERINBURG.RU    whois.nic.ru
+
+    BY                  whois.ripe.net
 
     NS     whois.nsiregistry.net
     RIPE   whois.ripe.net
@@ -147,7 +148,7 @@ our %servers = qw(
     PRO             whois.nic.pro
     TEL             whois-tel.neustar.biz
     TRAVEL          whois.nic.travel
-
+    
     ACADEMY         whois.donuts.co
     ACCOUNTANTS     whois.donuts.co
     AGENCY          whois.donuts.co
@@ -277,45 +278,65 @@ our %servers = qw(
     VENTURES        whois.donuts.co
     VIAJES          whois.donuts.co
     VILLAS          whois.donuts.co
+    VIN             whois.donuts.co
     VISION          whois.donuts.co
     VOYAGE          whois.donuts.co
     WATCH           whois.donuts.co
+    WINE            whois.donuts.co
     WORKS           whois.donuts.co
     WTF             whois.donuts.co
     ZONE            whois.donuts.co
 
-    SEXY            whois.uniregistry.net
-    TATTOO          whois.uniregistry.net
-    LINK            whois.uniregistry.net
-    GUITARS         whois.uniregistry.net
-    GIFT            whois.uniregistry.net
-    PICS            whois.uniregistry.net
-    PHOTO           whois.uniregistry.net
     AUDIO           whois.uniregistry.net
+    AUTO            whois.uniregistry.net
     BLACKFRIDAY     whois.uniregistry.net
+    CAR             whois.uniregistry.net
+    CARS            whois.uniregistry.net
     CHRISTMAS       whois.uniregistry.net
+    GIFT            whois.uniregistry.net
+    GUITARS         whois.uniregistry.net
     HIPHOP          whois.uniregistry.net
     JUEGOS          whois.uniregistry.net
+    LINK            whois.uniregistry.net
+    PHOTO           whois.uniregistry.net
+    PICS            whois.uniregistry.net
+    SEXY            whois.uniregistry.net
+    TATTOO          whois.uniregistry.net
 
     BERLIN          whois.nic.berlin
+    BEST            whois.nic.best
+    BROKER          whois.nic.broker
     BUILD           whois.nic.build
+    CAREER          whois.nic.career
+    COURSES         whois.nic.courses
     CLOUD           whois.nic.cloud
     CLUB            whois.nic.club
+    EARTH           whois.nic.earth
+    FILM            whois.nic.film
+    FOREX           whois.nic.forex
     KIWI            whois.dot-kiwi.com
     LUXURY          whois.nic.luxury
+    MEN             whois.nic.men
     MENU            whois.nic.menu
+    MOSCOW          whois.nic.moscow
     ONE             whois.nic.one
     OOO             whois.nic.ooo
+    SRL             whois.nic.srl
+    STUDY           whois.nic.study
+    TATAR           whois.nic.tatar
     TOP             whois.nic.top
     TRADING         whois.nic.trading
     WIEN            whois.nic.wien
     UNO             whois.nic.uno
+    XXX             whois.nic.xxx
 
     PINK            whois.afilias.net
     RED             whois.afilias.net
     SHIKSHA         whois.afilias.net
     KIM             whois.afilias.net
     BLUE            whois.afilias.net
+    PET             whois.afilias.net
+    BET             whois.afilias.net
 
     ACTOR           whois.unitedtld.com
     AIRFORCE        whois.unitedtld.com
@@ -367,6 +388,10 @@ our %servers = qw(
     WEDDING         whois-dub.mm-registry.com
     WORK            whois-dub.mm-registry.com
     YOGA            whois-dub.mm-registry.com
+
+    FAMILY          whois.rightside.co
+    LIVE            whois.rightside.co
+    STUDIO          whois.rightside.co
 
     AC  whois.nic.ac
     AG  whois.nic.ag
@@ -743,9 +768,6 @@ our %servers = qw(
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
-    XXX         whois.nic.xxx
-    MOSCOW      whois.nic.moscow
-    TATAR       whois.nic.tatar
 );
 
 

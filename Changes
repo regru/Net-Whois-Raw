@@ -1,8 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
-2.93               Vadim Likhota
-    - fix whois for .CC
-    - new tld .CLOUD
+2.93    Mar 06 2016 Vadim Likhota
+    - fix whois for .CC, .RU.NET, .COM.RU, .EXNET.RU, *.RU & *.SU geodomains
+    - new tlds .CLOUD, .BET, .PET, .AUTO, .CAR, .CARS, .BEST, .BROKER, .CAREER, .COURSES, .EARTH, .FILM, .FOREX, .MEN, .SRL, .STUDY, .FAMILY, .LIVE, .STUDIO
 
 2.92    Feb 10 2016  Vadim Likhota
     - fix clear disclaimer for .ME, .MOBY .NAME, and .ORG
