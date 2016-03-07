@@ -47,7 +47,7 @@ ok( Net::Whois::Raw::Common::get_real_whois_query( 'reg.ru',    'whois.ripn.net'
 
 is( Net::Whois::Raw::Common::get_server( 'reg.ru' ), 'whois.ripn.net', 'get_server' );
 is( Net::Whois::Raw::Common::get_server( 'nic.vn' ), 'www_whois',      'get_server' );
-is( Net::Whois::Raw::Common::get_server( undef, undef, 'spb.ru' ), 'whois.nic.ru', 'get_server' );
+is( Net::Whois::Raw::Common::get_server( undef, undef, 'spb.ru' ), 'whois.flexireg.net', 'get_server' );
 
 
 for ('ReferralServer: rwhois://rwhois.theplanet.com:4321') {
