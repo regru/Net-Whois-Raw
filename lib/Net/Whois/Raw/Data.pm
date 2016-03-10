@@ -477,6 +477,7 @@ our %servers = qw(
     PR  whois.nic.pr
     PT  whois.dns.pt
     PW  whois.centralnic.com
+    QA  whois.registry.qa
     RE  whois.nic.re
     RO  whois.rotld.ro
     RS  whois.rnids.rs
@@ -1031,6 +1032,7 @@ our %notfound = (
     'whois.nic.moscow'            => 'No entries found for the selected source',
     'whois.nic.tatar'             => 'No entries found for the selected source',
     'whois.nic.press'             => 'DOMAIN NOT FOUND',
+    'whois.registry.qa'           => 'No Data Found',
 );
 
 # Common whois stripping REs
