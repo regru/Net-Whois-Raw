@@ -163,6 +163,7 @@ our %servers = qw(
     CAPITAL         whois.donuts.co
     CARDS           whois.donuts.co
     CARE            whois.donuts.co
+    CAFE            whois.donuts.co
     CAREERS         whois.donuts.co
     CASH            whois.donuts.co
     CATERING        whois.donuts.co
