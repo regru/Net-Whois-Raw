@@ -1,5 +1,9 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.94    Mar 31 2016 Alexander Nalobin
+    - new tlds .CAFE, .QA
+    - new 'not found' message of whois-dub.mm-registry.com
+
 2.93    Mar 06 2016 Vadim Likhota
     - fix whois for .CC, .RU.NET, .COM.RU, .EXNET.RU, *.RU & *.SU geodomains
     - new tlds .CLOUD, .BET, .PET, .AUTO, .CAR, .CARS, .BEST, .BROKER, .CAREER, .COURSES, .EARTH, .FILM, .FOREX, .MEN, .SRL, .STUDY, .FAMILY, .LIVE, .STUDIO

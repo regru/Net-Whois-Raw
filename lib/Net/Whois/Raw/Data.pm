@@ -865,7 +865,7 @@ our %notfound = (
     'whois.nic.wien'             => 'No match',
 
     'whois.publicinterestregistry.net' => 'NOT FOUND',
-    'whois-dub.mm-registry.com'        => 'Status: Not Registered',
+    'whois-dub.mm-registry.com'        => 'The queried object does not exist',
 
     'whois.nic.ag'            => 'NOT FOUND',
     'whois.nic.as'            => 'Domain Not Found',
