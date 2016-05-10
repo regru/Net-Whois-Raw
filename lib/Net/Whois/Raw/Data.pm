@@ -770,6 +770,7 @@ our %servers = qw(
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
+    VIP         whois.nic.vip
 );
 
 
