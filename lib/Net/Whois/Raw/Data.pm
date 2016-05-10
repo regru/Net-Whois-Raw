@@ -965,6 +965,7 @@ our %notfound = (
     'whois.nic.wf'            => 'No entries found',
     'whois.nic.yt'            => 'No entries found',
     'whois.nic.pw'            => 'DOMAIN NOT FOUND',
+    'whois.nic.vip'           => 'The queried object does not exist: This object could not be found',
 
     'whois.nsiregistry.net'     => 'No match for',
 
