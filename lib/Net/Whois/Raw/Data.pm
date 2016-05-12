@@ -771,6 +771,8 @@ our %servers = qw(
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
     VIP         whois.nic.vip
+    GAME        whois.nic.game
+    PROMO       whois.nic.promo
 );
 
 

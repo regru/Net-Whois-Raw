@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.95    Mar 31 2016 Anton Chuvashev
+    - new tlds .GAME, .PROMO
+
 2.94    Mar 31 2016 Alexander Nalobin
     - new tlds .CAFE, .QA
     - new 'not found' message of whois-dub.mm-registry.com
