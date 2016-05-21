@@ -478,6 +478,7 @@ our %servers = qw(
     PR  whois.nic.pr
     PT  whois.dns.pt
     PW  whois.centralnic.com
+    PY  whois.i-dns.net
     QA  whois.registry.qa
     RE  whois.nic.re
     RO  whois.rotld.ro
@@ -513,6 +514,8 @@ our %servers = qw(
     WF  whois.nic.wf
     WS  whois.worldsite.ws
     YT  whois.nic.yt
+
+    PRIV.AT       whois.nic.priv.at
 
     ASN.AU        whois.aunic.net
     COM.AU        whois.aunic.net
@@ -697,10 +700,10 @@ our %servers = qw(
     ORG.UK      whois.nic.uk
     PLC.UK      whois.nic.uk
 
-    CO.ZA       whois.co.za
-    NET.ZA      whois.net.za
-    ORG.ZA      whois.org.za
-    WEB.ZA      whois.web.za
+    CO.ZA       whois.registry.net.za
+    NET.ZA      net-whois.registry.net.za
+    ORG.ZA      org-whois.registry.net.za
+    WEB.ZA      web-whois.registry.net.za
 
     XN--P1AG    ru.whois.i-dns.net
     XN--J1AEF   whois.i-dns.net
@@ -1038,6 +1041,41 @@ our %notfound = (
     'whois.nic.tatar'             => 'No entries found for the selected source',
     'whois.nic.press'             => 'DOMAIN NOT FOUND',
     'whois.registry.qa'           => 'No Data Found',
+
+    'whois.registry.net.za'       => '^Available',
+    'net-whois.registry.net.za'   => '^Available',
+    'org-whois.registry.net.za'   => '^Available',
+    'www-whois.registry.net.za'   => '^Available',
+
+    'whois.i-dns.net'           => '^NOMATCH',
+    'whois.dns.hr'              => 'No entries found',
+    'whois.flexireg.net'        => 'Domain not found',
+    'whois.netcom.cm'           => 'No Object Found',
+    'whois.nic.priv.at'         => 'No entries found for the selected source',
+    'whois.nic.ac'              => 'is available for purchase',
+    'whois.nic.best'            => 'The queried object does not exist',
+    'whois.nic.bj'              => 'No Object Found',
+    'whois.nic.broker'          => 'No match for',
+    'whois.nic.career'          => 'No match for',
+    'whois.nic.cc'              => 'No match for',
+    'whois.nic.cloud'           => 'No Data Found',
+    'whois.nic.courses'         => 'No Data Found',
+    'whois.nic.earth'           => 'The queried object does not exist',
+    'whois.nic.film'            => 'No Data Found',
+    'whois.nic.forex'           => 'No match for',
+    'whois.nic.men'             => 'No Data Found',
+    'whois.nic.ooo'             => 'No match for',
+    'whois.nic.priv.at'         => 'No entries found for the selected source',
+    'whois.nic.pro'             => 'NOT FOUND',
+    'whois.nic.so'              => 'Not found',
+    'whois.nic.srl'             => 'NOT FOUND',
+    'whois.nic.study'           => 'No Data Found',
+    'whois.nic.top'             => 'The queried object does not exist',
+    'whois.nic.trading'         => 'No match for',
+    'whois.nic.tv'              => 'No match for',
+    'whois.nic.xn--p1acf'       => 'No Object Found',
+    'whois.rightside.co'        => 'Domain not found',
+    'whois.sk-nic.sk'           => 'Not found',
 );
 
 # Common whois stripping REs
@@ -1325,6 +1363,7 @@ our %strip = (
     'whois.dotgov.gov' => [
         '^% DOTGOV WHOIS Server ready',
         '^Please be advised that this whois server only',
+        'No match for',
     ],
     'whois.nic.mil' => [
         '^To single out one record',
@@ -1646,7 +1685,7 @@ our %strip = (
         '^%',
     ],
     'whois.dns.be' => [
-        '^%',
+        'Status:\s+AVAILABLE',
     ],
     'whois.registro.br' => [
         '^%',
@@ -2582,7 +2621,7 @@ our %strip = (
 
         '^Access to the whois service is rate limited. For more information, please',
         '^see https://registrar-console.centralnic.com/pub/whois_guidance.',
-    ]
+    ],
 );
 
 our %exceed = (
@@ -2605,6 +2644,8 @@ our %exceed = (
     'whois.nic.ch'   => 'You have exceeded this limit',
     'whois.nic.cz'   => 'Your connection limit exceeded',
     'whois.name.com' => 'Too many connection attempts. Please try again in a few seconds.',
+    'whois.netcom.cm' => 'Lookup quota exceeded',
+    'whois.nic.bj'    => 'Lookup quota exceeded',
 );
 
 our $default_ban_time = 60;
