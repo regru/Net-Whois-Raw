@@ -1,7 +1,11 @@
 Revision history for Perl module Net::Whois::Raw.
 
-2.95    Mar 31 2016 Anton Chuvashev
+2.96    Mar 31 2016 Anton Chuvashev
     - new tlds .GAME, .PROMO
+
+2.95    May 24 2016 Alexander Nalobin
+    - new tld .VIP
+    - Update ZA, PRIV.AT whois, not available/exceed sentences thanx to @zdm
 
 2.94    Mar 31 2016 Alexander Nalobin
     - new tlds .CAFE, .QA
