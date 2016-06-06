@@ -14,6 +14,9 @@ our @www_whois = qw(
 
 our %servers = qw(
     RU                  whois.ripn.net
+    NET.RU              whois.ripn.net
+    ORG.RU              whois.ripn.net
+    PP.RU               whois.ripn.net
     SU                  whois.ripn.net
     XN--P1AI            whois.ripn.net
     XN--D1ACJ3B         whois.ripn.net
@@ -23,9 +26,6 @@ our %servers = qw(
     XN--80ADXHKS        whois.nic.xn--80adxhks
     XN--P1ACF           whois.nic.xn--p1acf
 
-    NET.RU              whois.nic.ru
-    ORG.RU              whois.nic.ru
-    PP.RU               whois.nic.ru
     INT.RU              whois.int.ru
 
     RU.NET              whois.flexireg.net
@@ -387,6 +387,7 @@ our %servers = qw(
     NRW             whois-dub.mm-registry.com
     SURF            whois-dub.mm-registry.com
     WEDDING         whois-dub.mm-registry.com
+    VIP             whois-dub.mm-registry.com
     WORK            whois-dub.mm-registry.com
     YOGA            whois-dub.mm-registry.com
 
@@ -763,6 +764,7 @@ our %servers = qw(
     SECURITY    whois.centralnic.com
     SITE        whois.centralnic.com
     SPACE       whois.centralnic.com
+    STORE       whois.centralnic.com
     TECH        whois.centralnic.com
     THEATRE     whois.centralnic.com
     TICKETS     whois.centralnic.com
