@@ -1,10 +1,18 @@
 Revision history for Perl module Net::Whois::Raw.
 
-2.96    Mar 31 2016 Anton Chuvashev
+2.98    Jun 22 2016 Anton Chuvashev
     - new tlds .TUBE
 
-2.95    Mar 31 2016 Anton Chuvashev
+2.97    Jun 06 2016 Vadim Likhota
+    - fix whois for .NET.RU, .ORG.RU, .PP.RU
+    - new zones .STORE, .VIP
+
+2.96    Mar 31 2016 Anton Chuvashev
     - new tlds .GAME, .PROMO
+
+2.95    May 24 2016 Alexander Nalobin
+    - new tld .VIP
+    - Update ZA, PRIV.AT whois, not available/exceed sentences thanx to @zdm
 
 2.94    Mar 31 2016 Alexander Nalobin
     - new tlds .CAFE, .QA
