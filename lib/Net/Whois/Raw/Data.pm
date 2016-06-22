@@ -766,6 +766,7 @@ our %servers = qw(
     WEBSITE     whois.centralnic.com
     WIKI        whois.centralnic.com
     XYZ         whois.centralnic.com
+    TUBE        whois.nic.tube
 
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz

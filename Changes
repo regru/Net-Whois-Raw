@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.96    Mar 31 2016 Anton Chuvashev
+    - new tlds .TUBE
+
 2.95    Mar 31 2016 Anton Chuvashev
     - new tlds .GAME, .PROMO
 
