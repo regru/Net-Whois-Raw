@@ -219,6 +219,7 @@ our %servers = qw(
     GRAPHICS        whois.donuts.co
     GRATIS          whois.donuts.co
     GRIPE           whois.donuts.co
+    GROUP           whois.donuts.co
     GUIDE           whois.donuts.co
     GURU            whois.donuts.co
     HOLDINGS        whois.donuts.co

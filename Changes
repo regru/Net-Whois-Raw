@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99    Jul 05 2016 Andrey Voyshko
+    - new tlds .GROUP
+
 2.98    Jun 22 2016 Anton Chuvashev
     - new tlds .TUBE
 
