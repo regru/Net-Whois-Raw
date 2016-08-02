@@ -746,6 +746,7 @@ our %servers = qw(
     UY.COM      whois.centralnic.com
     ZA.COM      whois.centralnic.com
 
+    ART         whois.centralnic.com
     BAR         whois.centralnic.com
     COLLEGE     whois.centralnic.com
     CONTACT     whois.centralnic.com
@@ -753,6 +754,7 @@ our %servers = qw(
     FAN         whois.centralnic.com
     FANS        whois.centralnic.com
     FEEDBACK    whois.centralnic.com
+    FORUM       whois.centralnic.com
     HOST        whois.centralnic.com
     INK         whois.centralnic.com
     LOVE        whois.centralnic.com
