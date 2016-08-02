@@ -138,7 +138,7 @@ our %servers = qw(
     GOV             whois.dotgov.gov
     INFO            whois.afilias.net
     INT             whois.iana.org
-    JOBS            jobswhois.verisign-grs.com
+    JOBS            whois.nic.jons
     MIL             whois.nic.mil
     MOBI            whois.dotmobiregistry.net
     MUSEUM          whois.museum
@@ -328,6 +328,7 @@ our %servers = qw(
     TATAR           whois.nic.tatar
     TOP             whois.nic.top
     TRADING         whois.nic.trading
+    TUBE            whois.nic.tube
     WIEN            whois.nic.wien
     UNO             whois.nic.uno
     XXX             whois.nic.xxx
@@ -338,6 +339,7 @@ our %servers = qw(
     KIM             whois.afilias.net
     BLUE            whois.afilias.net
     PET             whois.afilias.net
+    PROMO           whois.afilias.net
     BET             whois.afilias.net
 
     ACTOR           whois.unitedtld.com
@@ -772,7 +774,6 @@ our %servers = qw(
     WEBSITE     whois.centralnic.com
     WIKI        whois.centralnic.com
     XYZ         whois.centralnic.com
-    TUBE        whois.nic.tube
 
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
@@ -1029,7 +1030,7 @@ our %notfound = (
      # 'whois.yournamemonkey.com' -- need try again
     'whois.cnnic.net.cn'        => 'no matching record',
     'whois.nic.co'              => 'Not found: \S+',
-    'me.whois-servers.net'      => 'NOT FOUND',
+    'whois.nic.me'              => 'NOT FOUND',
     'whois.domain.kg'           => 'Data not found. This domain is available for registration.',
     'whois.nic.one'             => 'No Data Found',
 

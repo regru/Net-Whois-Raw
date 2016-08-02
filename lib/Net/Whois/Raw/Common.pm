@@ -183,7 +183,8 @@ sub get_server {
                $Net::Whois::Raw::Data::servers{ 'NS' };
     }
     else {
-            my $cname = "$tld.whois-servers.net";
+            #my $cname = "$tld.whois-servers.net";
+            my $cname = "whois.nic.$tld";
         $srv = $Net::Whois::Raw::Data::servers{ $tld } || $cname;
     }
 
