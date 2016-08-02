@@ -138,7 +138,7 @@ our %servers = qw(
     GOV             whois.dotgov.gov
     INFO            whois.afilias.net
     INT             whois.iana.org
-    JOBS            whois.nic.jons
+    JOBS            whois.nic.jobs
     MIL             whois.nic.mil
     MOBI            whois.dotmobiregistry.net
     MUSEUM          whois.museum
