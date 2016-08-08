@@ -454,7 +454,7 @@ our %servers = qw(
     KI  whois.nic.ki
     KR  whois.nic.or.kr
     KZ  whois.nic.kz
-    LA  whois.centralnic.com
+    LA  whois.nic.com
     LC  whois2.afilias-grs.net
     LI  whois.nic.li
     LT  whois.domreg.lt
