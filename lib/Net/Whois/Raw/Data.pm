@@ -140,7 +140,7 @@ our %servers = qw(
     INT             whois.iana.org
     JOBS            whois.nic.jobs
     MIL             whois.nic.mil
-    MOBI            whois.dotmobiregistry.net
+    MOBI            whois.nic.mobi
     MUSEUM          whois.museum
     NAME            whois.nic.name
     NET             whois.crsnic.net

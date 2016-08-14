@@ -2,7 +2,7 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.xx    Aug 01 2016 Vadim Likhota
     - new tlds .PROMO, .ART, .FORUM
-    - fix whois for .JOBS, .LA
+    - fix whois for .JOBS, .LA, .MOBI
     - set default whois whois.nic.TLD
 
 2.99    Jul 05 2016 Andrey Voyshko
