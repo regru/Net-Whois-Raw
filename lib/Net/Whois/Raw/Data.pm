@@ -498,6 +498,7 @@ our %servers = qw(
     SM  whois.ripe.net
     SO  whois.nic.so
     ST  whois.nic.st
+    SX  whois.sx
     TC  whois.adamsnames.tc
     TF  whois.nic.tf
     TH  whois.nic.uk
