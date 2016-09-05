@@ -171,12 +171,16 @@ sub recursive_whois {
     my $lines = whois_query( $dom, $srv, $is_ns );
     my $whois = join("", @{$lines});
 
-    my ($newsrv, $registrar);
+    my ($newsrv, $registrar, $wsrv);
     foreach (@{$lines}) {
-            $registrar ||= /Registrar/ || /Registered through/;
+        $registrar ||= /Registrar/ || /Registered through/;
 
-        if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
-            $newsrv = lc $1;
+        if ( !$norecurse  &&  !$wsrv  &&  /(?:Whois|WHOIS) Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
+            $wsrv = lc $1;
+        }
+
+        if ( $registrar  &&  !$norecurse  &&  $wsrv  &&  !$newsrv ) {
+            $newsrv = $wsrv;
         }
         elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
             return recursive_whois( "=$dom", $srv, $was_srv );
@@ -187,14 +191,14 @@ sub recursive_whois {
         }
         elsif (/Contact information can be found in the (\S+)\s+database/) {
             $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $1 };
-            }
+        }
         elsif ((/OrgID:\s+(\w+)/ || /descr:\s+(\w+)/) && Net::Whois::Raw::Common::is_ipaddr($dom)) {
             my $val = $1;
             if($val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/) {
                 $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $val };
                 last;
             }
-            }
+        }
         elsif (/^\s+Maintainer:\s+RIPE\b/ && Net::Whois::Raw::Common::is_ipaddr($dom)) {
             $newsrv = $Net::Whois::Raw::Data::servers{RIPE};
         }
