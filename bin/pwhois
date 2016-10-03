@@ -93,7 +93,8 @@ eval {
     my ($result, $result_server);
     my $which_whois =
         $return_first ? 'QRY_FIRST' :
-        $return_all   ? 'QRY_ALL'   : 'QRY_LAST';
+        $return_all   ? 'QRY_ALL'   :
+        $return_last  ? 'QRY_LAST'  : '' ;
 
     ($result, $result_server) =
         Net::Whois::Raw::get_whois( $dom, $server, $which_whois );
@@ -214,6 +215,9 @@ sub validate_domain {
 
     $dom =~ /(.+?)\.([^.]+)$/;
     my ($name, $tld) = ($1, $2);
+
+    # query with tld only
+    return 1 unless $name;
 
     return 0 if $name =~ /^-/;
     return 0 if $name =~ /-$/;

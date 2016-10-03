@@ -1,5 +1,7 @@
 Revision history for Perl module Net::Whois::Raw.
 
+    - whois.iana.org for tld only query
+
 2.99002  Oct 03 2016 Anton Chuvashev
     - new tld .HELP
 

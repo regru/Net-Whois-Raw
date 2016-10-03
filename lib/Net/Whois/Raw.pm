@@ -60,7 +60,10 @@ sub whois_config_data {
 sub whois {
     my ($dom, $server, $which_whois) = @_;
 
-    $which_whois ||= 'QRY_LAST';
+    unless ( $which_whois ) {
+        my ( undef, $tld ) = Net::Whois::Raw::Common::split_domain( $dom );
+        $which_whois = $Net::Whois::Raw::Data::default_last_tlds{ uc $tld } ? 'QRY_LAST' : 'QRY_FIRST' ;
+    }
 
     my $res = Net::Whois::Raw::Common::get_from_cache( "$dom-$which_whois", $CACHE_DIR, $CACHE_TIME );
 
@@ -93,7 +96,11 @@ sub whois {
 # obtain whois
 sub get_whois {
     my ($dom, $srv, $which_whois) = @_;
-    $which_whois ||= 'QRY_LAST';
+
+    unless ( $which_whois ) {
+        my ( undef, $tld ) = Net::Whois::Raw::Common::split_domain( $dom );
+        $which_whois = $Net::Whois::Raw::Data::default_last_tlds{ uc $tld } ? 'QRY_LAST' : 'QRY_FIRST' ;
+    }
 
     my $whois = get_all_whois( $dom, $srv, $which_whois eq 'QRY_FIRST' )
         or return undef;

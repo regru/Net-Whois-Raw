@@ -148,7 +148,7 @@ our %servers = qw(
     PRO             whois.nic.pro
     TEL             whois-tel.neustar.biz
     TRAVEL          whois.nic.travel
-    
+
     ACADEMY         whois.donuts.co
     ACCOUNTANTS     whois.donuts.co
     AGENCY          whois.donuts.co
@@ -785,6 +785,17 @@ our %servers = qw(
     VIP         whois.nic.vip
     GAME        whois.nic.game
     PROMO       whois.nic.promo
+
+    NOTLD       whois.iana.org
+);
+
+
+our %default_last_tlds = qw(
+    COM         whois.crsnic.net
+    NET         whois.crsnic.net
+    CC          whois.nic.cc
+    TV          whois.nic.tv
+    JOBS        whois.nic.jobs
 );
 
 
