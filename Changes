@@ -1,6 +1,7 @@
 Revision history for Perl module Net::Whois::Raw.
 
-    - new tlds .SX
+2.99002  Oct 03 2016 Anton Chuvashev
+    - new tld .HELP
 
 2.99001  Aug 01 2016 Vadim Likhota
     - new tlds .PROMO, .ART, .FORUM
@@ -9,6 +10,7 @@ Revision history for Perl module Net::Whois::Raw.
 
 2.99    Jul 05 2016 Andrey Voyshko
     - new tlds .GROUP
+    - new tlds .SX
 
 2.98    Jun 22 2016 Anton Chuvashev
     - new tlds .TUBE

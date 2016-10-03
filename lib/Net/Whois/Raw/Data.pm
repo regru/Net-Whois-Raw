@@ -304,6 +304,7 @@ our %servers = qw(
     PICS            whois.uniregistry.net
     SEXY            whois.uniregistry.net
     TATTOO          whois.uniregistry.net
+    HELP            whois.uniregistry.net
 
     BERLIN          whois.nic.berlin
     BEST            whois.nic.best
