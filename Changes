@@ -1,6 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+      Oct 03 2016 Vadim Likhota
     - whois.iana.org for tld only query
+    - new tlds .RADIO.AM, .RADIO.FM, .SHOP, .SHOPPING, .GAMES
 
 2.99002  Oct 03 2016 Anton Chuvashev
     - new tld .HELP

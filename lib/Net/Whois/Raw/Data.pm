@@ -258,6 +258,7 @@ our %servers = qw(
     SCHULE          whois.donuts.co
     SERVICES        whois.donuts.co
     SHOES           whois.donuts.co
+    SHOPPING        whois.donuts.co
     SINGLES         whois.donuts.co
     SOLAR           whois.donuts.co
     SOLUTIONS       whois.donuts.co
@@ -295,8 +296,10 @@ our %servers = qw(
     CAR             whois.uniregistry.net
     CARS            whois.uniregistry.net
     CHRISTMAS       whois.uniregistry.net
+    GAME            whois.uniregistry.net
     GIFT            whois.uniregistry.net
     GUITARS         whois.uniregistry.net
+    HELP            whois.uniregistry.net
     HIPHOP          whois.uniregistry.net
     JUEGOS          whois.uniregistry.net
     LINK            whois.uniregistry.net
@@ -304,7 +307,6 @@ our %servers = qw(
     PICS            whois.uniregistry.net
     SEXY            whois.uniregistry.net
     TATTOO          whois.uniregistry.net
-    HELP            whois.uniregistry.net
 
     BERLIN          whois.nic.berlin
     BEST            whois.nic.best
@@ -324,6 +326,7 @@ our %servers = qw(
     MOSCOW          whois.nic.moscow
     ONE             whois.nic.one
     OOO             whois.nic.ooo
+    SHOP            whois.nic.shop
     SRL             whois.nic.srl
     STUDY           whois.nic.study
     TATAR           whois.nic.tatar
@@ -396,6 +399,7 @@ our %servers = qw(
     YOGA            whois-dub.mm-registry.com
 
     FAMILY          whois.rightside.co
+    GAMES           whois.rightside.co
     LIVE            whois.rightside.co
     STUDIO          whois.rightside.co
 
@@ -737,6 +741,8 @@ our %servers = qw(
     MEX.COM     whois.centralnic.com
     NO.COM      whois.centralnic.com
     QC.COM      whois.centralnic.com
+    RADIO.AM    whois.centralnic.com
+    RADIO.FM    whois.centralnic.com
     RU.COM      whois.centralnic.com
     SA.COM      whois.centralnic.com
     SE.COM      whois.centralnic.com
@@ -783,7 +789,6 @@ our %servers = qw(
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
     VIP         whois.nic.vip
-    GAME        whois.nic.game
     PROMO       whois.nic.promo
 
     NOTLD       whois.iana.org
