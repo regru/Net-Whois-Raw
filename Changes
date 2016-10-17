@@ -1,5 +1,7 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99002  Oct 17 2016 Alexander Nalobin
+    - get rid of unused DBI dependency
     - new tlds .SX
 
 2.99001  Aug 01 2016 Vadim Likhota
