@@ -1,8 +1,10 @@
 Revision history for Perl module Net::Whois::Raw.
 
-2.99002  Oct 17 2016 Alexander Nalobin
+2.99002  Oct 17 2016 Alexander Nalobin, Vadim Likhota, Anton Chuvashev
     - get rid of unused DBI dependency
-    - new tlds .SX
+    - whois.iana.org for tld only query
+    - new tlds .RADIO.AM, .RADIO.FM, .SHOP, .SHOPPING, .GAMES
+    - new tld .HELP
 
 2.99001  Aug 01 2016 Vadim Likhota
     - new tlds .PROMO, .ART, .FORUM

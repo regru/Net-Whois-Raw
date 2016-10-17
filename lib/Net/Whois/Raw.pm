@@ -60,7 +60,10 @@ sub whois_config_data {
 sub whois {
     my ($dom, $server, $which_whois) = @_;
 
-    $which_whois ||= 'QRY_LAST';
+    unless ( $which_whois ) {
+        my ( undef, $tld ) = Net::Whois::Raw::Common::split_domain( $dom );
+        $which_whois = $Net::Whois::Raw::Data::default_last_tlds{ uc $tld } ? 'QRY_LAST' : 'QRY_FIRST' ;
+    }
 
     my $res = Net::Whois::Raw::Common::get_from_cache( "$dom-$which_whois", $CACHE_DIR, $CACHE_TIME );
 
@@ -93,7 +96,11 @@ sub whois {
 # obtain whois
 sub get_whois {
     my ($dom, $srv, $which_whois) = @_;
-    $which_whois ||= 'QRY_LAST';
+
+    unless ( $which_whois ) {
+        my ( undef, $tld ) = Net::Whois::Raw::Common::split_domain( $dom );
+        $which_whois = $Net::Whois::Raw::Data::default_last_tlds{ uc $tld } ? 'QRY_LAST' : 'QRY_FIRST' ;
+    }
 
     my $whois = get_all_whois( $dom, $srv, $which_whois eq 'QRY_FIRST' )
         or return undef;
@@ -171,12 +178,16 @@ sub recursive_whois {
     my $lines = whois_query( $dom, $srv, $is_ns );
     my $whois = join("", @{$lines});
 
-    my ($newsrv, $registrar);
+    my ($newsrv, $registrar, $wsrv);
     foreach (@{$lines}) {
-            $registrar ||= /Registrar/ || /Registered through/;
+        $registrar ||= /Registrar/ || /Registered through/;
 
-        if ( $registrar && !$norecurse && /Whois Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
-            $newsrv = lc $1;
+        if ( !$norecurse  &&  !$wsrv  &&  /(?:Whois|WHOIS) Server:\s*([A-Za-z0-9\-_\.]+)/ ) {
+            $wsrv = lc $1;
+        }
+
+        if ( $registrar  &&  !$norecurse  &&  $wsrv  &&  !$newsrv ) {
+            $newsrv = $wsrv;
         }
         elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
             return recursive_whois( "=$dom", $srv, $was_srv );
@@ -187,14 +198,14 @@ sub recursive_whois {
         }
         elsif (/Contact information can be found in the (\S+)\s+database/) {
             $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $1 };
-            }
+        }
         elsif ((/OrgID:\s+(\w+)/ || /descr:\s+(\w+)/) && Net::Whois::Raw::Common::is_ipaddr($dom)) {
             my $val = $1;
             if($val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/) {
                 $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $val };
                 last;
             }
-            }
+        }
         elsif (/^\s+Maintainer:\s+RIPE\b/ && Net::Whois::Raw::Common::is_ipaddr($dom)) {
             $newsrv = $Net::Whois::Raw::Data::servers{RIPE};
         }
