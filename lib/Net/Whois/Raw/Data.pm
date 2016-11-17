@@ -152,14 +152,14 @@ our %servers = qw(
     ACADEMY         whois.donuts.co
     ACCOUNTANTS     whois.donuts.co
     AGENCY          whois.donuts.co
-    APARTMENTS	    whois.donuts.co
+    APARTMENTS      whois.donuts.co
     ASSOCIATES      whois.donuts.co
     BARGAINS        whois.donuts.co
     BIKE            whois.donuts.co
-    BINGO	        whois.donuts.co
+    BINGO           whois.donuts.co
     BOUTIQUE        whois.donuts.co
     BUILDERS        whois.donuts.co
-    BUSINESS	    whois.donuts.co
+    BUSINESS        whois.donuts.co
     CAB             whois.donuts.co
     CAFE            whois.donuts.co
     CAMERA          whois.donuts.co
@@ -169,18 +169,18 @@ our %servers = qw(
     CAREERS         whois.donuts.co
     CARE            whois.donuts.co
     CASH            whois.donuts.co
-    CASINO	        whois.donuts.co
+    CASINO          whois.donuts.co
     CATERING        whois.donuts.co
     CENTER          whois.donuts.co
-    CHAT	        whois.donuts.co
+    CHAT            whois.donuts.co
     CHEAP           whois.donuts.co
     CHURCH          whois.donuts.co
-    CITY	        whois.donuts.co
+    CITY            whois.donuts.co
     CLAIMS          whois.donuts.co
     CLEANING        whois.donuts.co
     CLINIC          whois.donuts.co
     CLOTHING        whois.donuts.co
-    COACH	        whois.donuts.co
+    COACH           whois.donuts.co
     CODES           whois.donuts.co
     COFFEE          whois.donuts.co
     COMMUNITY       whois.donuts.co
@@ -194,19 +194,19 @@ our %servers = qw(
     CREDIT          whois.donuts.co
     CRUISES         whois.donuts.co
     DATING          whois.donuts.co
-    DEALS	        whois.donuts.co
-    DELIVERY	    whois.donuts.co
+    DEALS           whois.donuts.co
+    DELIVERY        whois.donuts.co
     DENTAL          whois.donuts.co
     DIAMONDS        whois.donuts.co
     DIGITAL         whois.donuts.co
     DIRECTORY       whois.donuts.co
-    DIRECT	        whois.donuts.co
+    DIRECT          whois.donuts.co
     DISCOUNT        whois.donuts.co
-    DOG	            whois.donuts.co
+    DOG             whois.donuts.co
     DOMAINS         whois.donuts.co
     EDUCATION       whois.donuts.co
     EMAIL           whois.donuts.co
-    ENERGY	        whois.donuts.co
+    ENERGY          whois.donuts.co
     ENGINEERING     whois.donuts.co
     ENTERPRISES     whois.donuts.co
     EQUIPMENT       whois.donuts.co
@@ -215,7 +215,7 @@ our %servers = qw(
     EXCHANGE        whois.donuts.co
     EXPERT          whois.donuts.co
     EXPOSED         whois.donuts.co
-    EXPRESS	        whois.donuts.co
+    EXPRESS         whois.donuts.co
     FAIL            whois.donuts.co
     FARM            whois.donuts.co
     FINANCE         whois.donuts.co
@@ -224,61 +224,61 @@ our %servers = qw(
     FITNESS         whois.donuts.co
     FLIGHTS         whois.donuts.co
     FLORIST         whois.donuts.co
-    FOOTBALL	    whois.donuts.co
+    FOOTBALL        whois.donuts.co
     FOUNDATION      whois.donuts.co
     FUND            whois.donuts.co
     FURNITURE       whois.donuts.co
     GALLERY         whois.donuts.co
-    GIFTS	        whois.donuts.co
+    GIFTS           whois.donuts.co
     GLASS           whois.donuts.co
-    GMBH	        whois.donuts.co
-    GOLD	        whois.donuts.co
-    GOLF	        whois.donuts.co
+    GMBH            whois.donuts.co
+    GOLD            whois.donuts.co
+    GOLF            whois.donuts.co
     GRAPHICS        whois.donuts.co
     GRATIS          whois.donuts.co
     GRIPE           whois.donuts.co
     GROUP           whois.donuts.co
     GUIDE           whois.donuts.co
     GURU            whois.donuts.co
-    HEALTHCARE	    whois.donuts.co
-    HOCKEY	        whois.donuts.co
+    HEALTHCARE      whois.donuts.co
+    HOCKEY          whois.donuts.co
     HOLDINGS        whois.donuts.co
     HOLIDAY         whois.donuts.co
     HOUSE           whois.donuts.co
-    IMMO	        whois.donuts.co
+    IMMO            whois.donuts.co
     INDUSTRIES      whois.donuts.co
     INSTITUTE       whois.donuts.co
     INSURE          whois.donuts.co
     INTERNATIONAL   whois.donuts.co
     INVESTMENTS     whois.donuts.co
-    JETZT	        whois.donuts.co
-    JEWELRY	        whois.donuts.co
+    JETZT           whois.donuts.co
+    JEWELRY         whois.donuts.co
     KITCHEN         whois.donuts.co
     LAND            whois.donuts.co
     LEASE           whois.donuts.co
-    LEGAL	        whois.donuts.co
+    LEGAL            whois.donuts.co
     LIFE            whois.donuts.co
     LIGHTING        whois.donuts.co
     LIMITED         whois.donuts.co
     LIMO            whois.donuts.co
     LOANS           whois.donuts.co
-    LTD	            whois.donuts.co
+    LTD             whois.donuts.co
     MAISON          whois.donuts.co
     MANAGEMENT      whois.donuts.co
     MARKETING       whois.donuts.co
     MEDIA           whois.donuts.co
-    MEMORIAL	    whois.donuts.co
-    MONEY	        whois.donuts.co
-    NETWORK	        whois.donuts.co
+    MEMORIAL        whois.donuts.co
+    MONEY           whois.donuts.co
+    NETWORK         whois.donuts.co
     PARTNERS        whois.donuts.co
     PARTS           whois.donuts.co
     PHOTOGRAPHY     whois.donuts.co
     PHOTOS          whois.donuts.co
     PICTURES        whois.donuts.co
-    PIZZA	        whois.donuts.co
-    PLACE	        whois.donuts.co
+    PIZZA           whois.donuts.co
+    PLACE           whois.donuts.co
     PLUMBING        whois.donuts.co
-    PLUS	        whois.donuts.co
+    PLUS            whois.donuts.co
     PRODUCTIONS     whois.donuts.co
     PROPERTIES      whois.donuts.co
     RECIPES         whois.donuts.co
@@ -286,37 +286,37 @@ our %servers = qw(
     RENTALS         whois.donuts.co
     REPAIR          whois.donuts.co
     REPORT          whois.donuts.co
-    RESTAURANT	    whois.donuts.co
-    RUN	            whois.donuts.co
-    SALON	        whois.donuts.co
-    SARL	        whois.donuts.co
-    SCHOOL	        whois.donuts.co
+    RESTAURANT      whois.donuts.co
+    RUN             whois.donuts.co
+    SALON           whois.donuts.co
+    SARL            whois.donuts.co
+    SCHOOL          whois.donuts.co
     SCHULE          whois.donuts.co
     SERVICES        whois.donuts.co
     SHOES           whois.donuts.co
     SHOPPING        whois.donuts.co
-    SHOW	        whois.donuts.co
+    SHOW            whois.donuts.co
     SINGLES         whois.donuts.co
     SOLAR           whois.donuts.co
     SOLUTIONS       whois.donuts.co
-    STYLE	        whois.donuts.co
+    STYLE           whois.donuts.co
     SUPPLIES        whois.donuts.co
     SUPPLY          whois.donuts.co
     SUPPORT         whois.donuts.co
     SURGERY         whois.donuts.co
     SYSTEMS         whois.donuts.co
-    TAXI	        whois.donuts.co
+    TAXI            whois.donuts.co
     TAX             whois.donuts.co
-    TEAM	        whois.donuts.co
+    TEAM            whois.donuts.co
     TECHNOLOGY      whois.donuts.co
-    TENNIS	        whois.donuts.co
-    THEATER	        whois.donuts.co
+    TENNIS          whois.donuts.co
+    THEATER         whois.donuts.co
     TIENDA          whois.donuts.co
     TIPS            whois.donuts.co
-    TIRES	        whois.donuts.co
+    TIRES           whois.donuts.co
     TODAY           whois.donuts.co
     TOOLS           whois.donuts.co
-    TOURS	        whois.donuts.co
+    TOURS           whois.donuts.co
     TOWN            whois.donuts.co
     TOYS            whois.donuts.co
     TRAINING        whois.donuts.co
@@ -331,7 +331,7 @@ our %servers = qw(
     WATCH           whois.donuts.co
     WINE            whois.donuts.co
     WORKS           whois.donuts.co
-    WORLD	        whois.donuts.co
+    WORLD           whois.donuts.co
     WTF             whois.donuts.co
     ZONE            whois.donuts.co
 
