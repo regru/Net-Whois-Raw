@@ -478,6 +478,7 @@ our %servers = qw(
     MY  whois.mynic.net.my
     NA  whois.na-nic.com.na
     NF  whois.nic.cx
+    NG  whois.nic.net.ng
     NL  whois.domain-registry.nl
     NO  whois.norid.no
     NU  whois.nic.nu
