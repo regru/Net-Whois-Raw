@@ -152,28 +152,35 @@ our %servers = qw(
     ACADEMY         whois.donuts.co
     ACCOUNTANTS     whois.donuts.co
     AGENCY          whois.donuts.co
+    APARTMENTS	    whois.donuts.co
     ASSOCIATES      whois.donuts.co
     BARGAINS        whois.donuts.co
     BIKE            whois.donuts.co
+    BINGO	        whois.donuts.co
     BOUTIQUE        whois.donuts.co
     BUILDERS        whois.donuts.co
+    BUSINESS	    whois.donuts.co
     CAB             whois.donuts.co
+    CAFE            whois.donuts.co
     CAMERA          whois.donuts.co
     CAMP            whois.donuts.co
     CAPITAL         whois.donuts.co
     CARDS           whois.donuts.co
-    CARE            whois.donuts.co
-    CAFE            whois.donuts.co
     CAREERS         whois.donuts.co
+    CARE            whois.donuts.co
     CASH            whois.donuts.co
+    CASINO	        whois.donuts.co
     CATERING        whois.donuts.co
     CENTER          whois.donuts.co
+    CHAT	        whois.donuts.co
     CHEAP           whois.donuts.co
     CHURCH          whois.donuts.co
+    CITY	        whois.donuts.co
     CLAIMS          whois.donuts.co
     CLEANING        whois.donuts.co
     CLINIC          whois.donuts.co
     CLOTHING        whois.donuts.co
+    COACH	        whois.donuts.co
     CODES           whois.donuts.co
     COFFEE          whois.donuts.co
     COMMUNITY       whois.donuts.co
@@ -183,18 +190,23 @@ our %servers = qw(
     CONSTRUCTION    whois.donuts.co
     CONTRACTORS     whois.donuts.co
     COOL            whois.donuts.co
-    CREDIT          whois.donuts.co
     CREDITCARD      whois.donuts.co
+    CREDIT          whois.donuts.co
     CRUISES         whois.donuts.co
     DATING          whois.donuts.co
+    DEALS	        whois.donuts.co
+    DELIVERY	    whois.donuts.co
     DENTAL          whois.donuts.co
     DIAMONDS        whois.donuts.co
     DIGITAL         whois.donuts.co
     DIRECTORY       whois.donuts.co
+    DIRECT	        whois.donuts.co
     DISCOUNT        whois.donuts.co
+    DOG	            whois.donuts.co
     DOMAINS         whois.donuts.co
     EDUCATION       whois.donuts.co
     EMAIL           whois.donuts.co
+    ENERGY	        whois.donuts.co
     ENGINEERING     whois.donuts.co
     ENTERPRISES     whois.donuts.co
     EQUIPMENT       whois.donuts.co
@@ -203,6 +215,7 @@ our %servers = qw(
     EXCHANGE        whois.donuts.co
     EXPERT          whois.donuts.co
     EXPOSED         whois.donuts.co
+    EXPRESS	        whois.donuts.co
     FAIL            whois.donuts.co
     FARM            whois.donuts.co
     FINANCE         whois.donuts.co
@@ -211,43 +224,61 @@ our %servers = qw(
     FITNESS         whois.donuts.co
     FLIGHTS         whois.donuts.co
     FLORIST         whois.donuts.co
+    FOOTBALL	    whois.donuts.co
     FOUNDATION      whois.donuts.co
     FUND            whois.donuts.co
     FURNITURE       whois.donuts.co
     GALLERY         whois.donuts.co
+    GIFTS	        whois.donuts.co
     GLASS           whois.donuts.co
+    GMBH	        whois.donuts.co
+    GOLD	        whois.donuts.co
+    GOLF	        whois.donuts.co
     GRAPHICS        whois.donuts.co
     GRATIS          whois.donuts.co
     GRIPE           whois.donuts.co
     GROUP           whois.donuts.co
     GUIDE           whois.donuts.co
     GURU            whois.donuts.co
+    HEALTHCARE	    whois.donuts.co
+    HOCKEY	        whois.donuts.co
     HOLDINGS        whois.donuts.co
     HOLIDAY         whois.donuts.co
     HOUSE           whois.donuts.co
+    IMMO	        whois.donuts.co
     INDUSTRIES      whois.donuts.co
     INSTITUTE       whois.donuts.co
     INSURE          whois.donuts.co
     INTERNATIONAL   whois.donuts.co
     INVESTMENTS     whois.donuts.co
+    JETZT	        whois.donuts.co
+    JEWELRY	        whois.donuts.co
     KITCHEN         whois.donuts.co
     LAND            whois.donuts.co
     LEASE           whois.donuts.co
+    LEGAL	        whois.donuts.co
     LIFE            whois.donuts.co
     LIGHTING        whois.donuts.co
     LIMITED         whois.donuts.co
     LIMO            whois.donuts.co
     LOANS           whois.donuts.co
+    LTD	            whois.donuts.co
     MAISON          whois.donuts.co
     MANAGEMENT      whois.donuts.co
     MARKETING       whois.donuts.co
     MEDIA           whois.donuts.co
+    MEMORIAL	    whois.donuts.co
+    MONEY	        whois.donuts.co
+    NETWORK	        whois.donuts.co
     PARTNERS        whois.donuts.co
     PARTS           whois.donuts.co
     PHOTOGRAPHY     whois.donuts.co
     PHOTOS          whois.donuts.co
     PICTURES        whois.donuts.co
+    PIZZA	        whois.donuts.co
+    PLACE	        whois.donuts.co
     PLUMBING        whois.donuts.co
+    PLUS	        whois.donuts.co
     PRODUCTIONS     whois.donuts.co
     PROPERTIES      whois.donuts.co
     RECIPES         whois.donuts.co
@@ -255,24 +286,37 @@ our %servers = qw(
     RENTALS         whois.donuts.co
     REPAIR          whois.donuts.co
     REPORT          whois.donuts.co
+    RESTAURANT	    whois.donuts.co
+    RUN	            whois.donuts.co
+    SALON	        whois.donuts.co
+    SARL	        whois.donuts.co
+    SCHOOL	        whois.donuts.co
     SCHULE          whois.donuts.co
     SERVICES        whois.donuts.co
     SHOES           whois.donuts.co
     SHOPPING        whois.donuts.co
+    SHOW	        whois.donuts.co
     SINGLES         whois.donuts.co
     SOLAR           whois.donuts.co
     SOLUTIONS       whois.donuts.co
+    STYLE	        whois.donuts.co
     SUPPLIES        whois.donuts.co
     SUPPLY          whois.donuts.co
     SUPPORT         whois.donuts.co
     SURGERY         whois.donuts.co
     SYSTEMS         whois.donuts.co
+    TAXI	        whois.donuts.co
     TAX             whois.donuts.co
+    TEAM	        whois.donuts.co
     TECHNOLOGY      whois.donuts.co
+    TENNIS	        whois.donuts.co
+    THEATER	        whois.donuts.co
     TIENDA          whois.donuts.co
     TIPS            whois.donuts.co
+    TIRES	        whois.donuts.co
     TODAY           whois.donuts.co
     TOOLS           whois.donuts.co
+    TOURS	        whois.donuts.co
     TOWN            whois.donuts.co
     TOYS            whois.donuts.co
     TRAINING        whois.donuts.co
@@ -287,24 +331,31 @@ our %servers = qw(
     WATCH           whois.donuts.co
     WINE            whois.donuts.co
     WORKS           whois.donuts.co
+    WORLD	        whois.donuts.co
     WTF             whois.donuts.co
     ZONE            whois.donuts.co
 
     AUDIO           whois.uniregistry.net
     AUTO            whois.uniregistry.net
     BLACKFRIDAY     whois.uniregistry.net
-    CAR             whois.uniregistry.net
     CARS            whois.uniregistry.net
+    CAR             whois.uniregistry.net
     CHRISTMAS       whois.uniregistry.net
+    CLICK           whois.uniregistry.net
+    DIET            whois.uniregistry.net
+    FLOWERS         whois.uniregistry.net
     GAME            whois.uniregistry.net
     GIFT            whois.uniregistry.net
     GUITARS         whois.uniregistry.net
     HELP            whois.uniregistry.net
     HIPHOP          whois.uniregistry.net
+    HOSTING         whois.uniregistry.net
     JUEGOS          whois.uniregistry.net
     LINK            whois.uniregistry.net
+    LOL             whois.uniregistry.net
     PHOTO           whois.uniregistry.net
     PICS            whois.uniregistry.net
+    PROPERTY        whois.uniregistry.net
     SEXY            whois.uniregistry.net
     TATTOO          whois.uniregistry.net
 
@@ -350,12 +401,14 @@ our %servers = qw(
     AIRFORCE        whois.unitedtld.com
     ARMY            whois.unitedtld.com
     ATTORNEY        whois.unitedtld.com
+    AUCTION         whois.unitedtld.com
     CONSULTING      whois.unitedtld.com
-    DEGREE          whois.unitedtld.com
     DANCE           whois.unitedtld.com
+    DEGREE          whois.unitedtld.com
     DEMOCRAT        whois.unitedtld.com
     DENTIST         whois.unitedtld.com
     ENGINEER        whois.unitedtld.com
+    FORSALE         whois.unitedtld.com
     FUTBOL          whois.unitedtld.com
     GIVES           whois.unitedtld.com
     HAUS            whois.unitedtld.com
@@ -376,14 +429,9 @@ our %servers = qw(
     SOFTWARE        whois.unitedtld.com
     VET             whois.unitedtld.com
 
-    COOKING         whois-dub.mm-registry.com
+    
     COUNTRY         whois-dub.mm-registry.com
-    FISHING         whois-dub.mm-registry.com
-    HORSE           whois-dub.mm-registry.com
-    RODEO           whois-dub.mm-registry.com
-    VODKA           whois-dub.mm-registry.com
     LONDON          whois-dub.mm-registry.com
-    BAYERN          whois-dub.mm-registry.com
     MIAMI           whois-dub.mm-registry.com
     ABOGADO         whois-dub.mm-registry.com
     BEER            whois-dub.mm-registry.com
@@ -392,7 +440,6 @@ our %servers = qw(
     GARDEN          whois-dub.mm-registry.com
     LUXE            whois-dub.mm-registry.com
     NRW             whois-dub.mm-registry.com
-    SURF            whois-dub.mm-registry.com
     WEDDING         whois-dub.mm-registry.com
     VIP             whois-dub.mm-registry.com
     WORK            whois-dub.mm-registry.com
@@ -401,7 +448,10 @@ our %servers = qw(
     FAMILY          whois.rightside.co
     GAMES           whois.rightside.co
     LIVE            whois.rightside.co
+    RIP             whois.rightside.co
+    SALE            whois.rightside.co
     STUDIO          whois.rightside.co
+    VIDEO           whois.rightside.co
 
     AC  whois.nic.ac
     AG  whois.nic.ag
@@ -459,7 +509,6 @@ our %servers = qw(
     KI  whois.nic.ki
     KR  whois.nic.or.kr
     KZ  whois.nic.kz
-    LA  whois.nic.com
     LC  whois2.afilias-grs.net
     LI  whois.nic.li
     LT  whois.domreg.lt
@@ -520,7 +569,6 @@ our %servers = qw(
     UZ  whois.cctld.uz
     VC  whois2.afilias-grs.net
     VE  whois.nic.ve
-    VG  whois.adamsnames.tc
     WF  whois.nic.wf
     WS  whois.worldsite.ws
     YT  whois.nic.yt
@@ -704,6 +752,7 @@ our %servers = qw(
 
     AC.UK       whois.ja.net
     CO.UK       whois.nic.uk
+    ME.UK       whois.nic.uk
     GOV.UK      whois.ja.net
     LTD.UK      whois.nic.uk
     NET.UK      whois.nic.uk
@@ -792,6 +841,10 @@ our %servers = qw(
     PROMO       whois.nic.promo
 
     NOTLD       whois.iana.org
+    
+    ARCHI       whois.ksregistry.net
+    SAARLAND    whois.ksregistry.net
+    SKI         whois.ksregistry.net
 );
 
 
@@ -1101,6 +1154,7 @@ our %notfound = (
     'whois.nic.xn--p1acf'       => 'No Object Found',
     'whois.rightside.co'        => 'Domain not found',
     'whois.sk-nic.sk'           => 'Not found',
+    'whois.ksregistry.net'      => 'The queried object does not exist'
 );
 
 # Common whois stripping REs
