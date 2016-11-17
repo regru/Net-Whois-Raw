@@ -256,7 +256,7 @@ our %servers = qw(
     KITCHEN         whois.donuts.co
     LAND            whois.donuts.co
     LEASE           whois.donuts.co
-    LEGAL            whois.donuts.co
+    LEGAL           whois.donuts.co
     LIFE            whois.donuts.co
     LIGHTING        whois.donuts.co
     LIMITED         whois.donuts.co
