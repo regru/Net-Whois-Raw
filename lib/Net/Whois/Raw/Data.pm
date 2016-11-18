@@ -1154,7 +1154,7 @@ our %notfound = (
     'whois.nic.xn--p1acf'       => 'No Object Found',
     'whois.rightside.co'        => 'Domain not found',
     'whois.sk-nic.sk'           => 'Not found',
-    'whois.ksregistry.net'      => 'The queried object does not exist'
+    'whois.ksregistry.net'      => 'The queried object does not exist',
 );
 
 # Common whois stripping REs
