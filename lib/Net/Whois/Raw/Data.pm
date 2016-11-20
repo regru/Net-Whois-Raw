@@ -448,21 +448,6 @@ our %servers = qw(
     SOFTWARE        whois.unitedtld.com
     VET             whois.unitedtld.com
 
-    COUNTRY         whois-dub.mm-registry.com
-    LONDON          whois-dub.mm-registry.com
-    MIAMI           whois-dub.mm-registry.com
-    ABOGADO         whois-dub.mm-registry.com
-    BEER            whois-dub.mm-registry.com
-    BUDAPEST        whois-dub.mm-registry.com
-    FIT             whois-dub.mm-registry.com
-    GARDEN          whois-dub.mm-registry.com
-    LUXE            whois-dub.mm-registry.com
-    NRW             whois-dub.mm-registry.com
-    WEDDING         whois-dub.mm-registry.com
-    VIP             whois-dub.mm-registry.com
-    WORK            whois-dub.mm-registry.com
-    YOGA            whois-dub.mm-registry.com
-
     BAND            whois.rightside.co
     FAMILY          whois.rightside.co
     GAMES           whois.rightside.co
@@ -1955,6 +1940,32 @@ our %servers = qw(
     XN--KCRX77D1X4A         whois.nic.xn--kcrx77d1x4a
 
     XN--NGBC5AZD            whois.nic.xn--ngbc5azd
+
+    COUNTRY                 whois-dub.mm-registry.com
+
+    ABOGADO                 whois.nic.abogado
+
+    BEER                    whois.nic.beer
+
+    BUDAPEST                whois.nic.budapest
+
+    FIT                     whois.nic.fit
+
+    GARDEN                  whois.nic.garden
+
+    LONDON                  whois.nic.london
+
+    LUXE                    whois.nic.luxe
+
+    MIAMI                   whois.nic.miami
+
+    NRW                     whois.nic.nrw
+
+    WEDDING                 whois.nic.wedding
+
+    WORK                    whois.nic.work
+
+    YOGA                    whois.nic.yoga
 );
 
 
@@ -2644,6 +2655,18 @@ our %notfound = (
     'whois.nic.xn--kcrx77d1x4a'            => 'No Data Found',
     'whois.nic.xn--ngbc5azd'               => 'No Data Found',
     'whois.nic.shop'                       => 'The queried object does not exist: ',
+    'whois.nic.abogado'                    => 'This domain name has not been registered',
+    'whois.nic.beer'                       => 'This domain name has not been registered',
+    'whois.nic.budapest'                   => 'This domain name has not been registered',
+    'whois.nic.fit'                        => 'This domain name has not been registered',
+    'whois.nic.garden'                     => 'This domain name has not been registered',
+    'whois.nic.london'                     => 'This domain name has not been registered',
+    'whois.nic.luxe'                       => 'This domain name has not been registered',
+    'whois.nic.miami'                      => 'This domain name has not been registered',
+    'whois.nic.nrw'                        => 'The queried object does not exist: no matching objects found',
+    'whois.nic.wedding'                    => 'This domain name has not been registered',
+    'whois.nic.work'                       => 'This domain name has not been registered',
+    'whois.nic.yoga'                       => 'This domain name has not been registered',
 );
 
 # Common whois stripping REs
