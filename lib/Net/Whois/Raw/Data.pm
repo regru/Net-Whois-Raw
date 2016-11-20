@@ -1810,6 +1810,7 @@ our %servers = qw(
 
     TZ                      whois.tznic.or.tz
 
+    XN--55QW42G             whois.conac.cn
     XN--ZFR164B             whois.conac.cn
 
     XN--J1AMH               whois.dotukr.com
@@ -1923,6 +1924,37 @@ our %servers = qw(
     XN--YFRO4I67O           whois.sgnic.sg
 
     XN--O3CW4H              whois.thnic.co.th
+
+    XN--NODE                whois.itdc.ge
+
+    XN--3E0B707E            whois.kr
+    XN--CG4BKI              whois.kr
+
+    SANDVIKCOROMANT         whois.nic.sandvikcoromant
+
+    SCOR                    whois.nic.scor
+
+    SEVEN                   whois.nic.seven
+
+    SYDNEY                  whois.nic.sydney
+
+    TDK                     whois.nic.tdk
+
+    TEVA                    whois.nic.teva
+
+    TRUST                   whois.nic.trust
+
+    VIRGIN                  whois.nic.virgin
+
+    VISTAPRINT              whois.nic.vistaprint
+
+    WALTER                  whois.nic.walter
+
+    WOODSIDE                whois.nic.woodside
+
+    XN--KCRX77D1X4A         whois.nic.xn--kcrx77d1x4a
+
+    XN--NGBC5AZD            whois.nic.xn--ngbc5azd
 );
 
 
@@ -2596,6 +2628,21 @@ our %notfound = (
     'whois.registry.knet.cn'               => 'The queried object does not exist: ',
     'whois.sgnic.sg'                       => 'Domain Not Found',
     'whois.thnic.co.th'                    => 'No match for',
+    'whois.itdc.ge'                        => 'NO OBJECT FOUND',
+    'whois.kr'                             => 'The requested domain was not found',
+    'whois.nic.sandvikcoromant'            => 'No Data Found',
+    'whois.nic.scor'                       => 'No Data Found',
+    'whois.nic.seven'                      => 'No Data Found',
+    'whois.nic.sydney'                     => 'No Data Found',
+    'whois.nic.tdk'                        => 'No Data Found',
+    'whois.nic.teva'                       => 'No Data Found',
+    'whois.nic.trust'                      => 'No Data Found',
+    'whois.nic.virgin'                     => 'No Data Found',
+    'whois.nic.vistaprint'                 => 'No Data Found',
+    'whois.nic.walter'                     => 'No Data Found',
+    'whois.nic.woodside'                   => 'No Data Found',
+    'whois.nic.xn--kcrx77d1x4a'            => 'No Data Found',
+    'whois.nic.xn--ngbc5azd'               => 'No Data Found',
 );
 
 # Common whois stripping REs
