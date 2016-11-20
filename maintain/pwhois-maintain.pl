@@ -121,7 +121,6 @@ if ($check_for_new_gtlds) {
     my $template = read_file( $lib_path.'/index.html', {binmode => ':utf8'} );
     my $tpl = Template->new;
     $tpl->process(\$template, {
-        lib_path => $lib_path,
         new      => \@new,
         source   => scalar read_file( $FindBin::Bin.'/../lib/Net/Whois/Raw/Data.pm', {binmode => ':utf8'} ),
     }, \my $html) or die "Can't process template: ", $tpl->error;
