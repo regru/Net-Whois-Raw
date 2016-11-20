@@ -465,6 +465,8 @@ our %servers = qw(
     AQUARELLE        whois-aquarelle.nic.fr
     AS               whois.nic.as
     AT               whois.nic.at
+    CO.AT            whois.nic.at
+    OR.AT            whois.nic.at
     AU               whois.aunic.net
     BE               whois.dns.be
     BG               whois.register.bg
@@ -481,6 +483,7 @@ our %servers = qw(
     CM               whois.netcom.cm
     CN               whois.cnnic.net.cn
     CO               whois.nic.co
+    COM.CO           whois.nic.co
     CORSICA          whois-corsica.nic.fr
     CX               whois.nic.cx
     CZ               whois.nic.cz
@@ -2091,6 +2094,7 @@ our %notfound = (
     'whois.nic.cx'            => 'Status\: Not Registered',
     'whois.nic.cz'            => '^\% No entries found.',
     'whois.denic.de'          => 'Status\: free',
+    'whois.member.denic.de'   => 'Status\: free',
     'whois.nic.dm'            => 'Status\: Not Registered',
     'whois.dk-hostmaster.dk'  => '^No entries found for',
     'whois.eenet.ee'          => '^\% No entries found',
