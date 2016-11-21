@@ -105,10 +105,10 @@ if ($check_for_new_gtlds) {
     my $tpl = Template->new;
     $tpl->process(\*DATA, {
         new    => \@new,
-        source => scalar do { local $/; open my $fh, 'lib/Net/Whois/Raw/Data.pm' or die $!; <$fh> },
+        source => scalar do { local $/; open my $fh, '<:utf8', 'lib/Net/Whois/Raw/Data.pm' or die $!; <$fh> },
     }, \my $html) or die "Can't process template: ", $tpl->error;
     
-    open my $fh, '>', 'new-gtlds.html'
+    open my $fh, '>:utf8', 'new-gtlds.html'
         or die "open > new-gtlds.html: $!";
     print $fh $html;
     close $fh;
@@ -210,7 +210,7 @@ __DATA__
                     }
                     
                     // get not found patterns from perl sourcecode
-                    match = source.match(/our\s+%notfound\s*=\s*\(((?:.|\n)+?)\);/);
+                    match = source.match(/our\s+%notfound\s*=\s*\(\n((?:.|\n)+?)\);/);
                     if (!match) {
                         alert('Unexpected fail: can not find %notfound in Data.pm');
                         return;
