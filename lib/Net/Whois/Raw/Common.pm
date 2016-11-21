@@ -105,12 +105,9 @@ sub process_whois {
 
     if ( $CHECK_FAIL || $OMIT_MSG ) {
 
-        my %notfound = %Net::Whois::Raw::Data::notfound;
-        my %strip = %Net::Whois::Raw::Data::strip;
-
-        my $notfound = $notfound{ $server };
-
-        my @strip = $strip{ $server } ? @{ $strip{ $server } } : ();
+        my $notfound = $Net::Whois::Raw::Data::notfound{ $server };
+        my $strip = $Net::Whois::Raw::Data::strip{ $server };
+        my @strip = $strip ? @$strip : ();
         my @lines;
 
         MAIN:
