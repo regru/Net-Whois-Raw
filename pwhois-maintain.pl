@@ -300,6 +300,40 @@ __DATA__
                 })
             }
             
+            //  check is server name a equals server name b, at least partly
+            function server_names_cmp(a, b) {
+                // server.whois.ru.com -> ['server', 'whois.ru.com']
+                var parts_a = a.split('.');
+                var len = parts_a.length - 1;
+                var tld_finish = len - 1;
+                for (; tld_finish > 0; tld_finish--) {
+                    if (parts_a[tld_finish] == 'nic' || parts_a[tld_finish].length > 3)
+                        break;
+                }
+                parts_a[tld_finish] += '.' + parts_a.splice(tld_finish+1).join('.');
+                
+                // same for b
+                var parts_b = b.split('.');
+                len = parts_b.length - 1;
+                tld_finish = len - 1;
+                for (; tld_finish > 0; tld_finish--) {
+                    if (parts_b[tld_finish] == 'nic' || parts_b[tld_finish].length > 3)
+                        break;
+                }
+                parts_b[tld_finish] += '.' + parts_b.splice(tld_finish+1).join('.');
+                
+                // now cmp from the end
+                var len_a = parts_a.length;
+                var len_b = parts_b.length;
+                var i, j = 1;
+                for (i=len_a-1; i>=0 && j<=len_b; i--, j++) {
+                    if (parts_a[i] != parts_b[len_b-j]) break;
+                }
+                
+                // return rating
+                return (len_a-i-1)/len_a * (j-1)/len_b;
+            }
+            
             // inject new tld server in the right place
             function inject_new_whois_server(tld, server, groups) {
                 var rating = {};
@@ -307,9 +341,7 @@ __DATA__
                 for (var i=0; i<groups.length; i++) {
                     rating[i] = 0;
                     for (var r in groups[i].records) {
-                        if (groups[i].records[r].right == server) {
-                            rating[i]++;
-                        }
+                        rating[i] += server_names_cmp(groups[i].records[r].right, server);
                     }
                 }
                 
