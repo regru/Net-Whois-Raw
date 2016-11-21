@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99003     Vadim Likhota
+    - new tld .NG
+
 2.99002  Oct 17 2016 Alexander Nalobin, Vadim Likhota, Anton Chuvashev
     - get rid of unused DBI dependency
     - whois.iana.org for tld only query
