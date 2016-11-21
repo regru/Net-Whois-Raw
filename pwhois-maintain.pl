@@ -19,7 +19,16 @@ sub usage() {
     $0 --check-for-new-gtlds [--cache-dir /path/to/whois-cachedir] [--max-new num]
         --check-for-new-gtlds - try to find whois servers for gTLDs which are not in Data.pm yet
         --cache-dir - cache dir for whois responses, cache lifetime is 24 hrs
-        --max-new - stop when specified number of new gTLDs found\n";
+        --max-new - stop when specified number of new gTLDs found
+        
+        Workflow:
+            1. $0 --check-for-new-gtlds --cache-dir /tmp
+            2. chromium new-gtlds.html
+            3. Check Not Found pattern for each TLD (edit if wrong), accept or skip TLD
+            4. Press `Process` button. Accepted TLDs will be added to output,
+               skipped will not.
+            5. Copy and paste output from textarea to Data.pm
+            6. Save and commit Data.pm\n";
 }
 
 GetOptions(
