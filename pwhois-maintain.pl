@@ -96,7 +96,9 @@ if ($check_for_new_gtlds) {
     
     # tlds with not found message at the top
     @new = sort { 
-        defined($b->{notfound}) <=> defined($a->{notfound}) or ($b->{notfound}&&1) <=> ($a->{notfound}&&1)
+        $a->{whois_server} cmp $b->{whois_server} or
+        defined($b->{notfound}) <=> defined($a->{notfound}) or
+        ($b->{notfound}&&1) <=> ($a->{notfound}&&1)
     } @new;
     
     # generate HTML
@@ -135,6 +137,16 @@ __DATA__
                 border-bottom:1pt solid black;
                 padding: 10px 0px 10px 0px;
             }
+            
+            td.whois_column {
+                position: relative;
+            }
+            
+            .accept_block {
+                position: absolute;
+                top: 0px;
+                right: 10px;
+            }
         </style>
     </head>
     <body>
@@ -155,10 +167,10 @@ __DATA__
                         
                         var self = $(this);
                         var tld = self.find('td[data-id="tld"]').text();
-                        var whois_server = self.find('td[data-id="whois_server"]>input').val();
-                        var td_nf = self.find('td[data-id="notfound"]');
-                        var notfound_pat = td_nf.find('input[data-id="notfound_pat"]').val();
-                        var selected = td_nf.find('input[type="radio"]:checked').val();
+                        var td_whois = self.find('td[data-id="whois_server"]');
+                        var whois_server = td_whois.find('input[type="text"]').val();
+                        var selected = td_whois.find('input[type="radio"]:checked').val();
+                        var notfound_pat = self.find('td[data-id="notfound"] input[data-id="notfound_pat"]').val();
                         
                         new_tlds.push({
                            tld: tld,
@@ -191,7 +203,7 @@ __DATA__
                     }
                     
                     var raw_servers = match[1];
-                    var raw_servers_groups = raw_servers.split(/\n\n/);
+                    var raw_servers_groups = raw_servers.split(/\n[ \t]*\n/);
                     var servers_groups = [];
                     for (var rsg in raw_servers_groups) {
                         servers_groups.push( parse_str_group( raw_servers_groups[rsg] ) );
@@ -205,7 +217,7 @@ __DATA__
                     }
                     
                     var raw_notfound = match[1];
-                    var raw_notfound_groups = raw_notfound.split(/\n\n/);
+                    var raw_notfound_groups = raw_notfound.split(/\n[ \t]*\n/);
                     // always push to last nf group
                     var notfound_group = parse_str_group( raw_notfound_groups[raw_notfound_groups.length - 1] );
                     
@@ -387,13 +399,17 @@ __DATA__
             [% FOREACH i IN new %]
                 <tr class="border_bottom">
                     <td data-id="tld"><b>[% i.tld %]</b></td>
-                    <td data-id="whois_server"><input type="text" value="[% i.whois_server %]"></td>
+                    <td data-id="whois_server" class="whois_column">
+                        <div class="accept_block">
+                            <label><input type="radio" name="[% i.tld %]" value="accept"> Accept</label><br>
+                            <label><input type="radio" name="[% i.tld %]" value="skip"> Skip</label>
+                        </div>
+                        <input type="text" value="[% i.whois_server %]">
+                    </td>
                     <td data-id="notfound">
                         [% IF i.notfound or not i.notfound.defined  %]
                             <div>
                                 <input data-id="notfound_pat" type="text" style="width: 400px" value="[% FILTER html %][% i.notfound_pat %][% END %]">
-                                <label><input type="radio" name="[% i.tld %]" value="accept"> Accept</label>
-                                <label><input type="radio" name="[% i.tld %]" value="skip"> Skip</label>
                             </div>
                             [% IF i.notfound %]
                                 <textarea style="width: 700px; height: 300px;">[% FILTER html %][% i.notfound %][% END %]</textarea>
@@ -401,9 +417,7 @@ __DATA__
                                 couldn't receive response from the whois server
                             [% END %]
                         [% ELSE %]
-                            <i>not found pattern already in Data.pm or above</i>
-                            <label><input type="radio" name="[% i.tld %]" value="accept"> Accept</label>
-                            <label><input type="radio" name="[% i.tld %]" value="skip"> Skip</label>
+                            <i>Not Found pattern already in Data.pm or above</i>
                         [% END %]
                     </td>
                 </tr>
