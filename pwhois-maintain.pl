@@ -15,7 +15,11 @@ use constant {
 };
 
 sub usage() {
-    die "usage: $0 --check-for-new-gtlds [--cache-dir /path/to/whois-cachedir] [--max-new num]\n";
+    die "usage:
+    $0 --check-for-new-gtlds [--cache-dir /path/to/whois-cachedir] [--max-new num]
+        --check-for-new-gtlds - try to find whois servers for gTLDs which are not in Data.pm yet
+        --cache-dir - cache dir for whois responses, cache lifetime is 24 hrs
+        --max-new - stop when specified number of new gTLDs found\n";
 }
 
 GetOptions(
