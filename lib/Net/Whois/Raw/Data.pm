@@ -21,12 +21,11 @@ our %servers = qw(
     XN--P1AI            whois.ripn.net
     XN--D1ACJ3B         whois.ripn.net
 
-    XN--80ASWG          whois.site.rs.corenic.net
-    XN--80ASEHDB        whois.online.rs.corenic.net
+    MADRID              whois.madrid.rs.corenic.net
     XN--80ADXHKS        whois.nic.xn--80adxhks
+    XN--80ASEHDB        whois.online.rs.corenic.net
+    XN--80ASWG          whois.site.rs.corenic.net
     XN--P1ACF           whois.nic.xn--p1acf
-
-    INT.RU              whois.int.ru
 
     RU.NET              whois.flexireg.net
     COM.RU              whois.flexireg.net
@@ -120,8 +119,6 @@ our %servers = qw(
     YAKUTIA.SU          whois.nic.ru
     YEKATERINBURG.RU    whois.nic.ru
 
-    BY                  whois.ripe.net
-
     NS     whois.nsiregistry.net
     RIPE   whois.ripe.net
     IP     whois.arin.net
@@ -144,6 +141,7 @@ our %servers = qw(
     MUSEUM          whois.museum
     NAME            whois.nic.name
     NET             whois.crsnic.net
+    NOTLD           whois.iana.org
     ORG             whois.pir.org
     PRO             whois.nic.pro
     TEL             whois-tel.neustar.biz
@@ -477,14 +475,18 @@ our %servers = qw(
 
     AC               whois.nic.ac
     AG               whois.nic.ag
+    ALSACE           whois-alsace.nic.fr
     AM               whois.amnic.net
+    AQUARELLE        whois-aquarelle.nic.fr
     AS               whois.nic.as
     AT               whois.nic.at
     AU               whois.aunic.net
     BE               whois.dns.be
     BG               whois.register.bg
     BJ               whois.nic.bj
+    BOSTIK           whois-bostik.nic.fr
     BR               whois.registro.br
+    BY               whois.ripe.net
     BZ               whois2.afilias-grs.net
     CA               whois.cira.ca
     CD               whois.nic.cd
@@ -494,6 +496,7 @@ our %servers = qw(
     CM               whois.netcom.cm
     CN               whois.cnnic.net.cn
     CO               whois.nic.co
+    CORSICA          whois-corsica.nic.fr
     CX               whois.nic.cx
     CZ               whois.nic.cz
     DE               whois.denic.de
@@ -505,6 +508,7 @@ our %servers = qw(
     FM               whois.nic.fm
     FO               whois.ripe.net
     FR               whois.nic.fr
+    FROGANS          whois-frogans.nic.fr
     GD               whois.adamsnames.tc
     GG               whois.channelisles.net
     GI               whois2.afilias-grs.net
@@ -531,7 +535,9 @@ our %servers = qw(
     KI               whois.nic.ki
     KR               whois.nic.or.kr
     KZ               whois.nic.kz
+    LANCASTER        whois-lancaster.nic.fr
     LC               whois2.afilias-grs.net
+    LECLERC          whois-leclerc.nic.fr
     LI               whois.nic.li
     LT               whois.domreg.lt
     LU               whois.dns.lu
@@ -542,9 +548,11 @@ our %servers = qw(
     MD               whois.nic.md
     ME               whois.nic.me
     MG               whois.nic.mg
+    MMA              whois-mma.nic.fr
     MN               whois2.afilias-grs.net
     MS               whois.nic.ms
     MU               whois.nic.mu
+    MUTUELLE         whois-mutuelle.nic.fr
     MX               whois.nic.mx
     MY               whois.mynic.net.my
     NA               whois.na-nic.com.na
@@ -553,6 +561,8 @@ our %servers = qw(
     NO               whois.norid.no
     NU               whois.nic.nu
     NZ               whois.srs.net.nz
+    OVH              whois-ovh.nic.fr
+    PARIS            whois-paris.nic.fr
     PL               whois.dns.pl
     PM               whois.nic.pm
     PR               whois.nic.pr
@@ -572,6 +582,7 @@ our %servers = qw(
     SI               whois.arnes.si
     SK               whois.sk-nic.sk
     SM               whois.ripe.net
+    SNCF             whois-sncf.nic.fr
     SO               whois.nic.so
     ST               whois.nic.st
     SX               whois.sx
@@ -582,6 +593,7 @@ our %servers = qw(
     TL               whois.nic.tl
     TM               whois.nic.tm
     TO               whois.tonic.to
+    TOTAL            whois-total.nic.fr
     TR               whois.nic.tr
     TV               whois.nic.tv
     TW               whois.twnic.net.tw
@@ -602,8 +614,6 @@ our %servers = qw(
     XN--WGBL6A       whois.registry.qa
     XN--Y9A3AQ       whois.amnic.net
     YT               whois.nic.yt
-
-    PRIV.AT       whois.nic.priv.at
 
     ASN.AU        whois.aunic.net
     COM.AU        whois.aunic.net
@@ -790,7 +800,10 @@ our %servers = qw(
     ORG.UK      whois.nic.uk
     PLC.UK      whois.nic.uk
 
+    CAPETOWN    capetown-whois.registry.net.za
     CO.ZA       whois.registry.net.za
+    DURBAN      durban-whois.registry.net.za
+    JOBURG      joburg-whois.registry.net.za
     NET.ZA      net-whois.registry.net.za
     ORG.ZA      org-whois.registry.net.za
     WEB.ZA      web-whois.registry.net.za
@@ -876,8 +889,6 @@ our %servers = qw(
     VIP         whois.nic.vip
     PROMO       whois.nic.promo
 
-    NOTLD       whois.iana.org
-
     ALLFINANZ                 whois.ksregistry.net
     ARCHI                     whois.ksregistry.net
     BIO                       whois.ksregistry.net
@@ -895,12 +906,6 @@ our %servers = qw(
     XN--VERMGENSBERATER-CTB   whois.ksregistry.net
     XN--VERMGENSBERATUNG-PWB  whois.ksregistry.net
     ZUERICH                   whois.ksregistry.net
-
-    ALSACE      whois-alsace.nic.fr
-
-    AQUARELLE   whois-aquarelle.nic.fr
-
-    BOSTIK      whois-bostik.nic.fr
 
     AE              whois.aeda.net.ae
     XN--MGBAAM7A8H  whois.aeda.net.ae
@@ -1067,16 +1072,12 @@ our %servers = qw(
     YACHTS              whois.afilias-srs.net
     ZARA                whois.afilias-srs.net
 
-    AI           whois.ai
-
     BOX          whois.aridnrs.net.au
     EPSON        whois.aridnrs.net.au
     IINET        whois.aridnrs.net.au
     KRD          whois.aridnrs.net.au
     MELBOURNE    whois.aridnrs.net.au
     SAXO         whois.aridnrs.net.au
-
-    BN           whois.bnnic.bn
 
     BOM          whois.gtlds.nic.br
     FINAL        whois.gtlds.nic.br
@@ -1089,104 +1090,6 @@ our %servers = qw(
     XN--55QX5D   whois.ngtld.cn
     XN--IO0A7I   whois.ngtld.cn
     XN--XHQ521B  whois.ngtld.cn
-
-    AARP         whois.nic.aarp
-
-    ABC          whois.nic.abc
-
-    ABUDHABI     whois.nic.abudhabi
-
-    ACCOUNTANT   whois.nic.accountant
-
-    ADAC         whois.nic.adac
-
-    AEG          whois.nic.aeg
-
-    AF           whois.nic.af
-
-    AFAMILYCOMPANY  whois.nic.afamilycompany
-
-    AFL             whois.nic.afl
-
-    AIRBUS          whois.nic.airbus
-
-    AIRTEL          whois.nic.airtel
-
-    ALSTOM          whois.nic.alstom
-
-    AMERICANFAMILY  whois.nic.americanfamily
-
-    AMFAM           whois.nic.amfam
-
-    ANZ             whois.nic.anz
-
-    AOL             whois.nic.aol
-
-    ARTE            whois.nic.arte
-
-    ASDA            whois.nic.asda
-
-    AUSPOST         whois.nic.auspost
-
-    AW              whois.nic.aw
-
-    BANK            whois.nic.bank
-
-    BARCELONA       whois.nic.barcelona
-
-    BARCLAYCARD     whois.nic.barclaycard
-
-    BARCLAYS        whois.nic.barclays
-
-    BAREFOOT        whois.nic.barefoot
-
-    BASKETBALL      whois.nic.basketball
-
-    BAUHAUS         whois.nic.bauhaus
-
-    BAYERN          whois.nic.bayern
-
-    BBC             whois.nic.bbc
-
-    BBT             whois.nic.bbt
-
-    BBVA            whois.nic.bbva
-
-    BCN             whois.nic.bcn
-
-    BEAUTY          whois.nic.beauty
-
-    BENTLEY         whois.nic.bentley
-
-    BID             whois.nic.bid
-
-    BLANCO          whois.nic.blanco
-
-    BLOG            whois.nic.blog
-
-    BMS             whois.nic.bms
-
-    BO              whois.nic.bo
-
-    BOFA            whois.nic.bofa
-
-    BOND            whois.nic.bond
-
-    BOOTS           whois.nic.boots
-
-    BOSCH           whois.nic.bosch
-
-    BRADESCO        whois.nic.bradesco
-
-    BRIDGESTONE     whois.nic.bridgestone
-
-    BROADWAY        whois.nic.broadway
-
-    BROTHER         whois.nic.brother
-
-    BRUSSELS        whois.nic.brussels
-
-    BZH             whois.nic.bzh
 
     ADS             whois.nic.google
     ANDROID         whois.nic.google
@@ -1232,8 +1135,6 @@ our %servers = qw(
     YOUTUBE         whois.nic.google
     ZIP             whois.nic.google
 
-    BW              whois.nic.net.bw
-
     ANQUAN          whois.teleinfo.cn
     SHOUJI          whois.teleinfo.cn
     XIHUAN          whois.teleinfo.cn
@@ -1242,73 +1143,11 @@ our %servers = qw(
     XN--VUQ861B     whois.teleinfo.cn
     YUN             whois.teleinfo.cn
 
-    BI              whois1.nic.bi
-
-    CAPETOWN        capetown-whois.registry.net.za
-
-    CANCERRESEARCH  whois.nic.cancerresearch
-
-    CANON           whois.nic.canon
-
-    DURBAN          durban-whois.registry.net.za
-
-    JOBURG          joburg-whois.registry.net.za
-
-    PE              kero.yachay.pe
-
-    CORSICA         whois-corsica.nic.fr
-
-    MOVISTAR        whois-fe.movistar.tango.knipp.de
-
-    TELEFONICA      whois-fe.telefonica.tango.knipp.de
-
-    GMX             whois-fe1.gmx.tango.knipp.de
-
-    COLOGNE         whois-fe1.pdt.cologne.tango.knipp.de
-
-    KOELN           whois-fe1.pdt.koeln.tango.knipp.de
-
-    FROGANS         whois-frogans.nic.fr
-
-    SMART           whois-gtld.smart.com.ph
-
-    LANCASTER       whois-lancaster.nic.fr
-
-    LECLERC         whois-leclerc.nic.fr
-
-    MMA             whois-mma.nic.fr
-
-    MUTUELLE        whois-mutuelle.nic.fr
-
-    OVH             whois-ovh.nic.fr
-
-    PARIS           whois-paris.nic.fr
-
-    SNCF            whois-sncf.nic.fr
-
-    TOTAL           whois-total.nic.fr
-
     NOWRUZ          whois.agitsys.net
     PARS            whois.agitsys.net
     SHIA            whois.agitsys.net
     TCI             whois.agitsys.net
     XN--MGBT3DHD    whois.agitsys.net
-
-    TN              whois.ati.tn
-
-    UG              whois.co.ug
-
-    GQ              whois.dominio.gq
-
-    CF              whois.dot.cf
-
-    ML              whois.dot.ml
-
-    POST            whois.dotpostregistry.net
-
-    EUS             whois.eus.coreregistry.net
-
-    GAL             whois.gal.coreregistry.net
 
     WANG            whois.gtld.knet.cn
     XN--30RR7Y      whois.gtld.knet.cn
@@ -1317,130 +1156,13 @@ our %servers = qw(
     XN--9ET52U      whois.gtld.knet.cn
     XN--CZRU2D      whois.gtld.knet.cn
     XN--FIQ64B      whois.gtld.knet.cn
-
-    IKANO           whois.ikano.tld-box.at
-
-    KY              whois.kyregistry.ky
-
-    MADRID          whois.madrid.rs.corenic.net
-
-    MANGO           whois.mango.coreregistry.net
+    XN--SES554G     whois.registry.knet.cn
 
     MK              whois.marnet.mk
     XN--D1ALF       whois.marnet.mk
 
-    NC              whois.nc
-
-    CAPITALONE      whois.nic.capitalone
-
-    CASA            whois.nic.casa
-
-    CBA             whois.nic.cba
-
-    CEO             whois.nic.ceo
-
-    CFA             whois.nic.cfa
-
-    CFD             whois.nic.cfd
-
-    CHANEL          whois.nic.chanel
-
-    CHINTAI         whois.nic.chintai
-
-    CITYEATS        whois.nic.cityeats
-
-    CLUBMED         whois.nic.clubmed
-
-    COMCAST         whois.nic.comcast
-
-    COMMBANK        whois.nic.commbank
-
-    COMPARE         whois.nic.compare
-
-    COMSEC          whois.nic.comsec
-
-    COOKING         whois.nic.cooking
-
-    COOKINGCHANNEL  whois.nic.cookingchannel
-
-    CR              whois.nic.cr
-
-    CRICKET         whois.nic.cricket
-
-    CSC             whois.nic.csc
-
-    CUISINELLA      whois.nic.cuisinella
-
-    CYMRU           whois.nic.cymru
-
-    DATE            whois.nic.date
-
-    DDS             whois.nic.dds
-
-    DELOITTE        whois.nic.deloitte
-
-    DIY             whois.nic.diy
-
-    DOHA            whois.nic.doha
-
-    DOWNLOAD        whois.nic.download
-
-    DUBAI           whois.nic.dubai
-
-    DUCK            whois.nic.duck
-
     DZ               whois.nic.dz
     XN--LGBBAT1AD8J  whois.nic.dz
-
-    EC              whois.nic.ec
-
-    ERICSSON        whois.nic.ericsson
-
-    ERNI            whois.nic.erni
-
-    EUROVISION      whois.nic.eurovision
-
-    FAIRWINDS       whois.nic.fairwinds
-
-    FAITH           whois.nic.faith
-
-    FASHION         whois.nic.fashion
-
-    FIDELITY        whois.nic.fidelity
-
-    FIRESTONE       whois.nic.firestone
-
-    FIRMDALE        whois.nic.firmdale
-
-    FISHING         whois.nic.fishing
-
-    FOODNETWORK     whois.nic.foodnetwork
-
-    FRL             whois.nic.frl
-
-    FRONTDOOR       whois.nic.frontdoor
-
-    FUJIXEROX       whois.nic.fujixerox
-
-    GALLO           whois.nic.gallo
-
-    GDN             whois.nic.gdn
-
-    GENT            whois.nic.gent
-
-    GENTING         whois.nic.genting
-
-    GEORGE          whois.nic.george
-
-    GGEE            whois.nic.ggee
-
-    GIVING          whois.nic.giving
-
-    GL              whois.nic.gl
-
-    GLADE           whois.nic.glade
-
-    GLOBAL          whois.nic.global
 
     DATSUN          whois.nic.gmo
     FUJITSU         whois.nic.gmo
@@ -1457,384 +1179,692 @@ our %servers = qw(
     SHARP           whois.nic.gmo
     YODOBASHI       whois.nic.gmo
 
-    GOLDPOINT       whois.nic.goldpoint
-
-    GOP             whois.nic.gop
-
-    HAMBURG         whois.nic.hamburg
-
-    HGTV            whois.nic.hgtv
-
-    HONDA           whois.nic.honda
-
-    HORSE           whois.nic.horse
-
-    HYUNDAI         whois.nic.hyundai
-
-    IBM             whois.nic.ibm
-
-    ICE             whois.nic.ice
-
-    ICU             whois.nic.icu
-
-    IFM             whois.nic.ifm
-
-    INSURANCE       whois.nic.insurance
-
-    ISELECT         whois.nic.iselect
-
-    JAGUAR          whois.nic.jaguar
-
-    JAVA            whois.nic.java
-
-    JUNIPER         whois.nic.juniper
-
-    KDDI            whois.nic.kddi
-
-    KERRYHOTELS     whois.nic.kerryhotels
-
-    KERRYLOGISTICS  whois.nic.kerrylogistics
-
-    KERRYPROPERTIES  whois.nic.kerryproperties
-
-    KFH              whois.nic.kfh
-
-    KIA              whois.nic.kia
-
-    KN               whois.nic.kn
-
-    KOMATSU          whois.nic.komatsu
-
-    KUOKGROUP        whois.nic.kuokgroup
-
-    KYOTO            whois.nic.kyoto
-
-    LA               whois.nic.la
-
-    LACAIXA          whois.nic.lacaixa
-
-    LADBROKES        whois.nic.ladbrokes
-
-    LANCOME          whois.nic.lancome
-
-    LANDROVER        whois.nic.landrover
-
-    LAT              whois.nic.lat
-
-    LATROBE          whois.nic.latrobe
-
-    LAW              whois.nic.law
-
-    LEFRAK           whois.nic.lefrak
-
-    LEGO             whois.nic.lego
-
-    LEXUS            whois.nic.lexus
-
-    LIAISON          whois.nic.liaison
-
-    LIDL             whois.nic.lidl
-
-    LIFESTYLE        whois.nic.lifestyle
-
-    LINDE            whois.nic.linde
-
-    LIPSY            whois.nic.lipsy
-
-    LIXIL            whois.nic.lixil
-
-    LOAN             whois.nic.loan
-
-    LOCUS            whois.nic.locus
-
-    LOTTE            whois.nic.lotte
-
-    LPL              whois.nic.lpl
-
-    LPLFINANCIAL     whois.nic.lplfinancial
-
-    LUNDBECK         whois.nic.lundbeck
-
-    MACYS            whois.nic.macys
-
-    MAKEUP           whois.nic.makeup
-
-    MAN              whois.nic.man
-
-    MARKETS          whois.nic.markets
-
-    MED              whois.nic.med
-
-    MLS              whois.nic.mls
-
-    MOE              whois.nic.moe
-
-    MONASH           whois.nic.monash
-
-    MTN              whois.nic.mtn
-
-    MTR              whois.nic.mtr
-
-    MZ               whois.nic.mz
-
-    NAB              whois.nic.nab
-
-    NADEX            whois.nic.nadex
-
-    NATIONWIDE       whois.nic.nationwide
-
-    NEC              whois.nic.nec
-
-    NG               whois.nic.net.ng
-
-    NETBANK          whois.nic.netbank
-
-    NEXT             whois.nic.next
-
-    NEXTDIRECT       whois.nic.nextdirect
-
-    NICO             whois.nic.nico
-
-    NIKON            whois.nic.nikon
-
-    NISSAY           whois.nic.nissay
-
-    NORTON           whois.nic.norton
-
-    OBI              whois.nic.obi
-
-    OBSERVER         whois.nic.observer
-
-    OFF              whois.nic.off
-
-    OLAYAN           whois.nic.olayan
-
-    OLAYANGROUP      whois.nic.olayangroup
-
-    OMEGA            whois.nic.omega
-
-    ONYOURSIDE       whois.nic.onyourside
-
-    ORACLE           whois.nic.oracle
-
-    ORANGE           whois.nic.orange
-
-    UY               whois.nic.org.uy
-
-    OSAKA            whois.nic.osaka
-
-    PARTY            whois.nic.party
-
-    PHILIPS          whois.nic.philips
-
-    PHYSIO           whois.nic.physio
-
-    PLAYSTATION      whois.nic.playstation
-
-    POLITIE          whois.nic.politie
-
-    QUEBEC           whois.nic.quebec
-
-    QUEST            whois.nic.quest
-
-    RACING           whois.nic.racing
-
-    RADIO            whois.nic.radio
-
-    RAID             whois.nic.raid
-
-    REALESTATE       whois.nic.realestate
-
-    REDSTONE         whois.nic.redstone
-
-    REISE            whois.nic.reise
-
-    REVIEW           whois.nic.review
-
-    REXROTH          whois.nic.rexroth
-
-    RICOH            whois.nic.ricoh
-
-    RIGHTATHOME      whois.nic.rightathome
-
-    RODEO            whois.nic.rodeo
-
-    RUHR             whois.nic.ruhr
-
-    RWE              whois.nic.rwe
-
-    SAMSCLUB         whois.nic.samsclub
-
-    SAMSUNG          whois.nic.samsung
-
-    SANDVIK          whois.nic.sandvik
-
-    SANOFI           whois.nic.sanofi
-
-    SAP              whois.nic.sap
-
-    SBS              whois.nic.sbs
-
-    SCA              whois.nic.sca
-
-    SCB              whois.nic.scb
-
-    SCHMIDT          whois.nic.schmidt
-
-    SCHWARZ          whois.nic.schwarz
-
-    SCIENCE          whois.nic.science
-
-    SCJOHNSON        whois.nic.scjohnson
-
-    SEAT             whois.nic.seat
-
-    SEEK             whois.nic.seek
-
-    SELECT           whois.nic.select
-
-    SES              whois.nic.ses
-
-    SFR              whois.nic.sfr
-
-    SHANGRILA        whois.nic.shangrila
-
-    SHELL            whois.nic.shell
-
-    SKIN             whois.nic.skin
-
-    SKY              whois.nic.sky
-
-    SN               whois.nic.sn
-
-    SOFTBANK         whois.nic.softbank
-
-    SONY             whois.nic.sony
-
-    SPREADBETTING    whois.nic.spreadbetting
-
-    STARHUB          whois.nic.starhub
-
-    STATOIL          whois.nic.statoil
-
-    STC              whois.nic.stc
-
-    STCGROUP         whois.nic.stcgroup
-
-    SUCKS            whois.nic.sucks
-
-    SURF             whois.nic.surf
-
-    SWATCH           whois.nic.swatch
-
-    SWISS            whois.nic.swiss
-
-    SYMANTEC         whois.nic.symantec
-
-    TAB              whois.nic.tab
-
-    TAIPEI           whois.nic.taipei
-
-    TATAMOTORS       whois.nic.tatamotors
-
-    TELECITY         whois.nic.telecity
-
-    TG               whois.nic.tg
-
-    TIAA             whois.nic.tiaa
-
-    TIFFANY          whois.nic.tiffany
-
-    TIROL            whois.nic.tirol
-
-    TORAY            whois.nic.toray
-
-    TOSHIBA          whois.nic.toshiba
-
-    TOYOTA           whois.nic.toyota
-
-    TRADE            whois.nic.trade
-
-    TRAVELCHANNEL    whois.nic.travelchannel
-
-    UBANK            whois.nic.ubank
-
-    UBS              whois.nic.ubs
-
-    VANA             whois.nic.vana
-
-    VANGUARD         whois.nic.vanguard
-
-    VERISIGN         whois.nic.verisign
-
-    VERSICHERUNG     whois.nic.versicherung
-
-    VG               whois.nic.vg
-
-    VISA             whois.nic.visa
-
-    VISTA            whois.nic.vista
-
-    VIVA             whois.nic.viva
-
-    VLAANDEREN       whois.nic.vlaanderen
-
-    VODKA            whois.nic.vodka
-
-    VOLVO            whois.nic.volvo
-
-    WALES            whois.nic.wales
-
-    WALMART          whois.nic.walmart
-
-    WARMAN           whois.nic.warman
-
-    WEBCAM           whois.nic.webcam
-
-    WEBER            whois.nic.weber
-
-    WED              whois.nic.wed
-
-    WHOSWHO          whois.nic.whoswho
-
-    WIN              whois.nic.win
-
-    WME              whois.nic.wme
-
-    WTC              whois.nic.wtc
-
-    XEROX            whois.nic.xerox
-
-    XFINITY          whois.nic.xfinity
-
-    XIN              whois.nic.xin
-
-    XN--11B4C3D      whois.nic.xn--11b4c3d
-
-    ID               whois.pandi.or.id
-
     OM               whois.registry.om
     XN--MGB9AWBF     whois.registry.om
-
-    PF               whois.registry.pf
-
-    SCOT             whois.scot.coreregistry.net
 
     SY               whois.tld.sy
     XN--OGBPF8FL     whois.tld.sy
 
-    TZ               whois.tznic.or.tz
-
-    VOTING           whois.voting.tld-box.at
-
     XN--FIQS8S       cwhois.cnnic.cn
     XN--FIQZ9S       cwhois.cnnic.cn
 
-    XN--ZFR164B      whois.conac.cn
+    MO               whois.monic.mo
+    XN--MIX891F      whois.monic.mo
 
-    XN--J1AMH        whois.dotukr.com
+    XN--CLCHC0EA0B2G2A9GCD  whois.sgnic.sg
+    XN--YFRO4I67O           whois.sgnic.sg
 
-    XN--90AE         whois.imena.bg
+    INT.RU                  whois.int.ru
+
+    PRIV.AT                 whois.nic.priv.at
+
+    AI                      whois.ai
+
+    BN                      whois.bnnic.bn
+
+    AARP                    whois.nic.aarp
+
+    ABC                     whois.nic.abc
+
+    ABUDHABI                whois.nic.abudhabi
+
+    ACCOUNTANT              whois.nic.accountant
+
+    ADAC                    whois.nic.adac
+
+    AEG                     whois.nic.aeg
+
+    AF                      whois.nic.af
+
+    AFAMILYCOMPANY          whois.nic.afamilycompany
+
+    AFL                     whois.nic.afl
+
+    AIRBUS                  whois.nic.airbus
+
+    AIRTEL                  whois.nic.airtel
+
+    ALSTOM                  whois.nic.alstom
+
+    AMERICANFAMILY          whois.nic.americanfamily
+
+    AMFAM                   whois.nic.amfam
+
+    ANZ                     whois.nic.anz
+
+    AOL                     whois.nic.aol
+
+    ARTE                    whois.nic.arte
+
+    ASDA                    whois.nic.asda
+
+    AUSPOST                 whois.nic.auspost
+
+    AW                      whois.nic.aw
+
+    BANK                    whois.nic.bank
+
+    BARCELONA               whois.nic.barcelona
+
+    BARCLAYCARD             whois.nic.barclaycard
+
+    BARCLAYS                whois.nic.barclays
+
+    BAREFOOT                whois.nic.barefoot
+
+    BASKETBALL              whois.nic.basketball
+
+    BAUHAUS                 whois.nic.bauhaus
+
+    BAYERN                  whois.nic.bayern
+
+    BBC                     whois.nic.bbc
+
+    BBT                     whois.nic.bbt
+
+    BBVA                    whois.nic.bbva
+
+    BCN                     whois.nic.bcn
+
+    BEAUTY                  whois.nic.beauty
+
+    BENTLEY                 whois.nic.bentley
+
+    BID                     whois.nic.bid
+
+    BLANCO                  whois.nic.blanco
+
+    BLOG                    whois.nic.blog
+
+    BMS                     whois.nic.bms
+
+    BO                      whois.nic.bo
+
+    BOFA                    whois.nic.bofa
+
+    BOND                    whois.nic.bond
+
+    BOOTS                   whois.nic.boots
+
+    BOSCH                   whois.nic.bosch
+
+    BRADESCO                whois.nic.bradesco
+
+    BRIDGESTONE             whois.nic.bridgestone
+
+    BROADWAY                whois.nic.broadway
+
+    BROTHER                 whois.nic.brother
+
+    BRUSSELS                whois.nic.brussels
+
+    BZH                     whois.nic.bzh
+
+    BW                      whois.nic.net.bw
+
+    BI                      whois1.nic.bi
+
+    CANCERRESEARCH          whois.nic.cancerresearch
+
+    CANON                   whois.nic.canon
+
+    PE                      kero.yachay.pe
+
+    COLOGNE                 whois-fe1.pdt.cologne.tango.knipp.de
+    GMX                     whois-fe1.gmx.tango.knipp.de
+    KOELN                   whois-fe1.pdt.koeln.tango.knipp.de
+    MOVISTAR                whois-fe.movistar.tango.knipp.de
+    TELEFONICA              whois-fe.telefonica.tango.knipp.de
+
+    SMART                   whois-gtld.smart.com.ph
+
+    TN                      whois.ati.tn
+
+    UG                      whois.co.ug
+
+    GQ                      whois.dominio.gq
+
+    CF                      whois.dot.cf
+
+    ML                      whois.dot.ml
+
+    POST                    whois.dotpostregistry.net
+
+    EUS                     whois.eus.coreregistry.net
+    GAL                     whois.gal.coreregistry.net
+    MANGO                   whois.mango.coreregistry.net
+    SCOT                    whois.scot.coreregistry.net
+
+    IKANO                   whois.ikano.tld-box.at
+    VOTING                  whois.voting.tld-box.at
+
+    KY                      whois.kyregistry.ky
+
+    NC                      whois.nc
+
+    CAPITALONE              whois.nic.capitalone
+
+    CASA                    whois.nic.casa
+
+    CBA                     whois.nic.cba
+
+    CEO                     whois.nic.ceo
+
+    CFA                     whois.nic.cfa
+
+    CFD                     whois.nic.cfd
+
+    CHANEL                  whois.nic.chanel
+
+    CHINTAI                 whois.nic.chintai
+
+    CITYEATS                whois.nic.cityeats
+
+    CLUBMED                 whois.nic.clubmed
+
+    COMCAST                 whois.nic.comcast
+
+    COMMBANK                whois.nic.commbank
+
+    COMPARE                 whois.nic.compare
+
+    COMSEC                  whois.nic.comsec
+
+    COOKING                 whois.nic.cooking
+
+    COOKINGCHANNEL          whois.nic.cookingchannel
+
+    CR                      whois.nic.cr
+
+    CRICKET                 whois.nic.cricket
+
+    CSC                     whois.nic.csc
+
+    CUISINELLA              whois.nic.cuisinella
+
+    CYMRU                   whois.nic.cymru
+
+    DATE                    whois.nic.date
+
+    DDS                     whois.nic.dds
+
+    DELOITTE                whois.nic.deloitte
+
+    DIY                     whois.nic.diy
+
+    DOHA                    whois.nic.doha
+
+    DOWNLOAD                whois.nic.download
+
+    DUBAI                   whois.nic.dubai
+
+    DUCK                    whois.nic.duck
+
+    EC                      whois.nic.ec
+
+    ERICSSON                whois.nic.ericsson
+
+    ERNI                    whois.nic.erni
+
+    EUROVISION              whois.nic.eurovision
+
+    FAIRWINDS               whois.nic.fairwinds
+
+    FAITH                   whois.nic.faith
+
+    FASHION                 whois.nic.fashion
+
+    FIDELITY                whois.nic.fidelity
+
+    FIRESTONE               whois.nic.firestone
+
+    FIRMDALE                whois.nic.firmdale
+
+    FISHING                 whois.nic.fishing
+
+    FOODNETWORK             whois.nic.foodnetwork
+
+    FRL                     whois.nic.frl
+
+    FRONTDOOR               whois.nic.frontdoor
+
+    FUJIXEROX               whois.nic.fujixerox
+
+    GALLO                   whois.nic.gallo
+
+    GDN                     whois.nic.gdn
+
+    GENT                    whois.nic.gent
+
+    GENTING                 whois.nic.genting
+
+    GEORGE                  whois.nic.george
+
+    GGEE                    whois.nic.ggee
+
+    GIVING                  whois.nic.giving
+
+    GL                      whois.nic.gl
+
+    GLADE                   whois.nic.glade
+
+    GLOBAL                  whois.nic.global
+
+    GOLDPOINT               whois.nic.goldpoint
+
+    GOP                     whois.nic.gop
+
+    HAMBURG                 whois.nic.hamburg
+
+    HGTV                    whois.nic.hgtv
+
+    HONDA                   whois.nic.honda
+
+    HORSE                   whois.nic.horse
+
+    HYUNDAI                 whois.nic.hyundai
+
+    IBM                     whois.nic.ibm
+
+    ICE                     whois.nic.ice
+
+    ICU                     whois.nic.icu
+
+    IFM                     whois.nic.ifm
+
+    INSURANCE               whois.nic.insurance
+
+    ISELECT                 whois.nic.iselect
+
+    JAGUAR                  whois.nic.jaguar
+
+    JAVA                    whois.nic.java
+
+    JUNIPER                 whois.nic.juniper
+
+    KDDI                    whois.nic.kddi
+
+    KERRYHOTELS             whois.nic.kerryhotels
+
+    KERRYLOGISTICS          whois.nic.kerrylogistics
+
+    KERRYPROPERTIES         whois.nic.kerryproperties
+
+    KFH                     whois.nic.kfh
+
+    KIA                     whois.nic.kia
+
+    KN                      whois.nic.kn
+
+    KOMATSU                 whois.nic.komatsu
+
+    KUOKGROUP               whois.nic.kuokgroup
+
+    KYOTO                   whois.nic.kyoto
+
+    LA                      whois.nic.la
+
+    LACAIXA                 whois.nic.lacaixa
+
+    LADBROKES               whois.nic.ladbrokes
+
+    LANCOME                 whois.nic.lancome
+
+    LANDROVER               whois.nic.landrover
+
+    LAT                     whois.nic.lat
+
+    LATROBE                 whois.nic.latrobe
+
+    LAW                     whois.nic.law
+
+    LEFRAK                  whois.nic.lefrak
+
+    LEGO                    whois.nic.lego
+
+    LEXUS                   whois.nic.lexus
+
+    LIAISON                 whois.nic.liaison
+
+    LIDL                    whois.nic.lidl
+
+    LIFESTYLE               whois.nic.lifestyle
+
+    LINDE                   whois.nic.linde
+
+    LIPSY                   whois.nic.lipsy
+
+    LIXIL                   whois.nic.lixil
+
+    LOAN                    whois.nic.loan
+
+    LOCUS                   whois.nic.locus
+
+    LOTTE                   whois.nic.lotte
+
+    LPL                     whois.nic.lpl
+
+    LPLFINANCIAL            whois.nic.lplfinancial
+
+    LUNDBECK                whois.nic.lundbeck
+
+    MACYS                   whois.nic.macys
+
+    MAKEUP                  whois.nic.makeup
+
+    MAN                     whois.nic.man
+
+    MARKETS                 whois.nic.markets
+
+    MED                     whois.nic.med
+
+    MLS                     whois.nic.mls
+
+    MOE                     whois.nic.moe
+
+    MONASH                  whois.nic.monash
+
+    MTN                     whois.nic.mtn
+
+    MTR                     whois.nic.mtr
+
+    MZ                      whois.nic.mz
+
+    NAB                     whois.nic.nab
+
+    NADEX                   whois.nic.nadex
+
+    NATIONWIDE              whois.nic.nationwide
+
+    NEC                     whois.nic.nec
+
+    NG                      whois.nic.net.ng
+
+    NETBANK                 whois.nic.netbank
+
+    NEXT                    whois.nic.next
+
+    NEXTDIRECT              whois.nic.nextdirect
+
+    NICO                    whois.nic.nico
+
+    NIKON                   whois.nic.nikon
+
+    NISSAY                  whois.nic.nissay
+
+    NORTON                  whois.nic.norton
+
+    OBI                     whois.nic.obi
+
+    OBSERVER                whois.nic.observer
+
+    OFF                     whois.nic.off
+
+    OLAYAN                  whois.nic.olayan
+
+    OLAYANGROUP             whois.nic.olayangroup
+
+    OMEGA                   whois.nic.omega
+
+    ONYOURSIDE              whois.nic.onyourside
+
+    ORACLE                  whois.nic.oracle
+
+    ORANGE                  whois.nic.orange
+
+    UY                      whois.nic.org.uy
+
+    OSAKA                   whois.nic.osaka
+
+    PARTY                   whois.nic.party
+
+    PHILIPS                 whois.nic.philips
+
+    PHYSIO                  whois.nic.physio
+
+    PLAYSTATION             whois.nic.playstation
+
+    POLITIE                 whois.nic.politie
+
+    QUEBEC                  whois.nic.quebec
+
+    QUEST                   whois.nic.quest
+
+    RACING                  whois.nic.racing
+
+    RADIO                   whois.nic.radio
+
+    RAID                    whois.nic.raid
+
+    REALESTATE              whois.nic.realestate
+
+    REDSTONE                whois.nic.redstone
+
+    REISE                   whois.nic.reise
+
+    REVIEW                  whois.nic.review
+
+    REXROTH                 whois.nic.rexroth
+
+    RICOH                   whois.nic.ricoh
+
+    RIGHTATHOME             whois.nic.rightathome
+
+    RODEO                   whois.nic.rodeo
+
+    RUHR                    whois.nic.ruhr
+
+    RWE                     whois.nic.rwe
+
+    SAMSCLUB                whois.nic.samsclub
+
+    SAMSUNG                 whois.nic.samsung
+
+    SANDVIK                 whois.nic.sandvik
+
+    SANOFI                  whois.nic.sanofi
+
+    SAP                     whois.nic.sap
+
+    SBS                     whois.nic.sbs
+
+    SCA                     whois.nic.sca
+
+    SCB                     whois.nic.scb
+
+    SCHMIDT                 whois.nic.schmidt
+
+    SCHWARZ                 whois.nic.schwarz
+
+    SCIENCE                 whois.nic.science
+
+    SCJOHNSON               whois.nic.scjohnson
+
+    SEAT                    whois.nic.seat
+
+    SEEK                    whois.nic.seek
+
+    SELECT                  whois.nic.select
+
+    SES                     whois.nic.ses
+
+    SFR                     whois.nic.sfr
+
+    SHANGRILA               whois.nic.shangrila
+
+    SHELL                   whois.nic.shell
+
+    SKIN                    whois.nic.skin
+
+    SKY                     whois.nic.sky
+
+    SN                      whois.nic.sn
+
+    SOFTBANK                whois.nic.softbank
+
+    SONY                    whois.nic.sony
+
+    SPREADBETTING           whois.nic.spreadbetting
+
+    STARHUB                 whois.nic.starhub
+
+    STATOIL                 whois.nic.statoil
+
+    STC                     whois.nic.stc
+
+    STCGROUP                whois.nic.stcgroup
+
+    SUCKS                   whois.nic.sucks
+
+    SURF                    whois.nic.surf
+
+    SWATCH                  whois.nic.swatch
+
+    SWISS                   whois.nic.swiss
+
+    SYMANTEC                whois.nic.symantec
+
+    TAB                     whois.nic.tab
+
+    TAIPEI                  whois.nic.taipei
+
+    TATAMOTORS              whois.nic.tatamotors
+
+    TELECITY                whois.nic.telecity
+
+    TG                      whois.nic.tg
+
+    TIAA                    whois.nic.tiaa
+
+    TIFFANY                 whois.nic.tiffany
+
+    TIROL                   whois.nic.tirol
+
+    TORAY                   whois.nic.toray
+
+    TOSHIBA                 whois.nic.toshiba
+
+    TOYOTA                  whois.nic.toyota
+
+    TRADE                   whois.nic.trade
+
+    TRAVELCHANNEL           whois.nic.travelchannel
+
+    UBANK                   whois.nic.ubank
+
+    UBS                     whois.nic.ubs
+
+    VANA                    whois.nic.vana
+
+    VANGUARD                whois.nic.vanguard
+
+    VERISIGN                whois.nic.verisign
+
+    VERSICHERUNG            whois.nic.versicherung
+
+    VG                      whois.nic.vg
+
+    VISA                    whois.nic.visa
+
+    VISTA                   whois.nic.vista
+
+    VIVA                    whois.nic.viva
+
+    VLAANDEREN              whois.nic.vlaanderen
+
+    VODKA                   whois.nic.vodka
+
+    VOLVO                   whois.nic.volvo
+
+    WALES                   whois.nic.wales
+
+    WALMART                 whois.nic.walmart
+
+    WARMAN                  whois.nic.warman
+
+    WEBCAM                  whois.nic.webcam
+
+    WEBER                   whois.nic.weber
+
+    WED                     whois.nic.wed
+
+    WHOSWHO                 whois.nic.whoswho
+
+    WIN                     whois.nic.win
+
+    WME                     whois.nic.wme
+
+    WTC                     whois.nic.wtc
+
+    XEROX                   whois.nic.xerox
+
+    XFINITY                 whois.nic.xfinity
+
+    XIN                     whois.nic.xin
+
+    XN--11B4C3D             whois.nic.xn--11b4c3d
+
+    ID                      whois.pandi.or.id
+
+    PF                      whois.registry.pf
+
+    TZ                      whois.tznic.or.tz
+
+    XN--ZFR164B             whois.conac.cn
+
+    XN--J1AMH               whois.dotukr.com
+
+    XN--90AE                whois.imena.bg
+
+    XN--MGBERP4A5D4AR       whois.nic.net.sa
+
+    XN--3PXU8K              whois.nic.xn--3pxu8k
+
+    XN--42C2D9A             whois.nic.xn--42c2d9a
+
+    XN--45Q11C              whois.nic.xn--45q11c
+
+    XN--5SU34J936BGSG       whois.nic.xn--5su34j936bgsg
+
+    XN--9DBQ2A              whois.nic.xn--9dbq2a
+
+    XN--C2BR7G              whois.nic.xn--c2br7g
+
+    XN--EFVY88H             whois.nic.xn--efvy88h
+
+    XN--FHBEI               whois.nic.xn--fhbei
+
+    XN--HXT814E             whois.nic.xn--hxt814e
+
+    XN--KPUT3I              whois.nic.xn--kput3i
+
+    XN--MGBA7C0BBN0A        whois.nic.xn--mgba7c0bbn0a
+
+    XN--MGBCA7DZDO          whois.nic.xn--mgbca7dzdo
+
+    XN--MK1BU44C            whois.nic.xn--mk1bu44c
+
+    XN--MXTQ1M              whois.nic.xn--mxtq1m
+
+    XN--NGBE9E0A            whois.nic.xn--ngbe9e0a
+
+    XN--PSSY2U              whois.nic.xn--pssy2u
+
+    XN--T60B56A             whois.nic.xn--t60b56a
+
+    XN--TCKWE               whois.nic.xn--tckwe
+
+    XN--W4R85EL8FHU5DNRA    whois.nic.xn--w4r85el8fhu5dnra
+
+    XN--W4RS40L             whois.nic.xn--w4rs40l
+
+    XPERIA                  whois.nic.xperia
+
+    ZM                      whois.nic.zm
+
+    XN--YGBI2AMMX           whois.pnina.ps
+
+    XN--O3CW4H              whois.thnic.co.th
 
     MO               whois.monic.mo
     XN--MIX891F      whois.monic.mo
