@@ -5,6 +5,7 @@ use warnings;
 use Getopt::Long;
 use LWP::Simple;
 use Template;
+use File::Slurp;
 
 use lib 'lib';
 use Net::Whois::Raw;
@@ -118,13 +119,11 @@ if ($check_for_new_gtlds) {
     my $tpl = Template->new;
     $tpl->process(\*DATA, {
         new    => \@new,
-        source => scalar do { local $/; open my $fh, '<:utf8', 'lib/Net/Whois/Raw/Data.pm' or die $!; <$fh> },
+        source => scalar read_file( 'lib/Net/Whois/Raw/Data.pm', {binmode => ':utf8'} ),
     }, \my $html) or die "Can't process template: ", $tpl->error;
     
-    open my $fh, '>:utf8', 'new-gtlds.html'
-        or die "open > new-gtlds.html: $!";
-    print $fh $html;
-    close $fh;
+    write_file( 'new-gtlds.html', {binmode => ':utf8'} )
+        or die "write new-gtlds.html: $!";
     
     print "Done! Now open `new-gtlds.html' in your favorite browser.\n";
 }
