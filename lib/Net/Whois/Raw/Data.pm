@@ -166,8 +166,8 @@ our %servers = qw(
     CAMP            whois.donuts.co
     CAPITAL         whois.donuts.co
     CARDS           whois.donuts.co
-    CAREERS         whois.donuts.co
     CARE            whois.donuts.co
+    CAREERS         whois.donuts.co
     CASH            whois.donuts.co
     CASINO          whois.donuts.co
     CATERING        whois.donuts.co
@@ -190,8 +190,9 @@ our %servers = qw(
     CONSTRUCTION    whois.donuts.co
     CONTRACTORS     whois.donuts.co
     COOL            whois.donuts.co
-    CREDITCARD      whois.donuts.co
+    COUPONS         whois.donuts.co
     CREDIT          whois.donuts.co
+    CREDITCARD      whois.donuts.co
     CRUISES         whois.donuts.co
     DATING          whois.donuts.co
     DEALS           whois.donuts.co
@@ -199,9 +200,10 @@ our %servers = qw(
     DENTAL          whois.donuts.co
     DIAMONDS        whois.donuts.co
     DIGITAL         whois.donuts.co
-    DIRECTORY       whois.donuts.co
     DIRECT          whois.donuts.co
+    DIRECTORY       whois.donuts.co
     DISCOUNT        whois.donuts.co
+    DOCTOR          whois.donuts.co
     DOG             whois.donuts.co
     DOMAINS         whois.donuts.co
     EDUCATION       whois.donuts.co
@@ -228,6 +230,7 @@ our %servers = qw(
     FOUNDATION      whois.donuts.co
     FUND            whois.donuts.co
     FURNITURE       whois.donuts.co
+    FYI             whois.donuts.co
     GALLERY         whois.donuts.co
     GIFTS           whois.donuts.co
     GLASS           whois.donuts.co
@@ -266,9 +269,11 @@ our %servers = qw(
     MAISON          whois.donuts.co
     MANAGEMENT      whois.donuts.co
     MARKETING       whois.donuts.co
+    MBA             whois.donuts.co
     MEDIA           whois.donuts.co
     MEMORIAL        whois.donuts.co
     MONEY           whois.donuts.co
+    MOVIE           whois.donuts.co
     NETWORK         whois.donuts.co
     PARTNERS        whois.donuts.co
     PARTS           whois.donuts.co
@@ -297,6 +302,7 @@ our %servers = qw(
     SHOPPING        whois.donuts.co
     SHOW            whois.donuts.co
     SINGLES         whois.donuts.co
+    SOCCER          whois.donuts.co
     SOLAR           whois.donuts.co
     SOLUTIONS       whois.donuts.co
     STYLE           whois.donuts.co
@@ -305,8 +311,8 @@ our %servers = qw(
     SUPPORT         whois.donuts.co
     SURGERY         whois.donuts.co
     SYSTEMS         whois.donuts.co
-    TAXI            whois.donuts.co
     TAX             whois.donuts.co
+    TAXI            whois.donuts.co
     TEAM            whois.donuts.co
     TECHNOLOGY      whois.donuts.co
     TENNIS          whois.donuts.co
@@ -333,13 +339,17 @@ our %servers = qw(
     WORKS           whois.donuts.co
     WORLD           whois.donuts.co
     WTF             whois.donuts.co
+    XN--CZRS0T      whois.donuts.co
+    XN--FJQ720A     whois.donuts.co
+    XN--UNUP4Y      whois.donuts.co
+    XN--VHQUV       whois.donuts.co
     ZONE            whois.donuts.co
 
     AUDIO           whois.uniregistry.net
     AUTO            whois.uniregistry.net
     BLACKFRIDAY     whois.uniregistry.net
-    CARS            whois.uniregistry.net
     CAR             whois.uniregistry.net
+    CARS            whois.uniregistry.net
     CHRISTMAS       whois.uniregistry.net
     CLICK           whois.uniregistry.net
     DIET            whois.uniregistry.net
@@ -349,10 +359,12 @@ our %servers = qw(
     GUITARS         whois.uniregistry.net
     HELP            whois.uniregistry.net
     HIPHOP          whois.uniregistry.net
+    HIV             whois.uniregistry.net
     HOSTING         whois.uniregistry.net
     JUEGOS          whois.uniregistry.net
     LINK            whois.uniregistry.net
     LOL             whois.uniregistry.net
+    MOM             whois.uniregistry.net
     PHOTO           whois.uniregistry.net
     PICS            whois.uniregistry.net
     PROPERTY        whois.uniregistry.net
@@ -388,14 +400,23 @@ our %servers = qw(
     UNO             whois.nic.uno
     XXX             whois.nic.xxx
 
+    BET             whois.afilias.net
+    BLACK           whois.afilias.net
+    BLUE            whois.afilias.net
+    GREEN           whois.afilias.net
+    KIM             whois.afilias.net
+    LGBT            whois.afilias.net
+    LOTTO           whois.afilias.net
+    ORGANIC         whois.afilias.net
+    PET             whois.afilias.net
     PINK            whois.afilias.net
+    POKER           whois.afilias.net
+    PROMO           whois.afilias.net
     RED             whois.afilias.net
     SHIKSHA         whois.afilias.net
-    KIM             whois.afilias.net
-    BLUE            whois.afilias.net
-    PET             whois.afilias.net
-    PROMO           whois.afilias.net
-    BET             whois.afilias.net
+    VOTE            whois.afilias.net
+    VOTO            whois.afilias.net
+    XN--6FRZ82G     whois.afilias.net
 
     ACTOR           whois.unitedtld.com
     AIRFORCE        whois.unitedtld.com
@@ -429,7 +450,6 @@ our %servers = qw(
     SOFTWARE        whois.unitedtld.com
     VET             whois.unitedtld.com
 
-    
     COUNTRY         whois-dub.mm-registry.com
     LONDON          whois-dub.mm-registry.com
     MIAMI           whois-dub.mm-registry.com
@@ -445,133 +465,143 @@ our %servers = qw(
     WORK            whois-dub.mm-registry.com
     YOGA            whois-dub.mm-registry.com
 
+    BAND            whois.rightside.co
     FAMILY          whois.rightside.co
     GAMES           whois.rightside.co
     LIVE            whois.rightside.co
+    NEWS            whois.rightside.co
     RIP             whois.rightside.co
     SALE            whois.rightside.co
     STUDIO          whois.rightside.co
     VIDEO           whois.rightside.co
 
-    AC  whois.nic.ac
-    AG  whois.nic.ag
-    AM  whois.amnic.net
-    AS  whois.nic.as
-    AT  whois.nic.at
-    AU  whois.aunic.net
-    BE  whois.dns.be
-    BG  whois.register.bg
-    BJ  whois.nic.bj
-    BR  whois.registro.br
-    BZ  whois2.afilias-grs.net
-    CA  whois.cira.ca
-    CD  whois.nic.cd
-    CH  whois.nic.ch
-    CI  whois.nic.ci
-    CL  whois.nic.cl
-    CM  whois.netcom.cm
-    CN  whois.cnnic.net.cn
-    CO  whois.nic.co
-    CX  whois.nic.cx
-    CZ  whois.nic.cz
-    DE  whois.denic.de
-    DK  whois.dk-hostmaster.dk
-    DM  whois.nic.dm
-    EE  whois.eenet.ee
-    EU  whois.eu
-    FI  whois.ficora.fi
-    FM  whois.nic.fm
-    FO  whois.ripe.net
-    FR  whois.nic.fr
-    GD  whois.adamsnames.tc
-    GG  whois.channelisles.net
-    GI  whois2.afilias-grs.net
-    GS  whois.nic.gs
-    GY  whois.registry.gy
-    HU  whois.nic.hu
-    HK  whois.hkirc.hk
-    HM  whois.registry.hm
-    HN  whois2.afilias-grs.net
-    HR  whois.dns.hr
-    HT  whois.nic.ht
-    IE  whois.domainregistry.ie
-    IL  whois.isoc.org.il
-    IM  whois.nic.im
-    IN  whois.inregistry.net
-    IO  whois.nic.io
-    IR  whois.nic.ir
-    IS  whois.isnic.is
-    IT  whois.nic.it
-    JE  whois.channelisles.net
-    JP  whois.jprs.jp
-    KE  whois.kenic.or.ke
-    KG  whois.domain.kg
-    KI  whois.nic.ki
-    KR  whois.nic.or.kr
-    KZ  whois.nic.kz
-    LC  whois2.afilias-grs.net
-    LI  whois.nic.li
-    LT  whois.domreg.lt
-    LU  whois.dns.lu
-    LV  whois.nic.lv
-    LY  whois.nic.ly
-    MA  whois.iam.net.ma
-    MC  whois.ripe.net
-    MD  whois.nic.md
-    ME  whois.nic.me
-    MG  whois.nic.mg
-    MN  whois2.afilias-grs.net
-    MS  whois.nic.ms
-    MU  whois.nic.mu
-    MX  whois.nic.mx
-    MY  whois.mynic.net.my
-    NA  whois.na-nic.com.na
-    NF  whois.nic.cx
-    NL  whois.domain-registry.nl
-    NO  whois.norid.no
-    NU  whois.nic.nu
-    NZ  whois.srs.net.nz
-    PL  whois.dns.pl
-    PM  whois.nic.pm
-    PR  whois.nic.pr
-    PT  whois.dns.pt
-    PW  whois.centralnic.com
-    PY  whois.i-dns.net
-    QA  whois.registry.qa
-    RE  whois.nic.re
-    RO  whois.rotld.ro
-    RS  whois.rnids.rs
-    SA  whois.saudinic.net.sa
-    SB  whois.nic.sb
-    SC  whois2.afilias-grs.net
-    SE  whois.iis.se
-    SG  whois.nic.net.sg
-    SH  whois.nic.sh
-    SI  whois.arnes.si
-    SK  whois.sk-nic.sk
-    SM  whois.ripe.net
-    SO  whois.nic.so
-    ST  whois.nic.st
-    SX  whois.sx
-    TC  whois.adamsnames.tc
-    TF  whois.nic.tf
-    TH  whois.nic.uk
-    TK  whois.dot.tk
-    TL  whois.nic.tl
-    TM  whois.nic.tm
-    TO  whois.tonic.to
-    TR  whois.nic.tr
-    TV  whois.nic.tv
-    TW  whois.twnic.net.tw
-    UA  whois.com.ua
-    UK  whois.nic.uk
-    US  whois.nic.us
-    UZ  whois.cctld.uz
-    VC  whois2.afilias-grs.net
-    VE  whois.nic.ve
-    WF  whois.nic.wf
-    WS  whois.worldsite.ws
-    YT  whois.nic.yt
+    AC               whois.nic.ac
+    AG               whois.nic.ag
+    AM               whois.amnic.net
+    AS               whois.nic.as
+    AT               whois.nic.at
+    AU               whois.aunic.net
+    BE               whois.dns.be
+    BG               whois.register.bg
+    BJ               whois.nic.bj
+    BR               whois.registro.br
+    BZ               whois2.afilias-grs.net
+    CA               whois.cira.ca
+    CD               whois.nic.cd
+    CH               whois.nic.ch
+    CI               whois.nic.ci
+    CL               whois.nic.cl
+    CM               whois.netcom.cm
+    CN               whois.cnnic.net.cn
+    CO               whois.nic.co
+    CX               whois.nic.cx
+    CZ               whois.nic.cz
+    DE               whois.denic.de
+    DK               whois.dk-hostmaster.dk
+    DM               whois.nic.dm
+    EE               whois.eenet.ee
+    EU               whois.eu
+    FI               whois.ficora.fi
+    FM               whois.nic.fm
+    FO               whois.ripe.net
+    FR               whois.nic.fr
+    GD               whois.adamsnames.tc
+    GG               whois.channelisles.net
+    GI               whois2.afilias-grs.net
+    GS               whois.nic.gs
+    GY               whois.registry.gy
+    HK               whois.hkirc.hk
+    HM               whois.registry.hm
+    HN               whois2.afilias-grs.net
+    HR               whois.dns.hr
+    HT               whois.nic.ht
+    HU               whois.nic.hu
+    IE               whois.domainregistry.ie
+    IL               whois.isoc.org.il
+    IM               whois.nic.im
+    IN               whois.inregistry.net
+    IO               whois.nic.io
+    IR               whois.nic.ir
+    IS               whois.isnic.is
+    IT               whois.nic.it
+    JE               whois.channelisles.net
+    JP               whois.jprs.jp
+    KE               whois.kenic.or.ke
+    KG               whois.domain.kg
+    KI               whois.nic.ki
+    KR               whois.nic.or.kr
+    KZ               whois.nic.kz
+    LC               whois2.afilias-grs.net
+    LI               whois.nic.li
+    LT               whois.domreg.lt
+    LU               whois.dns.lu
+    LV               whois.nic.lv
+    LY               whois.nic.ly
+    MA               whois.iam.net.ma
+    MC               whois.ripe.net
+    MD               whois.nic.md
+    ME               whois.nic.me
+    MG               whois.nic.mg
+    MN               whois2.afilias-grs.net
+    MS               whois.nic.ms
+    MU               whois.nic.mu
+    MX               whois.nic.mx
+    MY               whois.mynic.net.my
+    NA               whois.na-nic.com.na
+    NF               whois.nic.cx
+    NL               whois.domain-registry.nl
+    NO               whois.norid.no
+    NU               whois.nic.nu
+    NZ               whois.srs.net.nz
+    PL               whois.dns.pl
+    PM               whois.nic.pm
+    PR               whois.nic.pr
+    PT               whois.dns.pt
+    PW               whois.centralnic.com
+    PY               whois.i-dns.net
+    QA               whois.registry.qa
+    RE               whois.nic.re
+    RO               whois.rotld.ro
+    RS               whois.rnids.rs
+    SA               whois.saudinic.net.sa
+    SB               whois.nic.sb
+    SC               whois2.afilias-grs.net
+    SE               whois.iis.se
+    SG               whois.nic.net.sg
+    SH               whois.nic.sh
+    SI               whois.arnes.si
+    SK               whois.sk-nic.sk
+    SM               whois.ripe.net
+    SO               whois.nic.so
+    ST               whois.nic.st
+    SX               whois.sx
+    TC               whois.adamsnames.tc
+    TF               whois.nic.tf
+    TH               whois.nic.uk
+    TK               whois.dot.tk
+    TL               whois.nic.tl
+    TM               whois.nic.tm
+    TO               whois.tonic.to
+    TR               whois.nic.tr
+    TV               whois.nic.tv
+    TW               whois.twnic.net.tw
+    UA               whois.com.ua
+    UK               whois.nic.uk
+    US               whois.nic.us
+    UZ               whois.cctld.uz
+    VC               whois2.afilias-grs.net
+    VE               whois.nic.ve
+    WF               whois.nic.wf
+    WS               whois.worldsite.ws
+    XN--80AO21A      whois.nic.kz
+    XN--E1A4C        whois.eu
+    XN--J6W193G      whois.hkirc.hk
+    XN--KPRW13D      whois.twnic.net.tw
+    XN--KPRY57D      whois.twnic.net.tw
+    XN--MGBA3A4F16A  whois.nic.ir
+    XN--WGBL6A       whois.registry.qa
+    XN--Y9A3AQ       whois.amnic.net
+    YT               whois.nic.yt
 
     PRIV.AT       whois.nic.priv.at
 
@@ -729,9 +759,10 @@ our %servers = qw(
     EDU.MT      whois.nic.mt
 
     CO.RS       whois.rnids.rs
-    ORG.RS      whois.rnids.rs
-    IN.RS       whois.rnids.rs
     EDU.RS      whois.rnids.rs
+    IN.RS       whois.rnids.rs
+    ORG.RS      whois.rnids.rs
+    XN--90A3AC  whois.rnids.rs
 
     COM.TW      whois.twnic.net
     IDV.TW      whois.twnic.net
@@ -764,10 +795,15 @@ our %servers = qw(
     ORG.ZA      org-whois.registry.net.za
     WEB.ZA      web-whois.registry.net.za
 
-    XN--P1AG    ru.whois.i-dns.net
-    XN--J1AEF   whois.i-dns.net
-    XN--E1APQ   whois.i-dns.net
-    XN--C1AVG   whois.publicinterestregistry.net
+    NGO              whois.publicinterestregistry.net
+    ONG              whois.publicinterestregistry.net
+    XN--C1AVG        whois.publicinterestregistry.net
+    XN--E1APQ        whois.i-dns.net
+    XN--I1B6B1A6A2E  whois.publicinterestregistry.net
+    XN--J1AEF        whois.i-dns.net
+    XN--NQV7F        whois.publicinterestregistry.net
+    XN--NQV7FS00EMA  whois.publicinterestregistry.net
+    XN--P1AG         ru.whois.i-dns.net
 
     AE.ORG      whois.centralnic.com
     AFRICA.COM  whois.centralnic.com
@@ -841,10 +877,1022 @@ our %servers = qw(
     PROMO       whois.nic.promo
 
     NOTLD       whois.iana.org
-    
-    ARCHI       whois.ksregistry.net
-    SAARLAND    whois.ksregistry.net
-    SKI         whois.ksregistry.net
+
+    ALLFINANZ                 whois.ksregistry.net
+    ARCHI                     whois.ksregistry.net
+    BIO                       whois.ksregistry.net
+    BMW                       whois.ksregistry.net
+    CAM                       whois.ksregistry.net
+    DESI                      whois.ksregistry.net
+    DVAG                      whois.ksregistry.net
+    FRESENIUS                 whois.ksregistry.net
+    MINI                      whois.ksregistry.net
+    POHL                      whois.ksregistry.net
+    SAARLAND                  whois.ksregistry.net
+    SKI                       whois.ksregistry.net
+    SPIEGEL                   whois.ksregistry.net
+    TUI                       whois.ksregistry.net
+    XN--VERMGENSBERATER-CTB   whois.ksregistry.net
+    XN--VERMGENSBERATUNG-PWB  whois.ksregistry.net
+    ZUERICH                   whois.ksregistry.net
+
+    ALSACE      whois-alsace.nic.fr
+
+    AQUARELLE   whois-aquarelle.nic.fr
+
+    BOSTIK      whois-bostik.nic.fr
+
+    AE              whois.aeda.net.ae
+    XN--MGBAAM7A8H  whois.aeda.net.ae
+
+    ABARTH              whois.afilias-srs.net
+    ABBOTT              whois.afilias-srs.net
+    ABBVIE              whois.afilias-srs.net
+    ACO                 whois.afilias-srs.net
+    ACTIVE              whois.afilias-srs.net
+    ADULT               whois.afilias-srs.net
+    AGAKHAN             whois.afilias-srs.net
+    AIGO                whois.afilias-srs.net
+    AKDN                whois.afilias-srs.net
+    ALFAROMEO           whois.afilias-srs.net
+    ALIBABA             whois.afilias-srs.net
+    ALIPAY              whois.afilias-srs.net
+    ALLSTATE            whois.afilias-srs.net
+    ALLY                whois.afilias-srs.net
+    APPLE               whois.afilias-srs.net
+    AUDI                whois.afilias-srs.net
+    AUTOS               whois.afilias-srs.net
+    AVIANCA             whois.afilias-srs.net
+    BCG                 whois.afilias-srs.net
+    BEATS               whois.afilias-srs.net
+    BESTBUY             whois.afilias-srs.net
+    BLOCKBUSTER         whois.afilias-srs.net
+    BNL                 whois.afilias-srs.net
+    BNPPARIBAS          whois.afilias-srs.net
+    BOATS               whois.afilias-srs.net
+    BOEHRINGER          whois.afilias-srs.net
+    BUGATTI             whois.afilias-srs.net
+    BUY                 whois.afilias-srs.net
+    CASE                whois.afilias-srs.net
+    CASEIH              whois.afilias-srs.net
+    CBS                 whois.afilias-srs.net
+    CEB                 whois.afilias-srs.net
+    CERN                whois.afilias-srs.net
+    CHRYSLER            whois.afilias-srs.net
+    CIPRIANI            whois.afilias-srs.net
+    CLINIQUE            whois.afilias-srs.net
+    CREDITUNION         whois.afilias-srs.net
+    CRUISE              whois.afilias-srs.net
+    CYOU                whois.afilias-srs.net
+    DABUR               whois.afilias-srs.net
+    DELTA               whois.afilias-srs.net
+    DISH                whois.afilias-srs.net
+    DODGE               whois.afilias-srs.net
+    DOT                 whois.afilias-srs.net
+    DTV                 whois.afilias-srs.net
+    DUNLOP              whois.afilias-srs.net
+    DVR                 whois.afilias-srs.net
+    ECO                 whois.afilias-srs.net
+    EDEKA               whois.afilias-srs.net
+    EMERCK              whois.afilias-srs.net
+    ESURANCE            whois.afilias-srs.net
+    EXTRASPACE          whois.afilias-srs.net
+    FAGE                whois.afilias-srs.net
+    FEDEX               whois.afilias-srs.net
+    FERRARI             whois.afilias-srs.net
+    FIAT                whois.afilias-srs.net
+    FIDO                whois.afilias-srs.net
+    GALLUP              whois.afilias-srs.net
+    GEA                 whois.afilias-srs.net
+    GODADDY             whois.afilias-srs.net
+    GOODHANDS           whois.afilias-srs.net
+    GOODYEAR            whois.afilias-srs.net
+    HDFC                whois.afilias-srs.net
+    HDFCBANK            whois.afilias-srs.net
+    HELSINKI            whois.afilias-srs.net
+    HERMES              whois.afilias-srs.net
+    HKT                 whois.afilias-srs.net
+    HOMEDEPOT           whois.afilias-srs.net
+    HOMES               whois.afilias-srs.net
+    HUGHES              whois.afilias-srs.net
+    ICBC                whois.afilias-srs.net
+    IMAMAT              whois.afilias-srs.net
+    IRISH               whois.afilias-srs.net
+    ISMAILI             whois.afilias-srs.net
+    IST                 whois.afilias-srs.net
+    ISTANBUL            whois.afilias-srs.net
+    ITV                 whois.afilias-srs.net
+    IVECO               whois.afilias-srs.net
+    JCP                 whois.afilias-srs.net
+    JEEP                whois.afilias-srs.net
+    JIO                 whois.afilias-srs.net
+    JLL                 whois.afilias-srs.net
+    KOSHER              whois.afilias-srs.net
+    LAMBORGHINI         whois.afilias-srs.net
+    LAMER               whois.afilias-srs.net
+    LANCIA              whois.afilias-srs.net
+    LASALLE             whois.afilias-srs.net
+    LATINO              whois.afilias-srs.net
+    LDS                 whois.afilias-srs.net
+    LOCKER              whois.afilias-srs.net
+    LTDA                whois.afilias-srs.net
+    MARRIOTT            whois.afilias-srs.net
+    MASERATI            whois.afilias-srs.net
+    MCKINSEY            whois.afilias-srs.net
+    METLIFE             whois.afilias-srs.net
+    MIT                 whois.afilias-srs.net
+    MONSTER             whois.afilias-srs.net
+    MOPAR               whois.afilias-srs.net
+    MORMON              whois.afilias-srs.net
+    MOTORCYCLES         whois.afilias-srs.net
+    NATURA              whois.afilias-srs.net
+    NEWHOLLAND          whois.afilias-srs.net
+    NOKIA               whois.afilias-srs.net
+    NOWTV               whois.afilias-srs.net
+    NRA                 whois.afilias-srs.net
+    OLLO                whois.afilias-srs.net
+    ONL                 whois.afilias-srs.net
+    ORIENTEXPRESS       whois.afilias-srs.net
+    ORIGINS             whois.afilias-srs.net
+    OTT                 whois.afilias-srs.net
+    PCCW                whois.afilias-srs.net
+    PNC                 whois.afilias-srs.net
+    PORN                whois.afilias-srs.net
+    PROGRESSIVE         whois.afilias-srs.net
+    PWC                 whois.afilias-srs.net
+    REDUMBRELLA         whois.afilias-srs.net
+    RELIANCE            whois.afilias-srs.net
+    RICH                whois.afilias-srs.net
+    RICHARDLI           whois.afilias-srs.net
+    RIL                 whois.afilias-srs.net
+    ROGERS              whois.afilias-srs.net
+    SBI                 whois.afilias-srs.net
+    SCHAEFFLER          whois.afilias-srs.net
+    SCHOLARSHIPS        whois.afilias-srs.net
+    SEW                 whois.afilias-srs.net
+    SEX                 whois.afilias-srs.net
+    SHAW                whois.afilias-srs.net
+    SHOWTIME            whois.afilias-srs.net
+    SHRIRAM             whois.afilias-srs.net
+    SINA                whois.afilias-srs.net
+    SLING               whois.afilias-srs.net
+    SRT                 whois.afilias-srs.net
+    STADA               whois.afilias-srs.net
+    STAR                whois.afilias-srs.net
+    STATEBANK           whois.afilias-srs.net
+    STOCKHOLM           whois.afilias-srs.net
+    STORAGE             whois.afilias-srs.net
+    TEMASEK             whois.afilias-srs.net
+    THD                 whois.afilias-srs.net
+    TRAVELERS           whois.afilias-srs.net
+    TRAVELERSINSURANCE  whois.afilias-srs.net
+    TRV                 whois.afilias-srs.net
+    TVS                 whois.afilias-srs.net
+    UCONNECT            whois.afilias-srs.net
+    UPS                 whois.afilias-srs.net
+    VEGAS               whois.afilias-srs.net
+    VIG                 whois.afilias-srs.net
+    VIKING              whois.afilias-srs.net
+    VOLKSWAGEN          whois.afilias-srs.net
+    WEIBO               whois.afilias-srs.net
+    WOLTERSKLUWER       whois.afilias-srs.net
+    XN--3OQ18VL8PN36A   whois.afilias-srs.net
+    XN--4GBRIM          whois.afilias-srs.net
+    XN--5TZM5G          whois.afilias-srs.net
+    XN--9KRT00A         whois.afilias-srs.net
+    XN--B4W605FERD      whois.afilias-srs.net
+    XN--ESTV75G         whois.afilias-srs.net
+    XN--FZYS8D69UVGM    whois.afilias-srs.net
+    XN--JLQ61U9W7B      whois.afilias-srs.net
+    YACHTS              whois.afilias-srs.net
+    ZARA                whois.afilias-srs.net
+
+    AI           whois.ai
+
+    BOX          whois.aridnrs.net.au
+    EPSON        whois.aridnrs.net.au
+    IINET        whois.aridnrs.net.au
+    KRD          whois.aridnrs.net.au
+    MELBOURNE    whois.aridnrs.net.au
+    SAXO         whois.aridnrs.net.au
+
+    BN           whois.bnnic.bn
+
+    BOM          whois.gtlds.nic.br
+    FINAL        whois.gtlds.nic.br
+    GLOBO        whois.gtlds.nic.br
+    RIO          whois.gtlds.nic.br
+    UOL          whois.gtlds.nic.br
+
+    BAIDU        whois.ngtld.cn
+    XN--1QQW23A  whois.ngtld.cn
+    XN--55QX5D   whois.ngtld.cn
+    XN--IO0A7I   whois.ngtld.cn
+    XN--XHQ521B  whois.ngtld.cn
+
+    AARP         whois.nic.aarp
+
+    ABC          whois.nic.abc
+
+    ABUDHABI     whois.nic.abudhabi
+
+    ACCOUNTANT   whois.nic.accountant
+
+    ADAC         whois.nic.adac
+
+    AEG          whois.nic.aeg
+
+    AF           whois.nic.af
+
+    AFAMILYCOMPANY  whois.nic.afamilycompany
+
+    AFL             whois.nic.afl
+
+    AIRBUS          whois.nic.airbus
+
+    AIRTEL          whois.nic.airtel
+
+    ALSTOM          whois.nic.alstom
+
+    AMERICANFAMILY  whois.nic.americanfamily
+
+    AMFAM           whois.nic.amfam
+
+    ANZ             whois.nic.anz
+
+    AOL             whois.nic.aol
+
+    ARTE            whois.nic.arte
+
+    ASDA            whois.nic.asda
+
+    AUSPOST         whois.nic.auspost
+
+    AW              whois.nic.aw
+
+    BANK            whois.nic.bank
+
+    BARCELONA       whois.nic.barcelona
+
+    BARCLAYCARD     whois.nic.barclaycard
+
+    BARCLAYS        whois.nic.barclays
+
+    BAREFOOT        whois.nic.barefoot
+
+    BASKETBALL      whois.nic.basketball
+
+    BAUHAUS         whois.nic.bauhaus
+
+    BAYERN          whois.nic.bayern
+
+    BBC             whois.nic.bbc
+
+    BBT             whois.nic.bbt
+
+    BBVA            whois.nic.bbva
+
+    BCN             whois.nic.bcn
+
+    BEAUTY          whois.nic.beauty
+
+    BENTLEY         whois.nic.bentley
+
+    BID             whois.nic.bid
+
+    BLANCO          whois.nic.blanco
+
+    BLOG            whois.nic.blog
+
+    BMS             whois.nic.bms
+
+    BO              whois.nic.bo
+
+    BOFA            whois.nic.bofa
+
+    BOND            whois.nic.bond
+
+    BOOTS           whois.nic.boots
+
+    BOSCH           whois.nic.bosch
+
+    BRADESCO        whois.nic.bradesco
+
+    BRIDGESTONE     whois.nic.bridgestone
+
+    BROADWAY        whois.nic.broadway
+
+    BROTHER         whois.nic.brother
+
+    BRUSSELS        whois.nic.brussels
+
+    BZH             whois.nic.bzh
+
+    ADS             whois.nic.google
+    ANDROID         whois.nic.google
+    APP             whois.nic.google
+    BOO             whois.nic.google
+    CAL             whois.nic.google
+    CHANNEL         whois.nic.google
+    CHROME          whois.nic.google
+    DAD             whois.nic.google
+    DAY             whois.nic.google
+    DCLK            whois.nic.google
+    DEV             whois.nic.google
+    DOCS            whois.nic.google
+    DRIVE           whois.nic.google
+    EAT             whois.nic.google
+    ESQ             whois.nic.google
+    FLY             whois.nic.google
+    FOO             whois.nic.google
+    GBIZ            whois.nic.google
+    GLE             whois.nic.google
+    GMAIL           whois.nic.google
+    GOOG            whois.nic.google
+    GOOGLE          whois.nic.google
+    GUGE            whois.nic.google
+    HANGOUT         whois.nic.google
+    HERE            whois.nic.google
+    HOW             whois.nic.google
+    ING             whois.nic.google
+    MEET            whois.nic.google
+    MEME            whois.nic.google
+    MOV             whois.nic.google
+    NEW             whois.nic.google
+    NEXUS           whois.nic.google
+    PAGE            whois.nic.google
+    PLAY            whois.nic.google
+    PROD            whois.nic.google
+    PROF            whois.nic.google
+    RSVP            whois.nic.google
+    SOY             whois.nic.google
+    XN--FLW351E     whois.nic.google
+    XN--Q9JYB4C     whois.nic.google
+    XN--QCKA1PMC    whois.nic.google
+    YOUTUBE         whois.nic.google
+    ZIP             whois.nic.google
+
+    BW              whois.nic.net.bw
+
+    ANQUAN          whois.teleinfo.cn
+    SHOUJI          whois.teleinfo.cn
+    XIHUAN          whois.teleinfo.cn
+    XN--3DS443G     whois.teleinfo.cn
+    XN--FIQ228C5HS  whois.teleinfo.cn
+    XN--VUQ861B     whois.teleinfo.cn
+    YUN             whois.teleinfo.cn
+
+    BI              whois1.nic.bi
+
+    CAPETOWN        capetown-whois.registry.net.za
+
+    CANCERRESEARCH  whois.nic.cancerresearch
+
+    CANON           whois.nic.canon
+
+    DURBAN          durban-whois.registry.net.za
+
+    JOBURG          joburg-whois.registry.net.za
+
+    PE              kero.yachay.pe
+
+    CORSICA         whois-corsica.nic.fr
+
+    MOVISTAR        whois-fe.movistar.tango.knipp.de
+
+    TELEFONICA      whois-fe.telefonica.tango.knipp.de
+
+    GMX             whois-fe1.gmx.tango.knipp.de
+
+    COLOGNE         whois-fe1.pdt.cologne.tango.knipp.de
+
+    KOELN           whois-fe1.pdt.koeln.tango.knipp.de
+
+    FROGANS         whois-frogans.nic.fr
+
+    SMART           whois-gtld.smart.com.ph
+
+    LANCASTER       whois-lancaster.nic.fr
+
+    LECLERC         whois-leclerc.nic.fr
+
+    MMA             whois-mma.nic.fr
+
+    MUTUELLE        whois-mutuelle.nic.fr
+
+    OVH             whois-ovh.nic.fr
+
+    PARIS           whois-paris.nic.fr
+
+    SNCF            whois-sncf.nic.fr
+
+    TOTAL           whois-total.nic.fr
+
+    NOWRUZ          whois.agitsys.net
+    PARS            whois.agitsys.net
+    SHIA            whois.agitsys.net
+    TCI             whois.agitsys.net
+    XN--MGBT3DHD    whois.agitsys.net
+
+    TN              whois.ati.tn
+
+    UG              whois.co.ug
+
+    GQ              whois.dominio.gq
+
+    CF              whois.dot.cf
+
+    ML              whois.dot.ml
+
+    POST            whois.dotpostregistry.net
+
+    EUS             whois.eus.coreregistry.net
+
+    GAL             whois.gal.coreregistry.net
+
+    WANG            whois.gtld.knet.cn
+    XN--30RR7Y      whois.gtld.knet.cn
+    XN--3BST00M     whois.gtld.knet.cn
+    XN--6QQ986B3XL  whois.gtld.knet.cn
+    XN--9ET52U      whois.gtld.knet.cn
+    XN--CZRU2D      whois.gtld.knet.cn
+    XN--FIQ64B      whois.gtld.knet.cn
+
+    IKANO           whois.ikano.tld-box.at
+
+    KY              whois.kyregistry.ky
+
+    MADRID          whois.madrid.rs.corenic.net
+
+    MANGO           whois.mango.coreregistry.net
+
+    MK              whois.marnet.mk
+    XN--D1ALF       whois.marnet.mk
+
+    NC              whois.nc
+
+    CAPITALONE      whois.nic.capitalone
+
+    CASA            whois.nic.casa
+
+    CBA             whois.nic.cba
+
+    CEO             whois.nic.ceo
+
+    CFA             whois.nic.cfa
+
+    CFD             whois.nic.cfd
+
+    CHANEL          whois.nic.chanel
+
+    CHINTAI         whois.nic.chintai
+
+    CITYEATS        whois.nic.cityeats
+
+    CLUBMED         whois.nic.clubmed
+
+    COMCAST         whois.nic.comcast
+
+    COMMBANK        whois.nic.commbank
+
+    COMPARE         whois.nic.compare
+
+    COMSEC          whois.nic.comsec
+
+    COOKING         whois.nic.cooking
+
+    COOKINGCHANNEL  whois.nic.cookingchannel
+
+    CR              whois.nic.cr
+
+    CRICKET         whois.nic.cricket
+
+    CSC             whois.nic.csc
+
+    CUISINELLA      whois.nic.cuisinella
+
+    CYMRU           whois.nic.cymru
+
+    DATE            whois.nic.date
+
+    DDS             whois.nic.dds
+
+    DELOITTE        whois.nic.deloitte
+
+    DIY             whois.nic.diy
+
+    DOHA            whois.nic.doha
+
+    DOWNLOAD        whois.nic.download
+
+    DUBAI           whois.nic.dubai
+
+    DUCK            whois.nic.duck
+
+    DZ               whois.nic.dz
+    XN--LGBBAT1AD8J  whois.nic.dz
+
+    EC              whois.nic.ec
+
+    ERICSSON        whois.nic.ericsson
+
+    ERNI            whois.nic.erni
+
+    EUROVISION      whois.nic.eurovision
+
+    FAIRWINDS       whois.nic.fairwinds
+
+    FAITH           whois.nic.faith
+
+    FASHION         whois.nic.fashion
+
+    FIDELITY        whois.nic.fidelity
+
+    FIRESTONE       whois.nic.firestone
+
+    FIRMDALE        whois.nic.firmdale
+
+    FISHING         whois.nic.fishing
+
+    FOODNETWORK     whois.nic.foodnetwork
+
+    FRL             whois.nic.frl
+
+    FRONTDOOR       whois.nic.frontdoor
+
+    FUJIXEROX       whois.nic.fujixerox
+
+    GALLO           whois.nic.gallo
+
+    GDN             whois.nic.gdn
+
+    GENT            whois.nic.gent
+
+    GENTING         whois.nic.genting
+
+    GEORGE          whois.nic.george
+
+    GGEE            whois.nic.ggee
+
+    GIVING          whois.nic.giving
+
+    GL              whois.nic.gl
+
+    GLADE           whois.nic.glade
+
+    GLOBAL          whois.nic.global
+
+    DATSUN          whois.nic.gmo
+    FUJITSU         whois.nic.gmo
+    GOO             whois.nic.gmo
+    HISAMITSU       whois.nic.gmo
+    HITACHI         whois.nic.gmo
+    INFINITI        whois.nic.gmo
+    JCB             whois.nic.gmo
+    MITSUBISHI      whois.nic.gmo
+    MTPC            whois.nic.gmo
+    NISSAN          whois.nic.gmo
+    PANASONIC       whois.nic.gmo
+    PIONEER         whois.nic.gmo
+    SHARP           whois.nic.gmo
+    YODOBASHI       whois.nic.gmo
+
+    GOLDPOINT       whois.nic.goldpoint
+
+    GOP             whois.nic.gop
+
+    HAMBURG         whois.nic.hamburg
+
+    HGTV            whois.nic.hgtv
+
+    HONDA           whois.nic.honda
+
+    HORSE           whois.nic.horse
+
+    HYUNDAI         whois.nic.hyundai
+
+    IBM             whois.nic.ibm
+
+    ICE             whois.nic.ice
+
+    ICU             whois.nic.icu
+
+    IFM             whois.nic.ifm
+
+    INSURANCE       whois.nic.insurance
+
+    ISELECT         whois.nic.iselect
+
+    JAGUAR          whois.nic.jaguar
+
+    JAVA            whois.nic.java
+
+    JUNIPER         whois.nic.juniper
+
+    KDDI            whois.nic.kddi
+
+    KERRYHOTELS     whois.nic.kerryhotels
+
+    KERRYLOGISTICS  whois.nic.kerrylogistics
+
+    KERRYPROPERTIES  whois.nic.kerryproperties
+
+    KFH              whois.nic.kfh
+
+    KIA              whois.nic.kia
+
+    KN               whois.nic.kn
+
+    KOMATSU          whois.nic.komatsu
+
+    KUOKGROUP        whois.nic.kuokgroup
+
+    KYOTO            whois.nic.kyoto
+
+    LA               whois.nic.la
+
+    LACAIXA          whois.nic.lacaixa
+
+    LADBROKES        whois.nic.ladbrokes
+
+    LANCOME          whois.nic.lancome
+
+    LANDROVER        whois.nic.landrover
+
+    LAT              whois.nic.lat
+
+    LATROBE          whois.nic.latrobe
+
+    LAW              whois.nic.law
+
+    LEFRAK           whois.nic.lefrak
+
+    LEGO             whois.nic.lego
+
+    LEXUS            whois.nic.lexus
+
+    LIAISON          whois.nic.liaison
+
+    LIDL             whois.nic.lidl
+
+    LIFESTYLE        whois.nic.lifestyle
+
+    LINDE            whois.nic.linde
+
+    LIPSY            whois.nic.lipsy
+
+    LIXIL            whois.nic.lixil
+
+    LOAN             whois.nic.loan
+
+    LOCUS            whois.nic.locus
+
+    LOTTE            whois.nic.lotte
+
+    LPL              whois.nic.lpl
+
+    LPLFINANCIAL     whois.nic.lplfinancial
+
+    LUNDBECK         whois.nic.lundbeck
+
+    MACYS            whois.nic.macys
+
+    MAKEUP           whois.nic.makeup
+
+    MAN              whois.nic.man
+
+    MARKETS          whois.nic.markets
+
+    MED              whois.nic.med
+
+    MLS              whois.nic.mls
+
+    MOE              whois.nic.moe
+
+    MONASH           whois.nic.monash
+
+    MTN              whois.nic.mtn
+
+    MTR              whois.nic.mtr
+
+    MZ               whois.nic.mz
+
+    NAB              whois.nic.nab
+
+    NADEX            whois.nic.nadex
+
+    NATIONWIDE       whois.nic.nationwide
+
+    NEC              whois.nic.nec
+
+    NG               whois.nic.net.ng
+
+    NETBANK          whois.nic.netbank
+
+    NEXT             whois.nic.next
+
+    NEXTDIRECT       whois.nic.nextdirect
+
+    NICO             whois.nic.nico
+
+    NIKON            whois.nic.nikon
+
+    NISSAY           whois.nic.nissay
+
+    NORTON           whois.nic.norton
+
+    OBI              whois.nic.obi
+
+    OBSERVER         whois.nic.observer
+
+    OFF              whois.nic.off
+
+    OLAYAN           whois.nic.olayan
+
+    OLAYANGROUP      whois.nic.olayangroup
+
+    OMEGA            whois.nic.omega
+
+    ONYOURSIDE       whois.nic.onyourside
+
+    ORACLE           whois.nic.oracle
+
+    ORANGE           whois.nic.orange
+
+    UY               whois.nic.org.uy
+
+    OSAKA            whois.nic.osaka
+
+    PARTY            whois.nic.party
+
+    PHILIPS          whois.nic.philips
+
+    PHYSIO           whois.nic.physio
+
+    PLAYSTATION      whois.nic.playstation
+
+    POLITIE          whois.nic.politie
+
+    QUEBEC           whois.nic.quebec
+
+    QUEST            whois.nic.quest
+
+    RACING           whois.nic.racing
+
+    RADIO            whois.nic.radio
+
+    RAID             whois.nic.raid
+
+    REALESTATE       whois.nic.realestate
+
+    REDSTONE         whois.nic.redstone
+
+    REISE            whois.nic.reise
+
+    REVIEW           whois.nic.review
+
+    REXROTH          whois.nic.rexroth
+
+    RICOH            whois.nic.ricoh
+
+    RIGHTATHOME      whois.nic.rightathome
+
+    RODEO            whois.nic.rodeo
+
+    RUHR             whois.nic.ruhr
+
+    RWE              whois.nic.rwe
+
+    SAMSCLUB         whois.nic.samsclub
+
+    SAMSUNG          whois.nic.samsung
+
+    SANDVIK          whois.nic.sandvik
+
+    SANOFI           whois.nic.sanofi
+
+    SAP              whois.nic.sap
+
+    SBS              whois.nic.sbs
+
+    SCA              whois.nic.sca
+
+    SCB              whois.nic.scb
+
+    SCHMIDT          whois.nic.schmidt
+
+    SCHWARZ          whois.nic.schwarz
+
+    SCIENCE          whois.nic.science
+
+    SCJOHNSON        whois.nic.scjohnson
+
+    SEAT             whois.nic.seat
+
+    SEEK             whois.nic.seek
+
+    SELECT           whois.nic.select
+
+    SES              whois.nic.ses
+
+    SFR              whois.nic.sfr
+
+    SHANGRILA        whois.nic.shangrila
+
+    SHELL            whois.nic.shell
+
+    SKIN             whois.nic.skin
+
+    SKY              whois.nic.sky
+
+    SN               whois.nic.sn
+
+    SOFTBANK         whois.nic.softbank
+
+    SONY             whois.nic.sony
+
+    SPREADBETTING    whois.nic.spreadbetting
+
+    STARHUB          whois.nic.starhub
+
+    STATOIL          whois.nic.statoil
+
+    STC              whois.nic.stc
+
+    STCGROUP         whois.nic.stcgroup
+
+    SUCKS            whois.nic.sucks
+
+    SURF             whois.nic.surf
+
+    SWATCH           whois.nic.swatch
+
+    SWISS            whois.nic.swiss
+
+    SYMANTEC         whois.nic.symantec
+
+    TAB              whois.nic.tab
+
+    TAIPEI           whois.nic.taipei
+
+    TATAMOTORS       whois.nic.tatamotors
+
+    TELECITY         whois.nic.telecity
+
+    TG               whois.nic.tg
+
+    TIAA             whois.nic.tiaa
+
+    TIFFANY          whois.nic.tiffany
+
+    TIROL            whois.nic.tirol
+
+    TORAY            whois.nic.toray
+
+    TOSHIBA          whois.nic.toshiba
+
+    TOYOTA           whois.nic.toyota
+
+    TRADE            whois.nic.trade
+
+    TRAVELCHANNEL    whois.nic.travelchannel
+
+    UBANK            whois.nic.ubank
+
+    UBS              whois.nic.ubs
+
+    VANA             whois.nic.vana
+
+    VANGUARD         whois.nic.vanguard
+
+    VERISIGN         whois.nic.verisign
+
+    VERSICHERUNG     whois.nic.versicherung
+
+    VG               whois.nic.vg
+
+    VISA             whois.nic.visa
+
+    VISTA            whois.nic.vista
+
+    VIVA             whois.nic.viva
+
+    VLAANDEREN       whois.nic.vlaanderen
+
+    VODKA            whois.nic.vodka
+
+    VOLVO            whois.nic.volvo
+
+    WALES            whois.nic.wales
+
+    WALMART          whois.nic.walmart
+
+    WARMAN           whois.nic.warman
+
+    WEBCAM           whois.nic.webcam
+
+    WEBER            whois.nic.weber
+
+    WED              whois.nic.wed
+
+    WHOSWHO          whois.nic.whoswho
+
+    WIN              whois.nic.win
+
+    WME              whois.nic.wme
+
+    WTC              whois.nic.wtc
+
+    XEROX            whois.nic.xerox
+
+    XFINITY          whois.nic.xfinity
+
+    XIN              whois.nic.xin
+
+    XN--11B4C3D      whois.nic.xn--11b4c3d
+
+    ID               whois.pandi.or.id
+
+    OM               whois.registry.om
+    XN--MGB9AWBF     whois.registry.om
+
+    PF               whois.registry.pf
+
+    SCOT             whois.scot.coreregistry.net
+
+    SY               whois.tld.sy
+    XN--OGBPF8FL     whois.tld.sy
+
+    TZ               whois.tznic.or.tz
+
+    VOTING           whois.voting.tld-box.at
+
+    XN--FIQS8S       cwhois.cnnic.cn
+    XN--FIQZ9S       cwhois.cnnic.cn
+
+    XN--ZFR164B      whois.conac.cn
+
+    XN--J1AMH        whois.dotukr.com
+
+    XN--90AE         whois.imena.bg
+
+    MO               whois.monic.mo
+    XN--MIX891F      whois.monic.mo
+
+    XN--MGBERP4A5D4AR  whois.nic.net.sa
+
+    XN--3PXU8K         whois.nic.xn--3pxu8k
+
+    XN--42C2D9A        whois.nic.xn--42c2d9a
+
+    XN--45Q11C         whois.nic.xn--45q11c
+
+    XN--5SU34J936BGSG  whois.nic.xn--5su34j936bgsg
+
+    XN--9DBQ2A         whois.nic.xn--9dbq2a
+
+    XN--C2BR7G         whois.nic.xn--c2br7g
+
+    XN--EFVY88H        whois.nic.xn--efvy88h
+
+    XN--FHBEI          whois.nic.xn--fhbei
+
+    XN--HXT814E        whois.nic.xn--hxt814e
+
+    XN--KPUT3I         whois.nic.xn--kput3i
+
+    XN--MGBA7C0BBN0A   whois.nic.xn--mgba7c0bbn0a
+
+    XN--MGBCA7DZDO     whois.nic.xn--mgbca7dzdo
+
+    XN--MK1BU44C       whois.nic.xn--mk1bu44c
+
+    XN--MXTQ1M         whois.nic.xn--mxtq1m
+
+    XN--NGBE9E0A       whois.nic.xn--ngbe9e0a
+
+    XN--PSSY2U         whois.nic.xn--pssy2u
+
+    XN--T60B56A        whois.nic.xn--t60b56a
+
+    XN--TCKWE          whois.nic.xn--tckwe
+
+    XN--W4R85EL8FHU5DNRA  whois.nic.xn--w4r85el8fhu5dnra
+
+    XN--W4RS40L           whois.nic.xn--w4rs40l
+
+    XPERIA                whois.nic.xperia
+
+    ZM                    whois.nic.zm
+
+    XN--YGBI2AMMX         whois.pnina.ps
+
+    XN--SES554G           whois.registry.knet.cn
+
+    XN--CLCHC0EA0B2G2A9GCD  whois.sgnic.sg
+    XN--YFRO4I67O           whois.sgnic.sg
+
+    XN--O3CW4H              whois.thnic.co.th
 );
 
 
@@ -1125,36 +2173,399 @@ our %notfound = (
     'org-whois.registry.net.za'   => '^Available',
     'www-whois.registry.net.za'   => '^Available',
 
-    'whois.i-dns.net'           => '^NOMATCH',
-    'whois.dns.hr'              => 'No entries found',
-    'whois.flexireg.net'        => 'Domain not found',
-    'whois.netcom.cm'           => 'No Object Found',
-    'whois.nic.priv.at'         => 'No entries found for the selected source',
-    'whois.nic.ac'              => 'is available for purchase',
-    'whois.nic.best'            => 'The queried object does not exist',
-    'whois.nic.bj'              => 'No Object Found',
-    'whois.nic.broker'          => 'No match for',
-    'whois.nic.career'          => 'No match for',
-    'whois.nic.cc'              => 'No match for',
-    'whois.nic.cloud'           => 'No Data Found',
-    'whois.nic.courses'         => 'No Data Found',
-    'whois.nic.earth'           => 'The queried object does not exist',
-    'whois.nic.film'            => 'No Data Found',
-    'whois.nic.forex'           => 'No match for',
-    'whois.nic.men'             => 'No Data Found',
-    'whois.nic.ooo'             => 'No match for',
-    'whois.nic.priv.at'         => 'No entries found for the selected source',
-    'whois.nic.pro'             => 'NOT FOUND',
-    'whois.nic.so'              => 'Not found',
-    'whois.nic.srl'             => 'NOT FOUND',
-    'whois.nic.study'           => 'No Data Found',
-    'whois.nic.top'             => 'The queried object does not exist',
-    'whois.nic.trading'         => 'No match for',
-    'whois.nic.tv'              => 'No match for',
-    'whois.nic.xn--p1acf'       => 'No Object Found',
-    'whois.rightside.co'        => 'Domain not found',
-    'whois.sk-nic.sk'           => 'Not found',
-    'whois.ksregistry.net'      => 'The queried object does not exist',
+    'whois.i-dns.net'                      => '^NOMATCH',
+    'whois.dns.hr'                         => 'No entries found',
+    'whois.flexireg.net'                   => 'Domain not found',
+    'whois.netcom.cm'                      => 'No Object Found',
+    'whois.nic.priv.at'                    => 'No entries found for the selected source',
+    'whois.nic.ac'                         => 'is available for purchase',
+    'whois.nic.best'                       => 'The queried object does not exist',
+    'whois.nic.bj'                         => 'No Object Found',
+    'whois.nic.broker'                     => 'No match for',
+    'whois.nic.career'                     => 'No match for',
+    'whois.nic.cc'                         => 'No match for',
+    'whois.nic.cloud'                      => 'No Data Found',
+    'whois.nic.courses'                    => 'No Data Found',
+    'whois.nic.earth'                      => 'The queried object does not exist',
+    'whois.nic.film'                       => 'No Data Found',
+    'whois.nic.forex'                      => 'No match for',
+    'whois.nic.men'                        => 'No Data Found',
+    'whois.nic.ooo'                        => 'No match for',
+    'whois.nic.priv.at'                    => 'No entries found for the selected source',
+    'whois.nic.pro'                        => 'NOT FOUND',
+    'whois.nic.so'                         => 'Not found',
+    'whois.nic.srl'                        => 'NOT FOUND',
+    'whois.nic.study'                      => 'No Data Found',
+    'whois.nic.top'                        => 'The queried object does not exist',
+    'whois.nic.trading'                    => 'No match for',
+    'whois.nic.tv'                         => 'No match for',
+    'whois.nic.xn--p1acf'                  => 'No Object Found',
+    'whois.rightside.co'                   => 'Domain not found',
+    'whois.sk-nic.sk'                      => 'Not found',
+    'whois.ksregistry.net'                 => 'The queried object does not exist',
+    'whois-alsace.nic.fr'                  => 'The queried object does not exist: Domain name',
+    'whois-aquarelle.nic.fr'               => 'The queried object does not exist: Domain name',
+    'whois-bostik.nic.fr'                  => 'The queried object does not exist: Domain name',
+    'whois.aeda.net.ae'                    => 'No Data Found',
+    'whois.afilias-srs.net'                => 'NOT FOUND',
+    'whois.ai'                             => 'Domain .+not registred',
+    'whois.aridnrs.net.au'                 => 'No Data Found',
+    'whois.bnnic.bn'                       => 'Domain Not Found',
+    'whois.gtlds.nic.br'                   => 'The queried object does not exist: ',
+    'whois.ngtld.cn'                       => 'No matching record\.',
+    'whois.nic.aarp'                       => 'No match for "',
+    'whois.nic.abc'                        => 'No match for "',
+    'whois.nic.abudhabi'                   => 'No Data Found',
+    'whois.nic.accountant'                 => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.adac'                       => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.aeg'                        => 'No match for "',
+    'whois.nic.af'                         => 'Domain Status: No Object Found',
+    'whois.nic.afamilycompany'             => 'No match for "',
+    'whois.nic.afl'                        => 'No Data Found',
+    'whois.nic.airbus'                     => 'No match for "',
+    'whois.nic.airtel'                     => 'No match for "',
+    'whois.nic.alstom'                     => 'The queried object does not exist: no matching objects found',
+    'whois.nic.americanfamily'             => 'No match for "',
+    'whois.nic.amfam'                      => 'No match for "',
+    'whois.nic.anz'                        => 'No Data Found',
+    'whois.nic.aol'                        => 'No match for "',
+    'whois.nic.arte'                       => 'No match for "',
+    'whois.nic.asda'                       => 'No match for "',
+    'whois.nic.auspost'                    => 'No Data Found',
+    'whois.nic.aw'                         => '\.aw is free',
+    'whois.nic.bank'                       => 'No match for "',
+    'whois.nic.barcelona'                  => 'The queried object does not exist: no matching objects found',
+    'whois.nic.barclaycard'                => 'No Data Found',
+    'whois.nic.barclays'                   => 'No Data Found',
+    'whois.nic.barefoot'                   => 'No match for "',
+    'whois.nic.basketball'                 => 'DOMAIN NOT FOUND',
+    'whois.nic.bauhaus'                    => 'The queried object does not exist: no matching objects found',
+    'whois.nic.bayern'                     => 'This domain name has not been registered\.',
+    'whois.nic.bbc'                        => 'This domain name has not been registered\.',
+    'whois.nic.bbt'                        => 'No match for "',
+    'whois.nic.bbva'                       => 'No match for "',
+    'whois.nic.bcn'                        => 'The queried object does not exist: no matching objects found',
+    'whois.nic.beauty'                     => 'No match for "',
+    'whois.nic.bentley'                    => 'This domain name has not been registered\.',
+    'whois.nic.bid'                        => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.blanco'                     => 'No match for "',
+    'whois.nic.blog'                       => 'This domain name has not been registered\.',
+    'whois.nic.bms'                        => 'No match for "',
+    'whois.nic.bo'                         => 'whois\.nic\.bo solo acepta consultas con dominios \.bo',
+    'whois.nic.bofa'                       => 'No match for "',
+    'whois.nic.bond'                       => 'No Data Found',
+    'whois.nic.boots'                      => 'No Data Found',
+    'whois.nic.bosch'                      => 'No match for "',
+    'whois.nic.bradesco'                   => 'This domain name has not been registered\.',
+    'whois.nic.bridgestone'                => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.broadway'                   => 'This domain name has not been registered\.',
+    'whois.nic.brother'                    => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.brussels'                   => 'The queried object does not exist',
+    'whois.nic.bzh'                        => 'The queried object does not exist: Domain name',
+    'whois.nic.google'                     => 'Domain not found\.',
+    'whois.nic.net.bw'                     => 'Domain Status: No Object Found',
+    'whois.teleinfo.cn'                    => 'No matching record',
+    'whois1.nic.bi'                        => 'Domain Status: No Object Found',
+    'capetown-whois.registry.net.za'       => 'Available',
+    'whois.nic.cancerresearch'             => 'No Data Found',
+    'whois.nic.canon'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'durban-whois.registry.net.za'         => 'Available',
+    'joburg-whois.registry.net.za'         => 'Available',
+    'kero.yachay.pe'                       => 'Domain Status: No Object Found',
+    'whois-corsica.nic.fr'                 => 'The queried object does not exist: Domain name',
+    'whois-fe.movistar.tango.knipp.de'     => 'The queried object does not exist: no matching objects found',
+    'whois-fe.telefonica.tango.knipp.de'   => 'The queried object does not exist: no matching objects found',
+    'whois-fe1.gmx.tango.knipp.de'         => 'The queried object does not exist: no matching objects found',
+    'whois-fe1.pdt.cologne.tango.knipp.de' => 'The queried object does not exist: no matching objects found',
+    'whois-fe1.pdt.koeln.tango.knipp.de'   => 'The queried object does not exist: no matching objects found',
+    'whois-frogans.nic.fr'                 => 'The queried object does not exist: Domain name',
+    'whois-gtld.smart.com.ph'              => 'DOMAIN NOT FOUND',
+    'whois-lancaster.nic.fr'               => 'The queried object does not exist: Domain name',
+    'whois-leclerc.nic.fr'                 => 'The queried object does not exist: Domain name',
+    'whois-mma.nic.fr'                     => 'The queried object does not exist: Domain name',
+    'whois-mutuelle.nic.fr'                => 'The queried object does not exist: Domain name',
+    'whois-ovh.nic.fr'                     => 'The queried object does not exist: Domain name',
+    'whois-paris.nic.fr'                   => 'The queried object does not exist: Domain name',
+    'whois-sncf.nic.fr'                    => 'The queried object does not exist: Domain name',
+    'whois-total.nic.fr'                   => 'The queried object does not exist: Domain name',
+    'whois.agitsys.net'                    => 'Domain Status: No Object Found',
+    'whois.ati.tn'                         => 'NO OBJECT FOUND!',
+    'whois.co.ug'                          => 'No entries found for the selected source',
+    'whois.dominio.gq'                     => 'Invalid query or domain name not known in Dominio GQ Domain Registry',
+    'whois.dot.cf'                         => 'Invalid query or domain name not known in Dot CF Domain Registry',
+    'whois.dot.ml'                         => 'Invalid query or domain name not known in Point ML Domain Registry',
+    'whois.dotpostregistry.net'            => 'NOT FOUND',
+    'whois.eus.coreregistry.net'           => 'The queried object does not exist: no matching objects found',
+    'whois.gal.coreregistry.net'           => 'The queried object does not exist: no matching objects found',
+    'whois.gtld.knet.cn'                   => 'The queried object does not exist: ',
+    'whois.ikano.tld-box.at'               => 'The queried object does not exist',
+    'whois.kyregistry.ky'                  => 'The queried object does not exist: Domain ',
+    'whois.madrid.rs.corenic.net'          => 'The queried object does not exist: no matching objects found',
+    'whois.mango.coreregistry.net'         => 'no matching objects found',
+    'whois.marnet.mk'                      => 'No entries found',
+    'whois.nc'                             => 'No entries found in the .nc database',
+    'whois.nic.capitalone'                 => 'No match for "',
+    'whois.nic.casa'                       => 'This domain name has not been registered\.',
+    'whois.nic.cba'                        => 'No Data Found',
+    'whois.nic.ceo'                        => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.cfa'                        => 'No match for "',
+    'whois.nic.cfd'                        => 'No match for "',
+    'whois.nic.chanel'                     => 'No match for "',
+    'whois.nic.chintai'                    => 'No Data Found',
+    'whois.nic.cityeats'                   => 'No match for "',
+    'whois.nic.clubmed'                    => 'No match for "',
+    'whois.nic.comcast'                    => 'This domain name has not been registered\.',
+    'whois.nic.commbank'                   => 'No Data Found',
+    'whois.nic.compare'                    => 'No Data Found',
+    'whois.nic.comsec'                     => 'No match for "',
+    'whois.nic.cooking'                    => 'This domain name has not been registered\.',
+    'whois.nic.cookingchannel'             => 'No match for "',
+    'whois.nic.cr'                         => 'no entries found',
+    'whois.nic.cricket'                    => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.csc'                        => 'No match for "',
+    'whois.nic.cuisinella'                 => 'No Data Found',
+    'whois.nic.cymru'                      => 'This domain name has not been registered\.',
+    'whois.nic.date'                       => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.dds'                        => 'This domain name has not been registered\.',
+    'whois.nic.deloitte'                   => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.diy'                        => 'No match for "',
+    'whois.nic.doha'                       => 'No Data Found',
+    'whois.nic.download'                   => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.dubai'                      => 'No Data Found',
+    'whois.nic.duck'                       => 'No match for "',
+    'whois.nic.dz'                         => 'NO OBJECT FOUND!',
+    'whois.nic.ec'                         => 'Status: Not Registered',
+    'whois.nic.ericsson'                   => 'No match for "',
+    'whois.nic.erni'                       => 'The queried object does not exist: no matching objects found',
+    'whois.nic.eurovision'                 => 'The queried object does not exist: no matching objects found',
+    'whois.nic.fairwinds'                  => 'No match for "',
+    'whois.nic.faith'                      => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.fashion'                    => 'This domain name has not been registered\.',
+    'whois.nic.fidelity'                   => 'No match for "',
+    'whois.nic.firestone'                  => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.firmdale'                   => 'Domain Not Found',
+    'whois.nic.fishing'                    => 'This domain name has not been registered\.',
+    'whois.nic.foodnetwork'                => 'No match for "',
+    'whois.nic.frl'                        => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.frontdoor'                  => 'No match for "',
+    'whois.nic.fujixerox'                  => 'No match for "',
+    'whois.nic.gallo'                      => 'No match for "',
+    'whois.nic.gdn'                        => 'Domain Not Found',
+    'whois.nic.gent'                       => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.genting'                    => 'No match for "',
+    'whois.nic.george'                     => 'No match for "',
+    'whois.nic.ggee'                       => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.giving'                     => 'No Data Found',
+    'whois.nic.gl'                         => 'Domain Status: No Object Found',
+    'whois.nic.glade'                      => 'No match for "',
+    'whois.nic.global'                     => 'NOT FOUND',
+    'whois.nic.gmo'                        => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.goldpoint'                  => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.gop'                        => 'This domain name has not been registered\.',
+    'whois.nic.hamburg'                    => 'The queried object does not exist',
+    'whois.nic.hgtv'                       => 'No match for "',
+    'whois.nic.honda'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.horse'                      => 'This domain name has not been registered\.',
+    'whois.nic.hyundai'                    => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.ibm'                        => 'No Data Found',
+    'whois.nic.ice'                        => 'No match for "',
+    'whois.nic.icu'                        => 'No Data Found',
+    'whois.nic.ifm'                        => 'The queried object does not exist: no matching objects found',
+    'whois.nic.insurance'                  => 'No match for "',
+    'whois.nic.iselect'                    => 'No Data Found',
+    'whois.nic.jaguar'                     => 'No match for "',
+    'whois.nic.java'                       => 'No match for "',
+    'whois.nic.juniper'                    => 'No match for "',
+    'whois.nic.kddi'                       => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.kerryhotels'                => 'No match for "',
+    'whois.nic.kerrylogistics'             => 'No match for "',
+    'whois.nic.kerryproperties'            => 'No match for "',
+    'whois.nic.kfh'                        => 'DOMAIN NOT FOUND',
+    'whois.nic.kia'                        => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.kn'                         => 'Domain Status: No Object Found',
+    'whois.nic.komatsu'                    => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.kuokgroup'                  => 'No match for "',
+    'whois.nic.kyoto'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.lacaixa'                    => 'The queried object does not exist: no matching objects found',
+    'whois.nic.ladbrokes'                  => 'No match for "',
+    'whois.nic.lancome'                    => 'No match for "',
+    'whois.nic.landrover'                  => 'No match for "',
+    'whois.nic.lat'                        => 'The queried object does not exists \(El objeto consultado no existe\)',
+    'whois.nic.latrobe'                    => 'No Data Found',
+    'whois.nic.law'                        => 'This domain name has not been registered\.',
+    'whois.nic.lefrak'                     => 'No match for "',
+    'whois.nic.lego'                       => 'No match for "',
+    'whois.nic.lexus'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.liaison'                    => 'No match for "',
+    'whois.nic.lidl'                       => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.lifestyle'                  => 'No match for "',
+    'whois.nic.linde'                      => 'No match for "',
+    'whois.nic.lipsy'                      => 'No match for "',
+    'whois.nic.lixil'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.loan'                       => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.locus'                      => 'This domain name has not been registered\.',
+    'whois.nic.lotte'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.lpl'                        => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.lplfinancial'               => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.lundbeck'                   => 'No match for "',
+    'whois.nic.macys'                      => 'No match for "',
+    'whois.nic.makeup'                     => 'No match for "',
+    'whois.nic.man'                        => 'The queried object does not exist: no matching objects found',
+    'whois.nic.markets'                    => 'No match for "',
+    'whois.nic.med'                        => 'No match for "',
+    'whois.nic.mls'                        => 'No match for "',
+    'whois.nic.moe'                        => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.monash'                     => 'No Data Found',
+    'whois.nic.mtn'                        => 'No Data Found',
+    'whois.nic.mtr'                        => 'The domain has not been registered\.',
+    'whois.nic.mz'                         => 'Domain Status: No Object Found',
+    'whois.nic.nab'                        => 'No match for "',
+    'whois.nic.nadex'                      => 'No match for "',
+    'whois.nic.nationwide'                 => 'No match for "',
+    'whois.nic.nec'                        => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.net.ng'                     => 'Domain Status: No Object Found',
+    'whois.nic.netbank'                    => 'No Data Found',
+    'whois.nic.next'                       => 'No match for "',
+    'whois.nic.nextdirect'                 => 'No match for "',
+    'whois.nic.nico'                       => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.nikon'                      => 'No match for "',
+    'whois.nic.nissay'                     => 'No match for "',
+    'whois.nic.norton'                     => 'No match for "',
+    'whois.nic.obi'                        => 'No match for "',
+    'whois.nic.observer'                   => 'DOMAIN NOT FOUND',
+    'whois.nic.off'                        => 'No match for "',
+    'whois.nic.olayan'                     => 'No Data Found',
+    'whois.nic.olayangroup'                => 'No Data Found',
+    'whois.nic.omega'                      => 'No match for "',
+    'whois.nic.onyourside'                 => 'No match for "',
+    'whois.nic.oracle'                     => 'No match for "',
+    'whois.nic.orange'                     => 'No match for "',
+    'whois.nic.org.uy'                     => 'No match for',
+    'whois.nic.osaka'                      => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.party'                      => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.philips'                    => 'No Data Found',
+    'whois.nic.physio'                     => 'No Data Found',
+    'whois.nic.playstation'                => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.politie'                    => 'Domain Status: free',
+    'whois.nic.quebec'                     => 'The queried object does not exist: no matching objects found',
+    'whois.nic.quest'                      => 'No Data Found',
+    'whois.nic.racing'                     => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.radio'                      => 'The queried object does not exist: no matching objects found',
+    'whois.nic.raid'                       => 'No match for "',
+    'whois.nic.realestate'                 => 'No match for "',
+    'whois.nic.redstone'                   => 'NOT FOUND',
+    'whois.nic.reise'                      => 'Domain not found\.',
+    'whois.nic.review'                     => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.rexroth'                    => 'No match for "',
+    'whois.nic.ricoh'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.rightathome'                => 'No match for "',
+    'whois.nic.rodeo'                      => 'This domain name has not been registered\.',
+    'whois.nic.ruhr'                       => 'The queried object does not exist: no matching objects found',
+    'whois.nic.rwe'                        => 'No match for "',
+    'whois.nic.samsclub'                   => 'No match for "',
+    'whois.nic.samsung'                    => 'No match for',
+    'whois.nic.sandvik'                    => 'No Data Found',
+    'whois.nic.sanofi'                     => 'No match for "',
+    'whois.nic.sap'                        => 'The queried object does not exist: no matching objects found',
+    'whois.nic.sbs'                        => 'No match for "',
+    'whois.nic.sca'                        => 'No match for "',
+    'whois.nic.scb'                        => 'NOT FOUND',
+    'whois.nic.schwarz'                    => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.science'                    => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.scjohnson'                  => 'No match for "',
+    'whois.nic.seat'                       => 'The queried object does not exist: no matching objects found',
+    'whois.nic.ses'                        => 'No match for "',
+    'whois.nic.sfr'                        => 'Status: AVAILABLE \(No match for domain "',
+    'whois.nic.shangrila'                  => 'No match for "',
+    'whois.nic.shell'                      => 'No match for "',
+    'whois.nic.skin'                       => 'No match for "',
+    'whois.nic.sky'                        => 'No match for "',
+    'whois.nic.sn'                         => 'NOT FOUND',
+    'whois.nic.softbank'                   => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.sony'                       => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.spreadbetting'              => 'No match for "',
+    'whois.nic.statoil'                    => 'No match for "',
+    'whois.nic.stc'                        => 'DOMAIN NOT FOUND',
+    'whois.nic.stcgroup'                   => 'DOMAIN NOT FOUND',
+    'whois.nic.surf'                       => 'This domain name has not been registered\.',
+    'whois.nic.swatch'                     => 'No match for "',
+    'whois.nic.swiss'                      => 'The queried object does not exist: no matching objects found',
+    'whois.nic.symantec'                   => 'No match for "',
+    'whois.nic.taipei'                     => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.tatamotors'                 => 'No match for "',
+    'whois.nic.telecity'                   => 'This domain name has not been registered\.',
+    'whois.nic.tg'                         => 'NO OBJECT FOUND!',
+    'whois.nic.tiaa'                       => 'No match for "',
+    'whois.nic.tiffany'                    => 'No match for "',
+    'whois.nic.tirol'                      => 'The queried object does not exist',
+    'whois.nic.toray'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.toshiba'                    => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.toyota'                     => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.trade'                      => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.travelchannel'              => 'No match for "',
+    'whois.nic.ubank'                      => 'No match for "',
+    'whois.nic.ubs'                        => 'No match for "',
+    'whois.nic.vana'                       => 'No match for "',
+    'whois.nic.vanguard'                   => 'No match for "',
+    'whois.nic.verisign'                   => 'No match for "',
+    'whois.nic.versicherung'               => 'The queried object does not exist',
+    'whois.nic.vg'                         => 'not found',
+    'whois.nic.visa'                       => 'No match for "',
+    'whois.nic.viva'                       => 'DOMAIN NOT FOUND',
+    'whois.nic.vlaanderen'                 => 'The queried object does not exist',
+    'whois.nic.vodka'                      => 'This domain name has not been registered\.',
+    'whois.nic.volvo'                      => 'No match for "',
+    'whois.nic.wales'                      => 'This domain name has not been registered\.',
+    'whois.nic.walmart'                    => 'No match for "',
+    'whois.nic.warman'                     => 'No match for "',
+    'whois.nic.webcam'                     => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.weber'                      => 'No match for "',
+    'whois.nic.wed'                        => 'Domain Status: No Object Found',
+    'whois.nic.whoswho'                    => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.win'                        => 'The queried object does not exist: No Domain exists for the search string "',
+    'whois.nic.wme'                        => 'DOMAIN NOT FOUND',
+    'whois.nic.xerox'                      => 'No match for "',
+    'whois.nic.xfinity'                    => 'This domain name has not been registered\.',
+    'whois.nic.xin'                        => 'NOT FOUND',
+    'whois.nic.xn--11b4c3d'                => 'No match for "',
+    'whois.pandi.or.id'                    => 'DOMAIN NOT FOUND',
+    'whois.registry.om'                    => 'No Data Found',
+    'whois.registry.pf'                    => 'Domain unknown',
+    'whois.scot.coreregistry.net'          => 'The queried object does not exist: no matching objects found',
+    'whois.tld.sy'                         => 'Domain Status: No Object Found',
+    'whois.tznic.or.tz'                    => 'No entries found',
+    'whois.voting.tld-box.at'              => 'The queried object does not exist',
+    'cwhois.cnnic.cn'                      => 'No matching record\.',
+    'whois.conac.cn'                       => 'Not find MatchingRecord',
+    'whois.dotukr.com'                     => 'No match for domain',
+    'whois.imena.bg'                       => 'does not exist in database!',
+    'whois.monic.mo'                       => 'No match for',
+    'whois.nic.net.sa'                     => 'No Match for',
+    'whois.nic.xn--3pxu8k'                 => 'No match for "',
+    'whois.nic.xn--42c2d9a'                => 'No match for "',
+    'whois.nic.xn--45q11c'                 => 'The queried object does not exist: ',
+    'whois.nic.xn--5su34j936bgsg'          => 'No match for "',
+    'whois.nic.xn--9dbq2a'                 => 'No match for "',
+    'whois.nic.xn--c2br7g'                 => 'No match for "',
+    'whois.nic.xn--efvy88h'                => 'The queried object does not exist: ',
+    'whois.nic.xn--fhbei'                  => 'No match for "',
+    'whois.nic.xn--hxt814e'                => 'The queried object does not exist: ',
+    'whois.nic.xn--kput3i'                 => 'NOT FOUND',
+    'whois.nic.xn--mgbca7dzdo'             => 'No Data Found',
+    'whois.nic.xn--mk1bu44c'               => 'No match for "',
+    'whois.nic.xn--mxtq1m'                 => 'Not Found\.',
+    'whois.nic.xn--ngbe9e0a'               => 'DOMAIN NOT FOUND',
+    'whois.nic.xn--pssy2u'                 => 'No match for "',
+    'whois.nic.xn--t60b56a'                => 'No match for "',
+    'whois.nic.xn--tckwe'                  => 'No match for "',
+    'whois.nic.xn--w4r85el8fhu5dnra'       => 'No match for "',
+    'whois.nic.xn--w4rs40l'                => 'No match for "',
+    'whois.nic.xperia'                     => 'No match for "',
+    'whois.nic.zm'                         => 'Domain Status: No Object Found',
+    'whois.pnina.ps'                       => 'Domain Status: No Object Found',
+    'whois.registry.knet.cn'               => 'The queried object does not exist: ',
+    'whois.sgnic.sg'                       => 'Domain Not Found',
+    'whois.thnic.co.th'                    => 'No match for',
 );
 
 # Common whois stripping REs
