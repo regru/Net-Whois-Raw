@@ -98,7 +98,7 @@ if ($check_for_new_gtlds) {
     @new = sort { 
         $a->{whois_server} cmp $b->{whois_server} or
         defined($b->{notfound}) <=> defined($a->{notfound}) or
-        ($b->{notfound}&&1) <=> ($a->{notfound}&&1)
+        ($b->{notfound}&&1||0) <=> ($a->{notfound}&&1||0)
     } @new;
     
     # generate HTML
