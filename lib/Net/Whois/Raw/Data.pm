@@ -10,7 +10,7 @@ our @www_whois = qw(
     VN
     TJ
 );
-# Candidates for www_whois: DO, ES, IO, MG, SH, TM, TP, ZA
+# Candidates for www_whois: BD, DO, ES, EG, MG, SH, TM, TP, ZA
 
 our %servers = qw(
     RU                  whois.ripn.net
@@ -467,7 +467,7 @@ our %servers = qw(
     AT               whois.nic.at
     CO.AT            whois.nic.at
     OR.AT            whois.nic.at
-    AU               whois.aunic.net
+    AU               whois.audns.net.au
     BE               whois.dns.be
     BG               whois.register.bg
     BJ               whois.nic.bj
@@ -509,6 +509,7 @@ our %servers = qw(
     HT               whois.nic.ht
     HU               whois.nic.hu
     IE               whois.domainregistry.ie
+    ID               whois.pandi.or.id
     IL               whois.isoc.org.il
     IM               whois.nic.im
     IN               whois.inregistry.net
@@ -576,7 +577,7 @@ our %servers = qw(
     SX               whois.sx
     TC               whois.adamsnames.tc
     TF               whois.nic.tf
-    TH               whois.nic.uk
+    TH               whois.thnic.co.th
     TK               whois.dot.tk
     TL               whois.nic.tl
     TM               whois.nic.tm
@@ -761,6 +762,14 @@ our %servers = qw(
     IN.RS       whois.rnids.rs
     ORG.RS      whois.rnids.rs
     XN--90A3AC  whois.rnids.rs
+
+    AC.TH       whois.thnic.co.th
+    CO.TH       whois.thnic.co.th
+    GO.TH       whois.thnic.co.th
+    MI.TH       whois.thnic.co.th
+    OR.TH       whois.thnic.co.th
+    NET.TH      whois.thnic.co.th
+    IN.TH       whois.thnic.co.th
 
     COM.TW      whois.twnic.net
     IDV.TW      whois.twnic.net
