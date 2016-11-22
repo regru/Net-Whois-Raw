@@ -1,5 +1,10 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99004  Nov 22 2016 Oleg Gavrin, Christian Walde, Vadim Likhota, Alexander Nalobin
+    - maintanance tool for Data.pm
+    - a lot of new gTLDs whois servers added and fixed
+    - "not found" patterns fixed
+
 2.99003     Vadim Likhota
     - new tlds .NG, *.TH, .ID
     - fix whois for .AU, .TH
