@@ -1499,7 +1499,7 @@ our %servers = qw(
 
     KYOTO                   whois.nic.kyoto
 
-    LA                      whois.nic.la
+    LA                      whois.lanic.la
 
     LACAIXA                 whois.nic.lacaixa
 

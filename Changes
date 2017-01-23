@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99004    2017 Vadiml Likhota
+    - fix whois for .LA
+
 2.99003  Nov 22 2016 Oleg Gavrin, Christian Walde, Vadim Likhota, Alexander Nalobin
     - maintanance tool for Data.pm
     - a lot of new gTLDs whois servers added and fixed
