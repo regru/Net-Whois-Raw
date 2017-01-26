@@ -581,8 +581,7 @@ sub split_domain {
         $name = $dom;
     }
     else {
-        $dom =~ /(.+?)\.$tld$/; # or die "Can't match $tld in $dom";
-        $name = $1;
+        $name = substr( $dom, 0, length($dom) - length($tld) - 1 );
     }
 
     return ($name, $tld);
