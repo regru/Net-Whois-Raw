@@ -157,7 +157,7 @@ sub _strip_trailer_lines {
     my ( $whois ) = @_;
 
     for my $re ( @Net::Whois::Raw::Data::strip_regexps ) {
-        $whois =~ s/$re/$1/;
+        $whois =~ s/$re//;
     }
 
     return $whois;

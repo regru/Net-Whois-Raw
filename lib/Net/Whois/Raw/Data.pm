@@ -2685,7 +2685,6 @@ our %notfound = (
 # Common whois stripping REs
 our @strip_regexps = (
     qr{
-        (.+)
         ^ (?:
             \W* Last \s update \s of \s WHOIS \s database
             | Database \s last \s updated
