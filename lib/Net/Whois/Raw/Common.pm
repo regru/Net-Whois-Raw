@@ -215,12 +215,12 @@ sub get_dom_tld {
         $tld = "NOTLD";
     }
     else {
-        my @tokens = split(/\./, uc $dom);
+        my @tokens = split( /\./, $dom );
         
         # try to get the longest known tld for this domain
         for my $i ( 1..$#tokens ) {
             my $tld_try = join '.', @tokens[$i..$#tokens];
-            if ( exists $Net::Whois::Raw::Data::servers{$tld_try} ) {
+            if ( exists $Net::Whois::Raw::Data::servers{ uc $tld_try } ) {
                 $tld = $tld_try;
                 last;
             }

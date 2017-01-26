@@ -68,7 +68,7 @@ blah-blah-blah
 
 The Data in MarkMonitor.com's WHOIS database is provided by MarkMonitor.com for
     } ),
-    "\nblah-blah-blah\n\n", '_strip_trailer_lines';
+    "\nblah-blah-blah\n", '_strip_trailer_lines';
 
 is Net::Whois::Raw::Common::_strip_trailer_lines( q{
 Record created on 24-Sep-1998
@@ -88,5 +88,5 @@ Domain Last Updated Date:                    Sat Jun 04 15:25:01 GMT 2011
 >>>> Whois database was last updated on: Mon Feb 24 12:49:50 GMT 2014 <<<<
 
 NeuStar, Inc., the Registry Operator for .BIZ, has collected this information} ),
-    "\nDomain Last Updated Date:                    Sat Jun 04 15:25:01 GMT 2011\n\n",
+    "\nDomain Last Updated Date:                    Sat Jun 04 15:25:01 GMT 2011\n",
     '_strip_trailer_lines';
