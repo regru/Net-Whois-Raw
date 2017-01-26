@@ -215,18 +215,18 @@ sub get_dom_tld {
         $tld = "NOTLD";
     }
     else {
-        my @alltlds = keys %Net::Whois::Raw::Data::servers;
-        @alltlds = sort { dlen($b) <=> dlen($a) } @alltlds;
-        foreach my $awailtld (@alltlds) {
-            if ($dom =~ /(.+?)\.($awailtld)$/i) {
-                $tld = $2;
+        my @tokens = split(/\./, uc $dom);
+        
+        # try to get the longest known tld for this domain
+        for my $i ( 1..$#tokens ) {
+            my $tld_try = join '.', @tokens[$i..$#tokens];
+            if ( exists $Net::Whois::Raw::Data::servers{$tld_try} ) {
+                $tld = $tld_try;
                 last;
             }
         }
-        unless ($tld) {
-            my @tokens = split(/\./, $dom);
-            $tld = $tokens[-1];
-        }
+        
+        $tld = $tokens[-1] unless $tld;
     }
 
     return $tld;
