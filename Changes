@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99006  Feb 1 2017 Alexander Nalobin
+    - pwhois script approves IDN domains (ɢoogle.com)
+
 2.99005  Jan 26 2017 Oleg Gavrin
      - speed optimizations
 

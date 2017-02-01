@@ -224,7 +224,7 @@ sub validate_domain {
     return 0 if $name =~ /^..--/ && $dom !~ /^xn--/;
 
     # Only latin and cyrillic characters allowed now
-    return 0 if $dom =~ m/[^-a-z0-9\.ёа-я\xAA\xBA\xB4\xB2\xB3\xAF\xBF\xA1\xA2]/;
+    # return 0 if $dom =~ m/[^-a-z0-9\.ёа-я\xAA\xBA\xB4\xB2\xB3\xAF\xBF\xA1\xA2]/;
 
     return 1;
 }
