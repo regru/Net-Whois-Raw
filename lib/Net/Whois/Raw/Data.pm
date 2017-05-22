@@ -1981,15 +1981,6 @@ our %servers = qw(
 );
 
 
-our %default_last_tlds = qw(
-    COM         whois.crsnic.net
-    NET         whois.crsnic.net
-    CC          whois.nic.cc
-    TV          whois.nic.tv
-    JOBS        whois.nic.jobs
-);
-
-
 our %ip_whois_servers = qw(
     AFRINIC     whois.afrinic.net
     APNIC       whois.apnic.net
