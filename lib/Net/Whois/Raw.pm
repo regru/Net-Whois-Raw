@@ -203,8 +203,12 @@ sub recursive_whois {
         }
     }
 
-    if ($dom =~ /^xn--/i && $newsrv && $Net::Whois::Raw::Data::whois_servers_with_no_idn_support{$newsrv}) {
+    if (
+        # Bypass recursing to custom servers
+        $Net::Whois::Raw::Data::whois_servers_no_recurse{ $newsrv }
         # Bypass recursing to WHOIS servers with no IDN support
+        || $dom =~ /^xn--/i && $newsrv && $Net::Whois::Raw::Data::whois_servers_with_no_idn_support{ $newsrv }
+    ) {
         $newsrv = undef;
     }
 

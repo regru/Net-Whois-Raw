@@ -4271,4 +4271,9 @@ our %query_prefix = (
     'whois.arin.net'           => 'n + ',
 );
 
+# Servers (within ports) to bypass recursion
+our %whois_servers_no_recurse = (
+    # 'rwhois.servercentral.net:4321' => 1,
+);
+
 1;
