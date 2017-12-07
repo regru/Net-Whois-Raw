@@ -2040,7 +2040,7 @@ our %notfound = (
 
     'whois.aero'                 => '^NOT FOUND',
     'whois.nic.asia'             => '^NOT FOUND',
-    'whois.biz'                  => '^Not found:',
+    'whois.biz'                  => '^No Data Found',
     'whois-tel.neustar.biz'      => '^Not found',
     'whois.cat'                  => '^% Object \S+ NOT FOUND',
     'whois.nic.coop'             => 'No domain records',
@@ -2167,7 +2167,7 @@ our %notfound = (
     'whois.twnic.net.tw'      => '^No Found',
     'whois.nic.uk'            => 'No match for',
     'whois.ja.net'            => '^No such domain',
-    'whois.nic.us'            => '^Not found',
+    'whois.nic.us'            => '^No Data Found',
     'whois.cctld.uz'          => 'not found in database',
     'whois.nic.ve'            => 'No match for',
     'whois.nic.wf'            => 'No entries found',
