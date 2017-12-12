@@ -1,6 +1,6 @@
 Revision history for Perl module Net::Whois::Raw.
 
-2.99007  Dec 11 2017 Vadiml Likhota
+2.99012  Dec 11 2017 Vadim Likhota
     - update notfound data and whois servers for some tlds
 
 2.99011  Nov 23 2017 Alexander Nalobin
