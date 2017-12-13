@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99013  Dec 13 2017 Alexander Nalobin
+    - Added "notfound" and "strip" patterns for whois.registry.ripn.net
+
 2.99012  Dec 11 2017 Vadim Likhota
     - update notfound data and whois servers for some tlds
 

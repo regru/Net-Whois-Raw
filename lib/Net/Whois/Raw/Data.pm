@@ -2023,6 +2023,7 @@ our %notfound = (
     'whois.ripe.net'        => 'No entries found',
 
     'whois.ripn.net'        => 'No entries found',
+    'whois.registry.ripn.net' => 'No entries found',
     'whois.nic.ru'          => 'No entries found',
     'whois.nnov.ru'         => 'No entries found',
     'whois.int.ru'          => 'No entries found',
@@ -2726,6 +2727,11 @@ our %strip = (
     ],
 
     'whois.ripn.net' => [
+        '^%',
+        'Last updated on ',
+    ],
+
+    'whois.registry.ripn.net' => [
         '^%',
         'Last updated on ',
     ],
@@ -4212,6 +4218,7 @@ our %exceed = (
     'whois.dns.lu' => 'Excessive querying, grace period of',
     'whois.mynic.my' => 'Query limitation is',
     'whois.ripn.net' => 'exceeded allowed connection rate',
+    'whois.registry.ripn.net' => 'exceeded allowed connection rate',
     'whois.domain-registry.nl' => 'too many requests',
     'whois.nic.uk' => 'and will be replenished',
     'whois.networksolutions.com' => 'contained within a list of IP addresses that may have failed',
@@ -4234,6 +4241,7 @@ our %exceed = (
 our $default_ban_time = 60;
 our %ban_time = (
     'whois.ripn.net'  => 60,
+    'whois.registry.ripn.net'  => 60,
 );
 
 # Whois servers which has no idn support
