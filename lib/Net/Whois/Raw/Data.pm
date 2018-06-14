@@ -14,9 +14,9 @@ our @www_whois = qw(
 
 our %servers = qw(
     RU                  whois.ripn.net
-    NET.RU              whois.ripn.net
-    ORG.RU              whois.ripn.net
-    PP.RU               whois.ripn.net
+    NET.RU              whois.nic.net.ru
+    ORG.RU              whois.nic.net.ru
+    PP.RU               whois.nic.net.ru
     SU                  whois.ripn.net
     XN--P1AI            whois.ripn.net
     XN--D1ACJ3B         whois.ripn.net
