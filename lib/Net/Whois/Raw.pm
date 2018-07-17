@@ -166,37 +166,37 @@ sub _referral_server {
 }
 
 sub recursive_whois {
-    my ($dom, $srv, $was_srv, $norecurse, $is_ns) = @_;
+    my ( $dom, $srv, $was_srv, $norecurse, $is_ns ) = @_;
 
     my $lines = whois_query( $dom, $srv, $is_ns );
-    my $whois = join("", @{$lines});
+    my $whois = join '', @$lines;
 
-    my ($newsrv, $registrar);
-    foreach (@{$lines}) {
+    my ( $newsrv, $registrar );
+    for ( @$lines ) {
         $registrar ||= /Registrar/ || /Registered through/;
 
         # Skip urls as recursive whois servers
         if ( $registrar && !$norecurse && /whois server:\s*([a-z0-9\-_\.]+)$/i ) {
             $newsrv = lc $1;
         }
-        elsif ($whois =~ /To single out one record, look it up with \"xxx\",/s) {
+        elsif ( $whois =~ /To single out one record, look it up with \"xxx\",/s ) {
             return recursive_whois( "=$dom", $srv, $was_srv );
         }
-        elsif (my ($rs) = _referral_server()) {
+        elsif ( my ( $rs ) = _referral_server() && !$norecurse ) {
             $newsrv = $rs;
             last;
         }
-        elsif (/Contact information can be found in the (\S+)\s+database/) {
+        elsif ( /Contact information can be found in the (\S+)\s+database/ ) {
             $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $1 };
         }
-        elsif ((/OrgID:\s+(\w+)/ || /descr:\s+(\w+)/) && Net::Whois::Raw::Common::is_ipaddr($dom)) {
+        elsif ( ( /OrgID:\s+(\w+)/ || /descr:\s+(\w+)/ ) && Net::Whois::Raw::Common::is_ipaddr( $dom ) ) {
             my $val = $1;
-            if($val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/) {
+            if ( $val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/ ) {
                 $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $val };
                 last;
             }
         }
-        elsif (/^\s+Maintainer:\s+RIPE\b/ && Net::Whois::Raw::Common::is_ipaddr($dom)) {
+        elsif ( /^\s+Maintainer:\s+RIPE\b/ && Net::Whois::Raw::Common::is_ipaddr( $dom ) ) {
             $newsrv = $Net::Whois::Raw::Data::servers{RIPE};
         }
         elsif ( $is_ns && $srv ne $Net::Whois::Raw::Data::servers{NS} ) {
@@ -216,14 +216,14 @@ sub recursive_whois {
     }
 
     my @whois_recs = ( { text => $whois, srv => $srv } );
-    if ($newsrv && $newsrv ne $srv) {
+    if ( $newsrv && $newsrv ne $srv ) {
         warn "recurse to $newsrv\n" if $DEBUG;
 
-        return () if grep {$_ eq $newsrv} @$was_srv;
+        return () if grep { $_ eq $newsrv } @$was_srv;
 
-        my @new_whois_recs = eval { recursive_whois( $dom, $newsrv, [@$was_srv, $srv], 0, $is_ns) };
-        my $new_whois = scalar(@new_whois_recs) ? $new_whois_recs[0]->{text} : '';
-        my $notfound = $Net::Whois::Raw::Data::notfound{$newsrv};
+        my @new_whois_recs = eval { recursive_whois( $dom, $newsrv, [ @$was_srv, $srv ], 0, $is_ns ) };
+        my $new_whois = scalar @new_whois_recs ? $new_whois_recs[0]->{text} : '';
+        my $notfound = $Net::Whois::Raw::Data::notfound{ $newsrv };
 
         if ( $new_whois && !$@ && not ( $notfound && $new_whois =~ /$notfound/im ) ) {
             if ( $is_ns ) {
@@ -234,7 +234,7 @@ sub recursive_whois {
             }
         }
         else {
-                warn "recursive query failed\n" if $DEBUG;
+            warn "recursive query failed\n" if $DEBUG;
         }
     }
 
