@@ -2022,8 +2022,8 @@ our %notfound = (
     'whois.arin.net'        => '^No match found',
     'whois.ripe.net'        => 'No entries found',
 
-    'whois.ripn.net'        => 'No entries found',
-    'whois.registry.ripn.net' => 'No entries found',
+    'whois.ripn.net'          => '(?:No entries found|The queried object does not exist)',
+    'whois.registry.ripn.net' => '(?:No entries found|The queried object does not exist)',
     'whois.nic.ru'          => 'No entries found',
     'whois.nnov.ru'         => 'No entries found',
     'whois.int.ru'          => 'No entries found',
