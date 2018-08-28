@@ -404,6 +404,7 @@ our %servers = qw(
     KIM             whois.afilias.net
     LGBT            whois.afilias.net
     LOTTO           whois.afilias.net
+    LLC             whois.afilias.net
     ORGANIC         whois.afilias.net
     PET             whois.afilias.net
     PINK            whois.afilias.net
@@ -420,6 +421,9 @@ our %servers = qw(
     ARMY            whois.nic.army
     ATTORNEY        whois.nic.attorney
     AUCTION         whois.nic.auction
+    BABY            whois.nic.baby
+    BOSTON          whois.nic.boston
+    BUZZ            whois.nic.buzz
     CONSULTING      whois.nic.consulting
     DANCE           whois.nic.dance
     DEGREE          whois.nic.degree
@@ -427,9 +431,12 @@ our %servers = qw(
     DENTIST         whois.nic.dentist
     ENGINEER        whois.nic.engineer
     FORSALE         whois.nic.forsale
+    FUN             whois.nic.fun
     FUTBOL          whois.nic.futbol
     GIVES           whois.nic.gives
     HAUS            whois.nic.haus
+    HEALTH          whois.nic.health
+    HOSPITAL        whois.nic.hospital
     IMMOBILIEN      whois.nic.immobilien
     KAUFEN          whois.nic.kaufen
     LAWYER          whois.nic.lawyer
@@ -437,15 +444,21 @@ our %servers = qw(
     MODA            whois.nic.moda
     MORTGAGE        whois.nic.mortgage
     NAVY            whois.nic.navy
+    NAGOYA          whois.nic.nagoya
     NINJA           whois.nic.ninja
+    NYC             whois.nic.nyc
     PUB             whois.nic.pub
+    QPON            whois.nic.qpon
     REHAB           whois.nic.rehab
     REPUBLICAN      whois.nic.republican
     REVIEWS         whois.nic.reviews
     ROCKS           whois.nic.rocks
     SOCIAL          whois.nic.social
     SOFTWARE        whois.nic.software
+    STREAM          whois.nic.stream
+    TOKYO           whois.nic.tokyo
     VET             whois.nic.vet
+    YOKOHAMA        whois.nic.yokohama
 
     BAND            whois.rightside.co
     FAMILY          whois.rightside.co
@@ -796,6 +809,7 @@ our %servers = qw(
     ORG.UK      whois.nic.uk
     PLC.UK      whois.nic.uk
 
+    AFRICA      africa-whois.registry.net.za
     CAPETOWN    capetown-whois.registry.net.za
     CO.ZA       whois.registry.net.za
     DURBAN      durban-whois.registry.net.za
@@ -886,6 +900,7 @@ our %servers = qw(
     ORG.NS      whois.pir.org
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
+    COM.TR      whois.nic.tr
     VIP         whois.nic.vip
     PROMO       whois.nic.promo
 
@@ -2353,6 +2368,7 @@ our %notfound = (
     'whois.nic.canon'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
     'durban-whois.registry.net.za'         => 'Available',
     'joburg-whois.registry.net.za'         => 'Available',
+    'africa-whois.registry.net.za'         => 'Available',
     'kero.yachay.pe'                       => 'Domain Status: No Object Found',
     'whois-corsica.nic.fr'                 => 'The queried object does not exist: Domain name',
     'whois-fe.movistar.tango.knipp.de'     => 'The queried object does not exist: no matching objects found',
@@ -2486,6 +2502,19 @@ our %notfound = (
     'whois.nic.immobilien'                 => '^Domain not found',
     'whois.nic.democrat'                   => '^Domain not found',
     'whois.nic.dance'                      => '^Domain not found',
+    'whois.nic.hospital'                   => '^Domain not found',
+    'whois.nic.buzz'                       => '^No Data Found',
+    'whois.nic.nyc'                        => '^No Data Found',
+    'whois.nic.qpon'                       => '^No Data Found',
+    'whois.nic.stream'                     => '^No Data Found',
+    'whois.nic.baby'                       => '^No Data Found',
+    'whois.nic.health'                     => '^No Data Found',
+    'whois.nic.tokyo'                      => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.nagoya'                     => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.yokohama'                   => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.fun'                        => 'The queried object does not exist: DOMAIN NOT FOUND',
+    'whois.nic.boston'                     => 'This domain name has not been registered\.',
+    'whois.nic.tr'                         => 'No match found for',
     'whois.nic.wien'                       => '^Available',
     'whois.nic.iselect'                    => 'No Data Found',
     'whois.nic.jaguar'                     => 'No match for "',
