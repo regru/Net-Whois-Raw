@@ -901,6 +901,7 @@ our %servers = qw(
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
     COM.TR      whois.nic.tr
+    COM.HN      whois.nic.hn
     VIP         whois.nic.vip
     PROMO       whois.nic.promo
 
@@ -2103,7 +2104,7 @@ our %notfound = (
     'whois.registry.hm'       => 'Domain not found',
     'whois.nic.ht'            => 'No Object Found',
     'whois.cira.ca'           => '^Domain status\:\s+available',
-    'whois.nic.cd'            => 'Domain Not Found',
+    'whois.nic.cd'            => 'Domain Status: No Object Found',
     'whois.nic.ch'            => '^We do not have an entry in our database matching your',
     'whois.nic.ci'            => 'No Object Found',
     'whois.nic.cl'            => '\: no entries found',
@@ -2471,7 +2472,7 @@ our %notfound = (
     'whois.nic.hyundai'                    => 'The queried object does not exist: DOMAIN NOT FOUND',
     'whois.nic.ibm'                        => 'No Data Found',
     'whois.nic.ice'                        => 'No match for "',
-    'whois.nic.icu'                        => '^registration status\: invalid',
+    'whois.nic.icu'                        => '(?:^registration status\: invalid|The queried object does not exist: DOMAIN NOT FOUND)',
     'whois.nic.ifm'                        => 'The queried object does not exist: no matching objects found',
     'whois.nic.insurance'                  => 'No match for "',
     'whois.nic.irish'                      => '^Domain not found',
@@ -2516,6 +2517,7 @@ our %notfound = (
     'whois.nic.boston'                     => 'This domain name has not been registered\.',
     'whois.nic.tr'                         => 'No match found for',
     'whois.nic.wien'                       => '^Available',
+    'whois.nic.hn'                         => 'Domain Status: No Object Found',
     'whois.nic.iselect'                    => 'No Data Found',
     'whois.nic.jaguar'                     => 'No match for "',
     'whois.nic.java'                       => 'No match for "',
