@@ -182,7 +182,7 @@ sub recursive_whois {
         elsif ( $whois =~ /To single out one record, look it up with \"xxx\",/s ) {
             return recursive_whois( "=$dom", $srv, $was_srv );
         }
-        elsif ( my ( $rs ) = _referral_server() && !$norecurse ) {
+        elsif ( !$norecurse && ( my ( $rs ) = _referral_server() ) ) {
             $newsrv = $rs;
             last;
         }
