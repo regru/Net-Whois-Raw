@@ -468,10 +468,6 @@ sub get_ips_for_query {
 1;
 __END__
 
-=head1 NAME
-
-Net::Whois::Raw — Get Whois information of domains and IP addresses.
-
 =head1 SYNOPSIS
 
     use Net::Whois::Raw;
