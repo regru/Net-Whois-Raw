@@ -73,7 +73,7 @@ sub whois {
         } elsif ($which_whois eq 'QRY_LAST' || !defined($which_whois)) {
             $res_text = $res->[-1]->{text};
             $res_srv  = $res->[-1]->{srv};
-        } elsif ($which_whois eq 'QRY_ALL) {
+        } elsif ($which_whois eq 'QRY_ALL') {
             return $res;
         }  
     }
