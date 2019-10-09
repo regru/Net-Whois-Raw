@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99024  Oct 10 2019 Eugeny Subachev
+    - A lot of new tlds added
+
 2.99023  Oct 09 2019 Eugeny Subachev
     - New tlds .ORG.HN, .NET.HN
 
