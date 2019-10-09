@@ -901,6 +901,8 @@ our %servers = qw(
     BIZ.NS      whois.biz
     NAME.NS     whois.nic.name
     COM.TR      whois.nic.tr
+    ORG.HN      whois.nic.hn
+    NET.HN      whois.nic.hn
     COM.HN      whois.nic.hn
     VIP         whois.nic.vip
     PROMO       whois.nic.promo
