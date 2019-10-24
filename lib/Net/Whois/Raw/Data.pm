@@ -1208,6 +1208,8 @@ our %servers = qw(
     XN--CLCHC0EA0B2G2A9GCD  whois.sgnic.sg
     XN--YFRO4I67O           whois.sgnic.sg
 
+    NET.SO                  whois.nic.so
+
     INT.RU                  whois.int.ru
 
     PRIV.AT                 whois.nic.priv.at
@@ -2454,7 +2456,7 @@ our %notfound = (
     'whois.nic.ooo'                        => 'The queried object does not exist: DOMAIN NOT FOUND',
     'whois.nic.priv.at'                    => 'No entries found for the selected source',
     'whois.nic.pro'                        => 'NOT FOUND',
-    'whois.nic.so'                         => 'Not found',
+    'whois.nic.so'                         => 'No Object Found',
     'whois.nic.srl'                        => 'NOT FOUND',
     'whois.nic.study'                      => 'No Data Found',
     'whois.nic.top'                        => 'The queried object does not exist',
