@@ -553,7 +553,7 @@ on several servers but certainly not on all of them.
 
 =item whois( DOMAIN [, SRV [, WHICH_WHOIS]] )
 
-Returns Whois information for C<DOMAIN>.
+Returns Whois information for C<DOMAIN> in punycode.
 Without C<SRV> argument default Whois server for specified domain name
 zone will be used. Use 'www_whois' as server name to force
 WHOIS querying via HTTP (only few TLDs are supported in HTTP queries).
