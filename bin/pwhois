@@ -11,6 +11,9 @@ use Encode;
 use Net::IDN::Punycode qw( :all );
 use utf8;
 
+binmode STDOUT, ':encoding(UTF-8)';
+binmode STDERR, ':encoding(UTF-8)';
+
 my $help;
 my $do_strip;
 my $do_strip_more;
@@ -40,7 +43,7 @@ GetOptions(
 ) or die;
 
 if ( $help || !@ARGV ) {
-    print <<EOM;
+    print q{
 Usage:	$0 [ -s ] [ -c ] [ -d ] [ -T <timeout> ] [ -a <src_ip> ] [ -t ] [ -F | -L | -A ] <domain> [ <server> ]
 
 Switches:
@@ -53,7 +56,7 @@ Switches:
 -F	returns results of the first query of recursive whois requests
 -L	returns results of the last query of recursive whois requests (the default)
 -A	returns results of the all queries of recursive whois requests
-EOM
+};
     exit;
 }
 
@@ -77,17 +80,21 @@ else {
 
 my ( $input_cp, $output_cp ) = detect_encodings();
 
-my $dname  = $ARGV[0];
-my $server = $ARGV[1];
+my ( $query, $server ) = @ARGV;
 
-$dname = prepare_domain( $dname, $input_cp );
+$query = decode_query( $query, $input_cp );
 
-unless ( validate_domain( $dname ) ) {
-    print encode_output( "\nIncorrect domain name:\n$dname\n", $output_cp );
+# Split domain name and optional part prepended by '?' character.
+my ( $dname, $options ) = split /[?]/, $query;
+
+unless ( validate_domain_name( $dname ) ) {
+    print encode_output( "\nIncorrect dname:\n$dname\n", $output_cp );
     exit -1;
 }
 
-$dname = to_punycode( $dname );
+$query = to_punycode( $dname );
+
+$query .= '?' . $options  if defined $options;
 
 my ( $result, $result_server );
 my $which_whois =
@@ -95,7 +102,7 @@ my $which_whois =
     $return_all   ? 'QRY_ALL'   : 'QRY_LAST';
 
 eval {
-    ( $result, $result_server ) = Net::Whois::Raw::get_whois( $dname, $server, $which_whois );
+    ( $result, $result_server ) = Net::Whois::Raw::get_whois( $query, $server, $which_whois );
 
     1;
 } or do {
@@ -179,40 +186,29 @@ sub detect_encodings {
     return $input_cp, $output_cp;
 }
 
-# Prepare domain name
-sub prepare_domain {
-    my ( $dname, $input_cp ) = @_;
+sub decode_query {
+    my ( $query, $input_cp ) = @_;
 
-    # Decode command-line input
-    $dname = decode( $input_cp, $dname );
+    $query = decode( $input_cp, $query );
 
     # Lowercase latin and cyrillic characters
-    $dname =~ tr/A-ZА-ЯЁ\xAA\xA5\xB2\xAF/a-zа-яё\xBA\xB4\xB3\xBF/;
+    $query =~ tr/A-ZА-ЯЁ\xAA\xA5\xB2\xAF/a-zа-яё\xBA\xB4\xB3\xBF/;
 
-    return $dname;
+    return $query;
 }
 
 # Decode domain name to punycode if needed
 sub to_punycode {
     my ( $dname ) = @_;
 
-    unless ( $dname =~ /^[a-z0-9.\-]*$/ ) {
-        # Convert to Punycode
-        my @parts;
-        for my $part ( split /\./, $dname ) {
-            $part = 'xn--' . Net::IDN::Punycode::encode_punycode( $part )
-                unless $part =~ /^[a-z0-9.-]*$/;
-            push @parts, $part;
-        }
+    return $dname  if $dname =~ /^[a-z0-9.\-]*$/;
 
-        $dname = join '.', @parts;
-    }
-
-    return $dname;
+    return join '.', 
+           map { /^[a-z0-9.-]*$/ ? $_ : 'xn--' . Net::IDN::Punycode::encode_punycode( $_ ) }
+           split /[.]/, $dname;
 }
 
-# Validate domain name
-sub validate_domain {
+sub validate_domain_name {
     my ( $dname ) = @_;
 
     return 0  unless $dname;
