@@ -418,7 +418,6 @@ our %servers = qw(
     PET             whois.afilias.net
     PINK            whois.afilias.net
     POKER           whois.afilias.net
-    PROMO           whois.afilias.net
     RED             whois.afilias.net
     SHIKSHA         whois.afilias.net
     VOTE            whois.afilias.net
@@ -520,7 +519,6 @@ our %servers = qw(
     HT               whois.nic.ht
     HU               whois.nic.hu
     IE               whois.domainregistry.ie
-    ID               whois.pandi.or.id
     IL               whois.isoc.org.il
     IM               whois.nic.im
     IN               whois.inregistry.net
@@ -1169,7 +1167,6 @@ our %servers = qw(
     XN--9ET52U      whois.gtld.knet.cn
     XN--CZRU2D      whois.gtld.knet.cn
     XN--FIQ64B      whois.gtld.knet.cn
-    XN--SES554G     whois.registry.knet.cn
 
     MK              whois.marnet.mk
     XN--D1ALF       whois.marnet.mk
@@ -1200,12 +1197,6 @@ our %servers = qw(
 
     XN--FIQS8S       cwhois.cnnic.cn
     XN--FIQZ9S       cwhois.cnnic.cn
-
-    MO               whois.monic.mo
-    XN--MIX891F      whois.monic.mo
-
-    XN--CLCHC0EA0B2G2A9GCD  whois.sgnic.sg
-    XN--YFRO4I67O           whois.sgnic.sg
 
     NET.SO                  whois.nic.so
 
@@ -1833,56 +1824,6 @@ our %servers = qw(
     XN--J1AMH               whois.dotukr.com
 
     XN--90AE                whois.imena.bg
-
-    XN--MGBERP4A5D4AR       whois.nic.net.sa
-
-    XN--3PXU8K              whois.nic.xn--3pxu8k
-
-    XN--42C2D9A             whois.nic.xn--42c2d9a
-
-    XN--45Q11C              whois.nic.xn--45q11c
-
-    XN--5SU34J936BGSG       whois.nic.xn--5su34j936bgsg
-
-    XN--9DBQ2A              whois.nic.xn--9dbq2a
-
-    XN--C2BR7G              whois.nic.xn--c2br7g
-
-    XN--EFVY88H             whois.nic.xn--efvy88h
-
-    XN--FHBEI               whois.nic.xn--fhbei
-
-    XN--HXT814E             whois.nic.xn--hxt814e
-
-    XN--KPUT3I              whois.nic.xn--kput3i
-
-    XN--MGBA7C0BBN0A        whois.nic.xn--mgba7c0bbn0a
-
-    XN--MGBCA7DZDO          whois.nic.xn--mgbca7dzdo
-
-    XN--MK1BU44C            whois.nic.xn--mk1bu44c
-
-    XN--MXTQ1M              whois.nic.xn--mxtq1m
-
-    XN--NGBE9E0A            whois.nic.xn--ngbe9e0a
-
-    XN--PSSY2U              whois.nic.xn--pssy2u
-
-    XN--T60B56A             whois.nic.xn--t60b56a
-
-    XN--TCKWE               whois.nic.xn--tckwe
-
-    XN--W4R85EL8FHU5DNRA    whois.nic.xn--w4r85el8fhu5dnra
-
-    XN--W4RS40L             whois.nic.xn--w4rs40l
-
-    XPERIA                  whois.nic.xperia
-
-    ZM                      whois.nic.zm
-
-    XN--YGBI2AMMX           whois.pnina.ps
-
-    XN--O3CW4H              whois.thnic.co.th
 
     MO               whois.monic.mo
     XN--MIX891F      whois.monic.mo
