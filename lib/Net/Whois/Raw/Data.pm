@@ -1876,7 +1876,7 @@ our %servers = qw(
 
     XN--YGBI2AMMX         whois.pnina.ps
 
-    XN--SES554G           whois.registry.knet.cn
+    XN--SES554G           whois.nic.xn--ses554g
 
     XN--CLCHC0EA0B2G2A9GCD  whois.sgnic.sg
     XN--YFRO4I67O           whois.sgnic.sg
