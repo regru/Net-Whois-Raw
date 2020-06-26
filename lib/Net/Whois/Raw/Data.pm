@@ -406,6 +406,13 @@ our %servers = qw(
     UNO             whois.nic.uno
     XXX             whois.nic.xxx
 
+    BOX             whois.nic.box
+    EPSON           whois.nic.epson
+    IINET           whois.nic.iinet
+    KRD             whois.nic.krd
+    MELBOURNE       whois.nic.melbourne
+    SAXO            whois.nic.saxo
+
     BET             whois.afilias.net
     BLACK           whois.afilias.net
     BLUE            whois.afilias.net
@@ -1082,13 +1089,6 @@ our %servers = qw(
     XN--JLQ61U9W7B      whois.afilias-srs.net
     YACHTS              whois.afilias-srs.net
     ZARA                whois.afilias-srs.net
-
-    BOX          whois.aridnrs.net.au
-    EPSON        whois.aridnrs.net.au
-    IINET        whois.aridnrs.net.au
-    KRD          whois.aridnrs.net.au
-    MELBOURNE    whois.aridnrs.net.au
-    SAXO         whois.aridnrs.net.au
 
     BOM          whois.gtlds.nic.br
     FINAL        whois.gtlds.nic.br
@@ -2409,7 +2409,6 @@ our %notfound = (
     'whois.aeda.net.ae'                    => 'No Data Found',
     'whois.afilias-srs.net'                => 'NOT FOUND',
     'whois.ai'                             => '^Domain \S+ not registered',
-    'whois.aridnrs.net.au'                 => 'No Data Found',
     'whois.bnnic.bn'                       => 'Domain Not Found',
     'whois.gtlds.nic.br'                   => 'The queried object does not exist: ',
     'whois.ngtld.cn'                       => 'No matching record\.',
@@ -2931,6 +2930,13 @@ our %notfound = (
     'whois.nic.you'                        => 'This domain name has not been registered\.',
     'whois.nic.zappos'                     => 'This domain name has not been registered\.',
     'whois.registry.in'                    => 'No Data Found',
+    'whois.nic.cyou'                       => 'DOMAIN NOT FOUND',
+    'whois.nic.box'                        => 'No Data Found',
+    'whois.nic.epson'                      => 'No Data Found',
+    'whois.nic.iinet'                      => 'No Data Found',
+    'whois.nic.krd'                        => 'No Data Found',
+    'whois.nic.melbourne'                  => 'No Data Found',
+    'whois.nic.saxo'                       => 'No Data Found',
 );
 
 # Common whois stripping REs
