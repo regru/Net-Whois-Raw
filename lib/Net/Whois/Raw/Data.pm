@@ -433,6 +433,7 @@ our %servers = qw(
     BOSTON          whois.nic.boston
     BUZZ            whois.nic.buzz
     CONSULTING      whois.nic.consulting
+    CYOU            whois.nic.cyou
     DANCE           whois.nic.dance
     DEGREE          whois.nic.degree
     DEMOCRAT        whois.nic.democrat
@@ -962,7 +963,6 @@ our %servers = qw(
     CLINIQUE            whois.afilias-srs.net
     CREDITUNION         whois.afilias-srs.net
     CRUISE              whois.afilias-srs.net
-    CYOU                whois.afilias-srs.net
     DABUR               whois.afilias-srs.net
     DELTA               whois.afilias-srs.net
     DISH                whois.afilias-srs.net
