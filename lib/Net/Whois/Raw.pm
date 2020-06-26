@@ -259,7 +259,6 @@ sub whois_query {
 
     ### get server for query
     my $server4query = Net::Whois::Raw::Common::get_server($dom);
-    $server4query = lc $server4query;
 
     if ( Net::Whois::Raw::Common::is_ip6addr( $srv ) ) {
         $srv = "[$srv]";
