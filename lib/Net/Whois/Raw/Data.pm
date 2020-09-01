@@ -559,7 +559,7 @@ our %servers = qw(
     MS               whois.nic.ms
     MU               whois.nic.mu
     MUTUELLE         whois-mutuelle.nic.fr
-    MX               whois.nic.mx
+    MX               whois.mx
     MY               whois.mynic.my
     NA               whois.na-nic.com.na
     NF               whois.nic.nf
