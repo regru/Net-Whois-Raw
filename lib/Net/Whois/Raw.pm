@@ -571,7 +571,7 @@ C<WHICH_WHOIS> argument is used to access a results if recursive queries;
 possible values:
 
 C<'QRY_FIRST'> -
-    returns results of the first query. Non't make recursive queries.
+    returns results of the first query. Does not make recursive queries.
     In scalar context returns just whois text.
     In list context returns two values: whois text and whois server
     which was used to make query).
