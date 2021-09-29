@@ -1,5 +1,8 @@
 Revision history for Perl module Net::Whois::Raw.
 
+2.99033  Sep 29 2021    Alexander Nalobin
+    - utf8 encoding fix in pwhois script
+
 2.99032  Aug 17 2021 Alexander Nalobin
     - Fix whois server for .mx
 
