@@ -11,9 +11,6 @@ use Encode;
 use Net::IDN::Punycode qw( :all );
 use utf8;
 
-binmode STDOUT, ':encoding(UTF-8)';
-binmode STDERR, ':encoding(UTF-8)';
-
 my $help;
 my $do_strip;
 my $do_strip_more;
