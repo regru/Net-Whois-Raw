@@ -2939,6 +2939,9 @@ our %notfound = (
     'whois.nic.krd'                        => 'No Data Found',
     'whois.nic.melbourne'                  => 'No Data Found',
     'whois.nic.saxo'                       => 'No Data Found',
+    'whois.nic.ink'                        => 'No Data Found',
+    'whois.nic.wiki'                       => 'No Data Found',
+    'whois.nic.design'                     => 'No Data Found',
 );
 
 # Common whois stripping REs
