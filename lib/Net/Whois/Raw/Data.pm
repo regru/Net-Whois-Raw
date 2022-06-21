@@ -127,7 +127,7 @@ our %servers = qw(
     ARPA            whois.iana.org
     ASIA            whois.nic.asia
     BIZ             whois.biz
-    CAT             whois.cat
+    CAT             whois.nic.cat
     CC              whois.nic.cc
     COM             whois.crsnic.net
     EDU             whois.educause.edu
@@ -2168,7 +2168,7 @@ our %notfound = (
     'whois.nic.asia'             => '^NOT FOUND',
     'whois.biz'                  => '^No Data Found',
     'whois-tel.neustar.biz'      => 'No Domain exists for',
-    'whois.cat'                  => 'no matching objects found',
+    'whois.nic.cat'              => 'no matching objects found',
     'whois.educause.edu'         => '^No Match',
     'whois.nic.mil'              => '^No match for',
     'whois.museum'               => 'NOT FOUND',
@@ -3115,7 +3115,7 @@ our %strip = (
         'unsolicited commercial advertising',
         '\(b\) harass any person; or',
     ],
-    'whois.cat' => [
+    'whois.nic.cat' => [
         '^%',
     ],
     'ccwhois.verisign-grs.com' => [ # .CC
