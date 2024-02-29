@@ -308,7 +308,7 @@ sub whois_query {
 
             unless ( $sock ) {
                 $sock = IO::Socket::IP->new( @sockparams )
-                    or die "$srv: $!: " . join( ', ', @sockparams );
+                    or die "$srv: $IO::Socket::errstr: " . join( ', ', @sockparams );
             }
 
             if ($class->can ('whois_socket_fixup')) {
