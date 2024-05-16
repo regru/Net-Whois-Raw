@@ -178,7 +178,7 @@ sub recursive_whois {
         $registrar ||= /Registrar/ || /Registered through/;
 
         # Skip urls as recursive whois servers
-        if ( $registrar && !$norecurse && /whois server:\s*([a-z0-9\-_\.]+)\b/i ) {
+        if ( $registrar && !$norecurse && /whois server:\s*(?:https?:\/\/)?([a-z0-9\-_\.]+)\b/i ) {
             $newsrv = lc $1;
         }
         elsif ( $whois =~ /To single out one record, look it up with \"xxx\",/s ) {
