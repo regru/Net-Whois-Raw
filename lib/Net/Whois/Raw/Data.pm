@@ -118,6 +118,7 @@ our %servers = qw(
     VOLOGDA.SU          whois.flexireg.net
     YAKUTIA.SU          whois.nic.ru
     YEKATERINBURG.RU    whois.nic.ru
+    XN--90A1AF.XN--P1AI whois.flexireg.net
 
     NS     whois.nsiregistry.net
     RIPE   whois.ripe.net
