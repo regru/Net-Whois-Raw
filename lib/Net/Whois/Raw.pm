@@ -191,7 +191,7 @@ sub recursive_whois {
         elsif ( /Contact information can be found in the (\S+)\s+database/ ) {
             $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $1 };
         }
-        elsif ( ( /OrgID:\s+(\w+)/ || /descr:\s+(\w+)/ ) && Net::Whois::Raw::Common::is_ipaddr( $dom ) ) {
+        elsif ( ( /OrgID:\s+(\w+)/i || /descr:\s+(\w+)/ ) && Net::Whois::Raw::Common::is_ipaddr( $dom ) ) {
             my $val = $1;
             if ( $val =~ /^(?:RIPE|APNIC|KRNIC|LACNIC)$/ ) {
                 $newsrv = $Net::Whois::Raw::Data::ip_whois_servers{ $val };
