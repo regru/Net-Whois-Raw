@@ -492,7 +492,7 @@ our %servers = qw(
     BJ               whois.nic.bj
     BOSTIK           whois-bostik.nic.fr
     BR               whois.registro.br
-    BY               whois.ripe.net
+    BY               whois.cctld.by
     BZ               whois2.afilias-grs.net
     CA               whois.cira.ca
     CD               whois.nic.cd
@@ -2854,7 +2854,7 @@ our %notfound = (
     'whois.nic.work'                       => 'This domain name has not been registered',
     'whois.nic.yoga'                       => 'This domain name has not been registered',
     'whois.ax'                             => 'Domain not found',
-    'whois.cctld.by'                       => 'Object does not exist',
+    'whois.cctld.by'                       => 'object does not exist',
     'whois.mediaserv.net'                  => 'NO OBJECT FOUND!',
     'whois.nic.amsterdam'                  => 'Domain Status: free',
     'whois.nic.arab'                       => 'No Data Found',
