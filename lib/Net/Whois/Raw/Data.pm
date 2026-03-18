@@ -834,6 +834,8 @@ our %servers = qw(
     XN--NQV7FS00EMA  whois.publicinterestregistry.net
     XN--P1AG         ru.whois.i-dns.net
 
+    IN.NET      whois.radix.host
+
     AE.ORG      whois.centralnic.com
     AFRICA.COM  whois.centralnic.com
     AR.COM      whois.centralnic.com
@@ -848,7 +850,6 @@ our %servers = qw(
     GR.COM      whois.centralnic.com
     HU.COM      whois.centralnic.com
     HU.NET      whois.centralnic.com
-    IN.NET      whois.centralnic.com
     JP.NET      whois.centralnic.com
     JPN.COM     whois.centralnic.com
     KR.COM      whois.centralnic.com
@@ -2316,6 +2317,7 @@ our %notfound = (
     'whois.aitdomains.com'      => '^No match for',
     'whois.alldomains.com'      => '^No match for',
     'whois.centralnic.com'      => '(?:DOMAIN NOT FOUND|Status:\s+free)',
+    'whois.radix.host'          => 'Domain \S+ is available for registration'
     'whois.communigal.net'      => '^NOT FOUND',
     'whois.desertdevil.com'     => 'No match for domain',
     'whois.directi.com'         => 'No Match for',
