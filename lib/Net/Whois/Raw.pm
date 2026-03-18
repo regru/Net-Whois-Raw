@@ -307,9 +307,13 @@ sub whois_query {
             $prev_alarm = alarm $TIMEOUT if $TIMEOUT;
 
             unless ( $sock ) {
-                $sock = IO::Socket::IP->new( @sockparams )
-                my $errstr = $IO::Socket::errstr || '<empty error>';
-                    or die "$srv: $errstr: " . join( ', ', @sockparams );
+                $sock = eval {
+                    IO::Socket::IP->new( @sockparams )
+                }
+                or do {
+                    my $errstr = $IO::Socket::errstr || '<empty error>';
+                    die "$srv: $errstr: " . join( ', ', @sockparams );
+                };
             }
 
             if ($class->can ('whois_socket_fixup')) {
