@@ -8,7 +8,7 @@ use warnings;
 use Net::Whois::Raw;
 use Getopt::Long;
 use Encode;
-use Net::IDN::Punycode qw( :all );
+use Net::IDN::PP;
 use utf8;
 
 my $help;
@@ -200,8 +200,8 @@ sub to_punycode {
 
     return $dname  if $dname =~ /^[a-z0-9.\-]*$/;
 
-    return join '.', 
-           map { /^[a-z0-9.-]*$/ ? $_ : 'xn--' . Net::IDN::Punycode::encode_punycode( $_ ) }
+    return join '.',
+           map { /^[a-z0-9.-]*$/ ? $_ : Net::IDN::PP->encode( $_ ) }
            split /[.]/, $dname;
 }
 
